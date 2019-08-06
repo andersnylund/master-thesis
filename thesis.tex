@@ -151,7 +151,7 @@
 %% * the second when you want to print your thesis to bind it, or
 %% * the third when producing a ps file and a pdf/a from it.
 %%
-\documentclass[english, 12pt, a4paper, elec, utf8, a-1b, online]{aaltothesis}
+\documentclass[english, 12pt, a4paper, sci, utf8, a-1b, online]{aaltothesis}
 %\documentclass[english, 12pt, a4paper, elec, utf8, a-1b]{aaltothesis}
 %\documentclass[english, 12pt, a4paper, elec, dvips, online]{aaltothesis}
 
@@ -176,6 +176,8 @@
 
 \usepackage{graphicx}
 
+\usepackage{tabularx}
+
 %% Math fonts, symbols, and formatting; these are usually needed
 \usepackage{amsfonts,amssymb,amsbsy,amsmath}
 
@@ -186,29 +188,29 @@
 
 %% Edit to conform to your degree programme
 %%
-\degreeprogram{Electronics and electrical engineering}
+\degreeprogram{Computer, Communication and Information Sciences}
 %%
 
 %% Your major
 %%
-\major{An appropriate major}
+\major{Software and Service Engineering}
 %%
 
 %% Major subject code
 %%
-\code{ELEC0007}
+\code{SCI3043}
 %%
  
 %% Choose one of the three below
 %%
-\univdegree{BSc}
-%\univdegree{MSc}
+%\univdegree{BSc}
+\univdegree{MSc}
 %\univdegree{Lic}
 %%
 
 %% Your name (self explanatory...)
 %%
-\thesisauthor{Eddie Engineer}
+\thesisauthor{Anders Nylund}
 %%
 
 %% Your thesis title comes here and possibly again together with the Finnish or
@@ -223,7 +225,7 @@
 %% argument in box brackets. This is done because the title is part of the 
 %% metadata in the pdf/a file, and the metadata cannot contain linebreaks.
 %%
-\thesistitle{Title of the thesis}
+\thesistitle{Impact of Developer Experience in the outcome of Software Projects}
 %\thesistitle[Title of the thesis]{Title of\\ the thesis}
 %%
 
@@ -233,7 +235,7 @@
 
 %% The date for the bachelor's thesis is the day it is presented
 %%
-\date{31.8.2018}
+\date{TBA}
 %%
 
 %% Thesis supervisor
@@ -266,7 +268,7 @@
 %% Thesis keywords:
 %% Note! The keywords are separated using the \spc macro
 %%
-\keywords{For keywords choose\spc concepts that are\spc central to your\spc thesis}
+\keywords{Developer Experience\spc Software Projects}
 %%
 
 %% The abstract text. This text is included in the metadata of the pdf file as well
@@ -360,40 +362,40 @@ text must be identical to the text on the abstract page.
 %% Force a new page so that the possible Finnish or Swedish abstract does not
 %% begin on the same page
 %%
-\newpage
-%%
-%% Abstract in Finnish.  Delete if you don't need it. 
-%%
-\thesistitle{Opinnäyteen otsikko}
-\supervisor{Prof.\ Pirjo Professori}
-\advisor{TkT Alan Advisor}
-\degreeprogram{Elektroniikka ja sähkötekniikka}
-%\department{Elektroniikan ja nanotekniikan laitos}
-\major{Sopiva pääaine}
-%% The keywords need not be separated by \spc now.
-\keywords{Vastus, resistanssi, lämpötila}
-%% Abstract text
-\begin{abstractpage}[finnish]
-  Tiivistelmässä on lyhyt selvitys
-  kirjoituksen tärkeimmästä sisällöstä: mitä ja miten on tutkittu,
-  sekä mitä tuloksia on saatu. 
-\end{abstractpage}
+% \newpage
+% %%
+% %% Abstract in Finnish.  Delete if you don't need it. 
+% %%
+% \thesistitle{Opinnäyteen otsikko}
+% \supervisor{Prof.\ Pirjo Professori}
+% \advisor{TkT Alan Advisor}
+% \degreeprogram{Elektroniikka ja sähkötekniikka}
+% %\department{Elektroniikan ja nanotekniikan laitos}
+% \major{Sopiva pääaine}
+% %% The keywords need not be separated by \spc now.
+% \keywords{Vastus, resistanssi, lämpötila}
+% %% Abstract text
+% \begin{abstractpage}[finnish]
+%   Tiivistelmässä on lyhyt selvitys
+%   kirjoituksen tärkeimmästä sisällöstä: mitä ja miten on tutkittu,
+%   sekä mitä tuloksia on saatu. 
+% \end{abstractpage}
 
 %% Force new page so that the Swedish abstract starts from a new page
 \newpage
 
 %% Swedish abstract. Delete it if you don't need it. 
 %% 
-\thesistitle{Arbetets titel}
+\thesistitle{Impact of Developer Experience in the outcome of Software Projects}
 \supervisor{Prof.\ Pirjo Professori}
 \advisor{TkD Alan Advisor} %
-\degreeprogram{Electronik och electroteknik}
+\degreeprogram{Computer, Communication and Information Sciences}
 \department{Institutionen för radiovetenskap och -teknik}%
 %% Abstract keywords
-\keywords{Nyckelord p\aa{} svenska, temperatur}
+\keywords{Nyckelord på svenska, temperatur}
 %% Abstract text
 \begin{abstractpage}[swedish]
- Sammandrag p\aa{} svenska.
+ Sammandrag på svenska.
  Try to keep the abstract short. Abstract explains your research topic, 
  the methods you have used, and the results you obtained.  
 \end{abstractpage}
@@ -403,14 +405,13 @@ text must be identical to the text on the abstract page.
 %% This section is optional. Remove it if you do not want a preface.
 \mysection{Preface}
 %\mysection{Esipuhe}
-I want to thank Professor Pirjo Professori and my instructor Dr Alan Advisor for 
-their good and poor guidance.\\
+I want to thank Professor Pirjo Professori and my instructor Dr Alan Advisor for their good and poor guidance.
 
 \vspace{5cm}
-Otaniemi, 31.8.2018
+Otaniemi, Date to te announced
 
 \vspace{5mm}
-{\hfill Eddie E.\ A.\ Engineer \hspace{1cm}}
+{\hfill Anders Nylund \hspace{1cm}}
 
 %% Force a new page after the preface
 %%
@@ -423,43 +424,12 @@ Otaniemi, 31.8.2018
 
 
 %% Symbols and abbreviations
-\mysection{Symbols and abbreviations}
-
-\subsection*{Symbols}
+\mysection{Thesis dictionary}
 
 \begin{tabular}{ll}
-$\mathbf{B}$  & magnetic flux density  \\
-$c$              & speed of light in vacuum $\approx 3\times10^8$ [m/s]\\
-$\omega_{\mathrm{D}}$    & Debye frequency \\
-$\omega_{\mathrm{latt}}$ & average phonon frequency of lattice \\
-$\uparrow$       & electron spin direction up\\
-$\downarrow$     & electron spin direction down
+DX          & Developer Experience \\
+UX          & User Experience \\
 \end{tabular}
-
-\subsection*{Operators}
-
-\begin{tabular}{ll}
-$\nabla \times \mathbf{A}$              & curl of vectorin $\mathbf{A}$\\
-$\displaystyle\frac{\mbox{d}}{\mbox{d} t}$ & derivative with respect to 
-variable $t$\\[3mm]
-$\displaystyle\frac{\partial}{\partial t}$  & partial derivative with respect 
-to variable $t$ \\[3mm]
-$\sum_i $                       & sum over index $i$\\
-$\mathbf{A} \cdot \mathbf{B}$    & dot product of vectors $\mathbf{A}$ and 
-$\mathbf{B}$
-\end{tabular}
-
-\subsection*{Abbreviations}
-
-\begin{tabular}{ll}
-AC         & alternating current \\
-APLAC      & an object-oriented analog circuit simulator and design tool \\
-           & (originally Analysis Program for Linear Active Circuits) \\
-BCS        & Bardeen-Cooper-Schrieffer \\ %% dash between the names
-DC         & direct current \\
-TEM        & transverse eletromagnetic
-\end{tabular}
-
 
 %% \clearpage is similar to \newpage, but it also flushes the floats (figures
 %% and tables).
@@ -476,6 +446,60 @@ TEM        & transverse eletromagnetic
 %% Leave page number of the first page empty
 %% 
 \thispagestyle{empty}
+
+\subsection{Motivation}
+
+Developers in software projects are in a crucial role when considering the success of software projects. 
+
+The same way as User Experience (UX) is considering the user of a system or tool, Developer Experience (DX) can be seen as the experience that developers have as users of a system. Here the system however includes the tools, frameworks, processes that the developer is the user of when developing software.
+
+DX has been studied previously, but is still lacking the focus
+
+\subsection{Research questions and problem}
+
+The research problem is finding out \textit{How the developer experience in software projects can affect the outcome}. 
+
+
+
+\begin{table}[h]
+  \caption{The research questions \label{researchquestions}}
+  \begin{center}
+    \begin{tabularx}{\textwidth}{lX}
+      \textbf{RQ 1} & How is Developer Experience defined in software projects?
+      \\
+      \textbf{RQ 2} & What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable? 
+      \\
+      \textbf{RQ 3} & Can the results of software projects be improved by investing in a better developer experience?   
+    \end{tabularx}
+  \end{center}
+\end{table}
+  
+\subsection{Scope and focus}
+
+\subsection{Structure of the thesis}
+
+\begin{enumerate}
+\item Nimi\"olehti
+\item Tiivistelm\"a
+\item Sis\"allysluettelo
+\item Symboli- ja lyhenneluettelo
+\item \label{a} Johdanto
+%% T\"ass\"a alla on esimerkki lainausmerkkien k\"ayt\"ost\"a. Suomalaisen tekstin
+%% lainausmerkit eiv\"at mene oikein latexissa (tai monissa muissakaan
+%% julkaisuj\"arjestelmiss\"a) kun k\"aytet\"a\"an
+%% "-merkki\"a, koska latex k\"aytt\"a\"a amerikkalaista lainausmerkkien
+%% tulostustapaa. Vaihtoehtona voi k\"aytt\"a\"a kulmalainausmerkkej\"a, jotka
+%% my\"os tulostuvat oikein.
+\item  Aikaisempi tutkimus. Ty\"on luonteen niin vaatiessa otsikko voi olla my\"os
+        >>Teoreettinen tausta>>  tai n\"aiden otsikoiden yhdistelm\"a.
+\item Tutkimusaineisto ja -menetelm\"at %% yhdysmerkki - eli tavuviiva. 
+\item Tulokset
+\item \label{o} Tarkastelu. Ty\"on luonteen niin vaatiessa otsikko voi
+      olla my\"os >>Johtop\"a\"at\"okset>> tai >>Yhteenveto>> 
+      tai edell\"a mainittujen otsikoiden yhdistelm\"a.
+\item L\"ahteet
+\item Liitteet.
+\end{enumerate}
 
 T\"am\"an tekstin l\"ahteen\"a oleva tiedosto on opinn\"aytteen
 pohja, jota voi k\"aytt\"a\"a kandidaatinty\"oss\"a, diplomity\"oss\"a ja
@@ -509,7 +533,7 @@ johdantoa lyhyempi. Sopivasti tiivistetty johdanto ei kaipaa alaotsikoita.
 %% In a thesis, every section starts a new page, hence \clearpage
 \clearpage
 
-\section{Background}
+\section{Background and literature review}
 %\section{Aikaisempi tutkimus}
 
 T\"ass\"a osassa selvitet\"a\"an, mit\"a tutkimuksen kohteena olevasta
@@ -533,34 +557,6 @@ ohjeita tarkemmin.
 %%
 %% Three levels of hierarchy in sectioning should be enough
 
-\subsection*{Rakenne}
-
-Opinn\"aytteen rakenteen tulee olla hyv\"an tieteellisen
-kirjoittamisen k\"ayt\"ann\"on mukainen ja sis\"alt\"a\"a v\"ahint\"a\"an seuraavat
-osat:
-
-\begin{enumerate}
-\item Nimi\"olehti
-\item Tiivistelm\"a
-\item Sis\"allysluettelo
-\item Symboli- ja lyhenneluettelo
-\item \label{a} Johdanto
-%% T\"ass\"a alla on esimerkki lainausmerkkien k\"ayt\"ost\"a. Suomalaisen tekstin
-%% lainausmerkit eiv\"at mene oikein latexissa (tai monissa muissakaan
-%% julkaisuj\"arjestelmiss\"a) kun k\"aytet\"a\"an
-%% "-merkki\"a, koska latex k\"aytt\"a\"a amerikkalaista lainausmerkkien
-%% tulostustapaa. Vaihtoehtona voi k\"aytt\"a\"a kulmalainausmerkkej\"a, jotka
-%% my\"os tulostuvat oikein.
-\item  Aikaisempi tutkimus. Ty\"on luonteen niin vaatiessa otsikko voi olla my\"os
-        >>Teoreettinen tausta>>  tai n\"aiden otsikoiden yhdistelm\"a.
-\item Tutkimusaineisto ja -menetelm\"at %% yhdysmerkki - eli tavuviiva. 
-\item Tulokset
-\item \label{o} Tarkastelu. Ty\"on luonteen niin vaatiessa otsikko voi
-      olla my\"os >>Johtop\"a\"at\"okset>> tai >>Yhteenveto>> 
-      tai edell\"a mainittujen otsikoiden yhdistelm\"a.
-\item L\"ahteet
-\item Liitteet.
-\end{enumerate}
 
 Tiivistelm\"an ja symboli- sek\"a lyhenneluetteloiden 
 v\"aliin voi sijoittaa halutessaan esipuheen.  
