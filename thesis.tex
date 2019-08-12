@@ -421,7 +421,6 @@ Otaniemi, Date to te announced
 %%
 \thesistableofcontents
 
-
 %% Symbols and abbreviations
 \mysection{Thesis dictionary}
 
@@ -429,6 +428,8 @@ Otaniemi, Date to te announced
   DX  & Developer Experience               \\
   UX  & User Experience                    \\
   IDE & Integrated Development Environment \\
+  HCI & Human Computer Interaction         \\
+  API & Application Programming Interface  \\
 \end{tabular}
 
 %% \clearpage is similar to \newpage, but it also flushes the floats (figures
@@ -437,50 +438,48 @@ Otaniemi, Date to te announced
 \cleardoublepage
 \section{Introduction}
 
+Software engineering and development is a complex practice that requires both technical and social skills. Compared to other engineering professions, software engineering is still in early stages. The best practices are still evolving, new ideas are coming and previous ideals are discarded.
+
+Creating software products is a social activity that requires both technical and social skills from the developers.
+
+Human Computer Interaction (HCI), a traditional field of research, studies the interface between computers and humans.
+
+User Experience (UX) is another field of research. UX includes the aspects of HCI, but on top of that includes also emotions and the user's perceptions of the product. UX can be seen as a more hedonic than a pragmatic approach of studying and understanding the usage of a software product.
+
+Software developers are in an interesting role where they are both creators and designers when they write the logic that makes up the product. Meantime they are also users of tools that they use to create the product. Developers using a software product that helps in their creative design work will create an user experience for them.
+
+Developer Experience is a term that explains how developers experience their development environments, both technically and socially. The same way as User Experience (UX) is considering the user of a system or tool, Developer Experience (DX) can be seen as the experience that developers have as users of a system. Here the system however includes the tools, frameworks, processes that the developer is the user of when developing software.
+
+This thesis will look at the question of "Is developer experience something worth investing on?", i.e. is there any apparent reward in investing into improvement of the developer experience.
+
 %% Leave page number of the first page empty 
 \thispagestyle{empty}
 
 \subsection{Motivation}
 
-{
-  \color{gray} Currently sections Introduction and Motivation are intertwined. It should be made more clear that what should go where. 
-  
-  A common theme in the thesis could be answering the question "Is Developer Experience something worth investing on in software companies?". I.e. is there any apparent reward in putting money in better tools or learning new technologies?
-
-  After all learning new technologies is not about solving new problems, but it's about solving the same problems more efficiently, faster, easier i.e. with a better developer experience.
-
-  Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
-
-  \textbf{Personal opinion:} For me developer experience means having a low friction and easy setup with my own development environment. I like to have an environment that is lightweight, fast, and easy to use. It should have a short cycle of feedback i.e. when making a change to the source code it should be immediately reflected in the output. This might be the reason why I like to develop for the web, as the tools are often quick and have a fast feedback cycle. The environment should perform tasks automatically as building, reporting errors.
-
-  React and the tools supporting it are a great examples of excellent developer experience. The tools are intuitive and guide the developer in making the right things.
-}
-
-Developers in software projects are in a crucial role when considering the success of software projects.
-
-The same way as User Experience (UX) is considering the user of a system or tool, Developer Experience (DX) can be seen as the experience that developers have as users of a system. Here the system however includes the tools, frameworks, processes that the developer is the user of when developing software.
-
-Developer experience has not been studied that much previously. There has been a doctoral thesis published about the topic recently \cite{fagerholm-doctoral-thesis}. In this thesis
+At the time of writing, a quick search with the keyword \textit{"Developer Experience"} on google.com gives as a result mostly articles on how framework and library authors should consider their users (developers) experience with using the product (tool, library, framework). However, DX is something more and includes also the feelings and perceptions of the developers. In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used, and in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \cite{fagerholm-dx-concept-and-definition} \cite{programmer-experience}. This shows also that there is still some ambiguity to the terms and definitions. It is also apparent that most results when searching with the term \textit{Developer Experience} gives results about the experience level of a developer in e.g. terms of years working in the field of software development, and not the hedonic and pragmatic experience.
 
 DX has been studied previously, but research on it is still lacking the connection to practical applications. This is one the biggest motivators for this thesis, as the topic is novel and there is huge potential in improving software development processes, and thereby also potential to improve the outcome of the projects.
 
-There is possibly huge value that can be gained from studying Developer Experience and learning about how it works. A better experience can help organizations
+There is possibly huge value that can be gained from studying Developer Experience and learning about how it works. A better understanding of DX can help organisations, teams, and individual software developers to create a better experience that enables them to benefit in multiple different areas.
 
-Currently a quick search with the keyword \textit{"Developer Experience"} on google gives as a result mostly articles on how framework and library authors should consider their users (developers) experience with using the product (tool, library, framework). However, DX is something more and includes also the feelings and perceptions of the developers. In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used, and in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \cite{fagerholm-dx-concept-and-definition} \cite{programmer-experience}.
+For the author the Developer Experience means having a low friction and easy setup with their own development environment. They want to have an environment that is lightweight, fast, and easy to use. It should have a short cycle of feedback i.e. when making a change to the source code it should be immediately reflected in the output. This might be the reason why they like to develop for the web, as the tools are often quick and have a fast feedback cycle. The environment should perform tasks automatically as building, reporting errors. The frontend JavaScript framework React and the tools supporting it are a great examples of excellent developer experience. The tools are intuitive and guide the developer in making the right things.
 
-It is also apparent that most results when searching with the term \textit{Developer Experience} gives results about the experience level of a developer, and not the experience of being part
+After all learning new technologies is not about solving new problems, but it's about solving the same old problems more efficiently, faster, easier i.e. with a better Developer Experience.
 
 \subsection{Research questions and problem}
 
-The research problem is finding out \textit{How the developer experience in software projects can affect the outcome}.
+The research problem is finding out \textit{How the developer experience in software projects can affect the outcome}. The goal is to create an understanding of what Developer Experience is, and how it might affect the outcome of software projects.
 
-{
-\color{gray} The debate throughout the thesis has to be something that makes the reader interested in the topic and engages the reader.
+  {
+    \color{gray} The debate throughout the thesis has to be something that makes the reader interested in the topic and engages the reader.
 
-This helps to find the argument of each article and paper that is read for this thesis. It helps the author of this thesis to take a stand when writing some statements. The meaning is not to create some kind of truth that has to be followed. The constant debate throughout the thesis helps to put things in perspective.
+    This helps to find the argument of each article and paper that is read for this thesis. It helps the author of this thesis to take a stand when writing some statements. The meaning is not to create some kind of truth that has to be followed. The constant debate throughout the thesis helps to put things in perspective.
 
-One example of debate is "Is Developer Experience something worth investing in?".
-}
+    One example of debate is "Is Developer Experience something worth investing in?".
+
+    There could also be some hypotheses that will be tested in the thesis.
+  }
 
 \begin{table}[htb]
   \caption{The research questions \label{researchquestions}}
@@ -502,24 +501,29 @@ One example of debate is "Is Developer Experience something worth investing in?"
   \item [--] "How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures (How developers perceive the development infrastructure?) \cite{fagerholm-dx-concept-and-definition}
 \end{enumerate}
 
-There could be some hypotheses that will be tested in the thesis.
-
 \subsection{Scope and focus}
+
+{
+  \color{gray} Scope and focus will be defined later. This can still vary quite a lot as it depends on basically everything, including the research problem and questions.
+}
 
 \subsection{Structure of the thesis}
 {
   \color{gray} This will be finalized later
 }
 \begin{enumerate}
+  \item Introduction
   \item Background and literature review
-  \item \dots
-  \item \dots
+  \item Research material and methods
+  \item Results
+  \item Summary
+  \item Conclusions
+  \item \dots ???
 \end{enumerate}
 
 %% In a thesis, every section starts a new page, hence \clearpage
 \clearpage
 \section{Background and literature review}
-
  {
   \color{gray}
 
@@ -530,44 +534,42 @@ There could be some hypotheses that will be tested in the thesis.
     \item Programmer Experience
     \item Happy Developer
     \item Unhappy Developer
+    \item User Experience
   \end{enumerate}
 
   https://insights.stackoverflow.com/ could be an interesting source of basic facts about programmers around the world, what technologies they are using, what they love and what they dread
+
+  Create a much clearer and better foundation of what software development is, why it is complex etc.
  }
 
 This section includes the background and literature review of the topic. The background of the topic should be covered equally from all points of view.
 
-{
-  \color{gray}
-  Create a much clearer and better foundation of what software development is, why it is complex etc.
-}
-
 A software project is a project where a group of people share a common goal what can for example be to create a product or service. In a software project there is a developer or multiple developers that have the responsibility of implementing the technical product itself. The developers are the ones writing the executable source code for the program or service, so that it can by it's functions and features achieve the requirements set to it.
 
-Software developers are in a crucial role when considering the success of a software project.
+Developer Experience and its related terms have been studied and researched relatively little at the moment of writing. A literature review of the term \textit{"Programmer Experience"} studied 73 articles that matched their search criteria \cite{programmer-experience}. The study concluded that there is still some ambiguity in the term \textit{Programmer Experience} in the context of programming environments, design documents, and programming codes.
 
-In this thesis the term \textit{Developer Experience} is examined and studied. Developer experience is a rather new concept in the scene of software engineering.
+A doctoral thesis titled "Software Developer Experience:
+Case Studies in Lean-Agile and Open Source Environments" in 2015 coined the term Developer Experience.
 
-Developer experience can be divided into three different sub areas – cognitive (How do developers perceive the development infrastructure?), affective (How do developers feel about their work?), and conative (How do developers see the value of their contribution?) \cite{fagerholm-dx-concept-and-definition}.
-
-\subsection{Intrinsic Motivation}
-
+Developer experience can be divided into three different sub areas – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution) \cite{fagerholm-dx-concept-and-definition}.
 
 \subsection{Programmer Experience}
 
-Programmer Experience (PX) can be defined as \textit{The result of the intrinsic motivations and perceptions of programmers about the use of development artifacts} \cite{programmer-experience}.
+{
+  \color{gray} http://programming-experience.org/px19/ https://2019.programming-conference.org/
+}
 
-A programmer can be seen as person who gives exact instructions on how a program should behave and function.
+Programmer Experience (PX) can be defined as \textit{The result of the intrinsic motivations and perceptions of programmers about the use of development artifacts} \cite{programmer-experience}. A programmer can be seen as person who gives exact instructions on how a program should behave and function. PX is based on the study mainly related to the programming environment, but also programming codes and Application Programming Interfaces (API).
 
 \subsection{Developer Experience}
 
-Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \cite{programmer-experience}. Developer Experience is considering more of the social
-
 A developer is a person with a bigger responsibility than a programmer. If a programmer is following instructions, requirements, and guidelines, the developer is also finding out what the instructions, requirements and guidelines should be (find other source than https://devskiller.com/programmer-vs-developer/). Therefore DX is also considering more of the surrounding context than what PX is considering.
+
+Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \cite{programmer-experience}. Developer Experience is considering also the social aspect of being a software developer. Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
 
 The Developer Experience can be divided into 2 different environments, a social and a technical environment \cite{fagerholm-doctoral-thesis}. This thesis might focus more on the technical environment.
 
-A common terminology and understanding of Developer Experience is part examining a project's Developer Experience.
+\subsection{Intrinsic Motivation}
 
 \subsection{Performance Alignment Work}
 
@@ -577,9 +579,9 @@ Happiness of developers have been reported have direct consequences to the thems
 
 \subsection{Selection of tools}
 
-Perceived choice is a perception of that the choice has already been made. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
+Perceived choice is a perception of that the choice has already been made \cite{kuusinen-flow}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
 
-One study of Integrated Development Environment (IDE), and how it is connected with state of flow, intrinsic motivation, and user experience revealed that if the developers have a high perception of choice, the also are overall more satisfied with the tools \cite{kuusinen-flow}. They also concluded that if the selected tools are selected without their input, (they perceive it chosen already), the developers will have a worse developer experience with it, as e.g. their frustration with the tool will be more common.
+One study of Integrated Development Environment (IDE), and how it is connected with state of flow, intrinsic motivation, and user experience reveal that if the developers have a high perception of choice, the also are overall more satisfied with the tools \cite{kuusinen-flow}. They also concluded that if the selected tools are selected without their input, (they perceive it chosen already), the developers will have a worse developer experience with it, as e.g. their frustration with the tool will be more common.
 
 There has been a study on the Developer Experience of IDEs \cite{software-developers-as-users}. However, the study concentrated on the UX of the selected IDE that was studied.
 
@@ -614,6 +616,9 @@ Jos tutkimustulosten merkityst\"a arvioidaan >>Tarkastelu>>-osassa,
 voi luotettavuuden arviointi olla my\"os siell\"a.
 
 \clearpage
+\section{Literature review}
+
+\clearpage
 \section{Summary}
 
 \clearpage
@@ -625,8 +630,7 @@ voi luotettavuuden arviointi olla my\"os siell\"a.
 \textbf{Development tools}
 \begin{enumerate}
   \item Murphy,G.C.,Kersten,M.,Findlater,L.:HowareJavasoftwaredevelopersusingtheElipseIDE? Softw. IEEE 23(4), 76–83 (2006)
-  \item 17. Muslu,K.,Brun,Y.,Holmes,R.,Ernst,M.D.,Notkin,D.:Speculativeanalysisofintegrated
-        development environment recommendations. ACM SIGPLAN Not. 47(10), 669–682 (2012)
+  \item 17. Muslu,K.,Brun,Y.,Holmes,R.,Ernst,M.D.,Notkin,D.:Speculative analysis of integrated development environment recommendations. ACM SIGPLAN Not. 47(10), 669–682 (2012)
   \item Kersten, M., Murphy, G.C.: Using task context to improve programmer productivity. In: Proceedings of the 14th ACM SIGSOFT International Symposium on Foundations of Software Engineering (SIGSOFT 2006/FSE-14), pp. 1–11. ACM, New York, NY, USA (2006)
   \item The Impact of "Cosmetic" Changes on the Usability of Error Messages Tao Dong, Kandarp Khandwala May 2019 CHI EA '19: Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems
   \item Designing a live development experience for web-components Jens Lincke, Patrick Rein, Stefan Ramson, Robert Hirschfeld, Marcel Taeumel, Tim Felgentreff October 2017 PX/17.2: Proceedings of the 3rd ACM SIGPLAN International Workshop on Programming Experience
@@ -644,7 +648,7 @@ voi luotettavuuden arviointi olla my\"os siell\"a.
   \item empty
 \end{enumerate}
 
-\textbf{Deveoper mood}
+\textbf{Developer mood}
 \begin{enumerate}
   \item Graziotin, D., Wang, X., Abrahamsson, P.: Happy software developers solve problemsbetter: psychological measurements in empirical software engineering. PeerJ2(1), e289(2014)
   \item Beecham, S., Baddoo, N., Hall, T., Robinson, H., Sharp, H.: Motivation in software engineering: A systematic literature review. IST 50, 860–878 (2008)
