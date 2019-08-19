@@ -430,6 +430,10 @@ Otaniemi, Date to te announced
   IDE & Integrated Development Environment \\
   HCI & Human Computer Interaction         \\
   API & Application Programming Interface  \\
+  SLR & Systematic Literature Review       \\
+  MLR & Multivocal Literature Review       \\
+  GL  & Grey Literature                    \\
+  SE  & Software Engineering               \\
 \end{tabular}
 
 %% \clearpage is similar to \newpage, but it also flushes the floats (figures
@@ -475,18 +479,18 @@ The research problem is finding out \textit{How the developer experience in soft
     \color{gray}
     Currently the research problem is too vague and needs a lot of more specification of what is researched and what is the actual problem.
 
+    The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \cite{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
+
     The debate throughout the thesis has to be something that makes the reader interested in the topic and engages the reader. This helps to find the argument of each article and paper that is read for this thesis. It helps the author of this thesis to take a stand when writing some statements. The meaning is not to create some kind of truth that has to be followed. The constant debate throughout the thesis helps to put things in perspective. One example of debate is "Is Developer Experience something worth investing in?".
 
     There could also be some hypotheses that will be tested in the thesis.
-
-    The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \cite{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
   }
 
 \begin{table}[htb]
   \caption{The research questions \label{researchquestions}}
   \begin{center}
     \begin{tabularx}{\textwidth}{lX}
-      \textbf{RQ 1} & How is Developer Experience defined in software projects?
+      \textbf{RQ 1} & What is the difference in the definition of Developer Experience in academic and industry literature? \label{RQ1}
       \\
       \textbf{RQ 2} & What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?
       \\
@@ -499,7 +503,7 @@ The research problem is finding out \textit{How the developer experience in soft
 
 \begin{enumerate}
   \item [--] "How Developer Experience affects the productivity of developers in software projects"?
-  \item [--] "How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures (How developers perceive the development infrastructure?) \cite{fagerholm-dx-concept-and-definition}
+  \item [--] "How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures i.e. \textit{How developers perceive the development infrastructure?} \cite{fagerholm-dx-concept-and-definition}
 \end{enumerate}
 
 \subsection{Scope and focus}
@@ -574,6 +578,10 @@ The Developer Experience can be divided into 2 different environments, a social 
 
 \subsection{Performance Alignment Work}
 
+{
+  \color{gray} Write here about \cite{how-developers-experience-team-performance} and read PAW article.
+}
+
 \subsection{Happiness of developers}
 
 Happiness of developers have been reported have direct consequences to the themselves, process and the product \cite{unhappy-developers}
@@ -606,6 +614,54 @@ What material will be used in the research and what methods/methodologies will b
 The developer experience can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time \cite{fagerholm-doctoral-thesis}. The research in this thesis will use a longer time-frame of developer experience.
 
 \clearpage
+\section{Multivocal literature review}
+
+DX is a complicated subject and topic, and there is not at the moment a clear and well agreed definition of it. There is a need to create an understanding of the definition of DX to support the rest of the thesis. Systematic literature reviews are a way of producing evidence based results, and in complex and opinion based fields it is an effective way of producing results (rephrase this and find reference). Multivocal Literature Reviews (MLR) are a way to include "grey" literature into Systematic Literature Reviews (SLR) \cite{the-need-for-MLR}.
+
+\begin{quotation}
+  \textit{"Grey literature stands for manifold document types produced on all levels of government, academics, business and industry in print and electronic formats that are protected by intellectual property rights, of sufficient quality to be collected and preserved by library holdings or institutional repositories, but not controlled by commercial publishers i.e., where publishing is not the primary activity of the producing body."} \cite{towards-a-prague-definition-of-grey-literature}
+\end{quotation}
+
+The Prague Definition of grey literature is strict and therefore not allowing e.g. blog posts to be used on MLRs. However, a specific guideline for including grey literature in literature reviews has been created \cite{guidelines-for-MLR}. This guideline is based on the guidelines on how to perform SLR in SE \cite{guidelines-for-SLR-in-SE}.
+
+\subsection{The motivation behind a MLR}
+
+An SLR would include only the academic papers, and therefore it might not be sufficient to only focus on that. In a MLR the GL should provide a current perspective and fill in the gaps of academic and formal literature \cite{guidelines-for-MLR}.
+
+Because the term and definition of DX is novel, it
+
+Even if there might not be a better definition of Developer Experience in GL, it will still be a valid point to
+
+
+\subsection{The review protocol of the MLR}
+
+{
+  \color{gray}. Read \cite{guidelines-for-MLR} again after reading \cite{guidelines-for-SLR-in-SE}.
+}
+
+The foundation for the MLR is the first research question \hyperref[RQ1]{RQ1}. The goal is to create a definition of \textit{Developer Experience} with help of both academic literature and "grey" literature.
+
+  {
+    \color{gray} The definition of Developer Experience might at some degree even be on the level of black literature \cite{guidelines-for-MLR}
+  }
+
+\cite{guidelines-for-SLR-in-SE} gives a set of guidelines on how to perform an SLR in SE. They include the following steps for PhD students conducting SLRs:
+
+\begin{itemize}
+  \item
+\end{itemize}
+
+To conduct the MLR, Google Scholar will be used to search for academic literature, and Google to search for GL.
+
+The selected keywords will be
+
+Quality criteria are included in the same form as the main data of the SLR. This is because the data from the quality analysis is going to be used together.
+
+This Reciprocal translation. When studies are about similar things, and the aim is to create an additional summary
+
+
+
+\clearpage
 \section{Results}
 
 Answer the research questions and problem.
@@ -617,9 +673,6 @@ Jos tutkimustulosten merkityst\"a arvioidaan >>Tarkastelu>>-osassa,
 voi luotettavuuden arviointi olla my\"os siell\"a.
 
 \clearpage
-\section{Literature review}
-
-\clearpage
 \section{Summary}
 
 \clearpage
@@ -627,6 +680,18 @@ voi luotettavuuden arviointi olla my\"os siell\"a.
 
 \clearpage
 \section{Possible references}
+
+\textbf{SLR and MLR}
+\begin{enumerate}
+  \item K. M. Benzies, S. Premji, K. A. Hayden, and K. Serrett, "State-of-the-Evidence Reviews: Advantages and Challenges of Including Grey Literature,"Worldviews on Evidence-Based Nursing, vol. 3, pp. 55-61, 2006.
+  \item Rucinski, Taryn. (2015). The Elephant in the Room: Toward a Definition of Grey Legal Literature. Law library journal. 107. 543.
+  \item Joachim Schöpfel. Towards a Prague Definition of Grey Literature. Twelfth International Conference on Grey Literature: Transparency in Grey Literature. Grey Tech Approaches to High Tech Issues. Prague, 6-7 December 2010, Dec 2010, Czech Republic. pp.11-26.
+  \item B. Kitchenham and S. Charters, "Guidelines for Performing Systematic Literature Reviews in Software engineering," in "EBSE Technical Report," 2007, vol. EBSE- 2007-01.
+  \item V. Garousi, M. Felderer, Experience-based guidelines for effective and efficient data extraction in systematic reviews in software engineering, in: International Conference on Evaluation and Assessment in Software Engineering, Karlskrona, Sweden, 2017, pp. 170–179.
+  \item Lotto, L. S. (1986). Qualitative Data Analysis: A Sourcebook of New Methods: Matthew B. Miles and A. Michael Huberman. Educational Evaluation and Policy Analysis, 8(3), 329–331. https://doi.org/10.3102/01623737008003329
+  \item Using argumentation theory to analyse software practitioners’ defeasible evidence, inference and belief
+        Author links open overlay panel. Austen Rainer
+\end{enumerate}
 
 \textbf{Development tools}
 \begin{enumerate}
