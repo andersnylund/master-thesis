@@ -177,6 +177,7 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{natbib}
+\usepackage{float}
 
 %% Math fonts, symbols, and formatting; these are usually needed
 \usepackage{amsfonts,amssymb,amsbsy,amsmath}
@@ -486,17 +487,19 @@ The research problem is finding out \textit{How the developer experience in soft
     There could also be some hypotheses that will be tested in the thesis.
   }
 
+\newcommand{\rqone}{What is the difference in the definition of Developer Experience in academic and industry literature?}
+\newcommand{\rqtwo}{What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?}
+\newcommand{\rqthree}{Can the results of software projects be improved by investing in a better developer experience?}
+
 \begin{table}[htb]
-  \caption{The research questions \label{researchquestions}}
   \begin{center}
     \begin{tabularx}{\textwidth}{lX}
-      \textbf{RQ 1} & What is the difference in the definition of Developer Experience in academic and industry literature? \label{RQ1}
-      \\
-      \textbf{RQ 2} & What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?
-      \\
-      \textbf{RQ 3} & Can the results of software projects be improved by investing in a better developer experience?
+      \textbf{RQ 1} & \rqone \label{RQ1}   \\
+      \textbf{RQ 2} & \rqtwo \label{RQ2}   \\
+      \textbf{RQ 3} & \rqthree \label{RQ3}
     \end{tabularx}
   \end{center}
+  \caption{The research questions \label{researchquestions}}
 \end{table}
 
 \subsubsection{Alternative research problems:}
@@ -616,7 +619,9 @@ The developer experience can be both short term impulsive, or related to one eve
 \clearpage
 \section{Multivocal literature review}
 
-DX is a complicated subject and topic, and there is not at the moment a clear and well agreed definition of it. There is a need to create an understanding of the definition of DX to support the rest of the thesis. Systematic literature reviews are a way of producing evidence based results, and in complex and opinion based fields it is an effective way of producing results (rephrase this and find reference). Multivocal Literature Reviews (MLR) are a way to include "grey" literature into Systematic Literature Reviews (SLR) \cite{the-need-for-MLR}.
+Traditionally, in SLRs the reviewed literature consists only of literature that is formally published, and thats motivation of publishing is the publication in itself, e.g. publications in journals and conferences. Material that is produced with commercial interests and informally published material and publications are not considered in SLR \cite{guidelines-for-MLR}.
+
+MLRs, are a way to include grey literature into SLRs \cite{the-need-for-MLR}. Grey literature can be defined in different ways, and research fields define grey literature in ways that are meaningful to that specific field.
 
 \begin{quotation}
   \textit{"Grey literature stands for manifold document types produced on all levels of government, academics, business and industry in print and electronic formats that are protected by intellectual property rights, of sufficient quality to be collected and preserved by library holdings or institutional repositories, but not controlled by commercial publishers i.e., where publishing is not the primary activity of the producing body."} \cite{towards-a-prague-definition-of-grey-literature}
@@ -624,42 +629,85 @@ DX is a complicated subject and topic, and there is not at the moment a clear an
 
 The Prague Definition of grey literature is strict and therefore not allowing e.g. blog posts to be used on MLRs. However, a specific guideline for including grey literature in literature reviews has been created \cite{guidelines-for-MLR}. This guideline is based on the guidelines on how to perform SLR in SE \cite{guidelines-for-SLR-in-SE}.
 
+
 \subsection{The motivation behind a MLR}
+
+DX is a complicated subject and topic, and a clear and well defined definition of it does not exist at the moment of writing (August 2019). There is a need to create an understanding of the definition of DX and a basis to build the rest of the thesis upon. Normal literature reviews can help in these cases, and they create a common understanding of the topic that is going to be discussed. However, normal literature reviews are prone to be biased. To avoid bias of the author, and because DX is a subjective concept of the developer, the definition of DX can be reviewed with a help of a Systematic Literature Review (SLR). Systematic literature reviews are a way of producing evidence based results, and they are effective in complex and opinion based fields where a common agreement of a concept or topic might be difficult to find.
+
+In software engineering practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \cite{the-need-for-MLR}.
 
 An SLR would include only the academic papers, and therefore it might not be sufficient to only focus on that. In a MLR the GL should provide a current perspective and fill in the gaps of academic and formal literature \cite{guidelines-for-MLR}.
 
-Because the term and definition of DX is novel, it
+SE practitioners are producing a lot of literature, that would not be considered in normal literature reviews or SLR. This GL can provide insights about the field of SE, and especially about DX.
 
-Even if there might not be a better definition of Developer Experience in GL, it will still be a valid point to
+A SLR has been conducted on the concept \textit{Programmer Experience} \cite{programmer-experience}. This SLR will be used to guide this MLR. 
 
+% Read \cite{guidelines-for-MLR} again after reading \cite{guidelines-for-SLR-in-SE}.
 
 \subsection{The review protocol of the MLR}
 
-{
-  \color{gray}. Read \cite{guidelines-for-MLR} again after reading \cite{guidelines-for-SLR-in-SE}.
-}
+DX is a novel concept, and therefore there has been little formal research on the topic. Based on the different levels of literature, white, grey, and black \cite{guidelines-for-MLR} (find correct reference), DX could be seen even to be in the category of black literature.
 
-The foundation for the MLR is the first research question \hyperref[RQ1]{RQ1}. The goal is to create a definition of \textit{Developer Experience} with help of both academic literature and "grey" literature.
+All data of the MLR can be found \href{https://docs.google.com/spreadsheets/d/1BLX4eQypAvxd3Gzft0s0rqUHdMYaKxPAbpZZ4dAvJqU/edit?usp=sharing}{here}. The data collection is done with Google Sheets and is based on the example shown in \cite{guidelines-for-MLR}.
 
-  {
-    \color{gray} The definition of Developer Experience might at some degree even be on the level of black literature \cite{guidelines-for-MLR}
-  }
+\subsubsection{Research questions}
 
-\cite{guidelines-for-SLR-in-SE} gives a set of guidelines on how to perform an SLR in SE. They include the following steps for PhD students conducting SLRs:
+The foundation for the MLR is the first research question \hyperref[RQ1]{RQ1} (\rqone). The goal is to create a definition of \textit{Developer Experience} with help of both white literature and grey literature.
+
+\subsubsection{Search process}
+
+The search is performed as a manual search by the author from various libraries to gather the academic literature. For grey literature, the Google search engine (https://www.google.com) will be used.
+
+\begin{table}[H]
+  \begin{tabular}{ l l }
+    Google Scholar & (https://scholar.google.com)                           \\
+    IEEExplore     & (https://ieeexplore.ieee.org/Xplore/home.jsp)          \\
+    ACM            & (https://dl.acm.org/)                                  \\
+    ScienceDirect  & (https://www.sciencedirect.com/)                       \\
+    Citeseer       & (https://citeseerx.ist.psu.edu/index)                  \\
+    SpringerLink   & (https://link.springer.com/)                           \\
+    Scopus         & (https://www.scopus.com/search/form.uri?display=basic)
+  \end{tabular}
+  \caption{Academic literature sources for the MLR}
+\end{table}
+
+Search string for both academic and grey literature will be \textbf{"developer experience"}. Because of an ambiguous definition of DX, only one search string is used. This assures that all relevant publications are included. At the moment of writing (August 2019), using this search string produces 3410 results on Google Scholar
+
+\subsubsection{Inclusion criteria}
+
+Articles that show up in the searches, and that have the words \textbf{developer experience} in consecutive order order are included in the review.
+
+\subsubsection{Exclusion criteria}
+
+Papers that discuss about developer's experience level e.g. \textit{senior} or \textit{junior developer}, will be excluded.
+
+% \subsubsection{Primary study selection process}
+
+\subsubsection{Quality assessment}
+
+Because of the novel topic the quality assessments might not be that crucial in this study.
+
+\subsubsection{Data collection and analysis}
+
+All papers will be collected into one form with the following data points:
 
 \begin{itemize}
-  \item
+  \item The source
+  \item Year of publication
+  \item Classification of paper
+  \begin{itemize}
+    \item Type of research
+    \item Scope (Research trends or specific research question)
+  \end{itemize}
+  \item Main software engineering topic area
+  \item The author(s) and affiliation (organisation and country)
+  \item Research question/issue
+  \item Definition of Developer Experience
+  \item Summary of paper
+  %\item Quality score for the study
 \end{itemize}
 
-To conduct the MLR, Google Scholar will be used to search for academic literature, and Google to search for GL.
-
-The selected keywords will be
-
-Quality criteria are included in the same form as the main data of the SLR. This is because the data from the quality analysis is going to be used together.
-
-This Reciprocal translation. When studies are about similar things, and the aim is to create an additional summary
-
-
+Analysis will be done on the found definitions of Developer Experience. During the study the collected data points and especially the about developer experience will be refined.
 
 \clearpage
 \section{Results}
