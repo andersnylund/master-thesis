@@ -426,17 +426,18 @@ Otaniemi, Date to te announced
 \mysection{Thesis dictionary}
 
 \begin{tabular}{ll}
-  DX  & Developer Experience               \\
-  UX  & User Experience                    \\
-  IDE & Integrated Development Environment \\
-  IM  & Intrinsic Motivation               \\
-  EM  & Extrinsic Motivation               \\
-  HCI & Human Computer Interaction         \\
-  API & Application Programming Interface  \\
-  SLR & Systematic Literature Review       \\
-  MLR & Multivocal Literature Review       \\
-  GL  & Grey Literature                    \\
-  SE  & Software Engineering               \\
+  DX    & Developer Experience               \\
+  UX    & User Experience                    \\
+  IDE   & Integrated Development Environment \\
+  IM    & Intrinsic Motivation               \\
+  EM    & Extrinsic Motivation               \\
+  HCI   & Human Computer Interaction         \\
+  API   & Application Programming Interface  \\
+  SLR   & Systematic Literature Review       \\
+  MLR   & Multivocal Literature Review       \\
+  GL    & Grey Literature                    \\
+  SE    & Software Engineering               \\
+  MSECO & Mobile Software Ecosystem          \\
 \end{tabular}
 
 %% \clearpage is similar to \newpage, but it also flushes the floats (figures
@@ -581,7 +582,7 @@ The Developer Experience can be divided into 2 different environments, a social 
 
 \subsection{Intrinsic Motivation}
 
-Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \cite{kuusinen-flow} (Self-determination theory. Handbook of theories of social psychology). 
+Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \cite{kuusinen-flow} (Self-determination theory. Handbook of theories of social psychology).
 
 \subsection{Performance Alignment Work}
 
@@ -652,7 +653,7 @@ DX is a novel concept, and therefore there has been little formal research on th
 
 \newcommand{\mlrdxlink}{https://docs.google.com/spreadsheets/d/1BLX4eQypAvxd3Gzft0s0rqUHdMYaKxPAbpZZ4dAvJqU/edit?usp=sharing}
 
-All data of the MLR can be found \href{\mlrdxlink}{\mlrdxlink}. The data collection is done with Google Sheets and is based on the example shown in \cite{guidelines-for-MLR}.
+All data of the MLR can be found \href{\mlrdxlink}{\textbf{here}}. The data collection is done with Google Sheets and is based on the example shown in \cite{guidelines-for-MLR}.
 
 \subsubsection{Research questions}
 
@@ -675,11 +676,15 @@ The search is performed as a manual search by the author from various libraries 
   \caption{Academic literature sources for the MLR}
 \end{table}
 
-Search string for both academic and grey literature will be \textbf{"developer experience"}. Because of an ambiguous definition of DX, only one search string is used so far. This assures that all relevant publications are included. Including more words in the search string or creating a more  complex search string would require a better understanding of DX, that the author does not have at this moment. At the moment of writing (August 2019), using this search string produces 3410 results on Google Scholar. On the first round of searching from Google Scholar, the first search with keyword \textbf{"developer experience"} resulted in 2 included papers and 8 excluded. The search keyword needs to be adjusted.
+Search string for both academic and grey literature will be \textbf{"developer experience"}. Because of an ambiguous definition of DX, only one search string is uses. This assures that all relevant publications are included. Including more words in the search string or creating a more complex search string would require a better understanding of DX, that the author does not have at this moment. Also, including other search strings would bias the search result.
+
+At the moment of writing (August 2019), using "developer experience" as search string produces 3410 results on Google Scholar. On the first round of searching from Google Scholar, the first search with keyword \textbf{"developer experience"} resulted in 2 included papers and 8 excluded. The search keyword needs to be adjusted.
+
+To further narrow down the search, the search was modified to include only results where author keyword was "developer experience". This narrowed down the search significantly, and removed irrelevant results.
 
 \subsubsection{Inclusion criteria}
 
-The material must be in English. Articles that show up in the searches, and that have the words \textbf{developer experience} in consecutive order order are included in the review. 
+The material must be in English. Articles that show up in the searches, and that have the words \textbf{developer experience} in consecutive order order are included in the review.
 
 \subsubsection{Exclusion criteria}
 
@@ -707,11 +712,58 @@ All papers will be collected into one form with the following data points:
   \item The author(s) and affiliation (organisation and country)
   \item Research question/issue
   \item Definition of Developer Experience
+  \item Point of interest towards Developer Experience (context)
   \item Summary of paper
         %\item Quality score for the study
 \end{itemize}
 
-Analysis will be done on the found definitions of Developer Experience. During the study the collected data points and especially the about developer experience will be refined.
+Analysis will be done on the found definitions and concepts of Developer Experience. During the study the collected data points and especially the about developer experience will be refined.
+
+\subsection{Data Collection}
+
+During collection of data different aspects emerged. The process of collection was a continuous refinement of the search method, inclusion and exclusion criteria, data extraction points. During the collection the comprehension and understanding of the base concept of DX was continuously refined.   
+
+\subsection{Data Analysis}
+
+The following sections go trough the data points that emerged during the collection of the data
+
+\subsubsection{Definition of DX}
+
+A majority of the conference papers base their definition of DX on \cite{fagerholm-dx-concept-and-definition}. This definition is at the moment the only stated definition of DX in the formal literature. There are however some other derived definitions of DX in the formal literature.
+
+In grey literature the definition of DX is loosely based, and no sources of definition is given in the articles.    
+
+\subsubsection{Context of DX}
+
+From the analysis of the material, there is a clear indication that there are different viewpoints to Developer Experience.
+
+Grey literature takes to a large degree a viewpoint where DX is a form of UX, where developers are users of products and services. In this viewpoint the DX consists of features that are also used when measuring the UX of a service. These include factors like functionality, usability, and reliability.
+
+The formal research on DX has taken a step further and is also considering the social aspects of software development.
+
+A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it. 
+
+Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development. 
+
+There is also to some degree a lot of 
+
+Overall the amount of formal research on DX is lacking. The lack of definitions and the amount of search results in the search speaks for this. 
+
+\clearpage
+\section{Interviews and case studies}
+
+Define what kind of practical approach to the study subject is going to be taken
+
+
+\textbf{\\ Possible approaches for the practical part of the study:}
+
+\newcommand{\uxdesigndx}{https://uxdesign.cc/contributing-great-developer-experience-designer-e1f497b0fb4}
+
+\begin{itemize}
+  \item [--] Based on the \href{\uxdesigndx}{this article}, create a set of guidelines and good practices of DX, and interview and/or measure how well established the application of the practices are
+  \item [--] An interview studying the development environments of different projects. \href{\uxdesigndx}{\textit{"When starting a new project, be upfront that you want to tailor your tools and methods for collaboration"}}
+  \item [--] 
+\end{itemize}
 
 \clearpage
 \section{Results}
