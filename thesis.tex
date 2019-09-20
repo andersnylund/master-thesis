@@ -448,51 +448,36 @@ Otaniemi, Date to te announced
 
 Software engineering and development is a complex practice that requires both technical and social skills. Compared to other engineering professions, software engineering is still in early stages. The best practices are still evolving, new ideas are coming and previous ideals are discarded.
 
-Creating software products is a social activity that requires both technical and social skills from the developers.
+Developing and creating software is a social activity that requires both technical and social skills from the developers. Deep technical skills and understanding is required to be able to implemented the required features. Software products are however used by people, and therefore it is a requirement to understand how social interactions work. Software is also most of the times
 
-Human Computer Interaction (HCI), a traditional field of research, studies the interface between computers and humans.
+Software developers are in an interesting role where they are both creators and designers when they write the logic that makes up the product. Meantime they are also users of tools that they use to create the product. Developers using a software product that helps in their creative design work will create an user experience for them. Human Computer Interaction (HCI), a traditional field of research, studies the interface and interaction between computers and humans. User Experience (UX) is another field of research. UX includes the aspects of HCI, but on top of that includes also emotions and the user's perceptions of the product. UX can be seen as a more hedonic than a pragmatic approach of studying and understanding the usage of a software product.
 
-User Experience (UX) is another field of research. UX includes the aspects of HCI, but on top of that includes also emotions and the user's perceptions of the product. UX can be seen as a more hedonic than a pragmatic approach of studying and understanding the usage of a software product.
+In recent academic research and internet articles a concept called Developer Experience (DX) has gotten traction. DX is a term that explains how developers experience their development environments, both technically and socially. The same way as User Experience (UX) is considering the user of a system or tool, DX can be seen as the experience that developers have as users of a system. Here the system however includes the tools, frameworks, processes that the developer is the user of when developing software.
 
-Software developers are in an interesting role where they are both creators and designers when they write the logic that makes up the product. Meantime they are also users of tools that they use to create the product. Developers using a software product that helps in their creative design work will create an user experience for them.
-
-Developer Experience is a term that explains how developers experience their development environments, both technically and socially. The same way as User Experience (UX) is considering the user of a system or tool, Developer Experience (DX) can be seen as the experience that developers have as users of a system. Here the system however includes the tools, frameworks, processes that the developer is the user of when developing software.
-
-This thesis will look at the question of "Is developer experience something worth investing on?", i.e. is there any apparent reward in investing into improvement of the developer experience.
+DX is more prevalent and therefore more interesting in contexts where development happens in teams. DX of individual developers is also important, but a big part of the experience stems from interaction with team members and other developers. Individual developers are aiming more towards creating an individual DX of e.g. their development environment or tools that they use.
 
 %% Leave page number of the first page empty 
 \thispagestyle{empty}
 
 \subsection{Motivation}
 
-At the time of writing, a quick search with the keyword \textit{"Developer Experience"} on google.com gives as a result mostly articles on how framework and library authors should consider their users (developers) experience with using the product (tool, library, framework). However, DX is something more and includes also the feelings and perceptions of the developers. In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used, and in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \cite{fagerholm-dx-concept-and-definition} \cite{programmer-experience}. This shows also that there is still some ambiguity to the terms and definitions. It is also apparent that most results when searching with the term \textit{Developer Experience} gives results about the experience level of a developer in e.g. terms of years working in the field of software development, and not the hedonic and pragmatic experience.
+At the time of writing, a quick search with the keyword \textit{"Developer Experience"} on google.com gives as a result mostly articles on how framework and library authors should consider their user's (developer's) experience with using the product (tool, library, framework). However, that is only one viewpoint on DX, as it also includes the feelings and perceptions of the developers. In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used, and in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \cite{fagerholm-dx-concept-and-definition} \cite{programmer-experience}. This shows also that there is still some ambiguity to the terms and definitions in academic research. Additionally, most results when searching with the term \textit{Developer Experience} gives results about the experience and knowledge level of a developer in e.g. terms of years working in the field of software development or amount of contribution, and not the hedonic and pragmatic experience of participating in development work.
 
-DX has been studied previously, but research on it is still lacking the connection to practical applications. This is one the biggest motivators for this thesis, as the topic is novel and there is huge potential in improving software development processes, and thereby also potential to improve the outcome of the projects.
+DX has been studied previously, but research on it is still lacking the connection to practical applications. This is one the biggest motivators for this thesis, as the topic is novel and there is huge potential in improving software development processes, and thereby also potentially improve the e.g. performance, quality, and outcome in software projects.
 
-There is possibly huge value that can be gained from studying Developer Experience and learning about how it works. A better understanding of DX can help organisations, teams, and individual software developers to create a better experience that enables them to benefit in multiple different areas.
+There is possibly huge value that can be gained from studying DX and learning about how it works. A better understanding of DX can help organisations, teams, and individual software developers to create a better experience that enables them to benefit from it in multiple different areas.
 
-For the author the Developer Experience means having a low friction and easy setup with their own development environment. They want to have an environment that is lightweight, fast, and easy to use. It should have a short cycle of feedback i.e. when making a change to the source code it should be immediately reflected in the output. This might be the reason why they like to develop for the web, as the tools are often quick and have a fast feedback cycle. The environment should perform tasks automatically as building, reporting errors. The frontend JavaScript framework React and the tools supporting it are a great examples of excellent developer experience. The tools are intuitive and guide the developer in making the right things.
+For the author the DX means having a low friction and easy setup with their own development environment. They want to have an environment that is lightweight, fast, and easy to use. It should have a short cycle of feedback i.e. when making a change to the source code it should be immediately reflected in the output. This might be the reason why they like to develop for the web, as the tools are often quick and have a fast feedback cycle. The environment should perform tasks automatically as building, reporting errors. The frontend JavaScript framework React and the tools supporting it are a great examples of excellent DX. The tools are intuitive and guide the developer in making the right things. After all learning new technologies is not about solving new problems, but it's about solving the same old problems more efficiently, faster, easier i.e. with a better DX.
 
-After all learning new technologies is not about solving new problems, but it's about solving the same old problems more efficiently, faster, easier i.e. with a better Developer Experience.
+\subsection{Research problem and questions}
 
-\subsection{Research questions and problem}
+\newcommand{\researchproblem}{What are the aspects of Developer Experience that are utilized in practice and have potential of being replicable in different teams of a software consulting company?}
 
-The research problem is finding out \textit{How the developer experience in software projects can affect the outcome}. The goal is to create an understanding of what Developer Experience is, and how it might affect the outcome of software projects.
+\textbf{Research problem:} \researchproblem
 
-  {
-    \color{gray}
-    Currently the research problem is too vague and needs a lot of more specification of what is researched and what is the actual problem.
-
-    The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \cite{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
-
-    The debate throughout the thesis has to be something that makes the reader interested in the topic and engages the reader. This helps to find the argument of each article and paper that is read for this thesis. It helps the author of this thesis to take a stand when writing some statements. The meaning is not to create some kind of truth that has to be followed. The constant debate throughout the thesis helps to put things in perspective. One example of debate is "Is Developer Experience something worth investing in?".
-
-    There could also be some hypotheses that will be tested in the thesis.
-  }
-
-\newcommand{\rqone}{What is the difference in the definition of Developer Experience in academic and industry literature?}
+\newcommand{\rqone}{What is the difference in the definition of Developer Experience in academic literature and in industry literature?}
 \newcommand{\rqtwo}{What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?}
-\newcommand{\rqthree}{Can the results of software projects be improved by investing in a better developer experience?}
+\newcommand{\rqthree}{What is included in replicable practices and techniques that can be utilized to create a good Developer Experience in software project teams?}
 
 \begin{table}[htb]
   \begin{center}
@@ -505,15 +490,17 @@ The research problem is finding out \textit{How the developer experience in soft
   \caption{The research questions \label{researchquestions}}
 \end{table}
 
-\subsubsection{Alternative research problems:}
+% The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \cite{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
 
-\begin{enumerate}
-  \item [--] "How Developer Experience affects the productivity of developers in software projects"?
-  \item [--] "How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures i.e. \textit{How developers perceive the development infrastructure?} \cite{fagerholm-dx-concept-and-definition}
-\end{enumerate}
+% The debate throughout the thesis has to be something that makes the reader interested in the topic and engages the reader. This helps to find the argument of each article and paper that is read for this thesis. It helps the author of this thesis to take a stand when writing some statements. The meaning is not to create some kind of truth that has to be followed. The constant debate throughout the thesis helps to put things in perspective. One example of debate is "Is Developer Experience something worth investing in?".
+
+% There could also be some hypotheses that will be tested in the thesis.
+
+% Alternative research problems:
+% - How Developer Experience affects the productivity of developers in software projects"?
+% -"How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures i.e. \textit{How developers perceive the development infrastructure?} \cite{fagerholm-dx-concept-and-definition}
 
 \subsection{Scope and focus}
-
 {
   \color{gray} Scope and focus will be defined later. This can still vary quite a lot as it depends on basically everything, including the research problem and questions.
 }
@@ -522,6 +509,7 @@ The research problem is finding out \textit{How the developer experience in soft
 {
   \color{gray} This will be finalized later
 }
+
 \begin{enumerate}
   \item Introduction
   \item Background and literature review
@@ -535,25 +523,18 @@ The research problem is finding out \textit{How the developer experience in soft
 %% In a thesis, every section starts a new page, hence \clearpage
 \clearpage
 \section{Background and literature review}
- {
-  \color{gray}
 
-  Keywords to search background and literature material with:
+% Keywords to search background and literature material with:
 
-  \begin{enumerate}
-    \item Developer Experience
-    \item Programmer Experience
-    \item Happy Developer
-    \item Unhappy Developer
-    \item User Experience
-  \end{enumerate}
+%   - Developer Experience
+%   - Programmer Experience
+%   - Happy Developer
+%   - Unhappy Developer
+%   - User Experience
 
-  https://insights.stackoverflow.com/ could be an interesting source of basic facts about programmers around the world, what technologies they are using, what they love and what they dread
+% https://insights.stackoverflow.com/ could be an interesting source of basic facts about programmers around the world, what technologies they are using, what they love and what they dread
 
-  Create a much clearer and better foundation of what software development is, why it is complex etc.
- }
-
-This section includes the background and literature review of the topic. The background of the topic should be covered equally from all points of view.
+% Create a much clearer and better foundation of what software development is, why it is complex etc.
 
 A software project is a project where a group of people share a common goal what can for example be to create a product or service. In a software project there is a developer or multiple developers that have the responsibility of implementing the technical product itself. The developers are the ones writing the executable source code for the program or service, so that it can by it's functions and features achieve the requirements set to it.
 
@@ -566,9 +547,7 @@ Developer experience can be divided into three different sub areas – cognitive
 
 \subsection{Programmer Experience}
 
-{
-  \color{gray} http://programming-experience.org/px19/ https://2019.programming-conference.org/
-}
+% http://programming-experience.org/px19/ https://2019.programming-conference.org/
 
 Programmer Experience (PX) can be defined as \textit{The result of the intrinsic motivations and perceptions of programmers about the use of development artifacts} \cite{programmer-experience}. A programmer can be seen as person who gives exact instructions on how a program should behave and function. PX is based on the study mainly related to the programming environment, but also programming codes and Application Programming Interfaces (API).
 
@@ -669,22 +648,22 @@ The search is performed as a manual search by the author from various libraries 
 
 \begin{table}[H]
   \begin{tabular}{ l l }
-    IEEExplore     & (https://ieeexplore.ieee.org/Xplore/home.jsp)          \\
-    ACM            & (https://dl.acm.org/)                                  \\
-    ScienceDirect  & (https://www.sciencedirect.com/)                       \\
-    Scopus         & (https://www.scopus.com/search/form.uri?display=basic)
+    IEEExplore    & (https://ieeexplore.ieee.org/Xplore/home.jsp)          \\
+    ACM           & (https://dl.acm.org/)                                  \\
+    ScienceDirect & (https://www.sciencedirect.com/)                       \\
+    Scopus        & (https://www.scopus.com/search/form.uri?display=basic)
   \end{tabular}
   \caption{Academic literature sources for the MLR}
 \end{table}
 
-Other possible libraries and sources for resources could be 
+Other possible libraries and sources for resources could be
 \begin{itemize}
   \item Google Scholar (https://scholar.google.com)
   \item Citeseer (https://citeseerx.ist.psu.edu/index)
   \item and SpringerLink (https://link.springer.com/)
 \end{itemize}
 
-However, they do not provide advanced search with the author keyword as a search criteria.   
+However, they do not provide advanced search with the author keyword as a search criteria.
 
 Search string for both academic and grey literature will be \textbf{"developer experience"}. Because of an ambiguous definition of DX, only one search string is uses. This assures that all relevant publications are included. Including more words in the search string or creating a more complex search string would require a better understanding of DX, that the author does not have at this moment. Also, including other search strings would bias the search result.
 
@@ -692,7 +671,7 @@ At the moment of writing (August 2019), using "developer experience" as search s
 
 To further narrow down the search, the search was modified to include only results where author keyword was "developer experience". This narrowed down the search significantly, and removed irrelevant results.
 
-Using the author keyword gives results where the author is intentionally discussing the topic. In the case of DX, with searching only with the author keyword, the inclusion/exclusion rate is significantly better than with a full-text search. However, this approach will remove the possibility to discover definitions of DX where the author is not aware of this concept or phenomenon.  
+Using the author keyword gives results where the author is intentionally discussing the topic. In the case of DX, with searching only with the author keyword, the inclusion/exclusion rate is significantly better than with a full-text search. However, this approach will remove the possibility to discover definitions of DX where the author is not aware of this concept or phenomenon.
 
 \subsubsection{Inclusion criteria}
 
@@ -733,7 +712,7 @@ Analysis will be done on the found definitions and concepts of Developer Experie
 
 \subsection{Data Collection}
 
-During collection of data different aspects emerged. The process of collection was a continuous refinement of the search method, inclusion and exclusion criteria, data extraction points. During the collection the comprehension and understanding of the base concept of DX was continuously refined.   
+During collection of data different aspects emerged. The process of collection was a continuous refinement of the search method, inclusion and exclusion criteria, data extraction points. During the collection the comprehension and understanding of the base concept of DX was continuously refined.
 
 \subsection{Data Analysis}
 
@@ -743,33 +722,33 @@ The following sections go trough the data points that emerged during the collect
 
 A majority of the conference papers base their definition of DX on \cite{fagerholm-dx-concept-and-definition}. This definition is at the moment the only stated definition of DX in the formal literature. There are however some other derived definitions of DX in the formal literature.
 
-In grey literature the definition of DX is loosely based, and no sources of definition is given in the articles.    
+In grey literature the definition of DX is loosely based, and no sources of definition is given in the articles.
 
 \subsubsection{Context of DX}
 
 From the analysis of the material, there is a clear indication that there are different viewpoints to Developer Experience.
 
-Grey literature takes to a large degree a viewpoint where DX is a form of UX, where developers are users of products and services. In this viewpoint the DX consists of features that are also used when measuring the UX of a service. These include factors like functionality, usability, and reliability. 
+Grey literature takes to a large degree a viewpoint where DX is a form of UX, where developers are users of products and services. In this viewpoint the DX consists of features that are also used when measuring the UX of a service. These include factors like functionality, usability, and reliability.
 
-The grey literature is also heavily influenced by businesses marketing their services or products. To gain visibility and recognition, they are publishing articles and posts on their blogs to write and discuss a specific topic. These businesses are defining DX from their own point of view where they are providing products and services, that are directly used by developers. 
+The grey literature is also heavily influenced by businesses marketing their services or products. To gain visibility and recognition, they are publishing articles and posts on their blogs to write and discuss a specific topic. These businesses are defining DX from their own point of view where they are providing products and services, that are directly used by developers.
 
-Some articles (which?) mentioned that back in the days, it was executives that made the business and purchase decisions of tools, frameworks and other products and the developer's opinion were not considered. Developers were forced to use whatever they were offered.  
+Some articles (which?) mentioned that back in the days, it was executives that made the business and purchase decisions of tools, frameworks and other products and the developer's opinion were not considered. Developers were forced to use whatever they were offered.
 
 Today, the purchase decision has more and more shifted to be a responsibility of the developer. Developers are the final users of the product and therefore businesses have probably realized that developers are the ones to make the decisions. All in all, it can be seen from the current grey literature that developers are being considered more and more (Devs are people too), and that this movement has created the concept of DX.
 
-DX allows developers to reason about things that before has been difficult. Making statements that are in the favour of developers might have been difficult as there hasn't been any term to coin the feelings, emotions, needs, 
+DX allows developers to reason about things that before has been difficult. Making statements that are in the favour of developers might have been difficult as there hasn't been any term to coin the feelings, emotions, needs,
 
 Businesses have taken notice on this movement, and are now utilizing it to create products and services.
 
-DX can be seen that there is always a developer that is a user. The role of the user is the variable, and can vary from being a user of a product where the DX is seen in the product, or then the user can be a user of a developer workflow in a software project.  
+DX can be seen that there is always a developer that is a user. The role of the user is the variable, and can vary from being a user of a product where the DX is seen in the product, or then the user can be a user of a developer workflow in a software project.
 
-In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX. 
+In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX.
 
 The formal research on DX has taken a step further and is also considering the social aspects of software development.
 
-A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it. 
+A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it.
 
-Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development. 
+Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development.
 
 Overall the amount of formal research on DX is lacking. The lack of definitions and the amount of search results in the search speaks for this.
 
@@ -796,7 +775,7 @@ Define what kind of practical approach to the study subject is going to be taken
 \begin{itemize}
   \item [--] Based on the \href{\uxdesigndx}{this article}, create a set of guidelines and good practices of DX, and interview and/or measure how well established the application of the practices are
   \item [--] An interview studying the development environments of different projects. \href{\uxdesigndx}{\textit{"When starting a new project, be upfront that you want to tailor your tools and methods for collaboration"}}
-  \item [--] 
+  \item [--]
 \end{itemize}
 
 \clearpage
