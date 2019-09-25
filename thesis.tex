@@ -178,6 +178,7 @@
 \usepackage{tabularx}
 \usepackage{natbib}
 \usepackage{float}
+\usepackage{caption}
 
 %% Math fonts, symbols, and formatting; these are usually needed
 \usepackage{amsfonts,amssymb,amsbsy,amsmath}
@@ -388,7 +389,8 @@
 %%
 %% This section is optional. Remove it if you do not want a preface.
 \mysection{Preface}
-I want to thank Professor Pirjo Professori and my instructor Dr Alan Advisor for their good and poor guidance.
+I want to thank everyone so far that has shown interested and been involved in this thesis. Even if the thesis is still in it's early phases, I am surprised of how many have showed interest towards it and offered a helping hand.
+\newline \\ After the thesis has been finalized there will probably be many more appreciations to give
 
 \vspace{5cm}
 Otaniemi, Date to te announced
@@ -710,27 +712,54 @@ The following sections go trough the data points that emerged during the collect
 
 The most common definition of DX in academic papers is the concept and definition of in  \cite{fagerholm-dx-concept-and-definition}. This definition is at the moment the only stated definition of DX in the formal literature. There is also further derivations on this concept and definition, but nothing that is revolutionizing or that takes another viewpoint.
 
-To analyze how the  By dividing the material on how DX is defined by either implicit or explicit definition of  
+To analyze how the the definition of DX is given, all articles and papers will be grouped into either having \textbf{implicit} or \textbf{explicit} definition of DX. This division was something that did emerge in the collection and analysis of the material.
 
-In grey literature the definition of DX is loosely based, and no sources of definition is given in the articles.
+\textit{Explicit definition} of DX means that the author has in some words explained or defined the concept of DX, or referenced some other material that gives the definition to it.
+
+\textit{Implicit definition} of DX means that the author doesn't give any definition or explanation of what DX is. The definition can often however be inferred from the context of the paper.
 
 \begin{figure}[H]
+  \captionsetup{width=0.6\textwidth}
   \caption{Implicit vs. explicit definition of Developer Experience in academic literature}
   \begin{center}
-    \includegraphics[width=10cm]{definition-academic.pdf}
+    \includegraphics[width=0.6\textwidth]{definition-academic.pdf}
   \end{center}
 \end{figure}
 
+Academic papers are almost equal in both giving an implicit or explicit definition of DX. It shows and confirms that DX is an topic and research area that has not gotten much attention at the moment of writing. Some research areas have been developed so far that there is things that can be taken for granted. However, the are of DX might not yet be at that point yet and therefore
+
 \begin{figure}[H]
-  \caption{Implicit vs. explicit definition of Developer Experience in grey literature}
+  \captionsetup{width=0.6\textwidth}
   \begin{center}
-    \includegraphics[width=10cm]{definition-grey.pdf}
+    \caption{Implicit vs. explicit definition of Developer Experience in grey literature}
+    \includegraphics[width=0.6\textwidth]{definition-grey.pdf}
   \end{center}
 \end{figure}
+
+Grey literature has a majority of explicit definition of DX. The articles are often starting with giving an explanation of their viewpoint and definition of DX. Quickly the articles then continue to discuss the topic from the selected context and viewpoint.
 
 \subsubsection{Context of DX}
 
-From the analysis of the material, there is a clear indication that there are different viewpoints to Developer Experience.
+From the analysis of the material, there is a clear indication that there are different viewpoints to DX. The different context that emerged from the analysis are listed in table \ref{table:contexts}.
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{l}
+      Definition                        \\
+      Development Environment           \\
+      API                               \\
+      Product or service                \\
+      User Experience                   \\
+      Team, Collaboration, \& Community \\
+      Mood \& Feelings                  \\
+    \end{tabular}
+    \captionsetup{width=0.6\textwidth}
+    \caption{Different contexts that emerged during the literature review}
+    \label{table:contexts}
+  \end{center}
+\end{table}
+
+
 
 Grey literature takes to a large degree a viewpoint where DX is a form of UX, where developers are users of products and services. In this viewpoint the DX consists of features that are also used when measuring the UX of a service. These include factors like functionality, usability, and reliability.
 
@@ -792,13 +821,13 @@ Many articles use the keyword developer experience but only mention DX briefly i
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{l r}
-      Definition                        & 1  \\
-      Development Environment           & 2  \\
-      API                               & 6  \\
-      Product or service                & 7  \\
-      User Experience                   & 7  \\
-      Team, Collaboration, \& Community & 5  \\
-      Mood \& Feelings                  & 1  \\
+      Definition                        & 1 \\
+      Development Environment           & 2 \\
+      API                               & 6 \\
+      Product or service                & 7 \\
+      User Experience                   & 7 \\
+      Team, Collaboration, \& Community & 5 \\
+      Mood \& Feelings                  & 1 \\
     \end{tabular}
     \caption{Grey literature}
   \end{center}
