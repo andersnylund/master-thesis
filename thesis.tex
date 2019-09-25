@@ -275,16 +275,12 @@
 %% The abstract text. This text is included in the metadata of the pdf file as well
 %% as the abstract page.
 %%
+
+\newcommand{\englishabstract}{The abstract in english}
+\newcommand{\swedishabstract}{Sammandrag på svenska}
+
 \thesisabstract{
-Your abstract in English. Keep the abstract short. The abstract explains your 
-research topic, the methods you have used, and the results you obtained. In the 
-PDF/A format of this thesis, in addition to the abstract page, the abstract text is 
-written into the pdf file's metadata. Write here the text that goes into the 
-metadata. The metadata cannot contain special characters, linebreak or paragraph 
-break characters, so these must not be used here. If your abstract does not contain 
-special characters and it does not require paragraphs, you may take advantage of 
-the abstracttext macro (see the comment below). Otherwise, the metadata abstract 
-text must be identical to the text on the abstract page.
+  \englishabstract
 }
 
 %% Copyright text. Copyright of a work is with the creator/author of the work
@@ -339,18 +335,7 @@ text must be identical to the text on the abstract page.
 %% above.
 %%
 \begin{abstractpage}[english]
-  Your abstract in English. Keep the abstract short. The abstract explains your
-  research topic, the methods you have used, and the results you obtained.
-
-  The abstract text of this thesis is written on the readable abstract page as
-  well as into the pdf file's metadata via the $\backslash$thesisabstract macro
-  (see above). Write here the text that goes onto the readable abstract page.
-  You can have special characters, linebreaks, and paragraphs here. Otherwise,
-  this abstract text must be identical to the metadata abstract text.
-
-  If your abstract does not contain special characters and it does not require
-  paragraphs, you may take advantage of the abstracttext macro (see the comment
-  below).
+  \englishabstract
 \end{abstractpage}
 
 %% The text in the \thesisabstract macro is stored in the macro \abstractext, so
@@ -396,9 +381,7 @@ text must be identical to the text on the abstract page.
 \keywords{Nyckelord på svenska, temperatur}
 %% Abstract text
 \begin{abstractpage}[swedish]
-  Sammandrag på svenska.
-  Try to keep the abstract short. Abstract explains your research topic,
-  the methods you have used, and the results you obtained.
+  \swedishabstract
 \end{abstractpage}
 
 %% Preface
@@ -475,7 +458,7 @@ For the author the DX means having a low friction and easy setup with their own 
 
 \textbf{Research problem:} \researchproblem
 
-\newcommand{\rqone}{What is the difference in the definition of Developer Experience in academic literature and in industry literature?}
+\newcommand{\rqone}{What is the difference in the definition of Developer Experience in academic literature and literature written by practitioners?}
 \newcommand{\rqtwo}{What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?}
 \newcommand{\rqthree}{What is included in replicable practices and techniques that can be utilized to create a good Developer Experience in software project teams?}
 
@@ -724,9 +707,25 @@ The following sections go trough the data points that emerged during the collect
 
 \subsubsection{Definition of DX}
 
-A majority of the conference papers base their definition of DX on \cite{fagerholm-dx-concept-and-definition}. This definition is at the moment the only stated definition of DX in the formal literature. There are however some other derived definitions of DX in the formal literature.
+The most common definition of DX in academic papers is the concept and definition of in  \cite{fagerholm-dx-concept-and-definition}. This definition is at the moment the only stated definition of DX in the formal literature. There is also further derivations on this concept and definition, but nothing that is revolutionizing or that takes another viewpoint.
+
+By measuring the \textbf{implicit}  
 
 In grey literature the definition of DX is loosely based, and no sources of definition is given in the articles.
+
+\begin{figure}[H]
+  \caption{Implicit vs. explicit definition of Developer Experience in academic literature}
+  \begin{center}
+    \includegraphics[width=10cm]{definition-academic.pdf}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \caption{Implicit vs. explicit definition of Developer Experience in grey literature}
+  \begin{center}
+    \includegraphics[width=10cm]{definition-grey.pdf}
+  \end{center}
+\end{figure}
 
 \subsubsection{Context of DX}
 
@@ -757,8 +756,73 @@ Another group of researchers in Finland have studied the mood of developers and 
 Overall the amount of formal research on DX is lacking. The lack of definitions and the amount of search results in the search speaks for this.
 
 
-
 Many articles use the keyword developer experience but only mention DX briefly in their material. This forces the readers to
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{l r}
+      Definition                        & 5  \\
+      Development Environment           & 11 \\
+      API                               & 10 \\
+      Product or service                & 9  \\
+      User Experience                   & 14 \\
+      Team, Collaboration, \& Community & 16 \\
+      Mood \& Feelings                  & 8  \\
+    \end{tabular}
+    \caption{Academic and grey literature}
+  \end{center}
+\end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{l r}
+      Definition                        & 4  \\
+      Development Environment           & 9  \\
+      API                               & 4  \\
+      Product or service                & 2  \\
+      User Experience                   & 7  \\
+      Team, Collaboration, \& Community & 11 \\
+      Mood \& Feelings                  & 7  \\
+    \end{tabular}
+    \caption{Academic literature}
+  \end{center}
+\end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{l r}
+      Definition                        & 1  \\
+      Development Environment           & 2  \\
+      API                               & 6  \\
+      Product or service                & 7  \\
+      User Experience                   & 7  \\
+      Team, Collaboration, \& Community & 5  \\
+      Mood \& Feelings                  & 1  \\
+    \end{tabular}
+    \caption{Grey literature}
+  \end{center}
+\end{table}
+
+\begin{figure}[H]
+  \caption{Combined}
+  \begin{center}
+    \includegraphics[width=\textwidth]{context-combined.pdf}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \caption{Academic}
+  \begin{center}
+    \includegraphics[width=\textwidth]{context-academic.pdf}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \caption{Grey}
+  \begin{center}
+    \includegraphics[width=\textwidth]{context-grey.pdf}
+  \end{center}
+\end{figure}
 
 \subsection{Validity of search results}
 
@@ -768,7 +832,6 @@ The search engine Google is known to provide results based on many different var
 \section{Interviews and case studies}
 
 Define what kind of practical approach to the study subject is going to be taken
-
 
 \textbf{\\ Possible approaches for the practical part of the study:}
 
