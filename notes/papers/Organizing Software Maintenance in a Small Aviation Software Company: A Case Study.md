@@ -59,22 +59,99 @@ https://aaltodoc.aalto.fi/handle/123456789/39848
 - survey created with Google Forms
 - techniques were used to produce better results 
 
-#### 3.2.3 Workshops
+#### 3.2.3 Workshops (Smeds et al. 2015)(Lyman 1987)
 
 - both interviews and workshops aim to gather thoughts and feelings on a specific subject
+- compared to interviews, in workshops the participants are collaboration with each other and the researcher might only need to observe and do the facilitation 
+- when performing a change the workshop can be seen as something that has been decided together instead of in a top-down manner
+- participants, boundary objects, and external facilitators
+- problematic if everyone has contradicting ideas of the topic
+- external facilitator will probably not be possible
+- individual thinking, pair discussions, and group discussions (think-pair-share)
+- individual thinking by writing post-its
+- pairing so that each part in a pair does not know each other that well
+- after working in pairs the findings are 
 
 #### 3.2.4 Data export from tracking systems
 
+- a ticket and a timetracking system were analyzed to support measurement of the change 
+
 ### 3.3 Research phases
+
+- action research has five main phases: diagnosis, action planning, intervention, evaluation, and reflection
+- only one iteration of the phases was done
 
 #### 3.3.1 Initial state analysis
 
+- first interview with CTO, COO, and CCO
+- based on first interview a survey was generated
+- workshop to get the initial state and broader viewpoint of the employers
+
 #### 3.3.2 Proposing solutions 
+
+- the first initial literature guided finding the problem
+- after the first workshop and interview, and after defining and prioritized the problems there was a second literature review to find possible solutions from theoretical frameworks
+- again, instead of selecting the proposed changes they were done together in a second workshop in February
 
 #### 3.3.3 Implementation
 
+- implementation phase lasted for 7 weeks
+
 #### 3.3.4 Evaluation and reflection
 
+- third workshop after the implementation phase
+
+## 4 Context
+
+## 5 Current state analysis
+
+### 5.1 Measuring the maintenance process
+
+- 
+
+### 5.2 Findings
+
+#### 5.2.1 Findings from the knowledge sharing survey
+
+#### 5.2.2 Findings from the first workshop
+
+#### 5.2.3 Findings from the data exports
+
+8 Evaluation
+8.1 Changes in metrics
+8.1.1 Maintenance knowledge metrics
+8.1.2 Maintenance process metrics
+8.1.3 Multitasking metrics
+8.2 Feedback from the third workshop
+8.2.1 Triage responsibility and pair working
+8.2.2 README template
+8.2.3 Project presentations
+
+## 9 Discussion
+
+### 9.1 Research outcomes
+
+#### 9.1.1 The main problems in the initial state
+
+- usage of informal communication channels
+- *Lacking the sufficient amount of resources to run proper structured processes easily leads to a situation where tasks are handled on an ad hoc basis by certain key personnel, which leads to further challenges while the company grows*
+- 
+
+#### 9.1.2 The most suitable solutions to identified problems
+
+#### 9.1.3 Effectiveness of the selected solutions
+
+### 9.2 Threats to validity
+
+#### 9.2.1 Construct validity
+
+#### 9.2.2 Internal validity
+
+#### 9.2.3 External validity
+
+#### 9.2.4 Reliability
+
+### 9.3 Future research
 
 ## Personal interpretations from the text
 
@@ -88,3 +165,7 @@ https://aaltodoc.aalto.fi/handle/123456789/39848
   - this would yield a much higher answer rate, however it might not be a really good approach as the study subject is quite abstract and undefined, which makes it really difficult to create a survey about
   - surveys are better to validate things whereas interviews are to identify new aspects and viewpoints to a topic 
 - one approach could also be to conduct a workshop where all different kinds of people would join and it would be audio recorded
+- what is good facilitation in a workshop?
+- contact someone who has done workshops before
+- company’s high level business strategy
+- there is a lot of discussion about the selected processes and the reasoning behind them 
