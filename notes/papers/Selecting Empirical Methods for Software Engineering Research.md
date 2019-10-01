@@ -230,7 +230,6 @@ https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.81.9285&rep=rep1&type=
   - results need to hold up across many different studies to be considered reliable
   - meta-analysis is hard in software engineering contexts
 - empirical research never produces certain knowledge
-- 
 
 ## Personal interpretations from the text
 

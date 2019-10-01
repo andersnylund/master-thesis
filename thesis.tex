@@ -429,7 +429,7 @@ Otaniemi, Date to te announced
 %% and tables).
 %%
 \cleardoublepage
-\section{Introduction}
+\section{Introduction} \label{introduction}
 
 Software development and software engineering is a complex practice that requires both technical and social skills. Compared to other engineering professions, software engineering is a relative new field of practice and study. The practices deemed as "best practice" are still evolving, and new ideas of good practices are being developed and previous ideas are discarded.
 
@@ -446,7 +446,7 @@ In this study we will focus on understanding what DX is and make an attempt to m
 %% Leave page number of the first page empty 
 \thispagestyle{empty}
 
-\subsection{Motivation}
+\subsection{Motivation} \label{motivation}
 
 At the time of writing, a quick search with the keyword \textit{"Developer Experience"} on google.com gives as a result mostly articles on how framework and library authors should consider their user's (developer's) experience with using the product (tool, library, framework). Also, performing searches with the same \textit{"Developer Experience"} keyword on known libraries of conference papers like Google Scholar and IEEExplore, the content and topic of the results vary much. This shows that there might not be a common and well known definition of what DX is.
 
@@ -460,13 +460,19 @@ There is possibly huge value that can be gained from studying DX and learning ab
 
 \subsection{Research problem and questions}
 
-\newcommand{\researchproblem}{What are the aspects of Developer Experience that are utilized in practice and have potential of being replicable in different teams of a software consulting company?}
+Easterbrook \cite{easterbrook2008selecting} encourage practitioners to document and reason the selection process of the research problem and questions, the philosophical stance, and the selected research methods e.g the research protocol. They encourage this because other researchers can then understand and interpret the study and possibly replicate the study. 
+
+During this study the research problem and questions have evolved and been modified while more understanding and knowledge about the research topic has been created and accumulated. The starting point of the study was to understand how DX is linked to software project outcomes. However, this was noted to be too vague, difficult to measure and difficult to research. The current state and understanding of DX does not allow to research correlation and causality of DX to software project outcomes as defined in \cite{easterbrook2008selecting}.
+
+Based on this, the selected approach for defining the problem and the research questions leans towards stating a exploratory research problem and research questions.
+
+\newcommand{\researchproblem}{How is Developer Experience defined and what are the aspects of Developer Experience that are valued by software practitioners?}
 
 \textbf{Research problem:} \researchproblem
 
-\newcommand{\rqone}{What is the difference in the definition of Developer Experience in academic literature and literature written by practitioners?}
-\newcommand{\rqtwo}{What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?}
-\newcommand{\rqthree}{What is included in replicable practices and techniques that can be utilized to create a good Developer Experience in software project teams?}
+\newcommand{\rqone}{What is the definition and aspects of Developer Experience, and how do they differ between academic literature and literature written by practitioners?}
+\newcommand{\rqtwo}{How is Developer Experience and its aspects defined by different roles in a software consultancy company?}
+\newcommand{\rqthree}{What aspects of Developer Experience do software developers in a software concultancy company value and see important?}
 
 \begin{table}[htb]
   \begin{center}
@@ -478,6 +484,32 @@ There is possibly huge value that can be gained from studying DX and learning ab
   \end{center}
   \caption{The research questions \label{researchquestions}}
 \end{table}
+
+To analyze the research questions, the categorization, classification, and guidelines from \cite{easterbrook2008selecting} will be used.
+
+\textbf{\hyperref[RQ1]{RQ1}} is a Description and Classification, but also a Descriptive-Comparative question that compares two different sources of literature. The comparison helps to better understand the definition of DX, and creates the ground for this thesis. The answer to this question will help to understand the phenomena better, but also point out the absence of definitions. This question 
+
+\textbf{\hyperref[RQ2]{RQ2}} is a Description and Classification question and tries to find the specific aspects of DX that exists in a software consultancy company. The question builds upon the first research question, but takes practitioner's view of point.
+
+\textbf{\hyperref[RQ3]{RQ3}} is Description and Classification question that leans towards being a Design question. Mainly it is however a knowledge question that tries to understand the construct of DX, and does not try to design or implement new or better practices in software development.
+
+All of the research questions are exploratory and they try to understand the underlying phenomena, i.e. DX. Because there is a vague and undefined foundation to build upon, it is not an option ask \textit{relationship}, \textit{correlation and causality}, or \textit{design questions} questions  The nature of these questions will guide the research and guide with selecting the used methods and techniques. 
+
+%% PREVIOUS RESEARCH PROBLEM(S)
+
+% \newcommand{\researchproblem}{What are the aspects of Developer Experience that are utilized in practice and have potential of being replicable in different teams of a software consulting company?}
+% the problem above is not an appropriate problem as there are too many unknowns in the problem:
+% 1. what is developer experience?
+% 2. what is the aspects of developer experience?
+% 3. what does utilizing in practice mean?
+% 4. what does having potential mean?
+% 5. what does replicable mean?
+
+%% PREVIOUS RESEARCH QUESTIONS
+
+% \newcommand{\rqone}{What is the difference in the definition of Developer Experience in academic literature and literature written by practitioners?}
+% \newcommand{\rqtwo}{What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?}
+% \newcommand{\rqthree}{What is included in replicable practices and techniques that can be utilized to create a good Developer Experience in software project teams?}
 
 % The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \cite{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
 
@@ -512,7 +544,7 @@ There is possibly huge value that can be gained from studying DX and learning ab
 
 %% In a thesis, every section starts a new page, hence \clearpage
 \clearpage
-\section{Background and literature review}
+\section{Background}
 
 % Keywords to search background and literature material with:
 
@@ -548,6 +580,8 @@ A developer is a person with a bigger responsibility than a programmer. If a pro
 Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \cite{programmer-experience}. Developer Experience is considering also the social aspect of being a software developer. Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
 
 The Developer Experience can be divided into 2 different environments, a social and a technical environment \cite{fagerholm-doctoral-thesis}. This thesis might focus more on the technical environment.
+
+The developer experience can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time \cite{fagerholm-doctoral-thesis}. The research in this thesis will use a longer time-frame of developer experience.
 
 \begin{figure}[H]
   \captionsetup{width=0.6\textwidth}
@@ -598,11 +632,43 @@ Flow state is something that many developers want to achieve. For some developer
 \textit{0 to 200} or \textit{Time to Hello World}
 
 \clearpage
-\section{Research material and methods}
+\section{Research methods}
 
-What material will be used in the research and what methods/methodologies will be used to study the problem. What kind of approach to research will be used in the thesis.
+During the study, the research problem and the research questions have evolved as the understanding and comprehension of the problem has improved. Because of this the planned research methods and the goals with these have also evolved and been reshaped when new information have been acquired.
 
-The developer experience can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time \cite{fagerholm-doctoral-thesis}. The research in this thesis will use a longer time-frame of developer experience.
+From the introduction and motivation in sections \ref{introduction} and \ref{motivation}, it was determined that DX is a novel and abstract construct. The concepts and definitions of it are multiple, and vary both in research and in industry.
+
+Easterbrook \cite{easterbrook2008selecting} define a set of guidelines for empirical research in software engineering. They argue that selecting a clear research question, an explicit philosophical stance, and an appropriate research method are key when researching in the context of SE. They also note that many research projects in SE fail in defining the stance of the research, which then further complicates all aspects of the research including its interpretation, validity, replicability etc.
+
+\subsection{Research approach}
+
+Based on the research problem and research questions, this thesis will take an exploratory approach. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \cite{easterbrook2008selecting}. 
+
+\subsection{Research philosophy}
+
+According to Easterbrook \cite{easterbrook2008selecting}, making explicit decisions on the research methods is key, and by doing that the research becomes more beneficial for practitioners and other researchers. Therefore they also argue that explicitly defining every step of the research should be done.
+
+This thesis will take a \textbf{constructivism} view of the truth, combined with pragmatic approach. A constructivist approach sees the problem as that the human context is always present, and that it is an important part of the research and the study. The pragmatic approach is also required because of the case company in this study. The context of a company is important to include, as something that works with one company, might not work with another company. The pragmatic approach can be seen as an approach from engineering, where the interest is focused on what works at a specific time in a specific context.
+
+\subsection{Research method selection}
+
+To be able to further develop the definition of DX, the study has to focus on the foundations. During early stages of this thesis, it was noted that a comprehensive literature review and study was required. A good literature review gives a good foundation on which to build the research upon, and ensures that the studied field is understood correctly. 
+
+\subsubsection{MLR}
+
+Each research and study should have a background check and literature review where previous material and research is assessed, and from where the current research can be continued from an built upon. 
+
+A MLR is a form of systematic literature review, that produces both qualitative and quantitative data. In this study a MLR was seen as a good fit, as it allows to get a broad view of the current state of the research in the topic. It also allows to answer exploratory questions where the existence of a subject or topic is abstract or vague.
+
+\subsubsection{Workshop}
+
+To address the empirical study of the software company it was also seen that exploratory research methods was the best fit to answer the research questions. Workshops are a collaborative way to gather data, where
+
+Workshops are used by practitioners in various ways.
+
+\subsubsection{Survey}
+
+
 
 \clearpage
 \section{Multivocal literature review}
@@ -869,9 +935,9 @@ Many articles use the keyword developer experience but only mention DX briefly i
 The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private sessions were used when performing the searches.
 
 \clearpage
-\section{Workshop, interviews, and case studies}
+\section{Exploratory research}
 
-Define what kind of practical approach to the study subject is going to be taken
+Based on the results from the background section and the Multivocal Literature Review, it can be derived that the research topic is complex and difficult to define. Therefore, to gain a better understanding and grasp how DX is thought of in the industry, a workshop and a series of interviews will be conducted.
 
 \textbf{\\ Possible approaches for the practical part of the study:}
 
@@ -880,26 +946,13 @@ Define what kind of practical approach to the study subject is going to be taken
 \begin{itemize}
   \item [--] Based on the \href{\uxdesigndx}{this article}, create a set of guidelines and good practices of DX, and interview and/or measure how well established the application of the practices are
   \item [--] Conduct interviews studying the development environments of different projects. \textit{"When starting a new project, be upfront that you want to tailor your tools and methods for collaboration"}(\href{\uxdesigndx}{uxdesigndx})
-  \item [--] Workshop to map current practices and viewpoints on DX 
+  \item [--] Workshop to map current practices and viewpoints on DX
   \item [--] Interviews with individual developers on their viewpoint of DX
 \end{itemize}
 
-Based on the results from the background section and the Multivocal Literature Review, it can be derived that the research topic is complex and difficult to define. Therefore, to gain a better understanding and grasp how DX is thought of in the industry, a workshop and a series of interviews will be conducted.
-
 \subsection{Workshop}
 
-To initiate the practical part of this thesis, a workshop was conducted. The workshop had the following agenda:
-
-\begin{itemize}
-  \item [--] 
-\end{itemize}
-
-\subsection{Interviews}
-
-Interviews can be divided into 
-
-\clearpage
-\section{Plan and possible future direction of thesis}
+\subsection{Survey (or interview)}
 
 
 
@@ -931,8 +984,7 @@ voi luotettavuuden arviointi olla my\"os siell\"a.
   \item B. Kitchenham and S. Charters, "Guidelines for Performing Systematic Literature Reviews in Software engineering," in "EBSE Technical Report," 2007, vol. EBSE- 2007-01.
   \item V. Garousi, M. Felderer, Experience-based guidelines for effective and efficient data extraction in systematic reviews in software engineering, in: International Conference on Evaluation and Assessment in Software Engineering, Karlskrona, Sweden, 2017, pp. 170–179.
   \item Lotto, L. S. (1986). Qualitative Data Analysis: A Sourcebook of New Methods: Matthew B. Miles and A. Michael Huberman. Educational Evaluation and Policy Analysis, 8(3), 329–331. https://doi.org/10.3102/01623737008003329
-  \item Using argumentation theory to analyse software practitioners’ defeasible evidence, inference and belief
-        Author links open overlay panel. Austen Rainer
+  \item Using argumentation theory to analyse software practitioners’ defeasible evidence, inference and belief Author links open overlay panel. Austen Rainer
 \end{enumerate}
 
 \textbf{Development tools}
@@ -987,6 +1039,18 @@ voi luotettavuuden arviointi olla my\"os siell\"a.
   \item Teamwork quality and project success in software development: A survey of agile development teams Author links open overlay panelYngveLindsjørnaDag I.K.Sjøbergab TorgeirDingsøyrbc Gunnar R.Bergersen Tore Dybåa
   \item Gass, O., Meth, H., Maedche, A.: PaaS characteristics for productive software development: an evaluation framework. Internet Comput. IEEE 18(1), 56–64 (2014)
   \item Deci, E., Ryan, R.M.: Self-determination theory. Handbook of theories of social psychology. SAGE, Los Angeles (2012). ISBN 9780857029607
+\end{enumerate}
+
+\textbf{Workshops}
+\begin{enumerate}
+  \item Sanne Akkerman and Arthur Bakker. Boundary Crossing and Boundary Objects. Review of Educational Research, 81(2):132–169, 2011. ISSN 08919976. doi: 10.3102/0034654311404435.
+  \item Riitta Smeds, Rita Lavikka, Miia Jaatinen, and Antero Hirvensalo. Interven- tions for the co-creation of inter-organizational business process change. In Proceedings of the International Conference on Advances in Product Man- agement Systems, pages 11–18. Springer, 2015. ISBN 9783319227580. doi: 10.1007/978-3-319-22759-7 2.
+  \item Frank Lyman. Think-Pair-Share: An expanding teaching technique. Maa- Cie Cooperative News, 1(1):1–2, 1987.
+  \item Guillermo E Leon de la Barra, De Barra, Mario B Leon de la Barra, and Ana M Urbina. Creative Problem Solving Workshops for Engineering Stu- dents. In Proceedings of the 27th Annual Conference. Frontiers in Ed- ucation: Teaching and Learning in an Era of Change, volume 3, pages 1428–1430. IEEE, 1997. ISBN 0780340868.
+  \item Haridimos Tsoukas. A Dialogical Approach to the Creation of New Knowl- edge in Organizations. Organization Science, 20(6):941–957, 2009. ISSN 1047-7039. doi: 10.1287/orsc.1090.0435.
+  \item Guillermo E Leon de la Barra, De Barra, Mario B Leon de la Barra, and Ana M Urbina. Creative Problem Solving Workshops for Engineering Stu- dents. In Proceedings of the 27th Annual Conference. Frontiers in Ed- ucation: Teaching and Learning in an Era of Change, volume 3, pages 1428–1430. IEEE, 1997. ISBN 0780340868.
+  \item David Coghlan. Action research: Exploring perspectives on a philosophy of practical knowing. Academy of Management Annals, 5(1):53–87, 2011. ISSN 19416520. doi: 10.1080/19416520.2011.571520.
+  \item Lotte S Luscher and Marianne W Lewis. Organizational Change and Manage- rial Sensemaking: Working Through Paradox. Academy of Management Journal, 51(2):221–240, 2008. ISSN 00014273. doi: 10.1103/PhysRevLett. 108.187601.
 \end{enumerate}
 
 \clearpage
