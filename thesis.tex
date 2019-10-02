@@ -176,7 +176,7 @@
 
 \usepackage{graphicx}
 \usepackage{tabularx}
-\usepackage{natbib}
+\usepackage[numbers]{natbib}
 \usepackage{float}
 \usepackage{caption}
 
@@ -423,6 +423,10 @@ Otaniemi, Date to te announced
   GL    & Grey Literature                    \\
   SE    & Software Engineering               \\
   MSECO & Mobile Software Ecosystem          \\
+  BS    & Brainstorming                      \\
+  TBS   & Traditional Brainstorming          \\
+  NBS   & Nominal Brainstorming              \\
+  EBS   & Electronic Brainstorming           \\
 \end{tabular}
 
 %% \clearpage is similar to \newpage, but it also flushes the floats (figures
@@ -460,7 +464,7 @@ There is possibly huge value that can be gained from studying DX and learning ab
 
 \subsection{Research problem and questions}
 
-Easterbrook \cite{easterbrook2008selecting} encourage practitioners to document and reason the selection process of the research problem and questions, the philosophical stance, and the selected research methods e.g the research protocol. They encourage this because other researchers can then understand and interpret the study and possibly replicate the study. 
+Easterbrook \cite{easterbrook2008selecting} encourage practitioners to document and reason the selection process of the research problem and questions, the philosophical stance, and the selected research methods e.g the research protocol. They encourage this because other researchers can then understand and interpret the study and possibly replicate the study.
 
 During this study the research problem and questions have evolved and been modified while more understanding and knowledge about the research topic has been created and accumulated. The starting point of the study was to understand how DX is linked to software project outcomes. However, this was noted to be too vague, difficult to measure and difficult to research. The current state and understanding of DX does not allow to research correlation and causality of DX to software project outcomes as defined in \cite{easterbrook2008selecting}.
 
@@ -487,15 +491,15 @@ Based on this, the selected approach for defining the problem and the research q
 
 To analyze the research questions, the categorization, classification, and guidelines from \cite{easterbrook2008selecting} will be used.
 
-\textbf{\hyperref[RQ1]{RQ1}} is a Description and Classification, but also a Descriptive-Comparative question that compares two different sources of literature. The comparison helps to better understand the definition of DX, and creates the ground for this thesis. The answer to this question will help to understand the phenomena better, but also point out the absence of definitions. This question 
+\textbf{\hyperref[RQ1]{RQ1}} is a Description and Classification, but also a Descriptive-Comparative question that compares two different sources of literature. The comparison helps to better understand the definition of DX, and creates the ground for this thesis. The answer to this question will help to understand the phenomena better, but also point out the absence of definitions. This question
 
 \textbf{\hyperref[RQ2]{RQ2}} is a Description and Classification question and tries to find the specific aspects of DX that exists in a software consultancy company. The question builds upon the first research question, but takes practitioner's view of point.
 
 \textbf{\hyperref[RQ3]{RQ3}} is Description and Classification question that leans towards being a Design question. Mainly it is however a knowledge question that tries to understand the construct of DX, and does not try to design or implement new or better practices in software development.
 
-All of the research questions are exploratory and they try to understand the underlying phenomena, i.e. DX. Because there is a vague and undefined foundation to build upon, it is not an option ask \textit{relationship}, \textit{correlation and causality}, or \textit{design questions} questions  The nature of these questions will guide the research and guide with selecting the used methods and techniques. 
+All of the research questions are exploratory and they try to understand the underlying phenomena, i.e. DX. Because there is a vague and undefined foundation to build upon, it is not an option ask \textit{relationship}, \textit{correlation and causality}, or \textit{design questions} questions  The nature of these questions will guide the research and guide with selecting the used methods and techniques.
 
-%% PREVIOUS RESEARCH PROBLEM(S)
+%% OTHER CONSIDERED RESEARCH PROBLEM(S)
 
 % \newcommand{\researchproblem}{What are the aspects of Developer Experience that are utilized in practice and have potential of being replicable in different teams of a software consulting company?}
 % the problem above is not an appropriate problem as there are too many unknowns in the problem:
@@ -505,11 +509,12 @@ All of the research questions are exploratory and they try to understand the und
 % 4. what does having potential mean?
 % 5. what does replicable mean?
 
-%% PREVIOUS RESEARCH QUESTIONS
+%% OTHER CONSIDERED RESEARCH QUESTIONS
 
-% \newcommand{\rqone}{What is the difference in the definition of Developer Experience in academic literature and literature written by practitioners?}
-% \newcommand{\rqtwo}{What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?}
-% \newcommand{\rqthree}{What is included in replicable practices and techniques that can be utilized to create a good Developer Experience in software project teams?}
+% - What is the difference in the definition of Developer Experience in academic literature and literature written by practitioners?
+% - What aspects of Developer Experience are currently being considered in software projects? What aspects of Developer Experience do developers see as valuable?
+% - What is included in replicable practices and techniques that can be utilized to create a good Developer Experience in software project teams?
+% - What practices of improving the DX are being applied at the company?
 
 % The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \cite{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
 
@@ -642,7 +647,7 @@ Easterbrook \cite{easterbrook2008selecting} define a set of guidelines for empir
 
 \subsection{Research approach}
 
-Based on the research problem and research questions, this thesis will take an exploratory approach. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \cite{easterbrook2008selecting}. 
+Based on the research problem and research questions, this thesis will take an exploratory approach. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \cite{easterbrook2008selecting}.
 
 \subsection{Research philosophy}
 
@@ -652,13 +657,27 @@ This thesis will take a \textbf{constructivism} view of the truth, combined with
 
 \subsection{Research method selection}
 
-To be able to further develop the definition of DX, the study has to focus on the foundations. During early stages of this thesis, it was noted that a comprehensive literature review and study was required. A good literature review gives a good foundation on which to build the research upon, and ensures that the studied field is understood correctly. 
+To be able to further develop the definition of DX, the study has to focus on the foundations. During early stages of this thesis, it was noted that a comprehensive literature review and study was required. A good literature review gives a good foundation on which to build the research upon, and ensures that the studied field is understood correctly.
 
 \subsubsection{MLR}
 
-Each research and study should have a background check and literature review where previous material and research is assessed, and from where the current research can be continued from an built upon. 
+Each research and study should have a background check and literature review where previous material and research is assessed, and from where the current research can be continued from an built upon.
 
 A MLR is a form of systematic literature review, that produces both qualitative and quantitative data. In this study a MLR was seen as a good fit, as it allows to get a broad view of the current state of the research in the topic. It also allows to answer exploratory questions where the existence of a subject or topic is abstract or vague.
+
+\subsubsection{Brainstorming}
+
+Brainstorming (BS) is a widely used technique, where the idea is to foster unique and novel ideas. Usually BS sessions are conducted when there is a need for innovation and new ideas. One typical use case of BS would be in a context of developing a product. With help of involving the development team in a BS session, new ideas and possible development directions can be found. The foundation of BS lies in that there are no right and wrong ideas, and that every idea is welcome.
+
+In the context of this research, the technique of BS works as an exploratory way of initiating the study. Because of the novelty of the research topic DX, BS is an appropriate way of establishing the initial understanding of DX in the context of the study. Because the researcher has studied the topic quite extensively, it would interfere with the study results if the researcher would participate into the sessions. There conducting the initial meeting as a workshop, where the researcher facilitates the session, would not yield in the same results as with a BS session.
+
+Brainstorming types can be identified into \textit{Traditional Brainstorming (TBS)}, \textit{Nominal Brainstorming (NBS)}, \textit{Electronic brainstorming (EBS)} \cite{brainstorming-techniques}. \textit{TBS} are verbal brainstorming sessions where the idea is to brainstorm verbally together in a group face-to-face. \textit{NBS} can be seen as individual BS sessions, where each individual does the brainstorming without working together. \textit{EBS} is a way to conduct BS with help of computers, from where each individual can concurrently input their ideas. Meanwhile the participants can see ideas from others. However there is a level of anonymity that defeats some of the problems with TBS and NBS.  All in all, the different types of BS has been studied and their efficiency is dependent on many factors \cite{productivity-loss-in-brainstorming-groups}, \cite{electronic-brainstorming}, \cite{chainstorm}.
+
+There are some problems with brainstorming sessions \cite{electronic-brainstorming} \cite{chainstorm}. \textit{Evaluation apprehension} means that group members might get the feeling of being judged, and therefore they might feel reticent with bringing out their ideas. \textit{Production blocking} might also be a problem, as working in groups will require everyone to talk on their own turns, which might lead to ideas becoming irrelevant, ideas might be forgot, the ideas might be rehearsed that blocks the generation of new ideas. \textit{Free riding} can also happen when some BS group members rely on other members to perform the BS actions.
+
+In this study the initial brainstorming session was selected to be a combination of TBS and NBS. NBS allows everyone to work individually. The case company has also established itself as working very agile, and therefore mentioned problems with BS do not require any extra actions to mitigate them. The BS session used Think-Pair-Share method \cite{think-pair-share}, where each participant of the session first thinks about the problem and possible ideas by themselves, then after that each individual is paired together where they share their own initial ideas, discard duplicate ideas, and further develop new ideas after the discussion. After pairing, each pair presents their ideas and findings to the whole group. 
+
+According to \citet{six-issues-of-brainstorming}, the proponents of brainstorming is the practitioners, and the opponents are often researchers.
 
 \subsubsection{Workshop}
 
@@ -672,15 +691,15 @@ Workshops are used by practitioners in various ways.
 
 The timeline of the research has been the following: The initiation of the thesis started during the summer of 2019. The topic of DX was selected, and the initial and the preliminary research question and problem were defined. At that moment, the concept of DX was a bit vague to the author. After some discussions and studies on the topic, it was decided that the MLR should be taken as the first step of the study.
 
-When the MLR had been initiated the first results from it emerged, at the meantime the context of the empirical study started also to get defined. 
+When the MLR had been initiated the first results from it emerged, at the meantime the context of the empirical study started also to get defined.
 
 Mixed-methods approaches are complex research strategies where multiple different approaches of empirical study is combined \cite{easterbrook2008selecting}. In mixed-methods approaches the limitations of the different methods are acknowledged, and the limitations of them are mitigated.
 
 One specific mixed-methods research approach is \textbf{Sequential exploratory strategy}. In this approach first qualitative data is collected and analyzed, after which the focus shifts towards quantitative data. Purpose of this approach is to first explore the topic with help of qualitative research, and then possibly test some emerging theory with help of quantitative research. Another reason might be to help in interpreting the qualitative data.
 
-Another specific approach of mixed-methods is \textbf{Concurrent triangulation strategy} \cite{easterbrook2008selecting}, where different research methods are used concurrently. The concurrent research enables to use results from one method to another, and vice versa. This enables to cross-validate research findings. 
+Another specific approach of mixed-methods is \textbf{Concurrent triangulation strategy} \cite{easterbrook2008selecting}, where different research methods are used concurrently. The concurrent research enables to use results from one method to another, and vice versa. This enables to cross-validate research findings.
 
-In this thesis both \textbf{sequential exploratory strategy} and \textbf{concurrent triangulation strategy} is used as research approaches. The sequential exploratory strategy was implemented by first conducting the initial multivocal and general background literature reviews, and then only after that the ideation and planning of the workshops started. However at this point the MLR was not finalized, and still had some open questions and interpretations.   
+In this thesis both \textbf{sequential exploratory strategy} and \textbf{concurrent triangulation strategy} is used as research approaches. The sequential exploratory strategy was implemented by first conducting the initial multivocal and general background literature reviews, and then only after that the ideation and planning of the workshops started. However at this point the MLR was not finalized, and still had some open questions and interpretations.
 
 The technique of concurrent triangulation strategy was utilized by conducting the MLR and the workshop and survey concurrently. While the first iteration of the MLR was being performed, the initial workshop at the case software consultancy company was held. The idea behind a concurrent research was to get as comprehensive definition of the research problem as possible from as many different viewpoints and contexts as possible.
 
@@ -949,6 +968,10 @@ Many articles use the keyword developer experience but only mention DX briefly i
 The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private sessions were used when performing the searches.
 
 \clearpage
+\section{Current state analysis}
+
+
+\clearpage
 \section{Exploratory research}
 
 Based on the results from the background section and the Multivocal Literature Review, it can be derived that the research topic is complex and difficult to define. Therefore, to gain a better understanding and grasp how DX is thought of in the industry, a workshop and a series of interviews will be conducted.
@@ -988,95 +1011,9 @@ voi luotettavuuden arviointi olla my\"os siell\"a.
 \section{Conclusions}
 
 \clearpage
-\section{Possible references}
-
-\textbf{SLR and MLR}
-\begin{enumerate}
-  \item K. M. Benzies, S. Premji, K. A. Hayden, and K. Serrett, "State-of-the-Evidence Reviews: Advantages and Challenges of Including Grey Literature,"Worldviews on Evidence-Based Nursing, vol. 3, pp. 55-61, 2006.
-  \item Rucinski, Taryn. (2015). The Elephant in the Room: Toward a Definition of Grey Legal Literature. Law library journal. 107. 543.
-  \item Joachim Schöpfel. Towards a Prague Definition of Grey Literature. Twelfth International Conference on Grey Literature: Transparency in Grey Literature. Grey Tech Approaches to High Tech Issues. Prague, 6-7 December 2010, Dec 2010, Czech Republic. pp.11-26.
-  \item B. Kitchenham and S. Charters, "Guidelines for Performing Systematic Literature Reviews in Software engineering," in "EBSE Technical Report," 2007, vol. EBSE- 2007-01.
-  \item V. Garousi, M. Felderer, Experience-based guidelines for effective and efficient data extraction in systematic reviews in software engineering, in: International Conference on Evaluation and Assessment in Software Engineering, Karlskrona, Sweden, 2017, pp. 170–179.
-  \item Lotto, L. S. (1986). Qualitative Data Analysis: A Sourcebook of New Methods: Matthew B. Miles and A. Michael Huberman. Educational Evaluation and Policy Analysis, 8(3), 329–331. https://doi.org/10.3102/01623737008003329
-  \item Using argumentation theory to analyse software practitioners’ defeasible evidence, inference and belief Author links open overlay panel. Austen Rainer
-\end{enumerate}
-
-\textbf{Development tools}
-\begin{enumerate}
-  \item Murphy,G.C.,Kersten,M.,Findlater,L.:HowareJavasoftwaredevelopersusingtheElipseIDE? Softw. IEEE 23(4), 76–83 (2006)
-  \item 17. Muslu,K.,Brun,Y.,Holmes,R.,Ernst,M.D.,Notkin,D.:Speculative analysis of integrated development environment recommendations. ACM SIGPLAN Not. 47(10), 669–682 (2012)
-  \item Kersten, M., Murphy, G.C.: Using task context to improve programmer productivity. In: Proceedings of the 14th ACM SIGSOFT International Symposium on Foundations of Software Engineering (SIGSOFT 2006/FSE-14), pp. 1–11. ACM, New York, NY, USA (2006)
-  \item The Impact of "Cosmetic" Changes on the Usability of Error Messages Tao Dong, Kandarp Khandwala May 2019 CHI EA '19: Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems
-  \item Designing a live development experience for web-components Jens Lincke, Patrick Rein, Stefan Ramson, Robert Hirschfeld, Marcel Taeumel, Tim Felgentreff October 2017 PX/17.2: Proceedings of the 3rd ACM SIGPLAN International Workshop on Programming Experience
-  \item Are Software Developers Just Users of Development Tools? Assessing Developer Experience of a Graphical User Interface Designer. Kati Kuusinen Conference paper First Online: 23 August 2016
-\end{enumerate}
-
-\textbf{Software Development}
-\begin{enumerate}
-  \item Capretz, L.F., Ahmed, F.: Making sense of software development and personality types. IT Prof. 12(1), 6–13 (2010)
-  \item An exploratory study on the influence of developers in technical debt Reem Alfayez, Pooyan Behnamghader, Kamonphop Srisopha, Barry Boehm May 2018 TechDebt '18: Proceedings of the 2018 International Conference on Technical Debt
-\end{enumerate}
-
-\textbf{Soft skills}
-\begin{enumerate}
-  \item empty
-\end{enumerate}
-
-\textbf{Developer mood}
-\begin{enumerate}
-  \item Graziotin, D., Wang, X., Abrahamsson, P.: Happy software developers solve problemsbetter: psychological measurements in empirical software engineering. PeerJ2(1), e289(2014)
-  \item Beecham, S., Baddoo, N., Hall, T., Robinson, H., Sharp, H.: Motivation in software engineering: A systematic literature review. IST 50, 860–878 (2008)
-  \item D. Graziotin, Consequences of unhappiness while developing software, in Proc. 2nd Int. Workshop Emotion Awareness Softw. Eng., May 2017, pp. 42–47.
-  \item On the Unhappiness of Software Developers Daniel Graziotin, Fabian Fagerholm, Xiaofeng Wang, Pekka Abrahamsson June 2017 EASE'17: Proceedings of the 21st International Conference on Evaluation and Assessment in Software Engineering
-\end{enumerate}
-
-\textbf{Flow state and distractions. Sociability and Social Support}
-\begin{enumerate}
-  \item Ryan, R.M., Mims, V., Koestner, R.: Relation of reward contingency and interpersonal context to intrinsic motivation: a review and test using cognitive evaluation theory. J. Pers. Soc. Psychol. 45, 736–750 (1983)
-  \item 27.Oehlberg,  L.,  Ducheneaut,  N.,  Thorton,  J.D.,  Moore,  R.J.,Nickell,  E.  2006.  Social  TV:  Designing  for  D istributed,  SocialTelevision Viewing. In Proc. Euro iTV’06. (2006), 251-259
-  \item Leont’ev,  A.  N.  Activity,  consciousness,  and  personality.  Prentice-Hall Press, (1978)
-  \item Perlow, L.A., The time famine: Toward a sociology of work time. Admin. Science Quarterly, 44, (1999), 57-81
-\end{enumerate}
-
-\textbf{User Experience}
-\begin{enumerate}
-  \item Hassenzahl, M., Tractinsky, N.: User experience - a research agenda. Behav. Inf. Technol. 25(2), 91–97 (2006)
-  \item Henrique Henriques, Hugo Lourenço, Vasco Amaral, and Miguel Goulão. 2018. Improving the Developer Experience with a Low-Code Process Modelling Language. In Proceedings of the 21th ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS '18). ACM, New York, NY, USA, 200-210. DOI: https://doi.org/10.1145/3239372.3239387
-  \item Ferreira, J. , Sharp, H. and Robinson, H. (2011), User experience design and agile development: managing cooperation through articulation work. Softw: Pract. Exper., 41: 963-974. doi:10.1002/spe.1012
-\end{enumerate}
-
-\textbf{Other}
-\begin{enumerate}
-  \item Kansala, M. and Tuomivaara, S. (2013). Do Agile Principles and Practices Support the Well-being at Work of Agile Team Members? In Proceedings of the 8th International Conference on Software Engineering Advances (ICSEA 2013), pages 364–367.
-  \item Dingsøyr, T., Nerur, S., Balijepally, V., and Moe, N. B. (2012). A decade of agile methodologies: Towards explaining agile software development. Journal of Systems and Software, 85(6):1213–1221.
-  \item Journal of Systems and Software Volume 140, June 2018, Pages 32-47 Journal of Systems and Software What happens when software developers are (un)happy Author links open overlay panel Daniel Graziotina Fabian Fagerholm bcXiaofengWangd PekkaAbrahamssone Show more https://doi.org/10.1016/j.jss.2018.02.041
-  \item Teamwork quality and project success in software development: A survey of agile development teams Author links open overlay panelYngveLindsjørnaDag I.K.Sjøbergab TorgeirDingsøyrbc Gunnar R.Bergersen Tore Dybåa
-  \item Gass, O., Meth, H., Maedche, A.: PaaS characteristics for productive software development: an evaluation framework. Internet Comput. IEEE 18(1), 56–64 (2014)
-  \item Deci, E., Ryan, R.M.: Self-determination theory. Handbook of theories of social psychology. SAGE, Los Angeles (2012). ISBN 9780857029607
-\end{enumerate}
-
-\textbf{Workshops}
-\begin{enumerate}
-  \item Sanne Akkerman and Arthur Bakker. Boundary Crossing and Boundary Objects. Review of Educational Research, 81(2):132–169, 2011. ISSN 08919976. doi: 10.3102/0034654311404435.
-  \item Riitta Smeds, Rita Lavikka, Miia Jaatinen, and Antero Hirvensalo. Interven- tions for the co-creation of inter-organizational business process change. In Proceedings of the International Conference on Advances in Product Man- agement Systems, pages 11–18. Springer, 2015. ISBN 9783319227580. doi: 10.1007/978-3-319-22759-7 2.
-  \item Frank Lyman. Think-Pair-Share: An expanding teaching technique. Maa- Cie Cooperative News, 1(1):1–2, 1987.
-  \item Guillermo E Leon de la Barra, De Barra, Mario B Leon de la Barra, and Ana M Urbina. Creative Problem Solving Workshops for Engineering Stu- dents. In Proceedings of the 27th Annual Conference. Frontiers in Ed- ucation: Teaching and Learning in an Era of Change, volume 3, pages 1428–1430. IEEE, 1997. ISBN 0780340868.
-  \item Haridimos Tsoukas. A Dialogical Approach to the Creation of New Knowl- edge in Organizations. Organization Science, 20(6):941–957, 2009. ISSN 1047-7039. doi: 10.1287/orsc.1090.0435.
-  \item Guillermo E Leon de la Barra, De Barra, Mario B Leon de la Barra, and Ana M Urbina. Creative Problem Solving Workshops for Engineering Stu- dents. In Proceedings of the 27th Annual Conference. Frontiers in Ed- ucation: Teaching and Learning in an Era of Change, volume 3, pages 1428–1430. IEEE, 1997. ISBN 0780340868.
-  \item David Coghlan. Action research: Exploring perspectives on a philosophy of practical knowing. Academy of Management Annals, 5(1):53–87, 2011. ISSN 19416520. doi: 10.1080/19416520.2011.571520.
-  \item Lotte S Luscher and Marianne W Lewis. Organizational Change and Manage- rial Sensemaking: Working Through Paradox. Academy of Management Journal, 51(2):221–240, 2008. ISSN 00014273. doi: 10.1103/PhysRevLett. 108.187601.
-\end{enumerate}
-
-\textbf{Research Methods}
-\begin{enumerate}
-  \item Can you Trust a Single Data Source Exploratory Software Engineering Case Study? (Bratthall and Jorgensen 2002)
-  \item An Empirical Study of the Complex Relationships between Requirements Engineering Processes and Other Processes that Lead to Payoffs in Productivity, Quality, and Risk Management (Damian and Chisan 2006)
-\end{enumerate}
-
-\clearpage
 \thesisbibliography
 \bibliography{thesis}
 % Different bibliography styles can be found from https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
-\bibliographystyle{abbrv}
+\bibliographystyle{plainnat}
 
 \end{document}
