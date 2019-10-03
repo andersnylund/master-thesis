@@ -176,12 +176,15 @@
 
 \usepackage{graphicx}
 \usepackage{tabularx}
-\usepackage[numbers]{natbib}
 \usepackage{float}
 \usepackage{caption}
 
 %% Math fonts, symbols, and formatting; these are usually needed
 \usepackage{amsfonts,amssymb,amsbsy,amsmath}
+
+% Different bibliography styles can be found from https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
+\usepackage{natbib}
+\bibliographystyle{apa}
 
 %% Change the school field to specify your school if the automatically set name
 %% is wrong
@@ -437,7 +440,7 @@ Otaniemi, Date to te announced
 
 Software development and software engineering is a complex practice that requires both technical and social skills. Compared to other engineering professions, software engineering is a relative new field of practice and study. The practices deemed as "best practice" are still evolving, and new ideas of good practices are being developed and previous ideas are discarded.
 
-Developing and creating software is a social activity that requires both technical and social skills from the developers. Deep technical skills and understanding is required to be able to implement the wanted artifact or end product. However software engineering is a highly social activity, and therefore it has been noted that human factors are the most important when regarding software development performance \cite{peopleware}.
+Developing and creating software is a social activity that requires both technical and social skills from the developers. Deep technical skills and understanding is required to be able to implement the wanted artifact or end product. However software engineering is a highly social activity, and therefore it has been noted that human factors are the most important when regarding software development performance \citep{peopleware}.
 
 Software developers are in an interesting role where they are both creators and designers when they write the code and design the logic that makes up the software. Meantime they are also users of tools that they use to create the software. Developers using a software product that aids them in their creative design work will create an user experience. Human Computer Interaction (HCI), a traditional field of research, studies the interface and interaction between computers and humans. User Experience (UX) is another field of research. UX includes the aspects of HCI, but on top of that includes also emotions and the user's perceptions of the product. UX can be seen as a more hedonic than a pragmatic approach of studying and understanding the usage of a software product {\color{red} citation?}.
 
@@ -454,7 +457,7 @@ In this study we will focus on understanding what DX is and make an attempt to m
 
 At the time of writing, a quick search with the keyword \textit{"Developer Experience"} on google.com gives as a result mostly articles on how framework and library authors should consider their user's (developer's) experience with using the product (tool, library, framework). Also, performing searches with the same \textit{"Developer Experience"} keyword on known libraries of conference papers like Google Scholar and IEEExplore, the content and topic of the results vary much. This shows that there might not be a common and well known definition of what DX is.
 
-In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used \cite{fagerholm-dx-concept-and-definition}, in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \cite{programmer-experience}, and finally maybe the most common abbreviation is \textit{DX}. This shows that there is still some ambiguity to the terms and definitions in academic research. Additionally, most results when searching with the term \textit{Developer Experience} gives results about the experience and knowledge level of a developer in e.g. terms of years working in the field of software development or amount of contribution, and not the hedonic and pragmatic experience of participating in development work.
+In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used \citep{fagerholm-dx-concept-and-definition}, in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \citep{programmer-experience}, and finally maybe the most common abbreviation is \textit{DX}. This shows that there is still some ambiguity to the terms and definitions in academic research. Additionally, most results when searching with the term \textit{Developer Experience} gives results about the experience and knowledge level of a developer in e.g. terms of years working in the field of software development or amount of contribution, and not the hedonic and pragmatic experience of participating in development work.
 
 DX has been studied previously, but research on it is still lacking the connection to practical applications. This is one the biggest motivators for this thesis, as the topic is novel and there is huge potential in improving software development processes, and thereby also potentially improve the e.g. performance, quality, and outcome in software projects.
 
@@ -464,9 +467,9 @@ There is possibly huge value that can be gained from studying DX and learning ab
 
 \subsection{Research problem and questions}
 
-Easterbrook \cite{easterbrook2008selecting} encourage practitioners to document and reason the selection process of the research problem and questions, the philosophical stance, and the selected research methods e.g the research protocol. They encourage this because other researchers can then understand and interpret the study and possibly replicate the study.
+\cite{easterbrook2008selecting} encourage practitioners to document and reason the selection process of the research problem and questions, the philosophical stance, and the selected research methods e.g the research protocol. They encourage this because other researchers can then understand and interpret the study and possibly replicate the study.
 
-During this study the research problem and questions have evolved and been modified while more understanding and knowledge about the research topic has been created and accumulated. The starting point of the study was to understand how DX is linked to software project outcomes. However, this was noted to be too vague, difficult to measure and difficult to research. The current state and understanding of DX does not allow to research correlation and causality of DX to software project outcomes as defined in \cite{easterbrook2008selecting}.
+During this study the research problem and questions have evolved and been modified while more understanding and knowledge about the research topic has been created and accumulated. The starting point of the study was to understand how DX is linked to software project outcomes. However, this was noted to be too vague, difficult to measure and difficult to research. The current state and understanding of DX does not allow to research correlation and causality of DX to software project outcomes as defined by \cite{easterbrook2008selecting}.
 
 Based on this, the selected approach for defining the problem and the research questions leans towards stating a exploratory research problem and research questions.
 
@@ -489,7 +492,7 @@ Based on this, the selected approach for defining the problem and the research q
   \caption{The research questions \label{researchquestions}}
 \end{table}
 
-To analyze the research questions, the categorization, classification, and guidelines from \cite{easterbrook2008selecting} will be used.
+To analyze the research questions, the categorization, classification, and guidelines of \cite{easterbrook2008selecting} will be used.
 
 \textbf{\hyperref[RQ1]{RQ1}} is a Description and Classification, but also a Descriptive-Comparative question that compares two different sources of literature. The comparison helps to better understand the definition of DX, and creates the ground for this thesis. The answer to this question will help to understand the phenomena better, but also point out the absence of definitions. This question
 
@@ -516,7 +519,7 @@ All of the research questions are exploratory and they try to understand the und
 % - What is included in replicable practices and techniques that can be utilized to create a good Developer Experience in software project teams?
 % - What practices of improving the DX are being applied at the company?
 
-% The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \cite{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
+% The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \citep{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
 
 % The debate throughout the thesis has to be something that makes the reader interested in the topic and engages the reader. This helps to find the argument of each article and paper that is read for this thesis. It helps the author of this thesis to take a stand when writing some statements. The meaning is not to create some kind of truth that has to be followed. The constant debate throughout the thesis helps to put things in perspective. One example of debate is "Is Developer Experience something worth investing in?".
 
@@ -524,7 +527,7 @@ All of the research questions are exploratory and they try to understand the und
 
 % Alternative research problems:
 % - How Developer Experience affects the productivity of developers in software projects"?
-% -"How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures i.e. \textit{How developers perceive the development infrastructure?} \cite{fagerholm-dx-concept-and-definition}
+% -"How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures i.e. \textit{How developers perceive the development infrastructure?} \citep{fagerholm-dx-concept-and-definition}
 
 \subsection{Scope and focus}
 {
@@ -565,32 +568,32 @@ All of the research questions are exploratory and they try to understand the und
 
 A software project is a project where a group of people share a common goal what can for example be to create a product or service. In a software project there is a developer or multiple developers that have the responsibility of implementing the technical product itself. The developers are the ones writing the executable source code for the program or service, so that it can by it's functions and features achieve the requirements set to it.
 
-Developer Experience and its related terms have been studied and researched relatively little at the moment of writing. A literature review of the term \textit{"Programmer Experience"} studied 73 articles that matched their search criteria \cite{programmer-experience}. The study concluded that there is still some ambiguity in the term \textit{Programmer Experience} in the context of programming environments, design documents, and programming codes.
+Developer Experience and its related terms have been studied and researched relatively little at the moment of writing. A literature review of the term \textit{"Programmer Experience"} studied 73 articles that matched their search criteria \citep{programmer-experience}. The study concluded that there is still some ambiguity in the term \textit{Programmer Experience} in the context of programming environments, design documents, and programming codes.
 
 A doctoral thesis titled "Software Developer Experience:
 Case Studies in Lean-Agile and Open Source Environments" in 2015 coined the term Developer Experience.
 
-Developer experience can be divided into three different sub areas – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution) \cite{fagerholm-dx-concept-and-definition}. In a study it was also concluded that the cognitive part of DX is also addressed via intention and affect \cite{kuusinen-flow}.
+Developer experience can be divided into three different sub areas – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution) \citep{fagerholm-dx-concept-and-definition}. In a study it was also concluded that the cognitive part of DX is also addressed via intention and affect \citep{kuusinen-flow}.
 
 \subsection{Programmer Experience}
 
 % http://programming-experience.org/px19/ https://2019.programming-conference.org/
 
-Programmer Experience (PX) can be defined as \textit{The result of the intrinsic motivations and perceptions of programmers about the use of development artifacts} \cite{programmer-experience}. A programmer can be seen as person who gives exact instructions on how a program should behave and function. PX is based on the study mainly related to the programming environment, but also programming codes and Application Programming Interfaces (API).
+Programmer Experience (PX) can be defined as \textit{The result of the intrinsic motivations and perceptions of programmers about the use of development artifacts} \citep{programmer-experience}. A programmer can be seen as person who gives exact instructions on how a program should behave and function. PX is based on the study mainly related to the programming environment, but also programming codes and Application Programming Interfaces (API).
 
 \subsection{Developer Experience}
 
 A developer is a person with a bigger responsibility than a programmer. If a programmer is following instructions, requirements, and guidelines, the developer is also finding out what the instructions, requirements and guidelines should be {\color{gray} (find other source than https://devskiller.com/programmer-vs-developer/).} Therefore DX is also considering more of the surrounding context than what PX is considering.
 
-Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \cite{programmer-experience}. Developer Experience is considering also the social aspect of being a software developer. Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
+Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \citep{programmer-experience}. Developer Experience is considering also the social aspect of being a software developer. Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
 
-The Developer Experience can be divided into 2 different environments, a social and a technical environment \cite{fagerholm-doctoral-thesis}. This thesis might focus more on the technical environment.
+The Developer Experience can be divided into 2 different environments, a social and a technical environment \citep{fagerholm-doctoral-thesis}. This thesis might focus more on the technical environment.
 
-The developer experience can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time \cite{fagerholm-doctoral-thesis}. The research in this thesis will use a longer time-frame of developer experience.
+The developer experience can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time \citep{fagerholm-doctoral-thesis}. The research in this thesis will use a longer time-frame of developer experience.
 
 \begin{figure}[H]
   \captionsetup{width=0.6\textwidth}
-  \caption{Conceptual framework of Developer Experience \cite{fagerholm-dx-concept-and-definition}}
+  \caption{Conceptual framework of Developer Experience \citep{fagerholm-dx-concept-and-definition}}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{dx-conceptual.pdf}
   \end{center}
@@ -598,29 +601,29 @@ The developer experience can be both short term impulsive, or related to one eve
 
 \subsection{Intrinsic Motivation}
 
-Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \cite{kuusinen-flow} (Self-determination theory. Handbook of theories of social psychology).
+Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \citep{kuusinen-flow} (Self-determination theory. Handbook of theories of social psychology).
 
 \subsection{Performance Alignment Work}
 
-% Write here about \cite{how-developers-experience-team-performance} and read PAW article.
+% Write here about \citep{how-developers-experience-team-performance} and read PAW article.
 
 \subsection{Happiness of developers}
 
-Happiness of developers have been reported have direct consequences to the themselves, process and the product \cite{unhappy-developers}
+Happiness of developers have been reported have direct consequences to the themselves, process and the product \citep{unhappy-developers}
 
 \subsection{Selection of tools}
 
-Perceived choice is a perception of that the choice has already been made \cite{kuusinen-flow}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
+Perceived choice is a perception of that the choice has already been made \citep{kuusinen-flow}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
 
-One study of Integrated Development Environment (IDE), and how it is connected with state of flow, intrinsic motivation, and user experience reveal that if the developers have a high perception of choice, the also are overall more satisfied with the tools \cite{kuusinen-flow}. They also concluded that if the selected tools are selected without their input, (they perceive it chosen already), the developers will have a worse developer experience with it, as e.g. their frustration with the tool will be more common.
+One study of Integrated Development Environment (IDE), and how it is connected with state of flow, intrinsic motivation, and user experience reveal that if the developers have a high perception of choice, the also are overall more satisfied with the tools \citep{kuusinen-flow}. They also concluded that if the selected tools are selected without their input, (they perceive it chosen already), the developers will have a worse developer experience with it, as e.g. their frustration with the tool will be more common.
 
-There has been a study on the Developer Experience of IDEs \cite{software-developers-as-users}. However, the study concentrated on the UX of the selected IDE that was studied.
+There has been a study on the Developer Experience of IDEs \citep{software-developers-as-users}. However, the study concentrated on the UX of the selected IDE that was studied.
 
 When selecting an IDE it is also important to consider what the other developers in the team or organization is using or what other would prefer to use.
 
 There can be situations when two different developers use a different IDE, and therefore also the experience can be completely different between them. At the most extreme the 2 IDEs are not compatible with each other as their files related to the project are different. An example of this is Eclipse and IntelliJ IDEA as Java IDEs.
 
-In a study of IDEs \cite{software-developers-as-users}, the survey in the study produced answers that were most pragmatic, but not hedonic. This could show that most of the developers are practical, and not feeling based. This has also been proven \cite{personality-software}. This might also be a reason why Developer Experience has not gotten that much attention yet, as big part of people in software engineering are \textit{"Introverts"}. Software engineers are also more logical thinkers than feeling based. As Developer Experience is focusing on the feelings and subjective opinions about things, it might be a difficult topic to research.
+In a study of IDEs \citep{software-developers-as-users}, the survey in the study produced answers that were most pragmatic, but not hedonic. This could show that most of the developers are practical, and not feeling based. This has also been proven \citep{personality-software}. This might also be a reason why Developer Experience has not gotten that much attention yet, as big part of people in software engineering are \textit{"Introverts"}. Software engineers are also more logical thinkers than feeling based. As Developer Experience is focusing on the feelings and subjective opinions about things, it might be a difficult topic to research.
 
 \subsection{Flow state}
 
@@ -643,15 +646,17 @@ During the study, the research problem and the research questions have evolved a
 
 From the introduction and motivation in sections \ref{introduction} and \ref{motivation}, it was determined that DX is a novel and abstract construct. The concepts and definitions of it are multiple, and vary both in research and in industry.
 
-Easterbrook \cite{easterbrook2008selecting} define a set of guidelines for empirical research in software engineering. They argue that selecting a clear research question, an explicit philosophical stance, and an appropriate research method are key when researching in the context of SE. They also note that many research projects in SE fail in defining the stance of the research, which then further complicates all aspects of the research including its interpretation, validity, replicability etc.
+\cite{easterbrook2008selecting} define a set of guidelines for empirical research in software engineering. They argue that selecting a clear research question, an explicit philosophical stance, and an appropriate research method are key when researching in the context of SE. They also note that many research projects in SE fail in defining the stance of the research, which then further complicates all aspects of the research including its interpretation, validity, replicability etc.
+
+During writing of the thesis, the author was working at the case company, allowing to perform ethnographic techniques in understanding and studying the phenomena. Working at the case company also allowed to have discussion with colleagues.    
 
 \subsection{Research approach}
 
-Based on the research problem and research questions, this thesis will take an exploratory approach. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \cite{easterbrook2008selecting}.
+Based on the research problem and research questions, this thesis will take an exploratory approach. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \citep{easterbrook2008selecting}.
 
 \subsection{Research philosophy}
 
-According to Easterbrook \cite{easterbrook2008selecting}, making explicit decisions on the research methods is key, and by doing that the research becomes more beneficial for practitioners and other researchers. Therefore they also argue that explicitly defining every step of the research should be done.
+According to \cite{easterbrook2008selecting}, making explicit decisions on the research methods is key, and by doing that the research becomes more beneficial for practitioners and other researchers. Therefore they also argue that explicitly defining every step of the research should be done.
 
 This thesis will take a \textbf{constructivism} view of the truth, combined with pragmatic approach. A constructivist approach sees the problem as that the human context is always present, and that it is an important part of the research and the study. The pragmatic approach is also required because of the case company in this study. The context of a company is important to include, as something that works with one company, might not work with another company. The pragmatic approach can be seen as an approach from engineering, where the interest is focused on what works at a specific time in a specific context.
 
@@ -671,13 +676,13 @@ Brainstorming (BS) is a widely used technique, where the idea is to foster uniqu
 
 In the context of this research, the technique of BS works as an exploratory way of initiating the study. Because of the novelty of the research topic DX, BS is an appropriate way of establishing the initial understanding of DX in the context of the study. Because the researcher has studied the topic quite extensively, it would interfere with the study results if the researcher would participate into the sessions. There conducting the initial meeting as a workshop, where the researcher facilitates the session, would not yield in the same results as with a BS session.
 
-Brainstorming types can be identified into \textit{Traditional Brainstorming (TBS)}, \textit{Nominal Brainstorming (NBS)}, \textit{Electronic brainstorming (EBS)} \cite{brainstorming-techniques}. \textit{TBS} are verbal brainstorming sessions where the idea is to brainstorm verbally together in a group face-to-face. \textit{NBS} can be seen as individual BS sessions, where each individual does the brainstorming without working together. \textit{EBS} is a way to conduct BS with help of computers, from where each individual can concurrently input their ideas. Meanwhile the participants can see ideas from others. However there is a level of anonymity that defeats some of the problems with TBS and NBS.  All in all, the different types of BS has been studied and their efficiency is dependent on many factors \cite{productivity-loss-in-brainstorming-groups}, \cite{electronic-brainstorming}, \cite{chainstorm}.
+Brainstorming types can be identified into \textit{Traditional Brainstorming (TBS)}, \textit{Nominal Brainstorming (NBS)}, \textit{Electronic brainstorming (EBS)} \citep{brainstorming-techniques}. \textit{TBS} are verbal brainstorming sessions where the idea is to brainstorm verbally together in a group face-to-face. \textit{NBS} can be seen as individual BS sessions, where each individual does the brainstorming without working together. \textit{EBS} is a way to conduct BS with help of computers, from where each individual can concurrently input their ideas. Meanwhile the participants can see ideas from others. However there is a level of anonymity that defeats some of the problems with TBS and NBS.  All in all, the different types of BS has been studied and their efficiency is dependent on many factors \citep{productivity-loss-in-brainstorming-groups}, \citep{electronic-brainstorming}, \citep{chainstorm}.
 
-There are some problems with brainstorming sessions \cite{electronic-brainstorming} \cite{chainstorm}. \textit{Evaluation apprehension} means that group members might get the feeling of being judged, and therefore they might feel reticent with bringing out their ideas. \textit{Production blocking} might also be a problem, as working in groups will require everyone to talk on their own turns, which might lead to ideas becoming irrelevant, ideas might be forgot, the ideas might be rehearsed that blocks the generation of new ideas. \textit{Free riding} can also happen when some BS group members rely on other members to perform the BS actions.
+There are some problems with brainstorming sessions \citep{electronic-brainstorming} \citep{chainstorm}. \textit{Evaluation apprehension} means that group members might get the feeling of being judged, and therefore they might feel reticent with bringing out their ideas. \textit{Production blocking} might also be a problem, as working in groups will require everyone to talk on their own turns, which might lead to ideas becoming irrelevant, ideas might be forgot, the ideas might be rehearsed that blocks the generation of new ideas. \textit{Free riding} can also happen when some BS group members rely on other members to perform the BS actions.
 
-In this study the initial brainstorming session was selected to be a combination of TBS and NBS. NBS allows everyone to work individually. The case company has also established itself as working very agile, and therefore mentioned problems with BS do not require any extra actions to mitigate them. The BS session used Think-Pair-Share method \cite{think-pair-share}, where each participant of the session first thinks about the problem and possible ideas by themselves, then after that each individual is paired together where they share their own initial ideas, discard duplicate ideas, and further develop new ideas after the discussion. After pairing, each pair presents their ideas and findings to the whole group. 
+In this study the initial brainstorming session was selected to be a combination of TBS and NBS. NBS allows everyone to work individually. The case company has also established itself as working very agile, and therefore mentioned problems with BS do not require any extra actions to mitigate them. The BS session used Think-Pair-Share method \citep{think-pair-share}, where each participant of the session first thinks about the problem and possible ideas by themselves, then after that each individual is paired together where they share their own initial ideas, discard duplicate ideas, and further develop new ideas after the discussion. After pairing, each pair presents their ideas and findings to the whole group. 
 
-According to \citet{six-issues-of-brainstorming}, the proponents of brainstorming is the practitioners, and the opponents are often researchers.
+According to \cite{six-issues-of-brainstorming}, the proponents of brainstorming is the practitioners, and the opponents are often researchers.
 
 \subsubsection{Workshop}
 
@@ -693,51 +698,55 @@ The timeline of the research has been the following: The initiation of the thesi
 
 When the MLR had been initiated the first results from it emerged, at the meantime the context of the empirical study started also to get defined.
 
-Mixed-methods approaches are complex research strategies where multiple different approaches of empirical study is combined \cite{easterbrook2008selecting}. In mixed-methods approaches the limitations of the different methods are acknowledged, and the limitations of them are mitigated.
+Mixed-methods approaches are complex research strategies where multiple different approaches of empirical study is combined \citep{easterbrook2008selecting}. In mixed-methods approaches the limitations of the different methods are acknowledged, and the limitations of them are mitigated.
 
 One specific mixed-methods research approach is \textbf{Sequential exploratory strategy}. In this approach first qualitative data is collected and analyzed, after which the focus shifts towards quantitative data. Purpose of this approach is to first explore the topic with help of qualitative research, and then possibly test some emerging theory with help of quantitative research. Another reason might be to help in interpreting the qualitative data.
 
-Another specific approach of mixed-methods is \textbf{Concurrent triangulation strategy} \cite{easterbrook2008selecting}, where different research methods are used concurrently. The concurrent research enables to use results from one method to another, and vice versa. This enables to cross-validate research findings.
+Another specific approach of mixed-methods is \textbf{Concurrent triangulation strategy} \citep{easterbrook2008selecting}, where different research methods are used concurrently. The concurrent research enables to use results from one method to another, and vice versa. This enables to cross-validate research findings.
 
 In this thesis both \textbf{sequential exploratory strategy} and \textbf{concurrent triangulation strategy} is used as research approaches. The sequential exploratory strategy was implemented by first conducting the initial multivocal and general background literature reviews, and then only after that the ideation and planning of the workshops started. However at this point the MLR was not finalized, and still had some open questions and interpretations.
 
 The technique of concurrent triangulation strategy was utilized by conducting the MLR and the workshop and survey concurrently. While the first iteration of the MLR was being performed, the initial workshop at the case software consultancy company was held. The idea behind a concurrent research was to get as comprehensive definition of the research problem as possible from as many different viewpoints and contexts as possible.
 
+\subsection{Analysis of data}
+
+\cite{analyzing-qualitative-data} give a set of guidelines and practices on analysing qualitative data. Analysis of all qualitative data in this thesis loosely follow those guidelines.
+
 \clearpage
 \section{Multivocal literature review}
 
-Traditionally, in SLRs the reviewed literature consists only of literature that is formally published, and thats motivation of publishing is the publication in itself, e.g. publications in journals and conferences. Material that is produced with commercial interests and informally published material and publications are not considered in SLR \cite{guidelines-for-MLR}.
+Traditionally, in SLRs the reviewed literature consists only of literature that is formally published, and thats motivation of publishing is the publication in itself, e.g. publications in journals and conferences. Material that is produced with commercial interests and informally published material and publications are not considered in SLR \citep{guidelines-for-MLR}.
 
-MLRs, are a way to include grey literature into SLRs \cite{the-need-for-MLR}. Grey literature can be defined in different ways, and research fields define grey literature in ways that are meaningful to that specific field.
+MLRs, are a way to include grey literature into SLRs \citep{the-need-for-MLR}. Grey literature can be defined in different ways, and research fields define grey literature in ways that are meaningful to that specific field.
 
 \begin{quotation}
-  \textit{"Grey literature stands for manifold document types produced on all levels of government, academics, business and industry in print and electronic formats that are protected by intellectual property rights, of sufficient quality to be collected and preserved by library holdings or institutional repositories, but not controlled by commercial publishers i.e., where publishing is not the primary activity of the producing body."} \cite{towards-a-prague-definition-of-grey-literature}
+  \textit{"Grey literature stands for manifold document types produced on all levels of government, academics, business and industry in print and electronic formats that are protected by intellectual property rights, of sufficient quality to be collected and preserved by library holdings or institutional repositories, but not controlled by commercial publishers i.e., where publishing is not the primary activity of the producing body."} \citep{towards-a-prague-definition-of-grey-literature}
 \end{quotation}
 
-The Prague Definition of grey literature is strict and therefore not allowing e.g. blog posts to be used on MLRs. However, a specific guideline for including grey literature in literature reviews has been created \cite{guidelines-for-MLR}. This guideline is based on the guidelines on how to perform SLR in SE \cite{guidelines-for-SLR-in-SE}.
+The Prague Definition of grey literature is strict and therefore not allowing e.g. blog posts to be used on MLRs. However, a specific guideline for including grey literature in literature reviews has been created \citep{guidelines-for-MLR}. This guideline is based on the guidelines on how to perform SLR in SE \citep{guidelines-for-SLR-in-SE}.
 
 
 \subsection{The motivation behind a MLR}
 
 DX is a complicated subject and topic, and a clear and well defined definition of it does not exist at the moment of writing (August 2019). There is a need to create an understanding of the definition of DX and a basis to build the rest of the thesis upon. Normal literature reviews can help in these cases, and they create a common understanding of the topic that is going to be discussed. However, normal literature reviews are prone to be biased. To avoid bias of the author, and because DX is a subjective concept of the developer, the definition of DX can be reviewed with a help of a Systematic Literature Review (SLR). Systematic literature reviews are a way of producing evidence based results, and they are effective in complex and opinion based fields where a common agreement of a concept or topic might be difficult to find.
 
-In software engineering practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \cite{the-need-for-MLR}.
+In software engineering practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \citep{the-need-for-MLR}.
 
-An SLR would include only the academic papers, and therefore it might not be sufficient to only focus on that. In a MLR the GL should provide a current perspective and fill in the gaps of academic and formal literature \cite{guidelines-for-MLR}.
+An SLR would include only the academic papers, and therefore it might not be sufficient to only focus on that. In a MLR the GL should provide a current perspective and fill in the gaps of academic and formal literature \citep{guidelines-for-MLR}.
 
 SE practitioners are producing a lot of literature, that would not be considered in normal literature reviews or SLR. This GL can provide insights about the field of SE, and especially about DX.
 
-A SLR has been conducted on the concept \textit{Programmer Experience} \cite{programmer-experience}. This SLR will be used to guide this MLR.
+A SLR has been conducted on the concept \textit{Programmer Experience} \citep{programmer-experience}. This SLR will be used to guide this MLR.
 
-% Read \cite{guidelines-for-MLR} again after reading \cite{guidelines-for-SLR-in-SE}.
+% Read \citep{guidelines-for-MLR} again after reading \citep{guidelines-for-SLR-in-SE}.
 
 \subsection{The review protocol of the MLR}
 
-DX is a novel concept, and therefore there has been little formal research on the topic. Based on the different levels of literature, white, grey, and black \cite{guidelines-for-MLR} (find correct reference), DX could be seen even to be in the category of black literature.
+DX is a novel concept, and therefore there has been little formal research on the topic. Based on the different levels of literature, white, grey, and black \citep{guidelines-for-MLR} (find correct reference), DX could be seen even to be in the category of black literature.
 
 \newcommand{\mlrdxlink}{https://docs.google.com/spreadsheets/d/1BLX4eQypAvxd3Gzft0s0rqUHdMYaKxPAbpZZ4dAvJqU/edit?usp=sharing}
 
-All data of the MLR can be found \href{\mlrdxlink}{\textbf{here}}. The data collection is done with Google Sheets and is based on the example shown in \cite{guidelines-for-MLR}.
+All data of the MLR can be found \href{\mlrdxlink}{\textbf{here}}. The data collection is done with Google Sheets and is based on the example shown in \citep{guidelines-for-MLR}.
 
 \subsubsection{Research questions}
 
@@ -745,7 +754,7 @@ The foundation for the MLR is the first research question \hyperref[RQ1]{RQ1} (\
 
 \subsubsection{Search process}
 
-The search is performed as a manual search by the author from various libraries to gather the academic literature. For grey literature, the Google search engine (https://www.google.com) will be used. To limit the amount of grey literature, only the first 2 pages of searches from google.com will be included. Only 91 percent of participants in a study went to the second page of google results page \cite{google-search}. Therefore it's appropriate to include only the most relevant results from the google search.
+The search is performed as a manual search by the author from various libraries to gather the academic literature. For grey literature, the Google search engine (https://www.google.com) will be used. To limit the amount of grey literature, only the first 2 pages of searches from google.com will be included. Only 91 percent of participants in a study went to the second page of google results page \citep{google-search}. Therefore it's appropriate to include only the most relevant results from the google search.
 
 \begin{table}[H]
   \begin{tabular}{ l l }
@@ -821,7 +830,7 @@ The following sections go trough the data points that emerged during the collect
 
 \subsubsection{Definition of DX}
 
-The most common definition of DX in academic papers is the concept and definition of in  \cite{fagerholm-dx-concept-and-definition}. This definition is at the moment the only stated definition of DX in the formal literature. There is also further derivations on this concept and definition, but nothing that is revolutionizing or that takes another viewpoint.
+The most common definition of DX in academic papers is the concept and definition of in  \citep{fagerholm-dx-concept-and-definition}. This definition is at the moment the only stated definition of DX in the formal literature. There is also further derivations on this concept and definition, but nothing that is revolutionizing or that takes another viewpoint.
 
 To analyze how the the definition of DX is given, all articles and papers will be grouped into either having \textbf{implicit} or \textbf{explicit} definition of DX. This division was something that did emerge in the collection and analysis of the material.
 
@@ -1013,7 +1022,5 @@ voi luotettavuuden arviointi olla my\"os siell\"a.
 \clearpage
 \thesisbibliography
 \bibliography{thesis}
-% Different bibliography styles can be found from https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
-\bibliographystyle{plainnat}
 
 \end{document}
