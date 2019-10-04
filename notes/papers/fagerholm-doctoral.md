@@ -30,6 +30,10 @@
 ## 4 Software Developer Experience
 
 - it must be understood that DX and UX are not the same
+- "developer experience is situated in the mind of individual developers"
+- "processing social information is part of software development work"
+- "Artefacts and activities are represented in the mind, and experience arises when the mind interacts with the internal representations as well as with hte external environment"
+- 
 
 ### 4.5 What is Summary
 
