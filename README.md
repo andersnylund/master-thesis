@@ -1,4 +1,4 @@
-# master-thesis
+# masters-thesis
 
 Work in progress Master's Thesis at Aalto university on the topic of Developer Experience. 
 
