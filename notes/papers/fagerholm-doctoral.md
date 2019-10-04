@@ -27,6 +27,10 @@
 
 ### 1.2 What is Research Questions and Scope
 
+## 4 Software Developer Experience
+
+- it must be understood that DX and UX are not the same
+
 ### 4.5 What is Summary
 
 - The models derived are not definitive, not too abstract and neither case specific. Therefore they can be a good ground to build up the understanding of what Developer Experience could be in different software projects.
