@@ -558,7 +558,7 @@ All of the research questions are exploratory and they try to understand the und
 \clearpage
 \section{Background}
 
-The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explains the background behind the themes in this study. A comprehensive and systematic literature review on the definition of DX is presented in section \ref{mlr}.
+The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explain the background behind the themes in this study. The topics and themes discussed are a result of an informal literature search on the concept of DX and the results of the systematic literature. They are topics that are related to DX and understanding these individual topics help to understand the complex nature of DX. The systematic literature review on the definition of DX is presented in section \ref{mlr}.
 
 \subsection{Developer Experience}
 
@@ -606,13 +606,15 @@ Programmer Experience (PX) can be defined as \textit{The result of the intrinsic
 
 \subsection{Selection of tools}
 
-Perceived choice is a perception of that the choice has already been made \citep{kuusinen-flow}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
+Perceived choice is a perception of that the choice has already been made \citep{flow-intrinsic-dx}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
 
-\cite{kuusinen-flow} studied Integrated Development Environment (IDE), and how they are connected with state of flow, intrinsic motivation, and user experience. Their findings reveal that if the developers have a high perception of choice, the also are overall more satisfied with the tools. They also concluded that if the selected tools are selected without their input, (they perceive it chosen already), the developers will have a worse developer experience with it, as e.g. their frustration with the tool will be more common.
+\cite{flow-intrinsic-dx} studied Integrated Development Environment (IDE), and how they are connected with state of flow, intrinsic motivation, and user experience. Their findings reveal that if the developers have a high perception of choice, the also are overall more satisfied with the tools. They also concluded that if the selected tools are selected without their input, (they perceive it chosen already), the developers will have a worse developer experience with it, as e.g. their frustration with the tool will be more common.
 
 There has been a study on the Developer Experience of IDEs \citep{software-developers-as-users}. However, the study concentrated on the UX of the selected IDE that was studied.
 
 When selecting an IDE it is also important to consider what the other developers in the team or organization is using or what other would prefer to use.
+
+\cite{design-framework-enchancing}
 
 There can be situations when two different developers use a different IDE, and therefore also the experience can be completely different between them. At the most extreme the 2 IDEs are not compatible with each other as their files related to the project are different. An example of this is Eclipse and IntelliJ IDEA as Java IDEs.
 
@@ -628,32 +630,39 @@ A hybrid OSS can consist of individual developers, but also sponsored and suppor
 
 \cite{entering-an-ecosystem} argue that onboarding and welcoming new developers to hybrid OSS might be more difficult than normal OSS projects. All in all, onboarding of any kind of software project is part of the whole DX of the onboarding developer.
 
-\subsection{Intrinsic Motivation}
+\subsection{Motivation}
 
-Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \citep{kuusinen-flow} (Self-determination theory. Handbook of theories of social psychology).
+Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \citep{flow-intrinsic-dx} (Self-determination theory. Handbook of theories of social psychology).
 
 \subsection{Performance Alignment Work}
 
 \cite{how-developers-experience-team-performance} and \cite{paw} have created a framework called Performance Alignment Work (PAW), that explains the phenomena of experiencing performance in software development context. Software development performance is a complex construct where performance measurement is not a straightforward practice.
 
+The PAW framework acknowledges that performance can not be measured trough some objective measures, as there are too many different viewpoints to measure software project performance from. It also acknowledges that performance exists on multiple different levels e.g. individual, team, organization, or customer level. Their study concluded that high-performing teams are considered high-performing because the are able to alter the ways the performance of the team is measured. 
+
+The performance of a software development project is highly linked with the DX of the individual and the whole team, and \cite{how-developers-experience-team-performance} suggest that by aligning affective and conative aspects with individual developers and within the whole software development team, there could be opportunities to reach improved performance.
+
 \subsection{Happiness of developers}
 
-Happiness of developers have been reported have direct consequences to the themselves, process and the product \citep{unhappy-developers}
+Happiness of developers has been reported have high impact on the practice of software development and have consequences. A series of studies, namely \cite{unhappy-developers}, \cite{on-the-unhappiness}, \cite{consequences-of-unhappiness}, and \cite{what-happens-when-unhappy} studies the happiness and unhappiness of developers. They concluded that the (un)happiness of the developer has consequences on the themselves, the process, and the end product.
 
 \subsection{Flow state}
 
-Flow state is something that many developers want to achieve. For some developers it is really difficult to focus if there are external things that disturb them like sound or something similar. Also, people coming and asking questions might disturb or interrupt the flow state. Therefore many developers are now also trying out remote work where they are not co-located.
-
-\cite{design-framework-enchancing} studied how an IDE worked in a collaborative environment and it's developer experience.
-
-\subsection{Team, community, and collaboration}
-
-\cite{entering-an-ecosystem}
-% Entering an ecosystem: The hybrid OSS landscape from a developer perspective
+The flow state is a state where the task at hand has gotten full attention \citep{flow-intrinsic-dx}. Flow state is something that many developers want to achieve. For some developers it is really difficult to focus if there are external things that disturb them like sound or something similar. Also, people coming and asking questions might disturb or interrupt the flow state. Therefore many developers are now also trying out remote work where they are not co-located. Achieving flow state requires a clear set of goals, continuous feedback, and a good balance between skills and challenge. 
 
 \subsection{User Starting Experience}
 
-\cite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}.
+\cite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}. These both concepts are discussing the approachability of APIs.
+
+Developers have become more and more in charge of the decision and selection of the tools and 3rd party products that are used when developing software. This might have been more of a responsibility of the organization or the directors or managers before. Now however, it has been seen that the developers are the most knowledgeable persons to make these decisions.
+
+\cite{api-designers} argue that the first encounter with the API determines if it's selected for usage or not, especially if there is a set of different options to choose from. Therefore they also say that the \textit{0 to 200} and \textit{Time to Hello World} are important things to consider when developing APIs with a good DX.
+
+\textit{0 to 200} comes from the Hypertext Transfer Protocol HTTP code 200 indicating a successful OK response. Adopting a new API and successfully calling the API with a 200 OK response can be seen as the minimal effort to get the integration working. 
+
+\textit{Time to Hello World} comes from the introduction and adoption a new programming language, where often the first task is to print or log the string "Hello World" to the console or terminal. Adoting the basic structures and building block of the programming language prove how easy it is to get going with it, and therefore can be a measurement of the approachability of the language. 
+
+However, this shouldn't be limited or restricted to only APIs, programming languages, or frameworks. The concept of User Starting Experience could be used in the measurement of introducing or adopting anything new related to software development e.g. a new development technique or process.  
 
 \clearpage
 \section{Research methods}
@@ -924,6 +933,9 @@ A research group in Brazil has to a large extent researched the DX in the contex
 Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development.
 
 Overall the amount of formal research on DX is lacking. The lack of definitions and the amount of search results in the search speaks for this.
+
+
+Team, community, and collaboration.
 
 
 Many articles use the keyword developer experience but only mention DX briefly in their material. This forces the readers to

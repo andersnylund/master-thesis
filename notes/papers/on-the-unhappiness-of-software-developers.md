@@ -8,6 +8,8 @@
 
 ## 1. Introduction
 
+
+
 ## 2. Background and related work
 
 ## 3. Method
@@ -23,3 +25,7 @@
 ## 6. Conclusion
 
 - C2 experienced causes for unhappiness among software developers
+
+## Personal interpretations of the text
+
+- what is the difference of this and 

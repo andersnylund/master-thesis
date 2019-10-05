@@ -6,7 +6,7 @@
 
 ## 1. Introduction
 
-- focus on previous research has been on happniness
+- focus on previous research has been on happiness
 - previous papers have focused on the unhappiness
 - this paper focuses more on the experienced consequences on both happiness and unhappiness 
 
