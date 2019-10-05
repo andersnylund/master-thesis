@@ -88,3 +88,7 @@
 
 - Can you Trust a Single Data Source Exploratory Software Engineering Case Study? (Bratthall and Jorgensen 2002)
 - An Empirical Study of the Complex Relationships between Requirements Engineering Processes and Other Processes that Lead to Payoffs in Productivity, Quality, and Risk Management (Damian and Chisan 2006)
+
+## Interviews
+
+- The qualitative research interview. Barbara DiCicco‐Bloom  Benjamin F Crabtree
