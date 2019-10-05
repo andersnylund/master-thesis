@@ -1,5 +1,7 @@
 # Performance Alignment Work: How software developers experience the continuous adaption of team performance in Lean and Agile environments
 
+https://www.sciencedirect.com/science/article/pii/S0950584915000269
+
 ## What is Abstract
 
 - The understanding from this paper can be used to help form an guide for high-performing software teams and also to improve the conditions of software developers

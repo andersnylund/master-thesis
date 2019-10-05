@@ -42,53 +42,49 @@
 
 ## User Experience}
 
-  - Hassenzahl, M., Tractinsky, N.: User experience - a research agenda. Behav. Inf. Technol. 25(2), 91–97 (2006)
-  - Henrique Henriques, Hugo Lourenço, Vasco Amaral, and Miguel Goulão. 2018. Improving the Developer Experience with a Low-Code Process Modelling Language. In Proceedings of the 21th ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS '18). ACM, New York, NY, USA, 200-210. DOI: https://doi.org/10.1145/3239372.3239387
-  - Ferreira, J. , Sharp, H. and Robinson, H. (2011), User experience design and agile development: managing cooperation through articulation work. Softw: Pract. Exper., 41: 963-974. doi:10.1002/spe.1012
-
+- Hassenzahl, M., Tractinsky, N.: User experience - a research agenda. Behav. Inf. Technol. 25(2), 91–97 (2006)
+- Henrique Henriques, Hugo Lourenço, Vasco Amaral, and Miguel Goulão. 2018. Improving the Developer Experience with a Low-Code Process Modelling Language. In Proceedings of the 21th ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS '18). ACM, New York, NY, USA, 200-210. DOI: https://doi.org/10.1145/3239372.3239387
+- Ferreira, J. , Sharp, H. and Robinson, H. (2011), User experience design and agile development: managing cooperation through articulation work. Softw: Pract. Exper., 41: 963-974. doi:10.1002/spe.1012
 
 ## Other
 
-  - Kansala, M. and Tuomivaara, S. (2013). Do Agile Principles and Practices Support the Well-being at Work of Agile Team Members? In Proceedings of the 8th International Conference on Software Engineering Advances (ICSEA 2013), pages 364–367.
-  - Dingsøyr, T., Nerur, S., Balijepally, V., and Moe, N. B. (2012). A decade of agile methodologies: Towards explaining agile software development. Journal of Systems and Software, 85(6):1213–1221.
-  - Journal of Systems and Software Volume 140, June 2018, Pages 32-47 Journal of Systems and Software What happens when software developers are (un)happy Author links open overlay panel Daniel Graziotina Fabian Fagerholm bcXiaofengWangd PekkaAbrahamssone Show more https://doi.org/10.1016/j.jss.2018.02.041
-  - Teamwork quality and project success in software development: A survey of agile development teams Author links open overlay panelYngveLindsjørnaDag I.K.Sjøbergab TorgeirDingsøyrbc Gunnar R.Bergersen Tore Dybåa
-  - Gass, O., Meth, H., Maedche, A.: PaaS characteristics for productive software development: an evaluation framework. Internet Comput. IEEE 18(1), 56–64 (2014)
-  - Deci, E., Ryan, R.M.: Self-determination theory. Handbook of theories of social psychology. SAGE, Los Angeles (2012). ISBN 9780857029607
-
+- Kansala, M. and Tuomivaara, S. (2013). Do Agile Principles and Practices Support the Well-being at Work of Agile Team Members? In Proceedings of the 8th International Conference on Software Engineering Advances (ICSEA 2013), pages 364–367.
+- Dingsøyr, T., Nerur, S., Balijepally, V., and Moe, N. B. (2012). A decade of agile methodologies: Towards explaining agile software development. Journal of Systems and Software, 85(6):1213–1221.
+- Journal of Systems and Software Volume 140, June 2018, Pages 32-47 Journal of Systems and Software What happens when software developers are (un)happy Author links open overlay panel Daniel Graziotina Fabian Fagerholm bcXiaofengWangd PekkaAbrahamssone Show more https://doi.org/10.1016/j.jss.2018.02.041
+- Teamwork quality and project success in software development: A survey of agile development teams Author links open overlay panelYngveLindsjørnaDag I.K.Sjøbergab TorgeirDingsøyrbc Gunnar R.Bergersen Tore Dybåa
+- Gass, O., Meth, H., Maedche, A.: PaaS characteristics for productive software development: an evaluation framework. Internet Comput. IEEE 18(1), 56–64 (2014)
+- Deci, E., Ryan, R.M.: Self-determination theory. Handbook of theories of social psychology. SAGE, Los Angeles (2012). ISBN 9780857029607
+- https://insights.stackoverflow.com/
 
 ## Brainstorming
 
-  - Productivity loss in brainstorming groups: Toward the solution of a riddle.
-  - Brainstorm your e-business
-  - Brainstorm, Chainstorm, Cheatstorm, Tweetstorm: New Ideation Strategies for Distributed HCI Design
-  - Nominal group technique: a users' guide
-  - An Examination of the Impact of Stimuli Type and GSS Structure on Creativity: Brainstorming Versus Non-Brainstorming Techniques in a GSS Environment
-  - Improving group creativity: brainstorming versus non-brainstorming techniques in a GSS environment
-  - The Brainstorming Myth
-  - Productivity Loss in Brainstorming Groups: A Meta-Analytic Integration
-
+- Productivity loss in brainstorming groups: Toward the solution of a riddle.
+- Brainstorm your e-business
+- Brainstorm, Chainstorm, Cheatstorm, Tweetstorm: New Ideation Strategies for Distributed HCI Design
+- Nominal group technique: a users' guide
+- An Examination of the Impact of Stimuli Type and GSS Structure on Creativity: Brainstorming Versus Non-Brainstorming Techniques in a GSS Environment
+- Improving group creativity: brainstorming versus non-brainstorming techniques in a GSS environment
+- The Brainstorming Myth
+- Productivity Loss in Brainstorming Groups: A Meta-Analytic Integration
 
 ## Workshops
 
-  - Sanne Akkerman and Arthur Bakker. Boundary Crossing and Boundary Objects. Review of Educational Research, 81(2):132–169, 2011. ISSN 08919976. doi: 10.3102/0034654311404435.
-  - Riitta Smeds, Rita Lavikka, Miia Jaatinen, and Antero Hirvensalo. Interven- tions for the co-creation of inter-organizational business process change. In Proceedings of the International Conference on Advances in Product Man- agement Systems, pages 11–18. Springer, 2015. ISBN 9783319227580. doi: 10.1007/978-3-319-22759-7 2.
-  - Guillermo E Leon de la Barra, De Barra, Mario B Leon de la Barra, and Ana M Urbina. Creative Problem Solving Workshops for Engineering Stu- dents. In Proceedings of the 27th Annual Conference. Frontiers in Ed- ucation: Teaching and Learning in an Era of Change, volume 3, pages 1428–1430. IEEE, 1997. ISBN 0780340868.
-  - Haridimos Tsoukas. A Dialogical Approach to the Creation of New Knowl- edge in Organizations. Organization Science, 20(6):941–957, 2009. ISSN 1047-7039. doi: 10.1287/orsc.1090.0435.
-  - Guillermo E Leon de la Barra, De Barra, Mario B Leon de la Barra, and Ana M Urbina. Creative Problem Solving Workshops for Engineering Stu- dents. In Proceedings of the 27th Annual Conference. Frontiers in Ed- ucation: Teaching and Learning in an Era of Change, volume 3, pages 1428–1430. IEEE, 1997. ISBN 0780340868.
-  - David Coghlan. Action research: Exploring perspectives on a philosophy of practical knowing. Academy of Management Annals, 5(1):53–87, 2011. ISSN 19416520. doi: 10.1080/19416520.2011.571520.
-  - Lotte S Luscher and Marianne W Lewis. Organizational Change and Manage- rial Sensemaking: Working Through Paradox. Academy of Management Journal, 51(2):221–240, 2008. ISSN 00014273. doi: 10.1103/PhysRevLett. 108.187601.
-  - How to conduct a successful workshop: The trainees’ perspective
-  - CETLs : Supporting Collaborative Activities Among Students and Teachers Through the Use of ThinkPair-Share Techniques
-  - Think Pair Share: A Teaching Learning Strategy to Enhance Students' Critical Thinking
-  - Creative problem solving workshops for engineering students
-  - Taking Breaks Found to Improve Attention https://psychcentral.com/news/2011/02/09/taking-breaks-found-to-improve-attention/23329.html
-  - Ten Simple Rules for Running Interactive Workshops https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003485
-  - Conducting Writing Workshops https://writing-speech.dartmouth.edu/teaching/first-year-writing-pedagogies-methods-design/conducting-writing-workshops
-
+- Sanne Akkerman and Arthur Bakker. Boundary Crossing and Boundary Objects. Review of Educational Research, 81(2):132–169, 2011. ISSN 08919976. doi: 10.3102/0034654311404435.
+- Riitta Smeds, Rita Lavikka, Miia Jaatinen, and Antero Hirvensalo. Interven- tions for the co-creation of inter-organizational business process change. In Proceedings of the International Conference on Advances in Product Man- agement Systems, pages 11–18. Springer, 2015. ISBN 9783319227580. doi: 10.1007/978-3-319-22759-7 2.
+- Guillermo E Leon de la Barra, De Barra, Mario B Leon de la Barra, and Ana M Urbina. Creative Problem Solving Workshops for Engineering Stu- dents. In Proceedings of the 27th Annual Conference. Frontiers in Ed- ucation: Teaching and Learning in an Era of Change, volume 3, pages 1428–1430. IEEE, 1997. ISBN 0780340868.
+- Haridimos Tsoukas. A Dialogical Approach to the Creation of New Knowl- edge in Organizations. Organization Science, 20(6):941–957, 2009. ISSN 1047-7039. doi: 10.1287/orsc.1090.0435.
+- Guillermo E Leon de la Barra, De Barra, Mario B Leon de la Barra, and Ana M Urbina. Creative Problem Solving Workshops for Engineering Stu- dents. In Proceedings of the 27th Annual Conference. Frontiers in Ed- ucation: Teaching and Learning in an Era of Change, volume 3, pages 1428–1430. IEEE, 1997. ISBN 0780340868.
+- David Coghlan. Action research: Exploring perspectives on a philosophy of practical knowing. Academy of Management Annals, 5(1):53–87, 2011. ISSN 19416520. doi: 10.1080/19416520.2011.571520.
+- Lotte S Luscher and Marianne W Lewis. Organizational Change and Manage- rial Sensemaking: Working Through Paradox. Academy of Management Journal, 51(2):221–240, 2008. ISSN 00014273. doi: 10.1103/PhysRevLett. 108.187601.
+- How to conduct a successful workshop: The trainees’ perspective
+- CETLs : Supporting Collaborative Activities Among Students and Teachers Through the Use of ThinkPair-Share Techniques
+- Think Pair Share: A Teaching Learning Strategy to Enhance Students' Critical Thinking
+- Creative problem solving workshops for engineering students
+- Taking Breaks Found to Improve Attention https://psychcentral.com/news/2011/02/09/taking-breaks-found-to-improve-attention/23329.html
+- Ten Simple Rules for Running Interactive Workshops https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003485
+- Conducting Writing Workshops https://writing-speech.dartmouth.edu/teaching/first-year-writing-pedagogies-methods-design/conducting-writing-workshops
 
 ## Research Methods
 
-  - Can you Trust a Single Data Source Exploratory Software Engineering Case Study? (Bratthall and Jorgensen 2002)
-  - An Empirical Study of the Complex Relationships between Requirements Engineering Processes and Other Processes that Lead to Payoffs in Productivity, Quality, and Risk Management (Damian and Chisan 2006)
-
+- Can you Trust a Single Data Source Exploratory Software Engineering Case Study? (Bratthall and Jorgensen 2002)
+- An Empirical Study of the Complex Relationships between Requirements Engineering Processes and Other Processes that Lead to Payoffs in Productivity, Quality, and Risk Management (Damian and Chisan 2006)

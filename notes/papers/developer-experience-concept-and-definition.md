@@ -37,6 +37,13 @@ https://dl.acm.org/citation.cfm?id=2664372
 ## 3 Developer experience 
 
 - experience = involvement
+- UX has evolved from first looking at the immediate actions in interaction and involvement of using a product (e.g. avoiding usage defects, increasing robustness, and ensuring safety)
+  - To the entire experience of using the product or service
+  - result of a maturation process in the field of HCI 
+- development is an intellectual activity
+  - cognition (attention, memory, producing and understanding language, problem-solving, decision-making)
+  - affect (feeling, emotion)
+  - conation (impulse, desire, volition, striving)
 - 
 
 ## 4 Ongoing and future work

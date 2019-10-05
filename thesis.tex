@@ -243,6 +243,8 @@
 \date{TBA}
 %%
 
+\newcommand{\now}{autumn 2019}
+
 %% Thesis supervisor
 %% Note the "\" character in the title after the period and before the space
 %% and the following character string.
@@ -414,22 +416,24 @@ Otaniemi, Date to te announced
 \mysection{Thesis dictionary}
 
 \begin{tabular}{ll}
+  API   & Application Programming Interface  \\
+  BS    & Brainstorming                      \\
   DX    & Developer Experience               \\
-  UX    & User Experience                    \\
+  EBS   & Electronic Brainstorming           \\
+  EM    & Extrinsic Motivation               \\
+  GL    & Grey Literature                    \\
+  HCI   & Human Computer Interaction         \\
   IDE   & Integrated Development Environment \\
   IM    & Intrinsic Motivation               \\
-  EM    & Extrinsic Motivation               \\
-  HCI   & Human Computer Interaction         \\
-  API   & Application Programming Interface  \\
-  SLR   & Systematic Literature Review       \\
   MLR   & Multivocal Literature Review       \\
-  GL    & Grey Literature                    \\
-  SE    & Software Engineering               \\
   MSECO & Mobile Software Ecosystem          \\
-  BS    & Brainstorming                      \\
-  TBS   & Traditional Brainstorming          \\
   NBS   & Nominal Brainstorming              \\
-  EBS   & Electronic Brainstorming           \\
+  OSS   & Open Source Software               \\
+  PAW   & Performance Alignment Work         \\
+  SE    & Software Engineering               \\
+  SLR   & Systematic Literature Review       \\
+  TBS   & Traditional Brainstorming          \\
+  UX    & User Experience                    \\
 \end{tabular}
 
 %% \clearpage is similar to \newpage, but it also flushes the floats (figures
@@ -448,14 +452,14 @@ In recent academic research and internet articles and blog posts, a concept call
 
 DX is more prevalent, and therefore also more interesting, in contexts where development happens in teams. DX of individual developers is also important, but a big part of the experience stems from interaction with team members and other developers. Individual developers are aiming more towards creating an individual DX of e.g. their development environment or tools that they use.
 
-In this study we will focus on understanding what DX is and make an attempt to map out good concrete practices on how a software company can improve the DX in their projects.
+In this study we will focus on understanding what DX is and make an attempt to map out how DX is defined in a software consultancy company.
 
 %% Leave page number of the first page empty 
 \thispagestyle{empty}
 
 \subsection{Motivation} \label{motivation}
 
-At the time of writing, a quick search with the keyword \textit{"Developer Experience"} on google.com gives as a result mostly articles on how framework and library authors should consider their user's (developer's) experience with using the product (tool, library, framework). Also, performing searches with the same \textit{"Developer Experience"} keyword on known libraries of conference papers like Google Scholar and IEEExplore, the content and topic of the results vary much. This shows that there might not be a common and well known definition of what DX is.
+At the time of writing (\now), a quick search with the keyword \textit{"Developer Experience"} on google.com gives as a result mostly articles on how framework and library authors should consider their user's (developer's) experience with using the product (tool, library, framework). Also, performing searches with the same \textit{"Developer Experience"} keyword on known libraries of conference papers like Google Scholar and IEEExplore, the content and topic of the results vary much. This shows that there might not be a common and well known definition of what DX is.
 
 In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used \citep{fagerholm-dx-concept-and-definition}, in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \citep{programmer-experience}, and finally maybe the most common abbreviation is \textit{DX}. This shows that there is still some ambiguity to the terms and definitions in academic research. Additionally, most results when searching with the term \textit{Developer Experience} gives results about the experience and knowledge level of a developer in e.g. terms of years working in the field of software development or amount of contribution, and not the hedonic and pragmatic experience of participating in development work.
 
@@ -541,8 +545,8 @@ All of the research questions are exploratory and they try to understand the und
 
 \begin{enumerate}
   \item Introduction
-  \item Background and literature review
-  \item Research material and methods
+  \item Background
+  \item Research methods
   \item Results
   \item Summary
   \item Conclusions
@@ -554,65 +558,51 @@ All of the research questions are exploratory and they try to understand the und
 \clearpage
 \section{Background}
 
-% https://insights.stackoverflow.com/ could be an interesting source of basic facts about programmers around the world, what technologies they are using, what they love and what they dread
+The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explains the background behind the themes in this study. A comprehensive and systematic literature review on the definition of DX is presented in section \ref{mlr}.
 
-Developer Experience and its related terms have been studied and researched relatively little at the moment of writing (autumn 2019). \cite{programmer-experience} performed a literature review of the term \textit{"Programmer Experience"}, that studied 73 articles that matched their defined search criteria. The study concluded that there is still some ambiguity in the term \textit{Programmer Experience} in the context of programming environments, design documents, and programming codes.
+\subsection{Developer Experience}
 
-Developer experience can be divided into three different sub areas – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution) \citep{fagerholm-dx-concept-and-definition}. In a study it was also concluded that the cognitive part of DX is also addressed via intention and affect \citep{kuusinen-flow}.
+Current scientific literature on the definition of DX is few in numbers. DX has however a comprehensive and detailed definition by \cite{fagerholm-doctoral-thesis}. Their doctoral thesis dives into the core of developers and their experiences with developing software. They define DX into two different environments, a social and a technical environment. These two dimensions are presented in figure \ref{figure:social-technical}.
 
-\begin{figure}[H]
+Social aspect of software development plays a crucial role on how a developer experiences the development practice, and is receiving as much consideration as the technical environment in figure \ref{figure:social-technical}. It has for long been noted that the social and human factors of software development are not considered as important as they should be \citep{human-factor}.
+
+The technical environment, including programming languages, infrastructure, processes, techniques, plans, diagrams etc., is also part of the DX. A developer is interacting with these artifacts and that generates an experience. Activities with these artefacts are both experienced as an individual but also as an group.
+
+Time-wise, the DX can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time, in e.g. a software project.
+
+\cite{fagerholm-dx-concept-and-definition} takes an approach from psychology, and divides DX into three different sub areas or categories – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution). This conceptual framework is presented in figure \ref{figure:conceptual-framework}.
+
+DX can be seen as important from multiple different viewpoints. From a viewpoint of project management a better DX can help to understand, evaluate, and plan projects so that they are inline with the three different dimensions of DX. Another viewpoint is when designing a software development platform or environment, it can be beneficial to understand what impacts and affect the DX, so that the platform or environment can be designed to be aligned with the developers using it \cite{fagerholm-dx-concept-and-definition}.
+
+\begin{figure}
   \captionsetup{width=0.6\textwidth}
-  \caption{Conceptual framework of Developer Experience \citep{fagerholm-doctoral-thesis}}
+  \caption{The Developer Experience Concept \citep{fagerholm-doctoral-thesis}}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{dx-social-technical.pdf}
   \end{center}
+  \label{figure:social-technical}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
   \captionsetup{width=0.6\textwidth}
   \caption{Conceptual framework of Developer Experience \citep{fagerholm-dx-concept-and-definition}}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{dx-conceptual.pdf}
   \end{center}
+  \label{figure:conceptual-framework}
 \end{figure}
-
-The following subsections are a combination of the initial literature review and the systematic literature review presented in section \ref{mlr}. The following subsections will lay the ground for the rest of the work and discuss about and define the upcoming topics and definitions.
-
-\subsection{Developer Experience}
-
-Current understanding, definition, and concept of DX is personal and    
-
-A software developer is a person with a bigger responsibility than a programmer. If a programmer is following instructions, requirements, and guidelines, the developer is also finding out what the instructions, requirements and guidelines should be. Therefore DX is also considering more of the surrounding context than what PX is considering.
-
-Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \citep{programmer-experience}. Developer Experience is considering also the social aspect of being a software developer. Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
-
-The Developer Experience can be divided into 2 different environments, a social and a technical environment \citep{fagerholm-doctoral-thesis}. This thesis might focus more on the technical environment.
-
-The developer experience can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time \citep{fagerholm-doctoral-thesis}. The research in this thesis will use a longer time-frame of developer experience.
 
 \subsection{Programmer Experience}
 
-% http://programming-experience.org/px19/ https://2019.programming-conference.org/
+A software developer is a person with a bigger responsibility than a programmer. If a programmer is following instructions, requirements, and guidelines, the developer is also finding out what the instructions, requirements and guidelines should be and probably also helps in defining them. Therefore DX is also considering more of the surrounding context than what Programmer Experience (PX) is considering.
+
+DX and its related terms have been studied and researched relatively little at the moment of writing (\now). \cite{programmer-experience} performed a literature review of the term \textit{"Programmer Experience"}, that studied 73 articles that matched their defined search criteria. The study concluded that there is still some ambiguity in the term \textit{Programmer Experience} in the context of programming environments, design documents, and programming codes.
+
+Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \citep{programmer-experience}. Developer Experience is considering also the social aspect of being a software developer. Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
 
 Programmer Experience (PX) can be defined as \textit{The result of the intrinsic motivations and perceptions of programmers about the use of development artifacts} \citep{programmer-experience}. A programmer can be seen as person who gives exact instructions on how a program should behave and function. PX is based on the study mainly related to the programming environment, but also programming codes and Application Programming Interfaces (API).
 
-
-
-\subsection{Organization and project onboarding}
-
-\cite{entering-an-ecosystem} have studied the process of entering an ecosystem from the perspective of developers. 
-
-\subsection{Intrinsic Motivation}
-
-Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \citep{kuusinen-flow} (Self-determination theory. Handbook of theories of social psychology).
-
-\subsection{Performance Alignment Work}
-
-% Write here about \citep{how-developers-experience-team-performance} and read PAW article.
-
-\subsection{Happiness of developers}
-
-Happiness of developers have been reported have direct consequences to the themselves, process and the product \citep{unhappy-developers}
+% http://programming-experience.org/px19/ https://2019.programming-conference.org/
 
 \subsection{Selection of tools}
 
@@ -628,6 +618,28 @@ There can be situations when two different developers use a different IDE, and t
 
 In a study of IDEs \citep{software-developers-as-users}, the survey in the study produced answers that were most pragmatic, but not hedonic. This could show that most of the developers are practical, and not feeling based. This has also been proven \citep{personality-software}. This might also be a reason why Developer Experience has not gotten that much attention yet, as big part of people in software engineering are \textit{"Introverts"}. Software engineers are also more logical thinkers than feeling based. As Developer Experience is focusing on the feelings and subjective opinions about things, it might be a difficult topic to research.
 
+\subsection{Organization and project onboarding}
+
+\cite{entering-an-ecosystem} have studied the process of entering an ecosystem from the perspective of developers. They have especially focused on the onboarding process of Hybrid Open Source Software projects that have special characteristics as software projects.
+
+Open Source Software (OSS) is software developed, where the source code of the software is accessible to the public. OSS is often developed by a community where anyone participating is allowed to report problems, suggest changes, and also modify the code and develop the software. However, the fact that anyone interested can participate in the community results in that the communities often create their own complex organization and hierarchy.
+
+A hybrid OSS can consist of individual developers, but also sponsored and supported developers that are pursuing the interests of some other organization. One example of this is JavaScript framework React, that was initially developed at Facebook, but later open sourced. Hybrid OSS creates another layer of complexity of the organization.
+
+\cite{entering-an-ecosystem} argue that onboarding and welcoming new developers to hybrid OSS might be more difficult than normal OSS projects. All in all, onboarding of any kind of software project is part of the whole DX of the onboarding developer.
+
+\subsection{Intrinsic Motivation}
+
+Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \citep{kuusinen-flow} (Self-determination theory. Handbook of theories of social psychology).
+
+\subsection{Performance Alignment Work}
+
+\cite{how-developers-experience-team-performance} and \cite{paw} have created a framework called Performance Alignment Work (PAW), that explains the phenomena of experiencing performance in software development context. Software development performance is a complex construct where performance measurement is not a straightforward practice.
+
+\subsection{Happiness of developers}
+
+Happiness of developers have been reported have direct consequences to the themselves, process and the product \citep{unhappy-developers}
+
 \subsection{Flow state}
 
 Flow state is something that many developers want to achieve. For some developers it is really difficult to focus if there are external things that disturb them like sound or something similar. Also, people coming and asking questions might disturb or interrupt the flow state. Therefore many developers are now also trying out remote work where they are not co-located.
@@ -636,7 +648,7 @@ Flow state is something that many developers want to achieve. For some developer
 
 \subsection{Team, community, and collaboration}
 
-\cite{entering-an-ecosystem} 
+\cite{entering-an-ecosystem}
 % Entering an ecosystem: The hybrid OSS landscape from a developer perspective
 
 \subsection{User Starting Experience}
@@ -652,7 +664,7 @@ From the introduction and motivation in sections \ref{introduction} and \ref{mot
 
 \cite{easterbrook2008selecting} define a set of guidelines for empirical research in software engineering. They argue that selecting a clear research question, an explicit philosophical stance, and an appropriate research method are key when researching in the context of SE. They also note that many research projects in SE fail in defining the stance of the research, which then further complicates all aspects of the research including its interpretation, validity, replicability etc.
 
-During writing of the thesis, the author was working at the case company, allowing to perform ethnographic techniques in understanding and studying the phenomena. Working at the case company also allowed to have discussion with colleagues.    
+During writing of the thesis, the author was working at the case company, allowing to perform ethnographic techniques in understanding and studying the phenomena. Working at the case company also allowed to have discussion with colleagues.
 
 \subsection{Research approach}
 
@@ -668,7 +680,7 @@ This thesis will take a \textbf{constructivism} view of the truth, combined with
 
 \cite{easterbrook2008selecting} point out that it is important to pick the unit of analysis of the study. The unit in this case could be a company or organization, a project, a team, or an individual software developer. As DX is the experience of an individual developer, it is selected as the primary focus in this study.
 
-Another viewpoint to this is also the case company, that has its own culture and set of practices. This study will also see the company as a unit of analysis. The company culture and practices are something that is shared between every developer and other employees.   
+Another viewpoint to this is also the case company, that has its own culture and set of practices. This study will also see the company as a unit of analysis. The company culture and practices are something that is shared between every developer and other employees.
 
 \subsection{Research method selection}
 
@@ -690,7 +702,7 @@ Brainstorming types can be identified into \textit{Traditional Brainstorming (TB
 
 There are some problems with brainstorming sessions \citep{electronic-brainstorming} \citep{chainstorm}. \textit{Evaluation apprehension} means that group members might get the feeling of being judged, and therefore they might feel reticent with bringing out their ideas. \textit{Production blocking} might also be a problem, as working in groups will require everyone to talk on their own turns, which might lead to ideas becoming irrelevant, ideas might be forgot, the ideas might be rehearsed that blocks the generation of new ideas. \textit{Free riding} can also happen when some BS group members rely on other members to perform the BS actions.
 
-In this study the initial brainstorming session was selected to be a combination of TBS and NBS. NBS allows everyone to work individually. The case company has also established itself as working very agile, and therefore mentioned problems with BS do not require any extra actions to mitigate them. The BS session used Think-Pair-Share method \citep{think-pair-share}, where each participant of the session first thinks about the problem and possible ideas by themselves, then after that each individual is paired together where they share their own initial ideas, discard duplicate ideas, and further develop new ideas after the discussion. After pairing, each pair presents their ideas and findings to the whole group. 
+In this study the initial brainstorming session was selected to be a combination of TBS and NBS. NBS allows everyone to work individually. The case company has also established itself as working very agile, and therefore mentioned problems with BS do not require any extra actions to mitigate them. The BS session used Think-Pair-Share method \citep{think-pair-share}, where each participant of the session first thinks about the problem and possible ideas by themselves, then after that each individual is paired together where they share their own initial ideas, discard duplicate ideas, and further develop new ideas after the discussion. After pairing, each pair presents their ideas and findings to the whole group.
 
 According to \cite{six-issues-of-brainstorming}, the proponents of brainstorming is the practitioners, and the opponents are often researchers.
 
@@ -714,7 +726,7 @@ One specific mixed-methods research approach is \textbf{Sequential exploratory s
 
 Another specific approach of mixed-methods is \textbf{Concurrent triangulation strategy} \citep{easterbrook2008selecting}, where different research methods are used concurrently. The concurrent research enables to use results from one method to another, and vice versa. This enables to cross-validate research findings.
 
-In this thesis both \textbf{sequential exploratory strategy} and \textbf{concurrent triangulation strategy} is used as research approaches. The sequential exploratory strategy was implemented by first conducting the initial multivocal and traditional literature reviews, and then only after that the ideation and planning of the workshops started. However at this point the MLR was not finalized, and still had some open questions and interpretations. 
+In this thesis both \textbf{sequential exploratory strategy} and \textbf{concurrent triangulation strategy} is used as research approaches. The sequential exploratory strategy was implemented by first conducting the initial multivocal and traditional literature reviews, and then only after that the ideation and planning of the workshops started. However at this point the MLR was not finalized, and still had some open questions and interpretations.
 
 The technique of concurrent triangulation strategy was utilized by conducting the MLR and the workshop and survey concurrently. While the first iteration of the MLR was being performed, the initial workshop at the case software consultancy company was held. The idea behind a concurrent research was to get as comprehensive definition of the research problem as possible from as many different viewpoints and contexts as possible.
 
