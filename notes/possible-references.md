@@ -23,15 +23,11 @@
 
 ## Software Development
 
-- Capretz, L.F., Ahmed, F.: Making sense of software development and personality types. IT Prof. 12(1), 6–13 (2010)
 - An exploratory study on the influence of developers in technical debt Reem Alfayez, Pooyan Behnamghader, Kamonphop Srisopha, Barry Boehm May 2018 TechDebt '18: Proceedings of the 2018 International Conference on Technical Debt
 
 ## Developer mood
 
-- Graziotin, D., Wang, X., Abrahamsson, P.: Happy software developers solve problemsbetter: psychological measurements in empirical software engineering. PeerJ2(1), e289(2014)
 - Beecham, S., Baddoo, N., Hall, T., Robinson, H., Sharp, H.: Motivation in software engineering: A systematic literature review. IST 50, 860–878 (2008)
-- D. Graziotin, Consequences of unhappiness while developing software, in Proc. 2nd Int. Workshop Emotion Awareness Softw. Eng., May 2017, pp. 42–47.
-- On the Unhappiness of Software Developers Daniel Graziotin, Fabian Fagerholm, Xiaofeng Wang, Pekka Abrahamsson June 2017 EASE'17: Proceedings of the 21st International Conference on Evaluation and Assessment in Software Engineering
 
 ## Flow state and distractions. Sociability and Social Support
 
@@ -40,17 +36,15 @@
 - Leont’ev,  A.  N.  Activity,  consciousness,  and  personality.  Prentice-Hall Press, (1978)
 - Perlow, L.A., The time famine: Toward a sociology of work time. Admin. Science Quarterly, 44, (1999), 57-81
 
-## User Experience}
+## User Experience
 
 - Hassenzahl, M., Tractinsky, N.: User experience - a research agenda. Behav. Inf. Technol. 25(2), 91–97 (2006)
-- Henrique Henriques, Hugo Lourenço, Vasco Amaral, and Miguel Goulão. 2018. Improving the Developer Experience with a Low-Code Process Modelling Language. In Proceedings of the 21th ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS '18). ACM, New York, NY, USA, 200-210. DOI: https://doi.org/10.1145/3239372.3239387
 - Ferreira, J. , Sharp, H. and Robinson, H. (2011), User experience design and agile development: managing cooperation through articulation work. Softw: Pract. Exper., 41: 963-974. doi:10.1002/spe.1012
 
 ## Other
 
 - Kansala, M. and Tuomivaara, S. (2013). Do Agile Principles and Practices Support the Well-being at Work of Agile Team Members? In Proceedings of the 8th International Conference on Software Engineering Advances (ICSEA 2013), pages 364–367.
 - Dingsøyr, T., Nerur, S., Balijepally, V., and Moe, N. B. (2012). A decade of agile methodologies: Towards explaining agile software development. Journal of Systems and Software, 85(6):1213–1221.
-- Journal of Systems and Software Volume 140, June 2018, Pages 32-47 Journal of Systems and Software What happens when software developers are (un)happy Author links open overlay panel Daniel Graziotina Fabian Fagerholm bcXiaofengWangd PekkaAbrahamssone Show more https://doi.org/10.1016/j.jss.2018.02.041
 - Teamwork quality and project success in software development: A survey of agile development teams Author links open overlay panelYngveLindsjørnaDag I.K.Sjøbergab TorgeirDingsøyrbc Gunnar R.Bergersen Tore Dybåa
 - Gass, O., Meth, H., Maedche, A.: PaaS characteristics for productive software development: an evaluation framework. Internet Comput. IEEE 18(1), 56–64 (2014)
 - Deci, E., Ryan, R.M.: Self-determination theory. Handbook of theories of social psychology. SAGE, Los Angeles (2012). ISBN 9780857029607

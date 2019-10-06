@@ -77,7 +77,7 @@ DOI: http://dx.doi.org/10.1109/ACCESS.2019.2920124
   - DX includes also the motivation 
 - *"Programming environments are the artifacts most used by programmers"*
 - Usability is important in the programming environment
-- **What the hell is a SET OF HEURISTICS**
+- **What is a SET OF HEURISTICS**
   - Wikipedia: "Examples that employ heuristics include using a rule of thumb, an educated guess, an intuitive judgment, a guesstimate, profiling, or common sense"
 
 ## VI. What is Conclusion

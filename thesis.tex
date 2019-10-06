@@ -607,6 +607,10 @@ Programmer Experience (PX) can be defined as \textit{The result of the intrinsic
 
 % http://programming-experience.org/px19/ https://2019.programming-conference.org/
 
+\subsection{User Experience}
+
+
+
 \subsection{Selection of tools}
 
 Perceived choice is a perception of that the choice has already been made \citep{flow-intrinsic-dx}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
@@ -662,6 +666,10 @@ The flow state is a state where the task at hand has gotten full attention \cite
 \textit{Time to Hello World} comes from the introduction and adoption a new programming language, where often the first task is to print or log the string "Hello World" to the console or terminal. Adoting the basic structures and building block of the programming language prove how easy it is to get going with it, and therefore can be a measurement of the approachability of the language.
 
 However, this shouldn't be limited or restricted to only APIs, programming languages, or frameworks. The concept of User Starting Experience could be used in the measurement of introducing or adopting anything new related to software development e.g. a new development technique or process.
+
+\subsection{Aplication Programming Interfaces}
+
+\cite{api-designers}, \cite{api-ecosystem}, \cite{web-api-economy}.
 
 \clearpage
 \section{Research methods}
@@ -878,17 +886,37 @@ This section reports the different result of the research.
 
 The Multivocal Literature Review (MLR) performed on the definition of DX resulted in interesting reslults that presented and reviewed in the following sections. The data points collected emerged during the analysis, and the more analysis was done the more interesting revelations were found.
 
+There are two different research groups that research DX. A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it. Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development. To this group is also linked other studies related to the DX of IDEs.
+
+% rename all occurences of "scientific" to "white"
+
+\begin{table}[ht]
+  \begin{center}
+    \begin{tabular}{l | l l | l}
+                        & \textbf{Scientific literature} & \textbf{Grey literature} &    \\
+      \hline
+      \textbf{Included} & 21                             & 11                       & 32 \\
+      \textbf{Excluded} & 45                             & 0                        & 45 \\
+      \hline
+                        & 66                             & 11                       &
+    \end{tabular}
+    \captionsetup{width=0.6\textwidth}
+    \caption{Number of sources found for the MLR}
+    \label{table:number-of-sources}
+  \end{center}
+\end{table}
+
 \subsubsection{Definition of DX}
 
 The most common definition of DX used in the scientific papers is the concept and definition presented by \cite{fagerholm-dx-concept-and-definition} and \cite{fagerholm-doctoral-thesis}. This definition is at the moment the only stated definition of DX in the scientific literature. There is also further derivations on this concept and definition, but nothing that is refuting their definition and concept or nothing that takes another viewpoint on the definition of DX.
 
 The definition of the selected sources for the majority follow the definition grounded by \cite{fagerholm-doctoral-thesis}. Almost all sources take some approach to DX, either cognitive, affective, or conative. This is especially in the scientific articles, where there are more comprehensive groundwork done on why the reserach in question is performed.
 
-In grey literature the definition of DX varies a lot more and there are no references to any scientific sources in the grey literature. The definitions are given by the practitioners themselves and from their viewpoint and context of software engineering.
+In grey literature the definition of DX varies a lot more and there are no references to any scientific sources in the grey literature. The definitions are given by the practitioners themselves and from their viewpoint and context of software engineering. In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX.
 
 \subsubsection{Explicit / implicit definition of DX}
 
-Interestingly, during the analysis of the sources, it emerged that some articles were stating an explicit definition of DX, but some were not. To analyze how the the definition of DX is given, all articles and papers were grouped into either having an \textbf{implicit} or an \textbf{explicit} definition of DX. This division was something that did emerge in the collection and analysis of the material.
+Interestingly, during the analysis of the sources, it emerged that some articles were stating an explicit definition of DX, but some were not. To analyze how the the definition of DX is given, all articles and papers were grouped into either having an \textbf{implicit} or an \textbf{explicit} definition of DX. This division was something that did emerge in the collection and analysis of the material. Many scientific articles use the keyword "developer experience", but only mention DX briefly in their material. This forces the readers to create an understanding of what DX, and "read between the lines" while acquiring the gist of the articles.
 
 \textit{Explicit definition} of DX means that the author has in some words explained or defined the concept of DX, or referenced some other material that gives the definition to it.
 
@@ -916,7 +944,7 @@ Grey literature has a majority of explicit definition of DX. The articles are of
 
 \subsubsection{Context of DX}
 
-From the analysis of the material, there is a clear indication that there are different viewpoints and contexts to DX. The different contexts that emerged from the analysis are listed in table \ref{table:contexts}. The context were completely unknown before starting the MLR. One source address the topic of DX from multiple contexts and viewpoints. 
+From the analysis of the material, there is a clear indication that there are different viewpoints and contexts to DX. The different contexts that emerged from the analysis are listed in table \ref{table:contexts}. The context were completely unknown before starting the MLR. One source address the topic of DX from multiple contexts and viewpoints.
 
 \begin{table}[ht]
   \begin{center}
@@ -937,35 +965,19 @@ From the analysis of the material, there is a clear indication that there are di
   \end{center}
 \end{table}
 
-Grey literature takes to a large degree a viewpoint where DX is a form of UX, where developers are users of products and services. In this viewpoint the DX consists of features that are also used when measuring the UX of a service. These include factors like functionality, usability, and reliability.
+\textit{Definition} is the context that considers direclty the definition of DX. Articles having the context of definition are discussing and explaining the concept of DX.
 
-The grey literature is also heavily influenced by businesses marketing their services or products. To gain visibility and recognition, they are publishing articles and posts on their blogs to write and discuss a specific topic. These businesses are defining DX from their own point of view where they are providing products and services, that are directly used by developers.
+\textit{Development Environment} is related to the technical environment where the developer is developing the software. In the found articles the most notable artifact under research was the IDE. Other artifacts that could be included in the development environment could be programming languages and framework or the ease of use of setting up the development environment.
 
-Some articles (which?) mentioned that back in the days, it was executives that made the business and purchase decisions of tools, frameworks and other products and the developer's opinion were not considered. Developers were forced to use whatever they were offered.
+\textit{APIs} emerged as a context. APIs are interfaces that developers use when building software. This makes developers users of the APIs, and their UX of an API can formulated to be a DX.
 
-Today, the purchase decision has more and more shifted to be a responsibility of the developer. Developers are the final users of the product and therefore businesses have probably realized that developers are the ones to make the decisions. All in all, it can be seen from the current grey literature that developers are being considered more and more (Devs are people too), and that this movement has created the concept of DX.
+\textit{Product or service} is related to the APIs, but was selected as a separate context. Software developers use products and services to develop software, and was seen as an important context of DX. The grey literature is heavily influenced by businesses marketing their services or products. To gain visibility and recognition, businesses are publishing articles and posts on their blogs to write and discuss a specific topic. These businesses are defining DX from their own point of view where they are providing products and services, that are directly used by developers. Some articles mentioned that back in the days, it was executives that made the business and purchase decisions of tools, frameworks and other products and the developer's opinion were not considered. Developers were forced to use whatever they were offered. Today, the purchase decision has more and more shifted to be a responsibility of the developer. Developers are the final users of the product and therefore businesses have probably realized that developers are the ones to make the decisions. All in all, it can be seen from the current grey literature that developers are being considered more and more (cite Devs are people too), and that this movement has created the concept of DX.
 
-DX allows developers to reason about things that before has been difficult. Making statements that are in the favour of developers might have been difficult as there hasn't been any term to coin the feelings, emotions, needs,
+\textit{User Experience} is the experience that emerges from using a software product or service. Multiple sources explained that DX is a form of UX. Grey literature takes to a large degree a viewpoint where DX is a form of UX, where developers are users of products and services. In this viewpoint the DX consists of features that are also used when measuring the UX of a service. These include factors like functionality, usability, and reliability. DX can be seen that there is always a developer that is a user. The role of the user is the variable, and can vary from being a user of a product where the DX is seen in the product, or then the user can be a user of a developer workflow in a software project.
 
-Businesses have taken notice on this movement, and are now utilizing it to create products and services.
+\textit{Team, Collaboration, \& Community} was seen as a specific context that includes the social aspect of DX. Multiple sources discussed about the team and communities where software is developed. They were considered to have a great impact on the DX. The scientific research is more focused on the social parts of DX, and scientific research has taken a step further in this than the grey literature.
 
-DX can be seen that there is always a developer that is a user. The role of the user is the variable, and can vary from being a user of a product where the DX is seen in the product, or then the user can be a user of a developer workflow in a software project.
-
-In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX.
-
-The formal research on DX has taken a step further and is also considering the social aspects of software development.
-
-A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it.
-
-Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development.
-
-Overall the amount of formal research on DX is lacking. The lack of definitions and the amount of search results in the search speaks for this.
-
-
-Team, community, and collaboration.
-
-
-Many articles use the keyword developer experience but only mention DX briefly in their material. This forces the readers to
+\textit{Mood \& Feelings} emerged from the multiple articles discussing the happiness of developers. The mood and feelings should not only be restricted to happiness and/or unhappiness. DX allows developers to reason about things that before has been difficult. Making statements that are in the favour of developers might have been difficult as there hasn't been any term to coin the feelings, emotions, needs, and desires.
 
 \begin{table}[ht]
   \begin{center}
@@ -981,7 +993,7 @@ Many articles use the keyword developer experience but only mention DX briefly i
       Mood \& Feelings                  & 8                    \\
       \hline
     \end{tabular}
-    \caption{Scientific and grey literature combined}
+    \caption{Occurences of different contexts in scientific and grey literature combined}
   \end{center}
 \end{table}
 
@@ -990,16 +1002,16 @@ Many articles use the keyword developer experience but only mention DX briefly i
     \begin{tabular}{l r}
       Context                           & Number of occurences \\
       \hline
-      Definition                        & 4  \\
-      Development Environment           & 9  \\
-      API                               & 4  \\
-      Product or service                & 2  \\
-      User Experience                   & 7  \\
-      Team, Collaboration, \& Community & 11 \\
-      Mood \& Feelings                  & 7  \\
+      Definition                        & 4                    \\
+      Development Environment           & 9                    \\
+      API                               & 4                    \\
+      Product or service                & 2                    \\
+      User Experience                   & 7                    \\
+      Team, Collaboration, \& Community & 11                   \\
+      Mood \& Feelings                  & 7                    \\
       \hline
     \end{tabular}
-    \caption{Scientific literature}
+    \caption{Occurences of different contexts in scientific literature}
   \end{center}
 \end{table}
 
@@ -1008,16 +1020,16 @@ Many articles use the keyword developer experience but only mention DX briefly i
     \begin{tabular}{l r}
       Context                           & Number of occurences \\
       \hline
-      Definition                        & 1 \\
-      Development Environment           & 2 \\
-      API                               & 6 \\
-      Product or service                & 7 \\
-      User Experience                   & 7 \\
-      Team, Collaboration, \& Community & 5 \\
-      Mood \& Feelings                  & 1 \\
+      Definition                        & 1                    \\
+      Development Environment           & 2                    \\
+      API                               & 6                    \\
+      Product or service                & 7                    \\
+      User Experience                   & 7                    \\
+      Team, Collaboration, \& Community & 5                    \\
+      Mood \& Feelings                  & 1                    \\
       \hline
     \end{tabular}
-    \caption{Grey literature}
+    \caption{Occurences of different contexts in grey literature}
   \end{center}
 \end{table}
 
@@ -1035,11 +1047,15 @@ Many articles use the keyword developer experience but only mention DX briefly i
   \end{center}
 \end{figure}
 
+\subsubsection{Conclusions of the sources}
+
+The articles report that DX is an important factor of software engineering. From the different contexts emerged in this study it is apparent that DX can be seen from multiple different viewpoints. 
+
 \subsection{Validity of results}
 
 \subsubsection{MLR}
 
-The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private sessions were used when performing the searches.
+The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private browsing sessions were used on the browser when performing the searches.
 
 \clearpage
 \section{Exploratory research}
