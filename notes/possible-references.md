@@ -1,5 +1,9 @@
 # Possible references
 
+## DX
+
+- Moilanen, J., Niinioja, M., Seppänen, M., & Honkanen, M. (2018). API-talous 101. Alma Talent Oy.
+
 ## SLR and MLR
 
 - K. M. Benzies, S. Premji, K. A. Hayden, and K. Serrett, "State-of-the-Evidence Reviews: Advantages and Challenges of Including Grey Literature,"Worldviews on Evidence-Based Nursing, vol. 3, pp. 55-61, 2006.

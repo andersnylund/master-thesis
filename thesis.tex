@@ -15,11 +15,11 @@
 %% Copyright 2017-2018, by Luis R.J. Costa, luis.costa@aalto.fi,              %%
 %% Copyright 2017-2018 Swedish translations in aaltothesis.cls by Elisabeth   %%
 %% Nyberg, elisabeth.nyberg@aalto.fi and Henrik Wallén,                       %%
-%% henrik.wallen@aalto.fi.                                                    %%
-%% Copyright 2017-2018 Finnish documentation in the template opinnatepohja.tex%%
+%% henrik.wallén@aalto.fi.                                                    %%
+%% Copyright 2017-2018 Finnish documentation in the template opinnaytepohja.tex%%
 %% by Perttu Puska, perttu.puska@aalto.fi, and Luis R.J. Costa.               %%
 %% Copyright 2018 English template thesistemplate.tex by Luis R.J. Costa.     %%
-%% Copyright 2018 Swedish template kandidatarbetsbotten.tex by Henrik Wallen. %%
+%% Copyright 2018 Swedish template kandidatarbetsbotten.tex by Henrik Wallén. %%
 %%                                                                            %%
 %% Permission is hereby granted, free of charge, to any person obtaining a    %%
 %% copy of this software and associated documentation files (the "Software"), %%
@@ -41,7 +41,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                                            %%
 %%                                                                            %%
-%% An example for writting your thesis using LaTeX                            %%
+%% An example for writing your thesis using LaTeX                            %%
 %% Original version and development work by Luis Costa, changes to the text   %% 
 %% in the Finnish template by Perttu Puska.                                   %%
 %% Support for Swedish added 15092014                                         %%
@@ -52,7 +52,7 @@
 %%         thesistemplate.tex (version 3.20) (for text in English)            %%
 %%         opinnaytepohja.tex (version 3.20) (for text in Finnish)            %%
 %%         kandidatarbetsbotten.tex (version 1.00) (for text in Swedish)      %%
-%%         aaltothesis.cls (versio 3.20)                                      %%
+%%         aaltothesis.cls (version 3.20)                                      %%
 %%         kuva1.eps (graphics file)                                          %%
 %%         kuva2.eps (graphics file)                                          %%
 %%         kuva1.jpg (graphics file)                                          %%
@@ -99,7 +99,7 @@
 %% WHAT is PDF/A
 %%
 %% PDF/A is the ISO-standardized version of the pdf. The standard's goal is to
-%% ensure that he file is reproducable even after a long time. PDF/A differs
+%% ensure that he file is reproducible even after a long time. PDF/A differs
 %% from pdf in that it allows only those pdf features that support long-term
 %% archiving of a file. For example, PDF/A requires that all used fonts are
 %% embedded in the file, whereas a normal pdf can contain only a link to the
@@ -113,13 +113,13 @@
 %%          transparency in the colour definition and digital signatures.
 %% PDF/A-3: based on PDF 1.7, standard ISO19005-3, published in 2012.
 %%          Differs from the above only in that it allows embedding of files in
-%%          any format (e.g., xml, csv, cad, spreadsheet or wordprocessing
+%%          any format (e.g., xml, csv, cad, spreadsheet or word processing
 %%          formats) into the pdf file.
 %% PDF/A-1 files are not necessarily PDF/A-2 -compatible and PDF/A-2 are not
 %% necessarily PDF/A-1 -compatible.
 %% All of the above PDF/A standards have two levels:
 %% b: (basic) requires that the visual appearance of the document is reliably
-%%    reproduceable.
+%%    reproducible.
 %% a (accessible) in addition to the b-level requirements, specifies how
 %%   accessible the pdf file is to assistive software, say, for the physically
 %%   impaired.
@@ -152,14 +152,14 @@
 %% * the third when producing a ps file and a pdf/a from it.
 %%
 \documentclass[english, 12pt, a4paper, sci, utf8, a-1b, online]{aaltothesis}
-%\documentclass[english, 12pt, a4paper, elec, utf8, a-1b]{aaltothesis}
-%\documentclass[english, 12pt, a4paper, elec, dvips, online]{aaltothesis}
+% \documentclass[english, 12pt, a4paper, sci, utf8, a-1b]{aaltothesis}
+% \documentclass[english, 12pt, a4paper, sci, dvips, online]{aaltothesis}
 
 %% Use the following options in the \documentclass macro above:
 %% your school: arts, biz, chem, elec, eng, sci
 %% the character encoding scheme used by your editor: utf8, latin1
 %% thesis language: english, finnish, swedish
-%% make an archiveable PDF/A-1b or PDF/A-2b compliant file: a-1b, a-2b
+%% make an archive suitable PDF/A-1b or PDF/A-2b compliant file: a-1b, a-2b
 %%                    (with pdflatex, a normal pdf containing metadata is
 %%                     produced without the a-*b option)
 %% typeset in symmetric layout and blue hypertext for online publication: online
@@ -184,7 +184,7 @@
 
 % Different bibliography styles can be found from https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
 \usepackage{natbib}
-\bibliographystyle{apa}
+\bibliographystyle{agsm}
 
 %% Change the school field to specify your school if the automatically set name
 %% is wrong
@@ -220,15 +220,15 @@
 
 %% Your thesis title comes here and possibly again together with the Finnish or
 %% Swedish abstract. Do not hyphenate the title, and avoid writing too long a
-%% title. Should LaTeX typeset a long title unsatisfactorily, you mght have to
-%% force a linebreak using the \\ control characters.
+%% title. Should LaTeX typeset a long title unsatisfactorily, you might have to
+%% force a line break using the \\ control characters.
 %% In this case...
 %% Remember, the title should not be hyphenated!
 %% A possible "and" in the title should not be the last word in the line, it
 %% begins the next line.
-%% Specify the title again without the linebreak characters in the optional
+%% Specify the title again without the line break characters in the optional
 %% argument in box brackets. This is done because the title is part of the 
-%% metadata in the pdf/a file, and the metadata cannot contain linebreaks.
+%% metadata in the pdf/a file, and the metadata cannot contain line breaks.
 %%
 \thesistitle{Developer Experience}
 %\thesistitle[Title of the thesis]{Title of\\ the thesis}
@@ -292,7 +292,7 @@
 %% Copyright text. Copyright of a work is with the creator/author of the work
 %% regardless of whether the copyright mark is explicitly in the work or not.
 %% You may, if you wish, publish your work under a Creative Commons license (see
-%% creaticecommons.org), in which case the license text must be visible in the
+%% creativecommons.org), in which case the license text must be visible in the
 %% work. Write here the copyright text you want. It is written into the metadata
 %% of the pdf file as well.
 %% Syntax:
@@ -300,7 +300,7 @@
 %% 
 %% In the macro below, the text written in the metadata must have a \noexpand
 %% macro before the \copyright special character, and macros (\copyright and
-%% \year here) must be separated by the \ character (space chacter) from the
+%% \year here) must be separated by the \ character (space character) from the
 %% text that follows. The macros in the argument of the \copyrighttext macro
 %% automatically insert the year and the author's name. (Note! \ThesisAuthor is
 %% an internal macro of the aaltothesis.cls class file).
@@ -321,7 +321,7 @@
 %%
 \begin{document}
 
-%% Create the coverpage
+%% Create the cover page
 %%
 \makecoverpage
 
@@ -333,7 +333,7 @@
 %%
 \makecopyrightpage
 
-%% Note that when writting your thesis in English, place the English abstract
+%% Note that when writing your thesis in English, place the English abstract
 %% first followed by the possible Finnish or Swedish abstract.
 
 %% Abstract text
@@ -368,9 +368,7 @@
 % \keywords{Vastus, resistanssi, lämpötila}
 % %% Abstract text
 % \begin{abstractpage}[finnish]
-%   Tiivistelmässä on lyhyt selvitys
-%   kirjoituksen tärkeimmästä sisällöstä: mitä ja miten on tutkittu,
-%   sekä mitä tuloksia on saatu. 
+%  Write the abstract here
 % \end{abstractpage}
 
 %% Force new page so that the Swedish abstract starts from a new page
@@ -447,7 +445,7 @@ Software development and software engineering is a complex practice that require
 
 Developing and creating software is a social activity that requires both technical and social skills from the developers. Deep technical skills and understanding is required to be able to implement the wanted artifact or end product. However software engineering is a highly social activity, and therefore it has been noted that human factors are the most important when regarding software development performance \citep{peopleware}.
 
-Software developers are in an interesting role where they are both creators and designers when they write the code and design the logic that makes up the software. Meantime they are also users of tools that they use to create the software. Developers using a software product that aids them in their creative design work will create an user experience. Human Computer Interaction (HCI), a traditional field of research, studies the interface and interaction between computers and humans. User Experience (UX) is another field of research. UX includes the aspects of HCI, but on top of that includes also emotions and the user's perceptions of the product. UX can be seen as a more hedonic than a pragmatic approach of studying and understanding the usage of a software product {\color{red} citation?}.
+Software developers are in an interesting role where they are both creators and designers when they write the code and design the logic that makes up the software. Meantime they are also users of tools that they use to create the software. Developers using a software product that aids them in their creative design work will create an user experience. Human Computer Interaction (HCI), a traditional field of research, studies the interface and interaction between computers and humans. User Experience (UX) is another field of research. UX includes the aspects of HCI, but on top of that includes also emotions and the user's perceptions of the product. UX can be seen as a more hedonic than a pragmatic approach of studying and understanding the usage of a software product \citep{the-thing-and-i}.
 
 In recent scientific research and internet articles and blog posts, a concept called Developer Experience (DX) has gotten traction. DX is a term that explains how developers experience the practice of developing software, both technically and socially. The same way as UX is considering the user of a system or tool, DX can be seen as the experience that developers have as users of a complex system. In the case of DX the system includes the everything around the developer, and everything that affects the software development practice.
 
@@ -609,7 +607,9 @@ Programmer Experience (PX) can be defined as \textit{The result of the intrinsic
 
 \subsection{User Experience}
 
+User Experience (UX) emerged from the traditional field of HCI. It was seen that only focusing on the instrumental value of the product or service is not enough. \cite{ux-research-agenda} studied recent research of UX, and also proposed the future of it to aid in finding a direction for research of it. They found 3 important perspectives of UX. 1) UX is beyond the instrumental by considering the holistic, aesthetic, and hedonic aspects of usage. 2) Emotion and affect are to interest when understanding the subjective view on usage, that often is focused on the positive antecedents and consequences. 3) The experience in itself is a complex and dynamic phenomena that is near to impossible to replicate.
 
+\cite{understanding-ux} found that the notion of User Experience (UX) has been widely adopted, without having a clear understanding and definition of what UX. Interestingly,this relates exactly to the situation that DX is in now.
 
 \subsection{Selection of tools}
 
@@ -663,11 +663,11 @@ The flow state is a state where the task at hand has gotten full attention \cite
 
 \textit{0 to 200} comes from the Hypertext Transfer Protocol HTTP code 200 indicating a successful OK response. Adopting a new API and successfully calling the API with a 200 OK response can be seen as the minimal effort to get the integration working.
 
-\textit{Time to Hello World} comes from the introduction and adoption a new programming language, where often the first task is to print or log the string "Hello World" to the console or terminal. Adoting the basic structures and building block of the programming language prove how easy it is to get going with it, and therefore can be a measurement of the approachability of the language.
+\textit{Time to Hello World} comes from the introduction and adoption a new programming language, where often the first task is to print or log the string "Hello World" to the console or terminal. Adopting the basic structures and building block of the programming language prove how easy it is to get going with it, and therefore can be a measurement of the approachability of the language.
 
 However, this shouldn't be limited or restricted to only APIs, programming languages, or frameworks. The concept of User Starting Experience could be used in the measurement of introducing or adopting anything new related to software development e.g. a new development technique or process.
 
-\subsection{Aplication Programming Interfaces}
+\subsection{Application Programming Interfaces}
 
 \cite{api-designers}, \cite{api-ecosystem}, \cite{web-api-economy}.
 
@@ -752,7 +752,7 @@ The initiation of the thesis started during the summer of 2019. The topic of the
 
 \subsection{Analysis of data}
 
-\cite{analyzing-qualitative-data} give a set of guidelines and practices on analysing qualitative data. They state that using qualitative data in research requires discipline, creativity, but also a systematic approach. The divide the analysis of qualitative data into 5 different step: get to know your data, focus the analysis, categorize information, identify patterns and connections within and between categories, and finllay interpretation. Categorization of the data is explained more in the specific sections where categorization, theming, or coding of data is performed.
+\cite{analyzing-qualitative-data} give a set of guidelines and practices on analysing qualitative data. They state that using qualitative data in research requires discipline, creativity, but also a systematic approach. The divide the analysis of qualitative data into 5 different step: get to know your data, focus the analysis, categorize information, identify patterns and connections within and between categories, and finally interpretation. Categorization of the data is explained more in the specific sections where categorization, theming, or coding of data is performed.
 
 \clearpage
 \section{Multivocal literature review} \label{mlr}
@@ -785,11 +785,11 @@ All data of the MLR can be found the following link: \href{\mlrdxlink}{https://b
 
 \subsubsection{Research questions}
 
-The foundation for the MLR is the first research question \hyperref[RQ1]{RQ1} (\rqone). The goal is to create a understanding of the current situtation of the definition of \textit{Developer Experience} with help of both white literature and grey literature.
+The foundation for the MLR is the first research question \hyperref[RQ1]{RQ1} (\rqone). The goal is to create a understanding of the current situation of the definition of \textit{Developer Experience} with help of both white literature and grey literature.
 
 \subsubsection{Search process}
 
-The search is performed as a manual search by the author from various libraries to gather the academic literature. For grey literature, the Google search engine (https://www.google.com) will be used. To limit the amount of grey literature, only the first 2 pages of searches from google.com will be included. Only 91 percent of participants in a study went to the second page of google results page \citep{google-search}. Therefore it's appropriate to include only the most relevant results from the google search. The selected sources of scientific literatue is seen in table \ref{table:included-sources}.
+The search is performed as a manual search by the author from various libraries to gather the academic literature. For grey literature, the Google search engine (https://www.google.com) will be used. To limit the amount of grey literature, only the first 2 pages of searches from google.com will be included. Only 91 percent of participants in a study went to the second page of google results page \citep{google-search}. Therefore it's appropriate to include only the most relevant results from the google search. The selected sources of scientific literature is seen in table \ref{table:included-sources}.
 
 \begin{table}
   \centering
@@ -814,19 +814,21 @@ The search is performed as a manual search by the author from various libraries 
     SpringerLink   & (https://link.springer.com/)          \\
     \hline
   \end{tabular}
-  \caption{Exluded scientific literature sources for the MLR}
+  \caption{Excluded scientific literature sources for the MLR}
   \label{table:excluded-sources}
 \end{table}
 
 Other possible libraries and sources for resources could have been are listed in table \ref{table:excluded-sources}. However, the sources listed here do not provide advanced search with the author keyword as a search criteria and are therefore excluded.
 
-Search string for both scientific and grey literature will be \textbf{"developer experience"}. Because the aim of the review was to get an overview of the definition of DX, only one search string was used. That assured that all relevant publications were included. Including more words in the search string or creating a more complex search string would have requird a better understanding of DX. Also, including other search strings would have biased the search result. To further narrow down the search, the search was modified to include only results where author keyword was "developer experience". This narrowed down the search significantly, and removed irrelevant results.
+Search string for both scientific and grey literature will be \textbf{"developer experience"}. Because the aim of the review was to get an overview of the definition of DX, only one search string was used. That assured that all relevant publications were included. Including more words in the search string or creating a more complex search string would have required a better understanding of DX. Also, including other search strings would have biased the search result. To further narrow down the search, the search was modified to include only results where author keyword was "developer experience". This narrowed down the search significantly, and removed irrelevant results.
 
 Using the author keyword gave results where the author is intentionally discussing the topic of DX. In the case of DX, with searching only with the author keyword, the inclusion/exclusion rate is significantly better than with a full-text search. However, this approach removed the possibility to discover definitions of DX where the author is not aware of this concept or phenomenon.
 
+\cite{understanding-ux} performed a search on the definition of UX. Their search strings used a combination of keywords. However, trying to replicate these for the search of the definition of DX did not yield any satisfactory results, and either the number of search results was too big or too small. 
+
 \subsubsection{Inclusion criteria}
 
-The included material had to be writte in English. Articles that showed up in the searches, and that had the words \textbf{developer experience} in consecutive order, were included in the review.
+The included material had to be written in English. Articles that showed up in the searches, and that had the words \textbf{developer experience} in consecutive order, were included in the review.
 
 \subsubsection{Exclusion criteria}
 
@@ -870,7 +872,7 @@ All sources of the review were collected into one form with the data points show
   \end{center}
 \end{table}
 
-A more comprehensive explanation of the collected datapoints is given in section \ref{section:result-of-mlr}.
+A more comprehensive explanation of the collected data points is given in section \ref{section:result-of-mlr}.
 
 \clearpage
 \section{Current state analysis}
@@ -884,11 +886,11 @@ This section reports the different result of the research.
 
 \subsection{Results of the Multivocal Literature Review} \label{section:result-of-mlr}
 
-The Multivocal Literature Review (MLR) performed on the definition of DX resulted in interesting reslults that presented and reviewed in the following sections. The data points collected emerged during the analysis, and the more analysis was done the more interesting revelations were found.
+The Multivocal Literature Review (MLR) performed on the definition of DX resulted in interesting results that presented and reviewed in the following sections. The data points collected emerged during the analysis, and the more analysis was done the more interesting revelations were found.
 
 There are two different research groups that research DX. A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it. Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development. To this group is also linked other studies related to the DX of IDEs.
 
-% rename all occurences of "scientific" to "white"
+% rename all occurrences of "scientific" to "white"
 
 \begin{table}[ht]
   \begin{center}
@@ -910,7 +912,7 @@ There are two different research groups that research DX. A research group in Br
 
 The most common definition of DX used in the scientific papers is the concept and definition presented by \cite{fagerholm-dx-concept-and-definition} and \cite{fagerholm-doctoral-thesis}. This definition is at the moment the only stated definition of DX in the scientific literature. There is also further derivations on this concept and definition, but nothing that is refuting their definition and concept or nothing that takes another viewpoint on the definition of DX.
 
-The definition of the selected sources for the majority follow the definition grounded by \cite{fagerholm-doctoral-thesis}. Almost all sources take some approach to DX, either cognitive, affective, or conative. This is especially in the scientific articles, where there are more comprehensive groundwork done on why the reserach in question is performed.
+The definition of the selected sources for the majority follow the definition grounded by \cite{fagerholm-doctoral-thesis}. Almost all sources take some approach to DX, either cognitive, affective, or conative. This is especially in the scientific articles, where there are more comprehensive groundwork done on why the research in question is performed.
 
 In grey literature the definition of DX varies a lot more and there are no references to any scientific sources in the grey literature. The definitions are given by the practitioners themselves and from their viewpoint and context of software engineering. In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX.
 
@@ -965,13 +967,13 @@ From the analysis of the material, there is a clear indication that there are di
   \end{center}
 \end{table}
 
-\textit{Definition} is the context that considers direclty the definition of DX. Articles having the context of definition are discussing and explaining the concept of DX.
+\textit{Definition} is the context that considers directly the definition of DX. Articles having the context of definition are discussing and explaining the concept of DX.
 
 \textit{Development Environment} is related to the technical environment where the developer is developing the software. In the found articles the most notable artifact under research was the IDE. Other artifacts that could be included in the development environment could be programming languages and framework or the ease of use of setting up the development environment.
 
 \textit{APIs} emerged as a context. APIs are interfaces that developers use when building software. This makes developers users of the APIs, and their UX of an API can formulated to be a DX.
 
-\textit{Product or service} is related to the APIs, but was selected as a separate context. Software developers use products and services to develop software, and was seen as an important context of DX. The grey literature is heavily influenced by businesses marketing their services or products. To gain visibility and recognition, businesses are publishing articles and posts on their blogs to write and discuss a specific topic. These businesses are defining DX from their own point of view where they are providing products and services, that are directly used by developers. Some articles mentioned that back in the days, it was executives that made the business and purchase decisions of tools, frameworks and other products and the developer's opinion were not considered. Developers were forced to use whatever they were offered. Today, the purchase decision has more and more shifted to be a responsibility of the developer. Developers are the final users of the product and therefore businesses have probably realized that developers are the ones to make the decisions. All in all, it can be seen from the current grey literature that developers are being considered more and more (cite Devs are people too), and that this movement has created the concept of DX.
+\textit{Product or service} is related to the APIs, but was selected as a separate context. Software developers use products and services to develop software, and was seen as an important context of DX. The grey literature is heavily influenced by businesses marketing their services or products. To gain visibility and recognition, businesses are publishing articles and posts on their blogs to write and discuss a specific topic. These businesses are defining DX from their own point of view where they are providing products and services, that are directly used by developers. Some articles mentioned that back in the days, it was executives that made the business and purchase decisions of tools, frameworks and other products and the developer's opinion were not considered. Developers were forced to use whatever they were offered. Today, the purchase decision has more and more shifted to be a responsibility of the developer. Developers are the final users of the product and therefore businesses have probably realized that developers are the ones to make the decisions. All in all, it can be seen from the current grey literature that developers are being considered more and more (cite "Devs are people too"), and that this movement has created the concept of DX.
 
 \textit{User Experience} is the experience that emerges from using a software product or service. Multiple sources explained that DX is a form of UX. Grey literature takes to a large degree a viewpoint where DX is a form of UX, where developers are users of products and services. In this viewpoint the DX consists of features that are also used when measuring the UX of a service. These include factors like functionality, usability, and reliability. DX can be seen that there is always a developer that is a user. The role of the user is the variable, and can vary from being a user of a product where the DX is seen in the product, or then the user can be a user of a developer workflow in a software project.
 
@@ -982,7 +984,7 @@ From the analysis of the material, there is a clear indication that there are di
 \begin{table}[ht]
   \begin{center}
     \begin{tabular}{l r}
-      Context                           & Number of occurences \\
+      Context                           & Number of occurrences \\
       \hline
       Definition                        & 5                    \\
       Development Environment           & 11                   \\
@@ -993,14 +995,14 @@ From the analysis of the material, there is a clear indication that there are di
       Mood \& Feelings                  & 8                    \\
       \hline
     \end{tabular}
-    \caption{Occurences of different contexts in scientific and grey literature combined}
+    \caption{Occurrences of different contexts in scientific and grey literature combined}
   \end{center}
 \end{table}
 
 \begin{table}[ht]
   \begin{center}
     \begin{tabular}{l r}
-      Context                           & Number of occurences \\
+      Context                           & Number of occurrences \\
       \hline
       Definition                        & 4                    \\
       Development Environment           & 9                    \\
@@ -1011,14 +1013,14 @@ From the analysis of the material, there is a clear indication that there are di
       Mood \& Feelings                  & 7                    \\
       \hline
     \end{tabular}
-    \caption{Occurences of different contexts in scientific literature}
+    \caption{Occurrences of different contexts in scientific literature}
   \end{center}
 \end{table}
 
 \begin{table}[ht]
   \begin{center}
     \begin{tabular}{l r}
-      Context                           & Number of occurences \\
+      Context                           & Number of occurrences \\
       \hline
       Definition                        & 1                    \\
       Development Environment           & 2                    \\
@@ -1029,7 +1031,7 @@ From the analysis of the material, there is a clear indication that there are di
       Mood \& Feelings                  & 1                    \\
       \hline
     \end{tabular}
-    \caption{Occurences of different contexts in grey literature}
+    \caption{Occurrences of different contexts in grey literature}
   \end{center}
 \end{table}
 
