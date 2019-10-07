@@ -563,7 +563,15 @@ This thesis doesn't give any clear and well defined definition of DX, and there 
 
 The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explain the background behind the themes in this study. The topics and themes discussed are a result of an informal literature search on the concept of DX and the results of the systematic literature. They are topics that are related to DX and understanding these individual topics help to understand the complex nature of DX. The systematic literature review on the definition of DX is presented in section \ref{mlr}.
 
-\subsection{Developer Experience}
+\subsection{Experience}
+
+\cite{moilanen2018api} differentiates UX from DX by stating that in UX the focus is on using the product and in DX the focus is on creating a product. They also note that UX is a user-centered model of operation, whereas DX is a process-product-centered model of operation. This differentiation of using versus producing is used in this thesis
+
+The notion of experiencing can been seen in various different ways in SE. Sometimes the different variations of experiences are used intertwined, but is important to differentiate them to avoid misunderstandings. Different experiences related to consuming, using or interacting with something provided by someone else includes \textit{user experience}, \textit{product experience}, \textit{brand experience}, and \textit{service experience}. Experiences related\textit{programmer experience}, and finally also \textit{developer experience}.
+
+\cite{understanding-ux} investigate into the notion of UX and simultaneously differentiates the different kinds of usage experiences. \textit{Brand experience} includes interaction not only with the product, but also the company and it's services and is therefore a broader concept than UX. \textit{Product experience} is narrower the user experience and deals with the objects that are products. \textit{Service experience} concerns about face-to-face services and experiences related to that. \textit{User experience} is discussed in section \ref{section:ux}
+
+\subsubsection{Developer Experience}
 
 Current scientific literature on the definition of DX is few in numbers. DX has however a comprehensive and detailed definition by \cite{fagerholm-doctoral-thesis}. Their doctoral thesis dives into the core of developers and their experiences with developing software. They define DX into two different environments, a social and a technical environment. These two dimensions are presented in figure \ref{figure:social-technical}.
 
@@ -597,7 +605,7 @@ DX can be seen as important from multiple different viewpoints. From a viewpoint
   \label{figure:conceptual-framework}
 \end{figure}
 
-\subsection{Programmer Experience}
+\subsubsection{Programmer Experience}
 
 A software developer is a person with a bigger responsibility than a programmer. If a programmer is following instructions, requirements, and guidelines, the developer is also finding out what the instructions, requirements and guidelines should be and probably also helps in defining them. Therefore DX is also considering more of the surrounding context than what Programmer Experience (PX) is considering.
 
@@ -609,7 +617,7 @@ Programmer Experience (PX) can be defined as \textit{The result of the intrinsic
 
 % http://programming-experience.org/px19/ https://2019.programming-conference.org/
 
-\subsection{User Experience}
+\subsubsection{User Experience} \label{section:ux}
 
 User Experience (UX) emerged from the traditional field of HCI. It was seen that only focusing on the instrumental value of the product or service is not enough. \cite{ux-research-agenda} studied recent research of UX, and also proposed the future of it to aid in finding a direction for research of it. They found 3 important perspectives of UX. 1) UX is beyond the instrumental by considering the holistic, aesthetic, and hedonic aspects of usage. 2) Emotion and affect are to interest when understanding the subjective view on usage, that often is focused on the positive antecedents and consequences. 3) The experience in itself is a complex and dynamic phenomena that is near to impossible to replicate.
 
@@ -673,7 +681,9 @@ However, this shouldn't be limited or restricted to only APIs, programming langu
 
 \subsection{Application Programming Interfaces}
 
-\cite{api-designers}, \cite{api-ecosystem}, \cite{web-api-economy}.
+Application Programming Interfaces (APIs) are interface that developers use to communicate and transfer information with external service, but also to build products and services with. As developers are in the role of using APIs, the APIs UX, and also DX, has been researched \citep{api-designers}. Developers are the main users of APIs, the API's DX has been considered as a very important aspect of the API. A good DX aids in getting users for an API.
+
+APIs, and especially Web APIs have enabled to create businesses around APIs \citep{api-ecosystem}, \citep{web-api-economy}, \citep{moilanen2018api}. This type of business is called an API economy, and has quickly become a viable way of generating revenue for businesses.
 
 \clearpage
 \section{Research methods}
