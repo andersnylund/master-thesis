@@ -78,7 +78,9 @@ https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.81.9285&rep=rep1&type=
   - qualitative => theoretical lens is often applied after data is collected, to focus the process of labeling and categorizing ("coding") the data
 - *Grounded Theory*
   - initial analysis of the data begins without any preconceived categories
-- traditionally software engineering researchers have been poor at making theories explicit
+  - then during the research the theory "emerges" from the analysis
+  - new qualitative data is compared with old qualitative data 
+- traditionally software engineering researchers have been poor at making theories explicit and therefore results have been difficult to compare
 
 ## 5 Selecting Methods
 

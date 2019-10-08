@@ -2,7 +2,7 @@
 
 ## DX
 
-- Moilanen, J., Niinioja, M., Seppänen, M., & Honkanen, M. (2018). API-talous 101. Alma Talent Oy.
+- Extreme Programming Explained by Kent Beck
 
 ## SLR and MLR
 
@@ -28,6 +28,7 @@
 ## Software Development
 
 - An exploratory study on the influence of developers in technical debt Reem Alfayez, Pooyan Behnamghader, Kamonphop Srisopha, Barry Boehm May 2018 TechDebt '18: Proceedings of the 2018 International Conference on Technical Debt
+- N. Novielli and A. Serebrenik, “Sentiment and emotion in software engineering,” IEEE Softw., vol. 36, no. 5, pp. 6–9, p. 23, Sept./Oct. 2019.
 
 ## Developer mood
 

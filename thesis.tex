@@ -466,6 +466,8 @@ In some research the term \textit{Developer Experience} with the abbreviation of
 
 DX has been studied previously, but research on it is still lacking the connection to practical applications. This is one the biggest motivators for this thesis, as the topic is novel and there is huge potential in improving software development processes, and thereby also potentially improve the e.g. performance, quality, and outcome in software projects.
 
+\cite{voice-of-the-developer} talk about \textit{The Voice of the Developer}, and how the focus of software development has been on the customer's and product's perspective on e.g. code quality and technical debt. The voice of the developer considers more on the developer's perspective, and on how the product or service under development resonates with the developer's satisfaction and well-being. The voice of the developer resonates with DX, and there can be seen a lot of commonalities with what is considered with them. 
+
 There is possibly huge value that can be gained from studying DX and learning about how it works. A better understanding of DX can help organisations, teams, and individual software developers to create a better experience that enables them to benefit from it in multiple different areas.
 
 % For the author the DX means having a low friction and easy setup with their own development environment. They want to have an environment that is lightweight, fast, and easy to use. It should have a short cycle of feedback i.e. when making a change to the source code it should be immediately reflected in the output. This might be the reason why they like to develop for the web, as the tools are often quick and have a fast feedback cycle. The environment should perform tasks automatically as building, reporting errors. The frontend JavaScript framework React and the tools supporting it are a great examples of excellent DX. The tools are intuitive and guide the developer in making the right things. After all learning new technologies is not about solving new problems, but it's about solving the same old problems more efficiently, faster, easier i.e. with a better DX.
@@ -484,7 +486,9 @@ Based on this, the selected approach for defining the problem and the research q
 
 \newcommand{\rqone}{What is the definition and aspects of Developer Experience, and how do they differ between scientific literature and literature written by practitioners?}
 \newcommand{\rqtwo}{How is Developer Experience and its aspects defined by different roles in a software consultancy company?}
-\newcommand{\rqthree}{What aspects of Developer Experience do software developers in a software concultancy company value and see important?}
+\newcommand{\rqthree}{What aspects of Developer Experience do software developers in a software consultancy company value and see important?} 
+
+% TODO: RQ3 could include a WHY. This would allow to also understand why developers see exactly those aspects as important 
 
 \begin{table}[htb]
   \begin{center}
@@ -505,7 +509,7 @@ To analyze the research questions, the categorization, classification, and guide
 
 \textbf{\hyperref[RQ3]{RQ3}} is Description and Classification question that leans towards being a Design question. Mainly it is however a knowledge question that tries to understand the construct of DX, and does not try to design or implement new or better practices in software development.
 
-All of the research questions are exploratory and they try to understand the underlying phenomena, i.e. DX. Because there is a vague and undefined foundation to build upon, it is not an option ask \textit{relationship}, \textit{correlation and causality}, or \textit{design questions} questions  The nature of these questions will guide the research and guide with selecting the used methods and techniques.
+All of the research questions are exploratory and they try to understand the underlying phenomena, i.e. DX. Because there is a vague and undefined foundation to build upon, it is not an option ask \textit{relationship}, \textit{correlation and causality}, or \textit{design questions} questions. The nature of these selected research questions will guide the research and guide with selecting the used methods and techniques.
 
 %% OTHER CONSIDERED RESEARCH PROBLEM(S)
 
@@ -671,6 +675,8 @@ The flow state is a state where the task at hand has gotten full attention \cite
 
 \subsection{User Starting Experience}
 
+% FIXME: move to the other experiences
+
 \cite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}. These both concepts are discussing the approachability of APIs. Developers have become more and more in charge of the decision and selection of the tools and 3rd party products that are used when developing software. This might have been more of a responsibility of the organization or the directors or managers before. Now however, it has been seen that the developers are the most knowledgeable persons to make these decisions. \cite{api-designers} argue that the first encounter with the API determines if it's selected for usage or not, especially if there is a set of different options to choose from. Therefore they also say that the \textit{0 to 200} and \textit{Time to Hello World} are important things to consider when developing APIs with a good DX.
 
 \textit{0 to 200} comes from the Hypertext Transfer Protocol HTTP code 200 indicating a successful OK response. Adopting a new API and successfully calling the API with a 200 OK response can be seen as the minimal effort to get the integration working.
@@ -694,11 +700,17 @@ During the study, the research problem and the research questions evolved as the
 
 During writing of the thesis, the author was working at the case company, allowing to perform ethnographic techniques in understanding and studying the phenomena. Working at the case company also allowed to have discussion with colleagues.
 
+% TODO: Use the theory and/or framework from \cite{fagerholm-doctoral-thesis} and use e.g. the "experience objects" and measure what kind of experiences ("immediate experience", "cumulative experience")
+
+% google translate work very well!: you could try to take the theoretical model in my doctoral dissertation to structure the analysis a bit (eg what "experience objects" come up, how the participants reason about them, and at what level they reason (from "immediate experience" to "cumulative experience) ")? Then you will most likely find something else as well, and then maybe a result could be a different theoretical model that is better based on empirical evidence.
+
 \subsection{Research approach}
 
-This thesis takes an exploratory approach to study the research problem and to answer the research questions. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \citep{easterbrook2008selecting}. The definition of DX given by \cite{fagerholm-dx-concept-and-definition} will work as the basis of the study, but it is only giving the abstract concept to build upon. This concept and framework has not widely been taken into practice into empirical research.
+This thesis takes an exploratory approach to study the research problem and to answer the research questions. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \citep{easterbrook2008selecting}. The definition of DX given by \cite{fagerholm-dx-concept-and-definition} will work as the basis of the study, but it is only giving the abstract concept to build upon. This concept and framework has not yet been widely taken into practice in empirical research.
 
 Also, from initial discussion in the case company there was almost as many definitions of DX as there was discussions. This shows that depending on the role of the practitioner and the context they are working in affects in the definition of DX.
+
+\citet{easterbrook2008selecting} 
 
 \subsection{Research philosophy} \label{section:research-philosophy}
 
@@ -720,13 +732,18 @@ To be able to investigate and define the definition of DX at the case company, t
 
 \subsubsection{Multivocal Literature Review}
 
-Each research and study should have a background check and literature review where previous material and research is assessed, and from where the current research can be continued from an built upon.
+% TODO: read "Guidelines for Snowballing in Systematic..." and reiterate the MLR
+% this is a way to get more articles
 
-A MLR is a form of systematic literature review, that produces both qualitative and quantitative data. In this study a MLR was seen as a good fit, as it allows to get a broad view of the current state of the research in the topic. It also allows to answer exploratory questions where the existence of a subject or topic is abstract or vague.
+% TODO: improve RQ1 to also include the following aspects:
+% - What objects/entities have been studied with respect to developer experience?
+% - What methods have been used to study developer experience?
+% - What are the main results of the existing research on developer experience?
+% - What is known about factors that improve or worsen developer experience? 
 
-A more comprehensive discussion of the MLR is discussed in section \ref{mlr}.
+Each research and study should have a background check and literature review where previous material and research is assessed, and from where the current research can be continued and built upon. A MLR is a form of systematic literature review, that produces both qualitative and quantitative data. In this study a MLR was seen as a good fit, as it allows to get a broad view of the current state of the research in the topic. It also allows to answer exploratory questions where the existence of a subject or topic is abstract or vague. A more comprehensive discussion of the MLR is discussed in section \ref{mlr}.
 
-% is this subsection of MLR required here or can it be discussed completely in the section of MLR
+% TODO: is this subsection of MLR required here or can it be discussed completely in the section of MLR?
 
 \subsubsection{Brainstorming}
 
