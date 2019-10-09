@@ -51,12 +51,29 @@ https://www.crcpress.com/rsc/downloads/9781598741933_Corbin.pdf
 
 ## Analytic Process
 
--  
+- break the data into pieces corresponding to the natural breaks in a conversation
+- try out various interpretations and discard those that are not supported by data
+- she found a concept that wasn't that important in the beginning
+  - higher level concept called "changing self"
+- while doing the analysis of the vietnam war veterans she found more and new questions that guided her work and the next steps of analysing the data collection
+- she trusted her intuitions more than never before as she didn't even have a well-formulated overall research question
+- "combatant" vs "noncombatant"
+- she had problems to find veterans that fought in the vietnam war
+- the difficult topics and discussions she had during the research made it even more difficult to continue with it
+- she found out that some veterans that had problems to talk about their experience had written memoirs about them, so she went to amazon and got everything she could
+- she got too involved with the stories and got emotionally affected by them and had to take a break from them
+- she wanted to know why some veterans were able to heal after and why some were not able to do that 
+- writing memos is an important way to reflect the interaction between the researcher and the data
 
 ## Concluding Remarks
+
+- this way of entering research and investigation enables the researchers to have an open mind where they are ready to listen and hear what the participants have to say
+- there is room also for other approaches for research, like thick rich description or case analysis
+- after all, methods are just methods and the data collected from it is the most important part
+- *"develop useful theory that is grounded in data"*
 
 ## Personal interpretations of the text
 
 - Corbin is a pioneer, and has her background in nursing
 - very comprehensive background behind the research philosophy
-- 
+- how could writing memos be done in my case?

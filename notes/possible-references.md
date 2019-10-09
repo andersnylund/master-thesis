@@ -33,6 +33,7 @@
 ## Developer mood
 
 - Beecham, S., Baddoo, N., Hall, T., Robinson, H., Sharp, H.: Motivation in software engineering: A systematic literature review. IST 50, 860–878 (2008)
+- Sentiment and Emotion in Software Engineering
 
 ## Flow state and distractions. Sociability and Social Support
 
@@ -87,6 +88,7 @@
 
 - Can you Trust a Single Data Source Exploratory Software Engineering Case Study? (Bratthall and Jorgensen 2002)
 - An Empirical Study of the Complex Relationships between Requirements Engineering Processes and Other Processes that Lead to Payoffs in Productivity, Quality, and Risk Management (Damian and Chisan 2006)
+- Grounded Theory Research: Porcedures, Canons and Evaluative Criteria http://www.zfs-online.org/index.php/zfs/article/viewFile/27
 
 ## Interviews
 
