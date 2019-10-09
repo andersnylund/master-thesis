@@ -3,6 +3,7 @@
 ## DX
 
 - Extreme Programming Explained by Kent Beck
+- What is required by software platforms in order to give a good developer experience? https://lup.lub.lu.se/student-papers/search/publication/8983773
 
 ## SLR and MLR
 
@@ -41,6 +42,7 @@
 - 27.Oehlberg,  L.,  Ducheneaut,  N.,  Thorton,  J.D.,  Moore,  R.J.,Nickell,  E.  2006.  Social  TV:  Designing  for  D istributed,  SocialTelevision Viewing. In Proc. Euro iTV’06. (2006), 251-259
 - Leont’ev,  A.  N.  Activity,  consciousness,  and  personality.  Prentice-Hall Press, (1978)
 - Perlow, L.A., The time famine: Toward a sociology of work time. Admin. Science Quarterly, 44, (1999), 57-81
+- Finding Flow: The Psychology of Engagement with Everyday Life
 
 ## User Experience
 
@@ -89,6 +91,7 @@
 - Can you Trust a Single Data Source Exploratory Software Engineering Case Study? (Bratthall and Jorgensen 2002)
 - An Empirical Study of the Complex Relationships between Requirements Engineering Processes and Other Processes that Lead to Payoffs in Productivity, Quality, and Risk Management (Damian and Chisan 2006)
 - Grounded Theory Research: Porcedures, Canons and Evaluative Criteria http://www.zfs-online.org/index.php/zfs/article/viewFile/27
+- Grounded theory in software engineering research: a critical review and guidelines
 
 ## Interviews
 
