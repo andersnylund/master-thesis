@@ -178,6 +178,8 @@
 \usepackage{tabularx}
 \usepackage{float}
 \usepackage{caption}
+\usepackage{titlesec}
+\usepackage{hyperref}
 
 %% Math fonts, symbols, and formatting; these are usually needed
 \usepackage{amsfonts,amssymb,amsbsy,amsmath}
@@ -317,6 +319,37 @@
 %% directly into the file thesistemplate.xmpdata.
 %\setboolean{writexmpdatafile}{false}
 
+% Create command subsubsubsection
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
 %% All that is printed on paper starts here
 %%
 \begin{document}
@@ -466,7 +499,7 @@ In some research the term \textit{Developer Experience} with the abbreviation of
 
 DX has been studied previously, but research on it is still lacking the connection to practical applications. This is one the biggest motivators for this thesis, as the topic is novel and there is huge potential in improving software development processes, and thereby also potentially improve the e.g. performance, quality, and outcome in software projects.
 
-\cite{voice-of-the-developer} talk about \textit{The Voice of the Developer}, and how the focus of software development has been on the customer's and product's perspective on e.g. code quality and technical debt. The voice of the developer considers more on the developer's perspective, and on how the product or service under development resonates with the developer's satisfaction and well-being. The voice of the developer resonates with DX, and there can be seen a lot of commonalities with what is considered with them. 
+\cite{voice-of-the-developer} talk about \textit{The Voice of the Developer}, and how the focus of software development has been on the customer's and product's perspective on e.g. code quality and technical debt. The voice of the developer considers more on the developer's perspective, and on how the product or service under development resonates with the developer's satisfaction and well-being. The voice of the developer resonates with DX, and there can be seen a lot of commonalities with what is considered with them.
 
 There is possibly huge value that can be gained from studying DX and learning about how it works. A better understanding of DX can help organisations, teams, and individual software developers to create a better experience that enables them to benefit from it in multiple different areas.
 
@@ -482,20 +515,30 @@ Based on this, the selected approach for defining the problem and the research q
 
 \newcommand{\researchproblem}{How is Developer Experience defined and what are the aspects of Developer Experience that are valued by software practitioners?}
 
-\textbf{Research problem:} \researchproblem
+\paragraph{Research problem:} \researchproblem
 
 \newcommand{\rqone}{What is the definition and aspects of Developer Experience, and how do they differ between scientific literature and literature written by practitioners?}
+\newcommand{\rqonepointone}{What objects/entities have been studied with respect to developer experience?}
+\newcommand{\rqonepointtwo}{What methods have been used to study developer experience?}
+\newcommand{\rqonepointthree}{What are the main results of the existing research on developer experience?}
+\newcommand{\rqonepointfour}{What is known about factors that improve or worsen developer experience?}
 \newcommand{\rqtwo}{How is Developer Experience and its aspects defined by different roles in a software consultancy company?}
-\newcommand{\rqthree}{What aspects of Developer Experience do software developers in a software consultancy company value and see important?} 
+\newcommand{\rqthree}{What aspects of Developer Experience do software developers in a software consultancy company value and see important?}
 
 % TODO: RQ3 could include a WHY. This would allow to also understand why developers see exactly those aspects as important 
 
-\begin{table}[htb]
+\begin{table}[ht]
   \begin{center}
-    \begin{tabularx}{\textwidth}{lX}
-      \textbf{RQ 1} & \rqone \label{RQ1}   \\
-      \textbf{RQ 2} & \rqtwo \label{RQ2}   \\
-      \textbf{RQ 3} & \rqthree \label{RQ3}
+    \begin{tabularx}{\textwidth}{l l X}
+      \textbf{RQ 1} &        & \textbf{\rqone} \label{RQ1}    \\
+                    & RQ 1.1 & \rqonepointone \label{RQ1.1}   \\
+                    & RQ 1.2 & \rqonepointtwo \label{RQ1.2}   \\
+                    & RQ 1.3 & \rqonepointthree \label{RQ1.3} \\
+                    & RQ 1.4 & \rqonepointfour \label{RQ1.4}  \\
+      \hline
+      \textbf{RQ 2} &        & \textbf{\rqtwo} \label{RQ2}    \\
+      \hline
+      \textbf{RQ 3} &        & \textbf{\rqthree} \label{RQ3}
     \end{tabularx}
   \end{center}
   \caption{The research questions \label{researchquestions}}
@@ -542,7 +585,7 @@ All of the research questions are exploratory and they try to understand the und
 
 The scope of the thesis changed remarkably during its conviction and during the time it was worked on. Initially the philosophy of the thesis was more of a positivistic approach, but the more information was gathered about the topic, the more exploratory the nature of the thesis became. More of this in section \ref{section:research-philosophy}.
 
-The scope of this thesis is narrow. Even if the there is a lot of open questions about the concept of DX, the thesis is only scratching the surface of the current state and understanding of the definition of DX. The thesis focuses on getting a broad view on the research problem. It is acknowledged that the problem is also most likely not solvable, and that there are no definitive answers to the research questions. 
+The scope of this thesis is narrow. Even if the there is a lot of open questions about the concept of DX, the thesis is only scratching the surface of the current state and understanding of the definition of DX. The thesis focuses on getting a broad view on the research problem. It is acknowledged that the problem is also most likely not solvable, and that there are no definitive answers to the research questions.
 
 The empirical study is focused only on one case company, where the aim is to understand the current notion of DX in the context of the company. Initially the idea was to generate a set of practices or even processes that would improve the ways of working at the company. However this was noted to be too ambitious.
 
@@ -552,11 +595,11 @@ This thesis doesn't give any clear and well defined definition of DX, and there 
 
 \begin{enumerate}
   \item Introduction
-  % \item Background
-  % \item Research methods
-  % \item Results
-  % \item Summary
-  % \item Conclusions
+        % \item Background
+        % \item Research methods
+        % \item Results
+        % \item Summary
+        % \item Conclusions
   \item ???
   \item Profit!!!
 \end{enumerate}
@@ -710,7 +753,7 @@ This thesis takes an exploratory approach to study the research problem and to a
 
 Also, from initial discussion in the case company there was almost as many definitions of DX as there was discussions. This shows that depending on the role of the practitioner and the context they are working in affects in the definition of DX.
 
-In \cite{developing-grounded-theory} Juliet Corbin reflects on the grounded theory research methodology and how she approached a research she conducted in combination while writing a book \citep{basics-of-qualitative-research} about grounded theory. 
+In \cite{developing-grounded-theory} Juliet Corbin reflects on the grounded theory research methodology and how she approached a research she conducted in combination while writing a book \citep{basics-of-qualitative-research} about grounded theory.
 
 \begin{quotation}
   \textit{"I was just going to sit down with that first piece of data in front of me and let it flow, let the research take me where it wanted"} - Juliet Corbin \citep[p.~43]{developing-grounded-theory}
@@ -806,11 +849,11 @@ The Prague Definition of grey literature is strict and therefore not allowing e.
 
 \subsection{The motivation behind a Multivocal Literature Review}
 
-DX is an abstract concept and framework. As pointed by \cite{fagerholm-doctoral-thesis}, the framework they present can be used to guide inquiries into DX. There was a need to create an understanding of the definition of DX from the point of view in this thesis. Traditional literature reviews can help in these cases, and they create a common understanding and basis of the topic that is going to be discussed. However, traditional literature reviews are prone to be biased. To avoid bias of the author, and because DX is a subjective concept of the developer, the definition of DX could have been reviewed with a help of a Systematic Literature Review (SLR). Systematic literature reviews are a way of producing evidence based results, and they are effective in complex and opinion based fields where a common agreement of a concept or topic might be difficult to find.
+DX is an abstract concept and framework. As pointed by \cite{fagerholm-doctoral-thesis}, the framework they present can be used to guide inquiries into DX. There was a need to create an understanding of the definition of DX from the point of view in this thesis. Traditional literature reviews can help in these cases, and they create a common understanding and basis of the topic that is going to be discussed. However, traditional literature reviews are prone to be biased. To avoid bias of the author, and because DX is a subjective concept of the developer, the definition of DX could have been reviewed with a help of a SLR. SLRs are a way of producing evidence based results, and they are effective in complex and opinion based fields where a common agreement of a concept or topic might be difficult to find.
 
-In software engineering practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \citep{the-need-for-MLR}. An SLR would include only the scientific papers, and therefore it might not be sufficient to only focus on that. In a MLR the GL should provide a current perspective and fill in the gaps of scientific and formal literature \citep{guidelines-for-MLR}. SE practitioners are producing a lot of literature, that would not be considered in normal literature reviews or SLR. This GL can provide insights about the field of SE, and especially about DX. A SLR has been conducted on the concept \textit{Programmer Experience} \citep{programmer-experience}. This SLR will be used to guide this MLR.
+In software engineering practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \citep{the-need-for-MLR}. An SLR would include only the scientific papers, and therefore it might not be sufficient to only focus on that. In a MLR the GL should provide a current perspective and fill in the gaps of scientific and formal literature \citep{guidelines-for-MLR}. SE practitioners are producing a lot of literature, that would not be considered in normal literature reviews or SLR. This GL can provide insights about the field of SE, and especially about DX.
 
-% Read \citep{guidelines-for-MLR} again after reading \citep{guidelines-for-SLR-in-SE}.
+% TODO: Read \citep{guidelines-for-MLR} again after reading \citep{guidelines-for-SLR-in-SE}.
 
 \subsection{The review protocol of the Multivocal Literature Review}
 
@@ -825,6 +868,8 @@ All data of the MLR can be found the following link: \href{\mlrdxlink}{https://b
 The foundation for the MLR is the first research question \hyperref[RQ1]{RQ1} (\rqone). The goal is to create a understanding of the current situation of the definition of \textit{Developer Experience} with help of both white literature and grey literature.
 
 \subsubsection{Search process}
+
+\subsubsubsection{Database search}
 
 The search is performed as a manual search by the author from various libraries to gather the academic literature. For grey literature, the Google search engine (https://www.google.com) will be used. To limit the amount of grey literature, only the first 2 pages of searches from google.com will be included. Only 91 percent of participants in a study went to the second page of google results page \citep{google-search}. Therefore it's appropriate to include only the most relevant results from the google search. The selected sources of scientific literature is seen in table \ref{table:included-sources}.
 
@@ -857,11 +902,23 @@ The search is performed as a manual search by the author from various libraries 
 
 Other possible libraries and sources for resources could have been are listed in table \ref{table:excluded-sources}. However, the sources listed here do not provide advanced search with the author keyword as a search criteria and are therefore excluded.
 
-Search string for both scientific and grey literature will be \textbf{"developer experience"}. Because the aim of the review was to get an overview of the definition of DX, only one search string was used. That assured that all relevant publications were included. Including more words in the search string or creating a more complex search string would have required a better understanding of DX. Also, including other search strings would have biased the search result. To further narrow down the search, the search was modified to include only results where author keyword was "developer experience". This narrowed down the search significantly, and removed irrelevant results.
+Search string for both scientific and grey literature will be \textbf{"developer experience"}. Because the aim of the review was to get an overview of the definition of DX, only that specific search string was used. \cite{guidelines-for-snowballing} state that with manual searches of sources, the results will vary and are hard to replicate because of the lack of a system. This is key when performing systematic reviews so other researchers can replicate the study.
+
+\cite{guidelines-for-snowballing} also mention that creating complex queries and search strings might be difficult because of the lacking standardized terminology of the research topic. This was exactly the case with this study, as the topic is relatively novel and some research might even be studying DX without knowing that themselves.
+
+Finally \cite{guidelines-for-snowballing} also mention that performing database searches might result in a big set of irrelevant results, from where it can be difficult to find the relevant result from. The process of manually filtering out results is also error prone.
+
+That assured that all relevant publications were included. Including more words in the search string or creating a more complex search string would have required a better understanding of DX. Also, including other search strings would have biased the search result. To further narrow down the search, the search was modified to include only results where author keyword was "developer experience". This narrowed down the search significantly, and removed irrelevant results.
 
 Using the author keyword gave results where the author is intentionally discussing the topic of DX. In the case of DX, with searching only with the author keyword, the inclusion/exclusion rate is significantly better than with a full-text search. However, this approach removed the possibility to discover definitions of DX where the author is not aware of this concept or phenomenon.
 
-\cite{understanding-ux} performed a search on the definition of UX. Their search strings used a combination of keywords. However, trying to replicate these for the search of the definition of DX did not yield any satisfactory results, and either the number of search results was too big or too small. 
+\cite{understanding-ux} performed a search on the definition of UX. Their search strings used a combination of keywords. However, trying to replicate these for the search of the definition of DX did not yield any satisfactory results, and either the number of search results was too big or too small.
+
+\subsubsubsection{Snowballing}
+
+Snowballing is not applicable to grey literature. However, the first round of grey literature about the topic was gathered at September 2019, and the second round in November 2019. Having two different occasions of gathering grey literature sources did take into action timely changes in search results of Google.
+
+% TODO: go through the Google Search Grey literature once again, and pick the first 2 pages into this. Because the first round of analysis was done in september, there might have been changes to the results now
 
 \subsubsection{Inclusion criteria}
 
@@ -1023,13 +1080,13 @@ From the analysis of the material, there is a clear indication that there are di
     \begin{tabular}{l r}
       Context                           & Number of occurrences \\
       \hline
-      Definition                        & 5                    \\
-      Development Environment           & 11                   \\
-      API                               & 10                   \\
-      Product or service                & 9                    \\
-      User Experience                   & 14                   \\
-      Team, Collaboration, \& Community & 16                   \\
-      Mood \& Feelings                  & 8                    \\
+      Definition                        & 5                     \\
+      Development Environment           & 11                    \\
+      API                               & 10                    \\
+      Product or service                & 9                     \\
+      User Experience                   & 14                    \\
+      Team, Collaboration, \& Community & 16                    \\
+      Mood \& Feelings                  & 8                     \\
       \hline
     \end{tabular}
     \caption{Occurrences of different contexts in scientific and grey literature combined}
@@ -1041,13 +1098,13 @@ From the analysis of the material, there is a clear indication that there are di
     \begin{tabular}{l r}
       Context                           & Number of occurrences \\
       \hline
-      Definition                        & 4                    \\
-      Development Environment           & 9                    \\
-      API                               & 4                    \\
-      Product or service                & 2                    \\
-      User Experience                   & 7                    \\
-      Team, Collaboration, \& Community & 11                   \\
-      Mood \& Feelings                  & 7                    \\
+      Definition                        & 4                     \\
+      Development Environment           & 9                     \\
+      API                               & 4                     \\
+      Product or service                & 2                     \\
+      User Experience                   & 7                     \\
+      Team, Collaboration, \& Community & 11                    \\
+      Mood \& Feelings                  & 7                     \\
       \hline
     \end{tabular}
     \caption{Occurrences of different contexts in scientific literature}
@@ -1059,13 +1116,13 @@ From the analysis of the material, there is a clear indication that there are di
     \begin{tabular}{l r}
       Context                           & Number of occurrences \\
       \hline
-      Definition                        & 1                    \\
-      Development Environment           & 2                    \\
-      API                               & 6                    \\
-      Product or service                & 7                    \\
-      User Experience                   & 7                    \\
-      Team, Collaboration, \& Community & 5                    \\
-      Mood \& Feelings                  & 1                    \\
+      Definition                        & 1                     \\
+      Development Environment           & 2                     \\
+      API                               & 6                     \\
+      Product or service                & 7                     \\
+      User Experience                   & 7                     \\
+      Team, Collaboration, \& Community & 5                     \\
+      Mood \& Feelings                  & 1                     \\
       \hline
     \end{tabular}
     \caption{Occurrences of different contexts in grey literature}

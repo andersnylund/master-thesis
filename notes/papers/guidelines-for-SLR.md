@@ -1,5 +1,7 @@
 # Guidelines for performing Systematic Literature Reviews in Software Engineering
 
+Kitchenham B. A. and Charters S. 2007. Guidelines for performing systematic literature reviews in software engineering. Version 2.3, EBSE Technical Report, EBSE- 2007-01, Keele University.
+
 ## 1. What is Introduction
 
 - Aimed towards researchers and PhD students 
