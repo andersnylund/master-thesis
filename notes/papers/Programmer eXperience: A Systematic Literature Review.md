@@ -83,7 +83,6 @@ DOI: http://dx.doi.org/10.1109/ACCESS.2019.2920124
 ## VI. What is Conclusion
 
 - What does it mean that the researchers didn't find heuristics to evaluate design documents
-- 
 
 ## Interpretation from the text
 
