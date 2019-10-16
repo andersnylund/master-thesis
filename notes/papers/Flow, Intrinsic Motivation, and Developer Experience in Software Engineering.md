@@ -12,7 +12,7 @@ https://link.springer.com/chapter/10.1007/978-3-319-33515-5_9
 - Developers are required to both know technical skills to implement the software, but also social skills to communicate with the software development team
 - Little has been studied and therefore little is known how developers e.g. interact with IDEs and their experience with it
 - There has been several studies [2-5] that happier developers produce better results
-- Developers are in an interesting role as they are both the creators of new systems, but also 
+- Developers are in an interesting role as they are both the creators of new systems, but also users of existing software products and services
 - The aim with the study is to understand what makes up the DX of an IDE measured in state of flow, intrinsic motivation and user experience
 - IDE selection is often done by the employer
 - Contribution is understanding developers as users

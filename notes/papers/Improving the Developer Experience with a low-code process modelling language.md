@@ -1,4 +1,4 @@
-# Improving the DX with a low-code process modelling language
+# Improving the Developer Experience with a low-code process modelling language
 
 ## What is 1. Introduction
 
