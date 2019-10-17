@@ -2,13 +2,13 @@
 
 ## Abstract
 
-- HOSS are virtual organizations
+- Hybrid OSS are virtual organizations
 - each community has their own way of working affecting contributions, verifications, long-term decisions
 - this is a challenging environment for new developers
 
 ## 1. Introduction
 
-- a HOSS consists of both individual developers and representatives of companies (think of React and Facebook)
+- a Hybrid OSS consists of both individual developers and representatives of companies (think of React and Facebook)
 - ensuring that everyone has equal rights and opportunities is key for collaboration and motivation
 - *connection in between the community context and the developer's experience have largely been unexplored*
 - the aim is to lay ground for understanding on how communities can be made more welcoming for new developers
@@ -24,12 +24,12 @@
   - commercial actors don't have to behave like the rest of the community and can make shortcuts etc.
 - community sponsors can manage and orchestrate the whole project
 - a community has to stay healthy
-- Governance is crucial in a HOSS
+- Governance is crucial in a Hybrid OSS
 
 ### 2.1 A focus on the developer
 
 - healthy community should provide reward and motivation for further contribution
-- in HOSS discussion can be outside of the reach of the individual developer, which can hamper contribution
+- in Hybrid OSS discussion can be outside of the reach of the individual developer, which can hamper contribution
 - mentoring new developers and providing them the necessary information 
 
 ## 3 Modeling the context

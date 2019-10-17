@@ -19,6 +19,8 @@
 - Motivation, skill, satisfaction, values, and personality are all important when creating high performing teams 
 - But, it is still unknown how practitioners themselves experience the pursuit of being performant
 - The study shows that it is not enough to define performance by measuring if the predefined objectives are achieved
+- RQ1 How do software practitioners experience team performance in Lean and Agile environments?
+- RQ2 How do software practitioners reason about the relationships between perceived performance factors?
 
 ## 2. What is Theoretical background
 
@@ -115,9 +117,8 @@
 
 - Quite difficult to read
 - Addresses complex subjects
-- In the end the master thesis' research problem, as it is now, will measure the performance of the software teams, and therefore this and the following paper will be probably really interesting
 - I see that the article is talking about the same problem that I had in mind when starting to form my research problem and questions. Therefore I also see that the problem and questions needs a tremendous amount of improvement
-- The initial problem was about the success of software projects
+  - The initial research problem in the thesis was about the success of software projects
   - The article talks about the close connection in practitioners' experience between performance and success
 - More and more I think that the master thesis should be studying about some tool or framework that helps in the daily work of developers
 - The interviews done in this master thesis could be aimed towards a special kind of practitioners in the organization, e.g. developers and/or team-leads

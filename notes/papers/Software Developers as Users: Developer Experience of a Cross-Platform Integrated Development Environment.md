@@ -1,4 +1,4 @@
-# Software Developer as Users: Developer Experience of a Cross-Platform Integrated Development Environment
+# Software Developers as Users: Developer Experience of a Cross-Platform Integrated Development Environment
 
 https://link.springer.com/chapter/10.1007%2F978-3-319-26844-6_40
 
