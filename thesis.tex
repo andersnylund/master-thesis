@@ -463,6 +463,7 @@ Otaniemi, Date to te announced
   OSS   & Open Source Software               \\
   PAW   & Performance Alignment Work         \\
   SE    & Software Engineering               \\
+  SEO   & Search Engine Optimization         \\
   SLR   & Systematic Literature Review       \\
   TBS   & Traditional Brainstorming          \\
   UX    & User Experience                    \\
@@ -673,6 +674,16 @@ User Experience (UX) emerged from the traditional field of HCI. It was seen that
 
 \cite{understanding-ux} found that the notion of User Experience (UX) has been widely adopted, without having a clear understanding and definition of what UX. Interestingly,this relates exactly to the situation that DX is in now.
 
+\subsubsection{User Starting Experience}
+
+\cite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}. These both concepts are discussing the approachability of APIs. Developers have become more and more in charge of the decision and selection of the tools and 3rd party products that are used when developing software. This might have been more of a responsibility of the organization or the directors or managers before. Now however, it has been seen that the developers are the most knowledgeable persons to make these decisions. \cite{api-designers} argue that the first encounter with the API determines if it's selected for usage or not, especially if there is a set of different options to choose from. Therefore they also say that the \textit{0 to 200} and \textit{Time to Hello World} are important things to consider when developing APIs with a good DX.
+
+\textit{0 to 200} comes from the Hypertext Transfer Protocol HTTP code 200 indicating a successful OK response. Adopting a new API and successfully calling the API with a 200 OK response can be seen as the minimal effort to get the integration working.
+
+\textit{Time to Hello World} comes from the introduction and adoption a new programming language, where often the first task is to print or log the string "Hello World" to the console or terminal. Adopting the basic structures and building block of the programming language prove how easy it is to get going with it, and therefore can be a measurement of the approachability of the language.
+
+However, this shouldn't be limited or restricted to only APIs, programming languages, or frameworks. The concept of User Starting Experience could be used in the measurement of introducing or adopting anything new related to software development e.g. a new development technique or process.
+
 \subsection{Selection of tools}
 
 Perceived choice is a perception of that the choice has already been made \citep{flow-intrinsic-dx}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
@@ -718,18 +729,6 @@ Happiness of developers has been reported have high impact on the practice of so
 \subsection{Flow state}
 
 The flow state is a state where the task at hand has gotten full attention \citep{flow-intrinsic-dx}. Flow state is something that many developers want to achieve. For some developers it is really difficult to focus if there are external things that disturb them like sound or something similar. Also, people coming and asking questions might disturb or interrupt the flow state. Therefore many developers are now also trying out remote work where they are not co-located. Achieving flow state requires a clear set of goals, continuous feedback, and a good balance between skills and challenge.
-
-\subsection{User Starting Experience}
-
-% FIXME: move to the other experiences
-
-\cite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}. These both concepts are discussing the approachability of APIs. Developers have become more and more in charge of the decision and selection of the tools and 3rd party products that are used when developing software. This might have been more of a responsibility of the organization or the directors or managers before. Now however, it has been seen that the developers are the most knowledgeable persons to make these decisions. \cite{api-designers} argue that the first encounter with the API determines if it's selected for usage or not, especially if there is a set of different options to choose from. Therefore they also say that the \textit{0 to 200} and \textit{Time to Hello World} are important things to consider when developing APIs with a good DX.
-
-\textit{0 to 200} comes from the Hypertext Transfer Protocol HTTP code 200 indicating a successful OK response. Adopting a new API and successfully calling the API with a 200 OK response can be seen as the minimal effort to get the integration working.
-
-\textit{Time to Hello World} comes from the introduction and adoption a new programming language, where often the first task is to print or log the string "Hello World" to the console or terminal. Adopting the basic structures and building block of the programming language prove how easy it is to get going with it, and therefore can be a measurement of the approachability of the language.
-
-However, this shouldn't be limited or restricted to only APIs, programming languages, or frameworks. The concept of User Starting Experience could be used in the measurement of introducing or adopting anything new related to software development e.g. a new development technique or process.
 
 \subsection{Application Programming Interfaces}
 
@@ -785,9 +784,6 @@ Another viewpoint to this is also the case company, that has its own culture and
 To be able to investigate and define the definition of DX at the case company, the study has to focus on the foundations. During early stages of the thesis, it was noted that a comprehensive literature review and study was required. A good literature review gives a good foundation on which to build the research upon, and ensures that the studied field is understood correctly.
 
 \subsubsection{Multivocal Literature Review}
-
-% TODO: read "Guidelines for Snowballing in Systematic..." and reiterate the MLR
-% this is a way to get more articles
 
 Each research and study should have a background check and literature review where previous material and research is assessed, and from where the current research can be continued and built upon. A MLR is a form of systematic literature review, that produces both qualitative and quantitative data. In this study a MLR was seen as a good fit, as it allows to get a broad view of the current state of the research in the topic. It also allows to answer exploratory questions where the existence of a subject or topic is abstract or vague. A more comprehensive discussion of the MLR is discussed in section \ref{mlr}.
 
@@ -919,8 +915,6 @@ The first set of scientific literature included 21 articles. Snowballing was per
 
 The first round of grey literature about the topic was gathered at September 2019, and the second round in November 2019. Having two different occasions of gathering grey literature sources did take into action timely changes in search results of Google.
 
-% TODO: go through the Google Search Grey literature once again, and pick the first 2 pages into this. Because the first round of analysis was done in september, there might have been changes to the results now
-
 % TODO: write more about the iteration of snowballing
 
 \subsubsection{Inclusion criteria}
@@ -943,36 +937,48 @@ Because of the novel topic the quality assessments were not considered in this s
 
 \subsubsection{Data collection and analysis}
 
-All sources of the review were collected into one form with the data points shown in table \ref{table:data-collection-points}. During collection of data different aspects emerged. The process of collection was a continuous refinement of the search method, inclusion and exclusion criteria, data extraction points. During the collection the comprehension and understanding of the base concept of DX was continuously refined.
+All sources of the review were collected into one form with the data points. During collection of data different aspects emerged. The process of collection was a continuous refinement of the search method, inclusion and exclusion criteria, data extraction points. During the collection the comprehension and understanding of the base concept of DX was continuously refined.
 
-\begin{table}
-  \begin{center}
-    \begin{tabular}{ | p{0.4\textwidth} | p{0.5\textwidth} | }
-      \hline
-      \textbf{Data point}                   & \textbf{Description}                                                                                                                                                                                          \\ \hline
-      Title                                 & Title of the source                                                                                                                                                                                           \\ \hline
-      Link to the source                    & http-link to the source                                                                                                                                                                                       \\ \hline
-      Library                               & The library from where source was found                                                                                                                                                                       \\ \hline
-      Year of publication                   & Year of publication                                                                                                                                                                                           \\ \hline
-      Type of article                       & Type of article                                                                                                                                                                                               \\ \hline
-      Scientific / grey literature          & Classification if scientific or grey. Coded as 0 or 1                                                                                                                                                         \\ \hline
-      Author affiliation                    & Academic, industry, or collaboration                                                                                                                                                                          \\ \hline
-      Research problem / questions / topic  & The research problem or questions under study                                                                                                                                                                 \\ \hline
-      Research method                       & The research methods used in the study or article                                                                                                                                                             \\ \hline
-      Object / entity of DX under study     & Description of the experience object that is being studied                                                                                                                                                    \\ \hline
-      Factors that improve or worsen the DX & Factors that cause the DX of the object to be better or worse                                                                                                                                                 \\ \hline
-      Conclusions / results                 & Summary of the conclusions of the source                                                                                                                                                                      \\ \hline
-      Definition of DX                      & Short summary of what definition of DX is used                                                                                                                                                                \\ \hline
-      Explicit/implicit definition of DX    & Some papers explicitly give a definition of DX in the text by either referring other papers or giving their own definition, when other papers use DX without definition (assumes the reader knows what DX is) \\ \hline
-      Reason of interest towards DX         & Why the source is discussing and studying DX                                                                                                                                                                  \\ \hline
-      Mentions              & What the definition of DX is based on                                                                                                                                                                         \\ \hline
-      Other notes                           & Other noteworthy information                                                                                                                                                                                  \\ \hline
-    \end{tabular}
-    \captionsetup{width=0.6\textwidth}
-    \caption{The data collection points of the MLR}
-    \label{table:data-collection-points}
-  \end{center}
-\end{table}
+% TODO: reassess if the table below should be included or not
+
+% \begin{table}
+%   \begin{center}
+%     \begin{tabular}{ | p{0.4\textwidth} | p{0.5\textwidth} | }
+%       \hline
+%       \textbf{Data point}                                     & \textbf{Description}                                                                                                                                                                                          \\ \hline
+%       Title                                                   & Title of the source                                                                                                                                                                                           \\ \hline
+%       Link to the source                                      & http-link to the source                                                                                                                                                                                       \\ \hline
+%       Library                                                 & The library from where source was found                                                                                                                                                                       \\ \hline
+%       Year of publication                                     & Year of publication                                                                                                                                                                                           \\ \hline
+%       Type of article                                         & Type of article                                                                                                                                                                                               \\ \hline
+%       Scientific / grey literature                            & Classification if scientific or grey. Coded as 0 or 1                                                                                                                                                         \\ \hline
+%       Author affiliation                                      & Academic, industry, or collaboration                                                                                                                                                                          \\ \hline
+%       Research problem / questions / topic                    & The research problem or questions under study                                                                                                                                                                 \\ \hline
+%       Research method                                         & The research methods used in the study or article                                                                                                                                                             \\ \hline
+%       Object / entity of DX under study                       & Description of the experience object that is being studied                                                                                                                                                    \\ \hline
+%       Factors that improve or worsen the DX                   & Factors that cause the DX of the object to be better or worse                                                                                                                                                 \\ \hline
+%       Conclusions / results                                   & Summary of the conclusions of the source                                                                                                                                                                      \\ \hline
+%       Definition of DX                                        & Short summary of what definition of DX is used                                                                                                                                                                \\ \hline
+%       Explicit/implicit definition of DX                      & Some papers explicitly give a definition of DX in the text by either referring other papers or giving their own definition, when other papers use DX without definition (assumes the reader knows what DX is) \\ \hline
+%       Reason of interest towards DX                           & Why the source is discussing and studying DX                                                                                                                                                                  \\ \hline
+%       Context of DX                                           & From which context is DX looked at in the research                                                                                                                                                            \\ 
+%                                                               & Definition                                                                                                                                                                                                    \\ 
+%                                                               & Development Environment                                                                                                                                                                                       \\ 
+%                                                               & API                                                                                                                                                                                                           \\ 
+%                                                               & Product or Service                                                                                                                                                                                            \\ 
+%                                                               & User Experience                                                                                                                                                                                               \\ 
+%                                                               & Team, Collaboration, and Community                                                                                                                                                                            \\ 
+%                                                               & Knowledge Sharing                                                                                                                                                                                             \\ 
+%                                                               & Language / library / framework i.e. code in general                                                                                                                                                           \\ 
+%                                                               & Mood \& Feelings                                                                                                                                                                                              \\ \hline
+%       Mentions "Developer Experience: concept and definition" & If the research mentions Fagerholm and Münch's 2012 article                                                                                                                                                   \\ \hline
+%       Other notes                                             & Other noteworthy information                                                                                                                                                                                  \\ \hline
+%     \end{tabular}
+%     \captionsetup{width=0.6\textwidth}
+%     \caption{The data collection points of the MLR}
+%     \label{table:data-collection-points}
+%   \end{center}
+% \end{table}
 
 A more comprehensive explanation of the collected data points is given in section \ref{section:result-of-mlr}.
 
@@ -1110,7 +1116,7 @@ The articles report that DX is an important factor of software engineering. From
 
 The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private browsing sessions were used on the browser when performing the searches.
 
-% TODO: 
+Google has not revealed how the search engine optimization (SEO) works on the Google search engine. However there are some broad guidelines on what a web page has to include, so that it will rank higher on the results page. For companies Google search results is a huge asset and a big opportunity to gain visitor traffic and publicity. Having a web page or site ranking high on the Google search results can probably even determine the existence of some companies businesses. All in all, this means that ranking high on the Google search results page requires knowledge and effort. Therefore we can deduce that the grey literature resources included in this MLR retrieved from Google search are funded or backed by companies that deliberately aim for high ranking on Google searches to sell or promote their products or services.  
 
 %\clearpage
 %\section{Exploratory research}
