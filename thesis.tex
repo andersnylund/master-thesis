@@ -935,9 +935,11 @@ Papers that discussed about developer's experience in terms of the experience le
 
 Because of the novel topic the quality assessments were not considered in this study. The amount of sources were low and because of the exploratory nature of the study, every possible and available source were considered.
 
-\subsubsection{Data collection and analysis}
+\subsubsection{Data collection}
 
 All sources of the review were collected into one form with the data points. During collection of data different aspects emerged. The process of collection was a continuous refinement of the search method, inclusion and exclusion criteria, data extraction points. During the collection the comprehension and understanding of the base concept of DX was continuously refined.
+
+First version of the data collection form was simple and included only some basic characteristics and data points of the sources. With help of ongoing collection, refinement of the search process, and adjustments to the research questions the data points emerged to their final form. 
 
 % TODO: reassess if the table below should be included or not
 
@@ -982,10 +984,22 @@ All sources of the review were collected into one form with the data points. Dur
 
 A more comprehensive explanation of the collected data points is given in section \ref{section:result-of-mlr}.
 
+\subsubsection{Data analysis}
+
+Data analysis was done by looking at one data point (most of the cases a research question), and performing electronic affinity diagramming to them. By iterating on the categories by removing, adding, and combining them new categories and patterns emerged.    
+
 \clearpage
 \section{Current state analysis}
 
-Analysis of the current state of the case company
+\subsection{Case company}
+
+Reaktor is a Finnish company that provides consultancy and agency services. The company was founded in 2000 and has since then been a leading IT-consultancy company in the Finnish market. In addition to offices in Finland, Reaktor has offices in New York, Amsterdam, Tokyo, and Dubai \citep{reaktor-home}. Reaktor has won the Great Place to Work award multiple times in Finland \citep{reaktor-gptw} and the company is actively improving the wellbeing of everyone at the company \citep{talouselama-reaktor}. 
+
+A significant part of Reaktor's employee's are technical experts, engineers, and developers. These roles include titles as Senior Software Engineer, Full Stack Engineer, Experience mobile developer (iOS/Android), and DevOps engineer \citep{reaktor-careers}. This makes studying DX at Reaktor an interesting subject of research. Different roles and specialities have their own viewpoints of DX.
+
+\subsection{Developer Experience at Reaktor}
+
+Developer Experience wasn't something that had been previously explicitly been studied at Reaktor. 
 
 \clearpage
 \section{Results}
@@ -998,7 +1012,7 @@ The Multivocal Literature Review (MLR) performed on the definition of DX resulte
 
 There are two different research groups that research DX. A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it. Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development. To this group is also linked other studies related to the DX of IDEs.
 
-% rename all occurrences of "scientific" to "white"
+% TODO: rename all occurrences of "scientific" to "white"
 
 \begin{table}[ht]
   \begin{center}
@@ -1015,6 +1029,32 @@ There are two different research groups that research DX. A research group in Br
     \label{table:number-of-sources}
   \end{center}
 \end{table}
+
+\subsubsection{The object / entity of DX under study}
+
+Based on the DX framework presented by \citet{fagerholm-doctoral-thesis}, a data collection point was included to understand the object or entity under study of DX. This addresses the first research question, specifically \hyperref[RQ1.1]{RQ1.1}. The experience object is what is experienced in itself. This could be some artifact e.g. the IDE in the developer's development environment. However, it can also be something abstract.
+
+\subsubsubsection{Scientific literature}
+
+In scientific literature the most prominent object under study was the usability of various subjects e.g. the IDE and API. This stems probably from that DX was seen as a variation or extension of UX. Other emerged categories of objects under study included \textit{the support for developers, technical environment, developer activities in a community, wellbeing, individual developers in a bigger context, development tasks, peers in a software team, holistic view of developer experience, and performance.} Further iterating on the emerged objects / entities under study, it became more clear that the underlying object under study was the developers' point of view as in \cite{voice-of-the-developer}. 
+
+\subsubsubsection{Grey literature}
+
+The first iteration of the grey literature and it's object under study revealed following categories of study as \textit{starting experience, developer portals, API DX, usability, developer, developing for other developers, developer tools, developer support, development platforms}. No specific underlying category was found for the grey literature and the object under study.
+
+\subsubsection{Factors that improve or worsen the DX}
+
+What improves and/or worsens the DX as in \citet{fagerholm-doctoral-thesis} was also included in the data collection form. When understanding the object of DX, there is also something that improves or worsens the experience, i.e. what influences the experience. 
+
+\subsubsubsection{Scientific literature}
+
+Notable factors in scientific literature that improve DX were many. These included all aspects of the cognitive, affective, and conative viewpoints on DX.  
+
+\subsubsubsection{Grey literature}
+
+Simplicity	UX	Developers loving their tools	Sympathy	Feeling of capability	Developers are human too	Support development process
+
+In both scientific and grey literature there was the underlying factor of \textit{"feeling of being capable"} that improves the DX. This was also in line with \textit{"being in control"} that was also found. These both categories touch on how the developer sees their own work. 
 
 \subsubsection{Definition of DX}
 
@@ -1108,7 +1148,7 @@ From the analysis of the material, there is a clear indication that there are di
 
 The articles report that DX is an important factor of software engineering. From the different contexts emerged in this study it is apparent that DX can be seen from multiple different viewpoints.
 
-% TODO: a finding is that overall there is a shift in the empathy and sympathy towards developers. this is also noted in \cite{voice-of-the-developer}. However, there is still a lot of "objectifying" of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design. 
+One main finding from the  is that overall there is a shift in the empathy and sympathy towards developers. this is also noted in \cite{voice-of-the-developer}. However, there is still a lot of "objectifying" of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design. 
 
 \subsection{Validity of results}
 
@@ -1117,6 +1157,8 @@ The articles report that DX is an important factor of software engineering. From
 The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private browsing sessions were used on the browser when performing the searches.
 
 Google has not revealed how the search engine optimization (SEO) works on the Google search engine. However there are some broad guidelines on what a web page has to include, so that it will rank higher on the results page. For companies Google search results is a huge asset and a big opportunity to gain visitor traffic and publicity. Having a web page or site ranking high on the Google search results can probably even determine the existence of some companies businesses. All in all, this means that ranking high on the Google search results page requires knowledge and effort. Therefore we can deduce that the grey literature resources included in this MLR retrieved from Google search are funded or backed by companies that deliberately aim for high ranking on Google searches to sell or promote their products or services.  
+
+Depth of data collection has probably varied while performing the MLR. In most cases no explicit analysis was required to extract the required data when collecting it. However, based on the quality of the source sometimes the collection required some analysis to be able extract the data. E.g. understanding the object of DX under study forced sometimes the researcher to "read between the lines", adding their own interpretation and possible bias to the data. This same problem was present also if the research topic of the source was not explicitly  studying DX, but still related to concepts of DX. 
 
 %\clearpage
 %\section{Exploratory research}
