@@ -999,12 +999,26 @@ A significant part of Reaktor's employee's are technical experts, engineers, and
 
 \subsection{Developer Experience at Reaktor}
 
-Developer Experience wasn't something that had been previously explicitly been studied at Reaktor. 
+Developer Experience has not been previously explicitly studied at Reaktor. However, during the initial phases of the thesis, the topic of DX in this thesis caused some interesting informal discussions about some problems and occurrences of DX. These discussions varied in length and depth, but allowed to create a good basis for the empirical study at the company.  
+
+Discussion channels used at Reaktor are very active, and information sharing is a constant activity. \citet{thesis-nelli-vilkko} took a deep dive into the ways of of working at Reaktor, and specifically into how agile methods form the experience of work engagement. They also mention that information sharing and knowledge management is something that gets a lot of care at Reaktor.
+
+\begin{figure}[ht]
+  \captionsetup{width=1\textwidth}
+  \caption{Daily active Slack members at Reaktor}
+  \begin{center}
+    \includegraphics[width=1\textwidth]{daily-active-slack-members.png}
+  \end{center}
+  \label{figure:slack-members}
+\end{figure}
+
+By analyzing the company's Slack channel visualized in figure \ref{figure:slack-members}, it can be seen that people in the company are very active. However, by performing a quick search on the history of the chat's with the term "Developer Experience", only 62 results were found. In comparison 441 results was found when searching with the term "User Experience". However, it is worth to mention that a big chunk of the discussion is in Finnish.
 
 \clearpage
 \section{Results}
 
 This section reports the different result of the research.
+% TODO: add more explanation here
 
 \subsection{Results of the Multivocal Literature Review} \label{section:result-of-mlr}
 
@@ -1032,27 +1046,35 @@ There are two different research groups that research DX. A research group in Br
 
 \subsubsection{The object / entity of DX under study}
 
-Based on the DX framework presented by \citet{fagerholm-doctoral-thesis}, a data collection point was included to understand the object or entity under study of DX. This addresses the first research question, specifically \hyperref[RQ1.1]{RQ1.1}. The experience object is what is experienced in itself. This could be some artifact e.g. the IDE in the developer's development environment. However, it can also be something abstract.
+Based on the DX framework presented by \citet{fagerholm-doctoral-thesis}, a data collection point was included to understand the object or entity under study of DX. This addresses the first research question, specifically \hyperref[RQ1.1]{RQ1.1}. The experience object is what is experienced in itself. This could be some artifact e.g. the IDE in the developer's development environment. However, it can also be something more abstract like the conventions or unwritten rules that a software team has established.
 
-\subsubsubsection{Scientific literature}
+\subsubsubsection{Object under study in scientific literature}
 
-In scientific literature the most prominent object under study was the usability of various subjects e.g. the IDE and API. This stems probably from that DX was seen as a variation or extension of UX. Other emerged categories of objects under study included \textit{the support for developers, technical environment, developer activities in a community, wellbeing, individual developers in a bigger context, development tasks, peers in a software team, holistic view of developer experience, and performance.} Further iterating on the emerged objects / entities under study, it became more clear that the underlying object under study was the developers' point of view as in \cite{voice-of-the-developer}. 
+In scientific literature the most prominent object under study was the usability of various subjects e.g. the IDE and API. This stems most likely from the fact that DX is seen as a variation or extension of UX. In many articles the definition of developer experience is related to or derived from UX. Usability of developer tools and APIs is a concrete 
 
-\subsubsubsection{Grey literature}
+Other emerged categories of objects under study included \textit{the support for developers, technical environment, developer activities in a community, wellbeing, individual developers in a bigger context, development tasks, peers in a software team, holistic view of developer experience, and performance.} Further iterating on the emerged objects / entities under study, it became more clear that the underlying object under study was the developers' point of view as in \cite{voice-of-the-developer}. 
+
+Additionally, there is a concern of the well being of the developer's in the scientific literature. There are many articles that are directly addressing the moods and feelings of developers. However, a common theme in the articles is that they all more directly or indirectly are addressing how developer's can be supported in the environment that they are working in.
+
+\subsubsubsection{Object under study in grey literature}
 
 The first iteration of the grey literature and it's object under study revealed following categories of study as \textit{starting experience, developer portals, API DX, usability, developer, developing for other developers, developer tools, developer support, development platforms}. No specific underlying category was found for the grey literature and the object under study.
 
 \subsubsection{Factors that improve or worsen the DX}
 
-What improves and/or worsens the DX as in \citet{fagerholm-doctoral-thesis} was also included in the data collection form. When understanding the object of DX, there is also something that improves or worsens the experience, i.e. what influences the experience. 
+What improves and/or worsens the DX as in \citet{fagerholm-doctoral-thesis} was also included in the data collection form. When understanding the object of DX, there is also something that improves or worsens the experience, i.e. what influences the experience. The found factors were no direct statements in the found sources, but were factors that emerged when analyzing the articles as a more coherent set of articles. 
 
-\subsubsubsection{Scientific literature}
+\subsubsubsection{Factors in scientific literature}
 
-Notable factors in scientific literature that improve DX were many. These included all aspects of the cognitive, affective, and conative viewpoints on DX.  
+Notable factors in scientific literature that improve DX were many, including \textit{shared understanding,	available support, collaboration, expectations, mitigate complexity, being in control, ability to tackle challenges, having a meaning as a developer, guidelines, information availability}.
 
-\subsubsubsection{Grey literature}
+\textit{Shared understanding} was studied directly 
 
-Simplicity	UX	Developers loving their tools	Sympathy	Feeling of capability	Developers are human too	Support development process
+\textit{Collaboration} \textit{shared understanding} were two emerged factors that seem to improve the DX. Another pair of notable factors were \textit{mitigating complexity} and the \textit{"the ability to tackle challenges"}. 
+
+\subsubsubsection{Factors in grey literature}
+
+When analyzing grey literature and the factors that improve or worsen the DX categories as \textit{Simplicity	UX, Developers loving their tools, Sympathy, Feeling of capability, Developers are human too, Support development process} emerged.
 
 In both scientific and grey literature there was the underlying factor of \textit{"feeling of being capable"} that improves the DX. This was also in line with \textit{"being in control"} that was also found. These both categories touch on how the developer sees their own work. 
 
@@ -1189,5 +1211,10 @@ Depth of data collection has probably varied while performing the MLR. In most c
 \clearpage
 \thesisbibliography
 \bibliography{thesis}
+
+\clearpage
+\thesisappendix
+
+\section{Resources of the Multivocal Literature Review \label{mlr-resources}}
 
 \end{document}
