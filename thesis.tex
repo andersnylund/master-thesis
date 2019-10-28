@@ -176,6 +176,7 @@
 
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{longtable}
 \usepackage{float}
 \usepackage{caption}
 \usepackage{titlesec}
@@ -939,7 +940,7 @@ Because of the novel topic the quality assessments were not considered in this s
 
 All sources of the review were collected into one form with the data points. During collection of data different aspects emerged. The process of collection was a continuous refinement of the search method, inclusion and exclusion criteria, data extraction points. During the collection the comprehension and understanding of the base concept of DX was continuously refined.
 
-First version of the data collection form was simple and included only some basic characteristics and data points of the sources. With help of ongoing collection, refinement of the search process, and adjustments to the research questions the data points emerged to their final form. 
+First version of the data collection form was simple and included only some basic characteristics and data points of the sources. With help of ongoing collection, refinement of the search process, and adjustments to the research questions the data points emerged to their final form.
 
 % TODO: reassess if the table below should be included or not
 
@@ -986,20 +987,20 @@ A more comprehensive explanation of the collected data points is given in sectio
 
 \subsubsection{Data analysis}
 
-Data analysis was done by looking at one data point (most of the cases a research question), and performing electronic affinity diagramming to them. By iterating on the categories by removing, adding, and combining them new categories and patterns emerged.    
+Data analysis was done by looking at one data point (most of the cases a research question), and performing electronic affinity diagramming to them. By iterating on the categories by removing, adding, and combining them new categories and patterns emerged.
 
 \clearpage
 \section{Current state analysis}
 
 \subsection{Case company}
 
-Reaktor is a Finnish company that provides consultancy and agency services. The company was founded in 2000 and has since then been a leading IT-consultancy company in the Finnish market. In addition to offices in Finland, Reaktor has offices in New York, Amsterdam, Tokyo, and Dubai \citep{reaktor-home}. Reaktor has won the Great Place to Work award multiple times in Finland \citep{reaktor-gptw} and the company is actively improving the wellbeing of everyone at the company \citep{talouselama-reaktor}. 
+Reaktor is a Finnish company that provides consultancy and agency services. The company was founded in 2000 and has since then been a leading IT-consultancy company in the Finnish market. In addition to offices in Finland, Reaktor has offices in New York, Amsterdam, Tokyo, and Dubai \citep{reaktor-home}. Reaktor has won the Great Place to Work award multiple times in Finland \citep{reaktor-gptw} and the company is actively improving the wellbeing of everyone at the company \citep{talouselama-reaktor}.
 
 A significant part of Reaktor's employee's are technical experts, engineers, and developers. These roles include titles as Senior Software Engineer, Full Stack Engineer, Experience mobile developer (iOS/Android), and DevOps engineer \citep{reaktor-careers}. This makes studying DX at Reaktor an interesting subject of research. Different roles and specialities have their own viewpoints of DX.
 
 \subsection{Developer Experience at Reaktor}
 
-Developer Experience has not been previously explicitly studied at Reaktor. However, during the initial phases of the thesis, the topic of DX in this thesis caused some interesting informal discussions about some problems and occurrences of DX. These discussions varied in length and depth, but allowed to create a good basis for the empirical study at the company.  
+Developer Experience has not been previously explicitly studied at Reaktor. However, during the initial phases of the thesis, the topic of DX in this thesis caused some interesting informal discussions about some problems and occurrences of DX. These discussions varied in length and depth, but allowed to create a good basis for the empirical study at the company.
 
 Discussion channels used at Reaktor are very active, and information sharing is a constant activity. \citet{thesis-nelli-vilkko} took a deep dive into the ways of of working at Reaktor, and specifically into how agile methods form the experience of work engagement. They also mention that information sharing and knowledge management is something that gets a lot of care at Reaktor.
 
@@ -1050,9 +1051,9 @@ Based on the DX framework presented by \citet{fagerholm-doctoral-thesis}, a data
 
 \subsubsubsection{Object under study in scientific literature}
 
-In scientific literature the most prominent object under study was the usability of various subjects e.g. the IDE and API. This stems most likely from the fact that DX is seen as a variation or extension of UX. In many articles the definition of developer experience is related to or derived from UX. Usability of developer tools and APIs is a concrete 
+In scientific literature the most prominent object under study was the usability of various subjects e.g. the IDE and API. This stems most likely from the fact that DX is seen as a variation or extension of UX. In many articles the definition of developer experience is related to or derived from UX. Usability of developer tools and APIs is a concrete
 
-Other emerged categories of objects under study included \textit{the support for developers, technical environment, developer activities in a community, wellbeing, individual developers in a bigger context, development tasks, peers in a software team, holistic view of developer experience, and performance.} Further iterating on the emerged objects / entities under study, it became more clear that the underlying object under study was the developers' point of view as in \cite{voice-of-the-developer}. 
+Other emerged categories of objects under study included \textit{the support for developers, technical environment, developer activities in a community, wellbeing, individual developers in a bigger context, development tasks, peers in a software team, holistic view of developer experience, and performance.} Further iterating on the emerged objects / entities under study, it became more clear that the underlying object under study was the developers' point of view as in \cite{voice-of-the-developer}.
 
 Additionally, there is a concern of the well being of the developer's in the scientific literature. There are many articles that are directly addressing the moods and feelings of developers. However, a common theme in the articles is that they all more directly or indirectly are addressing how developer's can be supported in the environment that they are working in.
 
@@ -1062,21 +1063,21 @@ The first iteration of the grey literature and it's object under study revealed 
 
 \subsubsection{Factors that improve or worsen the DX}
 
-What improves and/or worsens the DX as in \citet{fagerholm-doctoral-thesis} was also included in the data collection form. When understanding the object of DX, there is also something that improves or worsens the experience, i.e. what influences the experience. The found factors were no direct statements in the found sources, but were factors that emerged when analyzing the articles as a more coherent set of articles. 
+What improves and/or worsens the DX as in \citet{fagerholm-doctoral-thesis} was also included in the data collection form. When understanding the object of DX, there is also something that improves or worsens the experience, i.e. what influences the experience. The found factors were no direct statements in the found sources, but were factors that emerged when analyzing the articles as a more coherent set of articles.
 
 \subsubsubsection{Factors in scientific literature}
 
 Notable factors in scientific literature that improve DX were many, including \textit{shared understanding,	available support, collaboration, expectations, mitigate complexity, being in control, ability to tackle challenges, having a meaning as a developer, guidelines, information availability}.
 
-\textit{Shared understanding} was studied directly 
+\textit{Shared understanding} was studied directly
 
-\textit{Collaboration} \textit{shared understanding} were two emerged factors that seem to improve the DX. Another pair of notable factors were \textit{mitigating complexity} and the \textit{"the ability to tackle challenges"}. 
+\textit{Collaboration} \textit{shared understanding} were two emerged factors that seem to improve the DX. Another pair of notable factors were \textit{mitigating complexity} and the \textit{"the ability to tackle challenges"}.
 
 \subsubsubsection{Factors in grey literature}
 
 When analyzing grey literature and the factors that improve or worsen the DX categories as \textit{Simplicity	UX, Developers loving their tools, Sympathy, Feeling of capability, Developers are human too, Support development process} emerged.
 
-In both scientific and grey literature there was the underlying factor of \textit{"feeling of being capable"} that improves the DX. This was also in line with \textit{"being in control"} that was also found. These both categories touch on how the developer sees their own work. 
+In both scientific and grey literature there was the underlying factor of \textit{"feeling of being capable"} that improves the DX. This was also in line with \textit{"being in control"} that was also found. These both categories touch on how the developer sees their own work.
 
 \subsubsection{Definition of DX}
 
@@ -1170,7 +1171,7 @@ From the analysis of the material, there is a clear indication that there are di
 
 The articles report that DX is an important factor of software engineering. From the different contexts emerged in this study it is apparent that DX can be seen from multiple different viewpoints.
 
-One main finding from the  is that overall there is a shift in the empathy and sympathy towards developers. this is also noted in \cite{voice-of-the-developer}. However, there is still a lot of "objectifying" of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design. 
+One main finding from the is that overall there is a shift in the empathy and sympathy towards developers. this is also noted in \cite{voice-of-the-developer}. However, there is still a lot of "objectifying" of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design.
 
 \subsection{Validity of results}
 
@@ -1178,9 +1179,9 @@ One main finding from the  is that overall there is a shift in the empathy and s
 
 The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private browsing sessions were used on the browser when performing the searches.
 
-Google has not revealed how the search engine optimization (SEO) works on the Google search engine. However there are some broad guidelines on what a web page has to include, so that it will rank higher on the results page. For companies Google search results is a huge asset and a big opportunity to gain visitor traffic and publicity. Having a web page or site ranking high on the Google search results can probably even determine the existence of some companies businesses. All in all, this means that ranking high on the Google search results page requires knowledge and effort. Therefore we can deduce that the grey literature resources included in this MLR retrieved from Google search are funded or backed by companies that deliberately aim for high ranking on Google searches to sell or promote their products or services.  
+Google has not revealed how the search engine optimization (SEO) works on the Google search engine. However there are some broad guidelines on what a web page has to include, so that it will rank higher on the results page. For companies Google search results is a huge asset and a big opportunity to gain visitor traffic and publicity. Having a web page or site ranking high on the Google search results can probably even determine the existence of some companies businesses. All in all, this means that ranking high on the Google search results page requires knowledge and effort. Therefore we can deduce that the grey literature resources included in this MLR retrieved from Google search are funded or backed by companies that deliberately aim for high ranking on Google searches to sell or promote their products or services.
 
-Depth of data collection has probably varied while performing the MLR. In most cases no explicit analysis was required to extract the required data when collecting it. However, based on the quality of the source sometimes the collection required some analysis to be able extract the data. E.g. understanding the object of DX under study forced sometimes the researcher to "read between the lines", adding their own interpretation and possible bias to the data. This same problem was present also if the research topic of the source was not explicitly  studying DX, but still related to concepts of DX. 
+Depth of data collection has probably varied while performing the MLR. In most cases no explicit analysis was required to extract the required data when collecting it. However, based on the quality of the source sometimes the collection required some analysis to be able extract the data. E.g. understanding the object of DX under study forced sometimes the researcher to "read between the lines", adding their own interpretation and possible bias to the data. This same problem was present also if the research topic of the source was not explicitly  studying DX, but still related to concepts of DX.
 
 %\clearpage
 %\section{Exploratory research}
@@ -1216,5 +1217,54 @@ Depth of data collection has probably varied while performing the MLR. In most c
 \thesisappendix
 
 \section{Resources of the Multivocal Literature Review \label{mlr-resources}}
+
+\renewcommand{\arraystretch}{1.2}
+
+\begin{center}
+  \begin{longtable}{p{0.05\linewidth}p{0.65\linewidth}p{0.30\linewidth}}
+    \captionsetup{width=0.6\textwidth}                                                                                                                                                                   \\
+    \caption{Scientific articles}                                                                                                                                                                        \\
+    \label{table:scientific-articles}                                                                                                                                                                    \\
+    1  & Developer experience: concept and definition                                                                                                & \cite{fagerholm-dx-concept-and-definition}        \\
+    2  & Flow, Intrinsic Motivation, and Developer Experience in Software Engineering                                                                & \cite{flow-intrinsic-dx}                          \\
+    3  & Informing the Design of New Mobile Development Methods and Tools                                                                            & \cite{nebeling2013informing}                      \\
+    4  & Improving the Developer Experience with a low-code process modelling language                                                               & \cite{henriques2018improving}                     \\
+    5  & Mobile Application Development Training in Mobile Software Ecosystem: Investigating the Developer eXperience                                & \cite{fontao2018mobile}                           \\
+    6  & Design framework enhancing developer experience in collaborative coding environment                                                         & \cite{design-framework-enchancing}                \\
+    7  & Unhappy Developers: Bad for Themselves, Bad for process, and Bad for Software Product                                                       & \cite{unhappy-developers}                         \\
+    8  & Investigating factors that influence developers' experience in mobile software ecosystems                                                   & \cite{fontao2017investigating}                    \\
+    9  & On the Unhappiness of Software Developers                                                                                                   & \cite{on-the-unhappiness}                         \\
+    10 & Consequences of Unhappiness While Developing Software                                                                                       & \cite{consequences-of-unhappiness}                \\
+    11 & What happens when software developers are (un)happy                                                                                         & \cite{what-happens-when-unhappy}                  \\
+    12 & How do software developers experience team performance in Lean and Agile environments?                                                      & \cite{how-developers-experience-team-performance} \\
+    13 & Performance Alignment Work: How software developers experience the continuous adaptation of team performance in Lean and Agile environments & \cite{paw}                                        \\
+    14 & Supporting the Developer Experience with Production Metrics                                                                                 & \cite{chatley2019supporting}                      \\
+    15 & Facing up the primary emotions in Mobile Software Ecosystems from Developer Experience                                                      & \cite{fontao2017facing}                           \\
+    16 & API Designers in the Field: Design Practices and Challenges for Creating Usable APIs                                                        & \cite{api-designers}                              \\
+    17 & Polymorph segmentation representation for medical image computing                                                                           & \cite{pinter2019polymorph}                        \\
+    18 & The Impact of "Cosmetic" Changes on the Usability of Error Messages                                                                         & \cite{dong2019impact}                             \\
+    19 & Entering an ecosystem: The hybrid OSS landscape from a developer perspective                                                                & \cite{entering-an-ecosystem}                      \\
+    20 & Software Developers as Users: Developer Experience of a Cross-Platform Integrated Development Environment                                   & \cite{software-developers-as-users}               \\
+    21 & Examining the Structure of Lean and Agile Values Among Software Developers                                                                  & \cite{fagerholm2014examining}                     \\
+    22 & Improving the Usability of a MAS DSML                                                                                                       & \cite{miranda2018improving}                       \\
+    23 & MSECO-DEV: Application Development Process in Mobile Software Ecosystems                                                                    & \cite{fontao2016mseco}                            \\
+    24 & Research Opportunities for Mobile Software Ecosystems                                                                                       & \cite{fontao2015research}                         \\
+    25 & Improving API usability                                                                                                                     & \cite{myers2016improving}                         \\
+    26 & API Usability at Scale                                                                                                                      & \cite{macvean2016api}                             \\
+    27 & Are Software Developers Just Users of Development Tools? Assessing Developer Experience of a Graphical User Interface Designer              & \cite{kuusinen2016software}                       \\
+    28 & Exploring Peopleware in Continuous Delivery                                                                                                 & \cite{karpanoja2016exploring}                     \\
+    29 & Tester Experience: Concept, Issues and Definition                                                                                           & \cite{ekwoge2017tester}                           \\
+    30 & The effect of noise on software engineers' performance                                                                                      & \cite{romano2018effect}                           \\
+    31 & An approach for applying Test-Driven Development (TDD) in the development of randomized algorithms                                          & \cite{ivo2018approach}                            \\
+    32 & Towards a Guideline-Based Approach to Govern Developers in Mobile Software Ecosystems                                                       & \cite{de2017towards}                              \\
+    33 & Programmer eXperience: A Systematic Literature Review                                                                                       & \cite{programmer-experience}                      \\
+    34 & The Role of Pre-Innovation Platform Activity for Diffusion Success: Evidence from Consumer Innovations on a 3D Printing Platform            & \cite{claussen2019role}                           \\
+    35 & A Set of Artifacts and Models to Support Requirements Communication Based on Perspectives                                                   & \cite{oran2017set}                                \\
+    36 & Detecting and Reporting Object-Relational Mapping Problems: An Industrial Report                                                            & \cite{nazariodetecting}                           \\
+    37 & Toward Understanding IoT Developers in Chinese Startups                                                                                     & \cite{zhang2018toward}                            \\
+    38 & Comparing the Usability of two Multi-Agents Systems DSLs: SEA\_ML++ and DSML4MAS Study Design                                               & \cite{silvacomparing}                             \\
+    39 & Helping developers to help each other: a technique to facilitate understanding among professional software developers                       & \cite{ollis2019helping}
+  \end{longtable}
+\end{center}
 
 \end{document}
