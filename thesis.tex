@@ -865,9 +865,11 @@ The foundation for the MLR is the first research question \hyperref[RQ1]{RQ1} (\
 
 \subsubsection{Search process}
 
+The search process was divided into a database search and a snowballing procedure performed on the first initial set of the results. The following sections motivate the decisions made before and during the search process, and explain the details on how the search was conducted.
+
 \subsubsubsection{Database search}
 
-The search is performed as a manual search by the author from various libraries to gather the academic literature. For grey literature, the Google search engine (https://www.google.com) will be used. To limit the amount of grey literature, only the first 2 pages of searches from google.com will be included. Only 91 percent of participants in a study went to the second page of google results page \citep{google-search}. Therefore it's appropriate to include only the most relevant results from the google search. The selected databases and libraries of sources of scientific literature is listed in table \ref{table:included-databases}.
+The first iteration of the search was performed as a manual search by the author from various libraries to gather the scientific literature. For grey literature, the Google search engine (https://www.google.com) was be used. To limit the amount of results in the search of grey literature, only the first 2 pages of searches from google.com will be included. In a study conducted by \cite{google-search}, only 91 percent of participants in a study went to the second page of google results page. Therefore it's appropriate to include only the most relevant (the first pages of the results) results from the google search. The selected databases and libraries of sources of scientific literature is listed in table \ref{table:included-databases}.
 
 \begin{table}
   \centering
@@ -1136,14 +1138,6 @@ The most significant factor that improves DX was the UX and usability of tools. 
 
 UX and usability of tools, APIs and products is the most obvious factor that improves DX. This is probably because that is the most easy and tangible definition and measurement of DX.  Further analysing the results however shows that there is more of what impacts the DX. In both scientific and grey literature there was the underlying factor of \textit{"feeling of being capable"} that improves the DX. This was also in line with \textit{"being in control"} that was also found. These both categories touch on how the developer sees their own work.
 
-\subsubsection{Definition of DX}
-
-The most common definition of DX used in the scientific papers is the concept and definition presented by \cite{fagerholm-dx-concept-and-definition} and \cite{fagerholm-doctoral-thesis}. This definition is at the moment the only stated definition of DX in the scientific literature. There is also further derivations on this concept and definition, but nothing that is refuting their definition and concept or nothing that takes another viewpoint on the definition of DX.
-
-The definition of the selected sources for the majority follow the definition grounded by \cite{fagerholm-doctoral-thesis}. Almost all sources take some approach to DX, either cognitive, affective, or conative. This is especially in the scientific articles, where there are more comprehensive groundwork done on why the research in question is performed.
-
-In grey literature the definition of DX varies a lot more and there are no references to any scientific sources in the grey literature. The definitions are given by the practitioners themselves and from their viewpoint and context of software engineering. In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX.
-
 \subsubsection{Explicit / implicit definition of DX}
 
 Interestingly, during the analysis of the sources, it emerged that some articles were stating an explicit definition of DX, but some were not. To analyze how the the definition of DX is given, all articles and papers were grouped into either having an \textbf{implicit} or an \textbf{explicit} definition of DX. This division was something that did emerge in the collection and analysis of the material. Many scientific articles use the keyword "developer experience", but only mention DX briefly in their material. This forces the readers to create an understanding of what DX, and "read between the lines" while acquiring the gist of the articles.
@@ -1223,6 +1217,38 @@ From the analysis of the material, there is a clear indication that there are di
     \includegraphics[width=\textwidth]{context-grey.pdf}
   \end{center}
 \end{figure}
+
+\subsubsection{Categories of definitions of DX}
+
+To summarize the analysis of what the studied objects of DX are, what the factors that improve/worsen the DX are, the explicit and implicit definitions of DX, and the context of from where DX is looked from, and attempt to understand the definition of DX was made. This was also a data point in the data collection form, and each article's short definition of DX was added to the form. The subsequent sections analyze the definitions on both the scientific and grey literature.
+
+\subsubsubsection{Categories of definitions of DX in scientific literature}
+
+The most common definition of DX used in the scientific papers is the concept and definition presented by \cite{fagerholm-dx-concept-and-definition} and \cite{fagerholm-doctoral-thesis}. This definition is at the moment of writing (\now) the only explicit attempt and deep dive into giving a definition of DX in the scientific literature. There is also further derivations on this concept and definition, but nothing that is refuting their definition and concept or nothing that takes another viewpoint on the definition of DX.
+
+The definition given by \citet{fagerholm-dx-concept-and-definition} was apparent when looking at results of the analysis of the definition of DX in scientific literature. The most apparent and noted definition of DX was \textit{developers thoughts and feelings towards their work}. The thoughts and feelings included subjects as the mood of developers, working environments, social aspects, processes, and basically anything that relates to the daily work activities that developers are conducting. Other categories of definitions were \textit{activities, technology, usability, values, agility combined with the starting experience, and expectations}.
+
+\textit{Activities} refer to the all the different activities, and the experiences of them, of a developer. In the literature these activities are defined as anything that the developer encounters in their software development tasks. A good example of a definition of DX regarding activities was
+
+\begin{quotation}
+  \noindent \textit{"Developer Experience relates to all kinds of artifacts and activities that a developer may encounter as part of his/her involvement in software development"}
+
+  - \cite{ekwoge2017tester} based on \cite{fagerholm-dx-concept-and-definition}
+\end{quotation}
+
+\noindent \textit{Technology} was another, quite broad, category of definition that was found.  Almost all articles discuss about the technologies that developers use, and that they are a main contributor to the definition of DX. In e.g. \cite{nebeling2013informing}, measurement of the DX of different mobile development platforms was performed by grading the platforms from the point of view of the technical (e.g. programming language, IDE, debugging tools), subjective (feelings towards the platform), and the level of productivity (ratio of output vs. effort). However, for example, \cite{silva-comparing} took an exclusively technical viewpoint on the definition of DX, and could be loosely interpreted to be defined as \textit{as the ability to construct models with help of visual modeling languages}.
+
+\textit{Usability} and UX was seen as being part of DX, and one definition of DX falling into this category was \textit{"UX characteristics of an IDE in the developers development environment"} \citep{software-developers-as-users}. The other definitions found in this category are also related to this definition, the UX and usability of any artifact in the software development activities.
+
+\textit{Aligned values} of developers and the bigger organizations that they are working in captured the different definitions were the DX is defined as the set of values, and their alignment with bigger entities of the software development process. \citep{fagerholm2014examining} state that \textit{Developer experience is formed in the value system of the development environment, both individually and in groups}.
+
+The definition of the selected sources for the majority follow the definition grounded by \cite{fagerholm-doctoral-thesis}. Almost all sources take some approach to DX, either cognitive, affective, or conative. This is especially true in the scientific articles, where there are more comprehensive groundwork done on why the research in question is performed.
+
+\subsubsubsection{Categories of definitions of DX in grey literature}
+
+In grey literature the definition of DX varies a lot more and there are no references to any scientific sources in the grey literature. The definitions are given by the practitioners themselves and from their viewpoint and context of software engineering. In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX. During the analysis there were 4 different categories of definitions of DX that emerged. These include \textit{the experience of using a software product, understanding the developer, experience from idea to code to delivering business value}, and finally \textit{support and help for developers}.
+
+\textit{The experience of using a software product} was interpreted as the definition of DX in multiple articles.
 
 \subsubsection{Conclusions of the sources}
 
@@ -1319,7 +1345,7 @@ Depth of data collection has probably varied while performing the MLR. In most c
     35. & \cite{oran2017set}                                & A Set of Artifacts and Models to Support Requirements Communication Based on Perspectives                                                   \\
     36. & \cite{nazariodetecting}                           & Detecting and Reporting Object-Relational Mapping Problems: An Industrial Report                                                            \\
     37. & \cite{zhang2018toward}                            & Toward Understanding IoT Developers in Chinese Startups                                                                                     \\
-    38. & \cite{silvacomparing}                             & Comparing the Usability of two Multi-Agents Systems DSLs: SEA\_ML++ and DSML4MAS Study Design                                               \\
+    38. & \cite{silva-comparing}                            & Comparing the Usability of two Multi-Agents Systems DSLs: SEA\_ML++ and DSML4MAS Study Design                                               \\
     39. & \cite{ollis2019helping}                           & Helping developers to help each other: a technique to facilitate understanding among professional software developers
   \end{longtable}
 \end{center}
