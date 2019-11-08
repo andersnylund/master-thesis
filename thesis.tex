@@ -531,6 +531,8 @@ Based on this, the selected approach for defining the problem and the research q
 \newcommand{\rqonepointtwo}{What methods have been used to study developer experience?}
 \newcommand{\rqonepointthree}{What are the main results of the existing research on developer experience?}
 \newcommand{\rqonepointfour}{What is known about factors that improve or worsen developer experience?}
+\newcommand{\rqonepointfive}{What are the definitions given to developer experience?}
+\newcommand{\rqonepointsix}{From what contexts is developer experience looked at from?}
 \newcommand{\rqtwo}{How is developer experience and its aspects defined by different roles (or software developers) in a software consultancy company?}
 \newcommand{\rqtwopointone}{What different experience objects of Developer Experience are there in the software consultancy company?}
 \newcommand{\rqtwopointtwo}{What factors related to the experience object improves or worsens the developer dxperience?}
@@ -544,6 +546,8 @@ Based on this, the selected approach for defining the problem and the research q
                     & RQ 1.2 & \rqonepointtwo   \label{RQ1.2} \\
                     & RQ 1.3 & \rqonepointthree \label{RQ1.3} \\
                     & RQ 1.4 & \rqonepointfour  \label{RQ1.4} \\
+                    & RQ 1.5 & \rqonepointfive  \label{RQ1.5} \\
+                    & RQ 1.6 & \rqonepointsix   \label{RQ1.6} \\
       \textbf{RQ 2} &        & \textbf{\rqtwo}  \label{RQ2}   \\
                     & RQ 2.1 & \rqtwopointone   \label{RQ2.1} \\
                     & RQ 2.2 & \rqtwopointtwo   \label{RQ2.2} \\
@@ -1145,6 +1149,19 @@ The most significant factor that improves DX was the UX and usability of tools. 
 
 UX and usability of tools, APIs and products is the most obvious factor that improves DX. This is probably because that is the most easy and tangible definition and measurement of DX.  Further analysing the results however shows that there is more of what impacts the DX. In both scientific and grey literature there was the underlying factor of \textit{"feeling of being capable"} that improves the DX. This was also in line with \textit{"being in control"} that was also found. These both categories touch on how the developer sees their own work.
 
+\subsubsection{Research methods that have been used to study DX}
+
+% TODO: create quantitative analysis on the research methods used  
+
+From the nature of the research topic in the studies, it is apparent that most of the research methods are exploratory in nature. Mostly the results of the studies were based on literature review and some qualitative methods like interviews, surveys, and diary studies.
+There were also some design science researches and case studies. Case studies are a common 
+
+Some data repository mining was also performed to find out patterns and 
+
+Some technical studies that studied the usability of development tools like the IDE or the programming language utilized control groups and experiments.
+
+In the scientific literature the research methods are all expert experience reports where practitioners from the industry report their experiences and lessons from them on blogs and other websites. However, the grey literature articles were quite heavy in references, where the authors were used either someone else's writing or their own writing to base their statements. 
+
 \subsubsection{Explicit / implicit definition of DX}
 
 Interestingly, during the analysis of the sources, it emerged that some articles were stating an explicit definition of DX, but some were not. To analyze how the the definition of DX is given, all articles and papers were grouped into either having an \textbf{implicit} or an \textbf{explicit} definition of DX. This division was something that did emerge in the collection and analysis of the material. Many scientific articles use the keyword "developer experience", but only mention DX briefly in their material. This forces the readers to create an understanding of what DX, and "read between the lines" while acquiring the gist of the articles.
@@ -1253,10 +1270,10 @@ The definition of the selected sources for the majority follow the definition gr
 
 In grey literature the definition of DX varies a lot more and there are no references to any scientific sources in the grey literature. The definitions are given by the practitioners themselves and from their viewpoint and context of software engineering. In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX. During the analysis there were 4 different categories of definitions of DX that emerged. These include \textit{the experience of using a software product, understanding the developer, experience from idea to code to delivering business value}, and finally \textit{support and help for developers}.
 
-\textit{The experience of using a software product} was interpreted as the definition of DX in multiple articles. 
+\textit{The experience of using a software product} was interpreted as the definition of DX in multiple articles.
 
 \begin{quote}
-  "Developer Experience (DX) is the equivalent of User Experience (UX) when it comes to a developer" \parencite{the-best-practices-for-a-great-dx} 
+  "Developer Experience (DX) is the equivalent of User Experience (UX) when it comes to a developer" \parencite{the-best-practices-for-a-great-dx}
 \end{quote}
 
 \noindent The category of \textit{understanding the developer} consisted of the following definition:
@@ -1265,11 +1282,11 @@ In grey literature the definition of DX varies a lot more and there are no refer
   "DX design is about understanding the context of use, understanding what developers need to complete their tasks, underlying technology, integration points, and focussing on how developers feel while using a product or services." \parencite{building-the-developer-experience-from-the-ground-up}.
 \end{quote}
 
-\noindent There seems to be a consensus that understanding the developer is important when creating a good developer experience. 
+\noindent There seems to be a consensus that understanding the developer is important when creating a good developer experience.
 
 \textit{Experience from idea to code to delivering business value} was a category that was created from a quote in \textcite{workflows-for-the-new-developer-experience} where they write about a talk on platforms and DX of them. This category included also viewpoints on the starting experience, and about how developers understand what is possible and what is not.
 
-\textit{Support and help for developers} was the final category of definitions in grey literature. This category had definitions that focused on making the developers life as easy as possible, and about creating a seamless experience for developers. Improving and optimizing how developer get their work done allows to create a better DX. This category emerged from the articles that discussed about third party library, framework, and tool authors (developers) that have other developers as their users or customers.   
+\textit{Support and help for developers} was the final category of definitions in grey literature. This category had definitions that focused on making the developers life as easy as possible, and about creating a seamless experience for developers. Improving and optimizing how developer get their work done allows to create a better DX. This category emerged from the articles that discussed about third party library, framework, and tool authors (developers) that have other developers as their users or customers.
 
 \begin{quote}
   "... Developer Experience (DX) — which is all about using User Experience (UX) techniques to make life easier for third-party developers calling your public APIs ..." \parencite{4-must-read-articles-on-developer-experience}
@@ -1277,7 +1294,7 @@ In grey literature the definition of DX varies a lot more and there are no refer
 
 \subsubsubsection{Difference between the definition of DX in scientific and grey literature}
 
-There can be seen both differences and similarities between the definitions of DX. 
+There can be seen both differences and similarities between the definitions of DX.
 % TODO: more here
 
 \subsubsection{Conclusions of the sources}
@@ -1319,10 +1336,26 @@ Depth of data collection has probably varied while performing the MLR. In most c
 \clearpage
 \section{Discussion}
 
-\subsection{Answering research questions}
+Developer experience is an umbrella term that captures a big part how developers feel and perceive their work. Current definition of DX in the industry is largely based on practitioners own experiences. In academic writings and papers, the topic of DX is studied relatively little, and the existing articles are not well known by the research community.
 
-\clearpage
-\section{Summary}
+\subsection{Answering the research questions}
+
+At this point we are ready to provide an answer the research problem and questions.
+
+\subsubsection{First research question}
+
+The first research question \hyperref[RQ1]{RQ1} (\rqone) prompted to perform a Multivocal literature review where both scientific and grey literature was studied to gain a better understanding of DX.
+
+\hyperref[RQ1.1]{RQ1.1} (\rqonepointone) discussed about the
+\hyperref[RQ1.2]{RQ1.2} (\rqonepointtwo)
+\hyperref[RQ1.3]{RQ1.3} (\rqonepointthree)
+\hyperref[RQ1.4]{RQ1.4} (\rqonepointfour)
+\hyperref[RQ1.5]{RQ1.5} (\rqonepointfive)
+\hyperref[RQ1.6]{RQ1.6} (\rqonepointsix)
+
+\subsubsection{Second research question}
+
+\subsubsection{Research problem}
 
 \clearpage
 \section{Conclusions}
