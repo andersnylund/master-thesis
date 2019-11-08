@@ -186,8 +186,14 @@
 \usepackage{amsfonts,amssymb,amsbsy,amsmath}
 
 % Different bibliography styles can be found from https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
-\usepackage{natbib}
-\bibliographystyle{agsm}
+% current bibliography style found from https://tex.stackexchange.com/questions/131518/help-with-citation-in-text-in-parentheses-etc-with-biblatex-apa
+\usepackage[
+backend=biber,
+style=apa,
+sortcites=true,
+sorting=nyt
+]{biblatex}
+\addbibresource{thesis.bib}
 
 %% Change the school field to specify your school if the automatically set name
 %% is wrong
@@ -478,9 +484,9 @@ Otaniemi, Date to te announced
 
 Software development and software engineering is a complex practice that requires both technical and social skills. Compared to other engineering professions, software engineering is a relative new field of practice and study. The practices deemed as "best practice" are still evolving, and new ideas of good practices are being developed and previous ideas are discarded.
 
-Developing and creating software is a social activity that requires both technical and social skills from the developers. Deep technical skills and understanding is required to be able to implement the wanted artifact or end product. However software engineering is a highly social activity, and therefore it has been noted that human factors are the most important when regarding software development performance \citep{peopleware}.
+Developing and creating software is a social activity that requires both technical and social skills from the developers. Deep technical skills and understanding is required to be able to implement the wanted artifact or end product. However software engineering is a highly social activity, and therefore it has been noted that human factors are the most important when regarding software development performance \parencite{peopleware}.
 
-Software developers are in an interesting role where they are both creators and designers when they write the code and design the logic that makes up the software. Meantime they are also users of tools that they use to create the software. Developers using a software product or services that aid them in their creative design work, will result in an User Experience (UX). Human Computer Interaction (HCI), a traditional field of research, studies the interface and interaction between computers and humans. UX is another field of research. UX includes the aspects of HCI, but on top of that includes also emotions and the user's perceptions of the product. UX can be seen as a more hedonic than a pragmatic approach of studying and understanding the usage of a software product \citep{the-thing-and-i}.
+Software developers are in an interesting role where they are both creators and designers when they write the code and design the logic that makes up the software. Meantime they are also users of tools that they use to create the software. Developers using a software product or services that aid them in their creative design work, will result in an User Experience (UX). Human Computer Interaction (HCI), a traditional field of research, studies the interface and interaction between computers and humans. UX is another field of research. UX includes the aspects of HCI, but on top of that includes also emotions and the user's perceptions of the product. UX can be seen as a more hedonic than a pragmatic approach of studying and understanding the usage of a software product \parencite{the-thing-and-i}.
 
 In recent scientific research and internet articles and blog posts, a concept called Developer Experience (DX) has gotten traction. DX is a term that explains how developers experience the practice of developing software, both technically and socially. The same way as UX is considering the user of a system, service or product, DX can be seen as the experience of developers developing software in a complex social and technical context. In the case of DX the context includes the everything around the developer, and everything that affects the software development practice.
 
@@ -495,13 +501,13 @@ Lately there has been mentions in the software engineering industry of DX like \
 
 At the time of writing (\now), a quick search with the keyword \textit{"Developer Experience"} on google.com gives as a result mostly articles on how framework and library authors should consider their user's (developer's) experience with using the product (tool, library, framework). Also, performing searches with the same \textit{"Developer Experience"} keyword on known libraries of conference papers like Google Scholar and IEEExplore, the content and topic of the results vary much. This shows that there might not be a common and well known definition of what DX is.
 
-In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used \citep{fagerholm-dx-concept-and-definition}, in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \citep{programmer-experience}, and finally maybe the most common abbreviation is \textit{DX}. This shows that there is still some ambiguity to the terms and definitions in scientific research. Additionally, most results when searching with the term \textit{Developer Experience} gives results about the experience and knowledge level of a developer in e.g. terms of years working in the field of software development or amount of contribution, and not the hedonic and pragmatic experience of participating in development work.
+In some research the term \textit{Developer Experience} with the abbreviation of \textit{DE\textsuperscript{x}} is used \parencite{fagerholm-dx-concept-and-definition}, in some other research the term \textit{Programmer eXperience} and abbreviation \textit{PX} is used \parencite{programmer-experience}, and finally maybe the most common abbreviation is \textit{DX}. This shows that there is still some ambiguity to the terms and definitions in scientific research. Additionally, most results when searching with the term \textit{Developer Experience} gives results about the experience and knowledge level of a developer in e.g. terms of years working in the field of software development or amount of contribution, and not the hedonic and pragmatic experience of participating in development work.
 
-\cite{understanding-ux} conducted a comprehensive research on the notion of UX. UX is significantly more mature than DX, but still there are problems of communication of UX and misunderstandings of what the notion of UX is. Therefore they saw the need of performing their study. This is a clear indicator that DX is also in the need of a clear and well defined.
+\textcite{understanding-ux} conducted a comprehensive research on the notion of UX. UX is significantly more mature than DX, but still there are problems of communication of UX and misunderstandings of what the notion of UX is. Therefore they saw the need of performing their study. This is a clear indicator that DX is also in the need of a clear and well defined.
 
 DX has been studied previously, but research on it is still lacking the connection to practical applications. This is one the biggest motivators for this thesis, as the topic is novel and there is huge potential in improving software development processes, and thereby also potentially improve the e.g. performance, quality, and outcome in software projects.
 
-\cite{voice-of-the-developer} talk about \textit{The Voice of the Developer}, and how the focus of software development has been on the customer's and product's perspective on e.g. code quality and technical debt. The voice of the developer considers more on the developer's perspective, and on how the product or service under development resonates with the developer's satisfaction and well-being. The voice of the developer resonates with DX, and there can be seen a lot of commonalities with what is considered with them.
+\textcite{voice-of-the-developer} talk about \textit{The Voice of the Developer}, and how the focus of software development has been on the customer's and product's perspective on e.g. code quality and technical debt. The voice of the developer considers more on the developer's perspective, and on how the product or service under development resonates with the developer's satisfaction and well-being. The voice of the developer resonates with DX, and there can be seen a lot of commonalities with what is considered with them.
 
 There is possibly huge value that can be gained from studying DX and learning about how it works. A better understanding of DX can help organisations, teams, and individual software developers to create a better experience that enables them to benefit from it in multiple different areas.
 
@@ -509,9 +515,9 @@ There is possibly huge value that can be gained from studying DX and learning ab
 
 \subsection{Research problem and questions}
 
-\cite{easterbrook2008selecting} encourage practitioners to document and reason the selection process of the research problem and questions, the philosophical stance, and the selected research methods e.g the research protocol. They encourage this because other researchers can then understand and interpret the study and possibly replicate the study.
+\textcite{easterbrook2008selecting} encourage practitioners to document and reason the selection process of the research problem and questions, the philosophical stance, and the selected research methods e.g the research protocol. They encourage this because other researchers can then understand and interpret the study and possibly replicate the study.
 
-During this study the research problem and questions have evolved and been modified while more understanding and knowledge about the research topic has been created and accumulated. The starting point of the study was to understand how DX is linked to software project outcomes. However, this was noted to be too vague, difficult to measure and difficult to research. The current state and understanding of DX does not allow to research correlation and causality of DX to software project outcomes as defined by \cite{easterbrook2008selecting}.
+During this study the research problem and questions have evolved and been modified while more understanding and knowledge about the research topic has been created and accumulated. The starting point of the study was to understand how DX is linked to software project outcomes. However, this was noted to be too vague, difficult to measure and difficult to research. The current state and understanding of DX does not allow to research correlation and causality of DX to software project outcomes as defined by \textcite{easterbrook2008selecting}.
 
 Based on this, the selected approach for defining the problem and the research questions leans towards stating a exploratory research problem and research questions.
 
@@ -546,7 +552,7 @@ Based on this, the selected approach for defining the problem and the research q
   \caption{The research questions \label{researchquestions}}
 \end{table}
 
-To analyze the research questions, the categorization, classification, and guidelines of \cite{easterbrook2008selecting} is used.
+To analyze the research questions, the categorization, classification, and guidelines of \textcite{easterbrook2008selecting} is used.
 
 \textbf{\hyperref[RQ1]{RQ1}} is a Description and Classification, but also a Descriptive-Comparative question that compares two different sources of literature. The comparison helps to better understand the definition of DX, and creates the ground for this thesis. The answer to this question will help to understand the phenomena better, but also point out the absence of definitions.
 
@@ -572,7 +578,7 @@ Both of the research questions are exploratory and they try to understand the un
 % - What practices of improving the DX are being applied at the company?
 % - What aspects of Developer Experience do software developers in a software consultancy company value and see important?
 
-% The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \citep{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
+% The original research problem was to understand how the developer experience affects the outcome of the project. This problem could also be rephrased so that it would consider the performance of the team, instead of the outcome as they basically mean the same thing. In \parencite{how-developers-experience-team-performance} it's stated that \textit{"since software development is largely human-based activity, most types of outcome depend on human factors"}. Therefore it's probably not worth to take the approach of studying how some technical artifact could improve the developer experience, and how that furthermore could improve the performance of the team, and finally improve the outcome of the project
 
 % The debate throughout the thesis has to be something that makes the reader interested in the topic and engages the reader. This helps to find the argument of each article and paper that is read for this thesis. It helps the author of this thesis to take a stand when writing some statements. The meaning is not to create some kind of truth that has to be followed. The constant debate throughout the thesis helps to put things in perspective. One example of debate is "Is Developer Experience something worth investing in?".
 
@@ -580,7 +586,7 @@ Both of the research questions are exploratory and they try to understand the un
 
 % Alternative research problems:
 % - How Developer Experience affects the productivity of developers in software projects"?
-% -"How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures i.e. \textit{How developers perceive the development infrastructure?} \citep{fagerholm-dx-concept-and-definition}
+% -"How the cognitive Developer Experience can affect the outcome of Software Projects". This would allow to restrict the scope of the thesis significantly, as the cognitive Developer Experience takes only into account the \textit{"technical"} parts e.g. Platform, techniques, process, skill, procedures i.e. \textit{How developers perceive the development infrastructure?} \parencite{fagerholm-dx-concept-and-definition}
 
 \subsection{Scope and focus}
 
@@ -613,35 +619,35 @@ The concept of Developer Experience (DX) introduces and is related to concepts, 
 
 \subsection{Experience}
 
-\citet[p.~167]{moilanen2018api} differentiates UX from DX by stating that in UX the focus is on using the product and in DX the focus is on creating a product. They also note that UX is a user-centered model of operation, whereas DX is a process-product-centered model of operation. This differentiation of using versus producing is used in this thesis
+\textcite[167]{moilanen2018api} differentiates UX from DX by stating that in UX the focus is on using the product and in DX the focus is on creating a product. They also note that UX is a user-centered model of operation, whereas DX is a process-product-centered model of operation. This differentiation of using versus producing is used in this thesis
 
 The notion of experiencing can been seen in various different ways in SE. Sometimes the different variations of experiences are used intertwined, but is important to differentiate them to avoid misunderstandings. Different experiences related to consuming, using or interacting with something provided by someone else includes \textit{user experience}, \textit{product experience}, \textit{brand experience}, and \textit{service experience}. Experiences related\textit{programmer experience}, and finally also \textit{developer experience}.
 
-\cite{understanding-ux} investigate into the notion of UX and simultaneously differentiates the different kinds of usage experiences. \textit{Brand experience} includes interaction not only with the product, but also the company and it's services and is therefore a broader concept than UX. \textit{Product experience} is narrower the user experience and deals with the objects that are products. \textit{Service experience} concerns about face-to-face services and experiences related to that. \textit{User experience} is discussed in section \ref{section:ux}
+\textcite{understanding-ux} investigate into the notion of UX and simultaneously differentiates the different kinds of usage experiences. \textit{Brand experience} includes interaction not only with the product, but also the company and it's services and is therefore a broader concept than UX. \textit{Product experience} is narrower the user experience and deals with the objects that are products. \textit{Service experience} concerns about face-to-face services and experiences related to that. \textit{User experience} is discussed in section \ref{section:ux}
 
 % Definition of Experience, [online] Available: https://www.merriam-webster.com/dictionary/experience.
 
 \subsubsection{Developer Experience}
 
-Current scientific literature on the definition of DX is few in numbers. DX has however a comprehensive and detailed definition by \cite{fagerholm-doctoral-thesis}. Their doctoral thesis dives into the core of developers and their experiences with developing software. They define DX into two different environments, a social and a technical environment. These two dimensions are presented in figure \ref{figure:social-technical}.
+Current scientific literature on the definition of DX is few in numbers. DX has however a comprehensive and detailed definition by \textcite{fagerholm-doctoral-thesis}. Their doctoral thesis dives into the core of developers and their experiences with developing software. They define DX into two different environments, a social and a technical environment. These two dimensions are presented in figure \ref{figure:social-technical}.
 
-Social aspect of software development plays a crucial role on how a developer experiences the development practice, and is receiving as much consideration as the technical environment in figure \ref{figure:social-technical}. It has for long been noted that the social and human factors of software development are not considered as important as they should be \citep{human-factor}.
+Social aspect of software development plays a crucial role on how a developer experiences the development practice, and is receiving as much consideration as the technical environment in figure \ref{figure:social-technical}. It has for long been noted that the social and human factors of software development are not considered as important as they should be \parencite{human-factor}.
 
 The technical environment, including programming languages, infrastructure, processes, techniques, plans, diagrams etc., is also part of the DX. A developer is interacting with these artifacts and that generates an experience. Activities with these artefacts are both experienced as an individual but also as an group.
 
 Time-wise, the DX can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time, in e.g. a software project.
 
-\cite{fagerholm-dx-concept-and-definition} takes an approach from psychology, and divides DX into three different sub areas or categories – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution). This conceptual framework is presented in figure \ref{figure:conceptual-framework}.
+\textcite{fagerholm-dx-concept-and-definition} takes an approach from psychology, and divides DX into three different sub areas or categories – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution). This conceptual framework is presented in figure \ref{figure:conceptual-framework}.
 
-DX can be seen as important from multiple different viewpoints. From a viewpoint of project management a better DX can help to understand, evaluate, and plan projects so that they are inline with the three different dimensions of DX. Another viewpoint is when designing a software development platform or environment, it can be beneficial to understand what impacts and affect the DX, so that the platform or environment can be designed to be aligned with the developers using it \cite{fagerholm-dx-concept-and-definition}.
+DX can be seen as important from multiple different viewpoints. From a viewpoint of project management a better DX can help to understand, evaluate, and plan projects so that they are inline with the three different dimensions of DX. Another viewpoint is when designing a software development platform or environment, it can be beneficial to understand what impacts and affect the DX, so that the platform or environment can be designed to be aligned with the developers using it \textcite{fagerholm-dx-concept-and-definition}.
 
-% TODO: \cite{exploring-peopleware-in-cd}
+% TODO: \textcite{exploring-peopleware-in-cd}
 
 % TODO: include also the Developer Experience Theoretical Framework into this section and explain how it is used in this thesis to guide the study
 
 \begin{figure}
   \captionsetup{width=0.6\textwidth}
-  \caption{The Developer Experience Concept \citep{fagerholm-doctoral-thesis}}
+  \caption{The Developer Experience Concept \parencite{fagerholm-doctoral-thesis}}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{dx-social-technical.pdf}
   \end{center}
@@ -650,7 +656,7 @@ DX can be seen as important from multiple different viewpoints. From a viewpoint
 
 \begin{figure}
   \captionsetup{width=0.6\textwidth}
-  \caption{Conceptual framework of Developer Experience \citep{fagerholm-dx-concept-and-definition}}
+  \caption{Conceptual framework of Developer Experience \parencite{fagerholm-dx-concept-and-definition}}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{dx-conceptual.pdf}
   \end{center}
@@ -661,23 +667,23 @@ DX can be seen as important from multiple different viewpoints. From a viewpoint
 
 A software developer is a person with a bigger responsibility than a programmer. If a programmer is following instructions, requirements, and guidelines, the developer is also finding out what the instructions, requirements and guidelines should be and probably also helps in defining them. Therefore DX is also considering more of the surrounding context than what Programmer Experience (PX) is considering.
 
-DX and its related terms have been studied and researched relatively little at the moment of writing (\now). \cite{programmer-experience} performed a literature review of the term \textit{"Programmer Experience"}, that studied 73 articles that matched their defined search criteria. The study concluded that there is still some ambiguity in the term \textit{Programmer Experience} in the context of programming environments, design documents, and programming codes.
+DX and its related terms have been studied and researched relatively little at the moment of writing (\now). \textcite{programmer-experience} performed a literature review of the term \textit{"Programmer Experience"}, that studied 73 articles that matched their defined search criteria. The study concluded that there is still some ambiguity in the term \textit{Programmer Experience} in the context of programming environments, design documents, and programming codes.
 
-Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \citep{programmer-experience}. Developer Experience is considering also the social aspect of being a software developer. Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
+Developer Experience (DX) is a bigger construct than PX. DX includes also the motivation of developers, and not only the artefacts like the programming environments \parencite{programmer-experience}. Developer Experience is considering also the social aspect of being a software developer. Developer Experience is what is felt by the developer while trying to achieve a goal i.e. completing a project
 
-Programmer Experience (PX) can be defined as \textit{The result of the intrinsic motivations and perceptions of programmers about the use of development artifacts} \citep{programmer-experience}. A programmer can be seen as person who gives exact instructions on how a program should behave and function. PX is based on the study mainly related to the programming environment, but also programming codes and Application Programming Interfaces (API).
+Programmer Experience (PX) can be defined as \textit{The result of the intrinsic motivations and perceptions of programmers about the use of development artifacts} \parencite{programmer-experience}. A programmer can be seen as person who gives exact instructions on how a program should behave and function. PX is based on the study mainly related to the programming environment, but also programming codes and Application Programming Interfaces (API).
 
 % http://programming-experience.org/px19/ https://2019.programming-conference.org/
 
 \subsubsection{User Experience} \label{section:ux}
 
-User Experience (UX) emerged from the traditional field of HCI. It was seen that only focusing on the instrumental value of the product or service is not enough. \cite{ux-research-agenda} studied recent research of UX, and also proposed the future of it to aid in finding a direction for research of it. They found 3 important perspectives of UX. 1) UX is beyond the instrumental by considering the holistic, aesthetic, and hedonic aspects of usage. 2) Emotion and affect are to interest when understanding the subjective view on usage, that often is focused on the positive antecedents and consequences. 3) The experience in itself is a complex and dynamic phenomena that is near to impossible to replicate.
+User Experience (UX) emerged from the traditional field of HCI. It was seen that only focusing on the instrumental value of the product or service is not enough. \textcite{ux-research-agenda} studied recent research of UX, and also proposed the future of it to aid in finding a direction for research of it. They found 3 important perspectives of UX. 1) UX is beyond the instrumental by considering the holistic, aesthetic, and hedonic aspects of usage. 2) Emotion and affect are to interest when understanding the subjective view on usage, that often is focused on the positive antecedents and consequences. 3) The experience in itself is a complex and dynamic phenomena that is near to impossible to replicate.
 
-\cite{understanding-ux} found that the notion of User Experience (UX) has been widely adopted, without having a clear understanding and definition of what UX. Interestingly,this relates exactly to the situation that DX is in now.
+\textcite{understanding-ux} found that the notion of User Experience (UX) has been widely adopted, without having a clear understanding and definition of what UX. Interestingly,this relates exactly to the situation that DX is in now.
 
 \subsubsection{User Starting Experience}
 
-\cite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}. These both concepts are discussing the approachability of APIs. Developers have become more and more in charge of the decision and selection of the tools and 3rd party products that are used when developing software. This might have been more of a responsibility of the organization or the directors or managers before. Now however, it has been seen that the developers are the most knowledgeable persons to make these decisions. \cite{api-designers} argue that the first encounter with the API determines if it's selected for usage or not, especially if there is a set of different options to choose from. Therefore they also say that the \textit{0 to 200} and \textit{Time to Hello World} are important things to consider when developing APIs with a good DX.
+\textcite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}. These both concepts are discussing the approachability of APIs. Developers have become more and more in charge of the decision and selection of the tools and 3rd party products that are used when developing software. This might have been more of a responsibility of the organization or the directors or managers before. Now however, it has been seen that the developers are the most knowledgeable persons to make these decisions. \textcite{api-designers} argue that the first encounter with the API determines if it's selected for usage or not, especially if there is a set of different options to choose from. Therefore they also say that the \textit{0 to 200} and \textit{Time to Hello World} are important things to consider when developing APIs with a good DX.
 
 \textit{0 to 200} comes from the Hypertext Transfer Protocol HTTP code 200 indicating a successful OK response. Adopting a new API and successfully calling the API with a 200 OK response can be seen as the minimal effort to get the integration working.
 
@@ -687,79 +693,79 @@ However, this shouldn't be limited or restricted to only APIs, programming langu
 
 \subsection{Selection of tools}
 
-Perceived choice is a perception of that the choice has already been made \citep{flow-intrinsic-dx}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
+Perceived choice is a perception of that the choice has already been made \parencite{flow-intrinsic-dx}. Selecting tools in software development projects is in a crucial role, as it can significantly improve the Developer Experience in software projects.
 
-\cite{flow-intrinsic-dx} studied Integrated Development Environment (IDE), and how they are connected with state of flow, intrinsic motivation, and user experience. Their findings reveal that if the developers have a high perception of choice, the also are overall more satisfied with the tools. They also concluded that if the selected tools are selected without their input, (they perceive it chosen already), the developers will have a worse developer experience with it, as e.g. their frustration with the tool will be more common.
+\textcite{flow-intrinsic-dx} studied Integrated Development Environment (IDE), and how they are connected with state of flow, intrinsic motivation, and user experience. Their findings reveal that if the developers have a high perception of choice, the also are overall more satisfied with the tools. They also concluded that if the selected tools are selected without their input, (they perceive it chosen already), the developers will have a worse developer experience with it, as e.g. their frustration with the tool will be more common.
 
-There has been a study on the Developer Experience of IDEs \citep{software-developers-as-users}. However, the study concentrated on the UX of the selected IDE that was studied.
+There has been a study on the Developer Experience of IDEs \parencite{software-developers-as-users}. However, the study concentrated on the UX of the selected IDE that was studied.
 
 When selecting an IDE it is also important to consider what the other developers in the team or organization is using or what other would prefer to use.
 
-\cite{design-framework-enchancing}
+\textcite{design-framework-enchancing}
 
 There can be situations when two different developers use a different IDE, and therefore also the experience can be completely different between them. At the most extreme the 2 IDEs are not compatible with each other as their files related to the project are different. An example of this is Eclipse and IntelliJ IDEA as Java IDEs.
 
-In a study of IDEs \citep{software-developers-as-users}, the survey in the study produced answers that were most pragmatic, but not hedonic. This could show that most of the developers are practical, and not feeling based. This has also been proven \citep{personality-software}. This might also be a reason why Developer Experience has not gotten that much attention yet, as big part of people in software engineering are \textit{"Introverts"}. Software engineers are also more logical thinkers than feeling based. As Developer Experience is focusing on the feelings and subjective opinions about things, it might be a difficult topic to research.
+In a study of IDEs \parencite{software-developers-as-users}, the survey in the study produced answers that were most pragmatic, but not hedonic. This could show that most of the developers are practical, and not feeling based. This has also been proven \parencite{personality-software}. This might also be a reason why Developer Experience has not gotten that much attention yet, as big part of people in software engineering are \textit{"Introverts"}. Software engineers are also more logical thinkers than feeling based. As Developer Experience is focusing on the feelings and subjective opinions about things, it might be a difficult topic to research.
 
 \subsection{Organization and project onboarding}
 
-\cite{entering-an-ecosystem} have studied the process of entering an ecosystem from the perspective of developers. They have especially focused on the onboarding process of Hybrid Open Source Software projects that have special characteristics as software projects.
+\textcite{entering-an-ecosystem} have studied the process of entering an ecosystem from the perspective of developers. They have especially focused on the onboarding process of Hybrid Open Source Software projects that have special characteristics as software projects.
 
 Open Source Software (OSS) is software developed, where the source code of the software is accessible to the public. OSS is often developed by a community where anyone participating is allowed to report problems, suggest changes, and also modify the code and develop the software. However, the fact that anyone interested can participate in the community results in that the communities often create their own complex organization and hierarchy.
 
 A hybrid OSS can consist of individual developers, but also sponsored and supported developers that are pursuing the interests of some other organization. One example of this is JavaScript framework React, that was initially developed at Facebook, but later open sourced. Hybrid OSS creates another layer of complexity of the organization.
 
-\cite{entering-an-ecosystem} argue that onboarding and welcoming new developers to hybrid OSS might be more difficult than normal OSS projects. All in all, onboarding of any kind of software project is part of the whole DX of the onboarding developer.
+\textcite{entering-an-ecosystem} argue that onboarding and welcoming new developers to hybrid OSS might be more difficult than normal OSS projects. All in all, onboarding of any kind of software project is part of the whole DX of the onboarding developer.
 
 \subsection{Motivation}
 
-Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \citep{flow-intrinsic-dx} (Self-determination theory. Handbook of theories of social psychology).
+Intrinsic Motivation (IM) is the motivation that is enabled by someone enjoying their own work, i.e. the motivation is originating from the work itself. Extrinsic Motivation (EM) is motivation that stems from the outcomes of the work performed \parencite{flow-intrinsic-dx} (Self-determination theory. Handbook of theories of social psychology).
 
 \subsection{Performance Alignment Work}
 
-\cite{how-developers-experience-team-performance} and \cite{paw} have created a framework called Performance Alignment Work (PAW), that explains the phenomena of experiencing performance in software development context. Software development performance is a complex construct where performance measurement is not a straightforward practice.
+\textcite{how-developers-experience-team-performance} and \textcite{paw} have created a framework called Performance Alignment Work (PAW), that explains the phenomena of experiencing performance in software development context. Software development performance is a complex construct where performance measurement is not a straightforward practice.
 
 The PAW framework acknowledges that performance can not be measured trough some objective measures, as there are too many different viewpoints to measure software project performance from. It also acknowledges that performance exists on multiple different levels e.g. individual, team, organization, or customer level. Their study concluded that high-performing teams are considered high-performing because the are able to alter the ways the performance of the team is measured.
 
-The performance of a software development project is highly linked with the DX of the individual and the whole team, and \cite{how-developers-experience-team-performance} suggest that by aligning affective and conative aspects with individual developers and within the whole software development team, there could be opportunities to reach improved performance.
+The performance of a software development project is highly linked with the DX of the individual and the whole team, and \textcite{how-developers-experience-team-performance} suggest that by aligning affective and conative aspects with individual developers and within the whole software development team, there could be opportunities to reach improved performance.
 
 \subsection{Happiness of developers}
 
-Happiness of developers has been reported have high impact on the practice of software development and have consequences. A series of studies, namely \cite{unhappy-developers}, \cite{on-the-unhappiness}, \cite{consequences-of-unhappiness}, and \cite{what-happens-when-unhappy} studies the happiness and unhappiness of developers. They concluded that the (un)happiness of the developer has consequences on the themselves, the process, and the end product. The concept of DX \citep{fagerholm-dx-concept-and-definition} includes the affective dimension that is directly related to the happiness of developers.
+Happiness of developers has been reported have high impact on the practice of software development and have consequences. A series of studies, namely \textcite{unhappy-developers}, \textcite{on-the-unhappiness}, \textcite{consequences-of-unhappiness}, and \textcite{what-happens-when-unhappy} studies the happiness and unhappiness of developers. They concluded that the (un)happiness of the developer has consequences on the themselves, the process, and the end product. The concept of DX \parencite{fagerholm-dx-concept-and-definition} includes the affective dimension that is directly related to the happiness of developers.
 
 \subsection{Flow state}
 
-The flow state is a state where the task at hand has gotten full attention \citep{flow-intrinsic-dx}. Flow state is something that many developers want to achieve. For some developers it is really difficult to focus if there are external things that disturb them like sound or something similar. Also, people coming and asking questions might disturb or interrupt the flow state. Therefore many developers are now also trying out remote work where they are not co-located. Achieving flow state requires a clear set of goals, continuous feedback, and a good balance between skills and challenge.
+The flow state is a state where the task at hand has gotten full attention \parencite{flow-intrinsic-dx}. Flow state is something that many developers want to achieve. For some developers it is really difficult to focus if there are external things that disturb them like sound or something similar. Also, people coming and asking questions might disturb or interrupt the flow state. Therefore many developers are now also trying out remote work where they are not co-located. Achieving flow state requires a clear set of goals, continuous feedback, and a good balance between skills and challenge.
 
 \subsection{Application Programming Interfaces}
 
-Application Programming Interfaces (APIs) are interface that developers use to communicate and transfer information with external service, but also to build products and services with. As developers are in the role of using APIs, the APIs UX, and also DX, has been researched \citep{api-designers}. Developers are the main users of APIs, the API's DX has been considered as a very important aspect of the API. A good DX aids in getting users for an API.
+Application Programming Interfaces (APIs) are interface that developers use to communicate and transfer information with external service, but also to build products and services with. As developers are in the role of using APIs, the APIs UX, and also DX, has been researched \parencite{api-designers}. Developers are the main users of APIs, the API's DX has been considered as a very important aspect of the API. A good DX aids in getting users for an API.
 
-APIs, and especially Web APIs have enabled to create businesses around APIs \citep{api-ecosystem}, \citep{web-api-economy}, \citep{moilanen2018api}. This type of business is called an API economy, and has quickly become a viable way of generating revenue for businesses.
+APIs, and especially Web APIs have enabled to create businesses around APIs \parencite{api-ecosystem}, \parencite{web-api-economy}, \parencite{moilanen2018api}. This type of business is called an API economy, and has quickly become a viable way of generating revenue for businesses.
 
 \clearpage
 \section{Research methods}
 
 During the study, the research problem and the research questions evolved as the understanding and comprehension of the problem improved. Because of this the planned research methods and the goals with these also evolved and were reshaped when new information was acquired. From the introduction and motivation in sections \ref{introduction} and \ref{motivation}, it was determined that DX is a novel and abstract construct. The concepts and definitions of it are multiple, and vary both in research and in industry. This means that the author's understanding of the topic improved and evolved during the study.
 
-\cite{easterbrook2008selecting} define a set of guidelines for empirical research in software engineering. They argue that selecting a clear research question, an explicit philosophical stance, and an appropriate research method are key when researching in the context of Software Engineering (SE). They also note that many research projects in SE fail in defining the stance of the research, which then further complicates all aspects of the research including its interpretation, validity, replicability etc.
+\textcite{easterbrook2008selecting} define a set of guidelines for empirical research in software engineering. They argue that selecting a clear research question, an explicit philosophical stance, and an appropriate research method are key when researching in the context of Software Engineering (SE). They also note that many research projects in SE fail in defining the stance of the research, which then further complicates all aspects of the research including its interpretation, validity, replicability etc.
 
 During writing of the thesis, the author was working at the case company, allowing to perform ethnographic techniques in understanding and studying the phenomena. Working at the case company also allowed to have discussion with colleagues.
 
-% TODO: Use the theory and/or framework from \cite{fagerholm-doctoral-thesis} and use e.g. the "experience objects" and measure what kind of experiences ("immediate experience", "cumulative experience")
+% TODO: Use the theory and/or framework from \textcite{fagerholm-doctoral-thesis} and use e.g. the "experience objects" and measure what kind of experiences ("immediate experience", "cumulative experience")
 
 % google translate work very well!: you could try to take the theoretical model in my doctoral dissertation to structure the analysis a bit (eg what "experience objects" come up, how the participants reason about them, and at what level they reason (from "immediate experience" to "cumulative experience) ")? Then you will most likely find something else as well, and then maybe a result could be a different theoretical model that is better based on empirical evidence.
 
 \subsection{Research approach}
 
-This thesis takes an exploratory approach to study the research problem and to answer the research questions. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \citep{easterbrook2008selecting}. The definition of DX given by \cite{fagerholm-dx-concept-and-definition} works as the basis of the study, but it is only giving the abstract concept to build upon. This concept and framework has not yet been widely taken into practice in empirical research.
+This thesis takes an exploratory approach to study the research problem and to answer the research questions. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \parencite{easterbrook2008selecting}. The definition of DX given by \textcite{fagerholm-dx-concept-and-definition} works as the basis of the study, but it is only giving the abstract concept to build upon. This concept and framework has not yet been widely taken into practice in empirical research.
 
 Also, from initial discussion in the case company there was almost as many definitions of DX as there was discussions. This shows that depending on the role of the practitioner and the context they are working in affects in the definition of DX.
 
-In \cite{developing-grounded-theory} Juliet Corbin reflects on the grounded theory research methodology and how she approached a research she conducted in combination while writing a book \citep{basics-of-qualitative-research} about grounded theory.
+In \textcite{developing-grounded-theory} Juliet Corbin reflects on the grounded theory research methodology and how she approached a research she conducted in combination while writing a book \parencite{basics-of-qualitative-research} about grounded theory.
 
 \begin{quotation}
-  \textit{"I was just going to sit down with that first piece of data in front of me and let it flow, let the research take me where it wanted"} - Juliet Corbin \citep[p.~43]{developing-grounded-theory}
+  \textit{"I was just going to sit down with that first piece of data in front of me and let it flow, let the research take me where it wanted"} - Juliet Corbin \parencite[p.~43]{developing-grounded-theory}
 \end{quotation}
 
 Taking an approach that enabled and open mind and building the research questions was the most suitable in this thesis, both from the viewpoint of the research topic and researchers own skills, competency, and way of thought.
@@ -768,15 +774,15 @@ Taking an approach that enabled and open mind and building the research question
 
 \subsection{Research philosophy} \label{section:research-philosophy}
 
-According to \cite{easterbrook2008selecting}, making explicit decisions on the research methods is key, and by doing that the research becomes more beneficial for practitioners and other researchers. Therefore they also argue that explicitly defining every step of the research should be done.
+According to \textcite{easterbrook2008selecting}, making explicit decisions on the research methods is key, and by doing that the research becomes more beneficial for practitioners and other researchers. Therefore they also argue that explicitly defining every step of the research should be done.
 
 This thesis will take a \textbf{constructivism} view of the truth, combined with pragmatic approach. A constructivist approach sees the problem as that the human context is always present, and that it is an important part of the research and the study. The \textbf{pragmatic} approach is also required because of the case company in this study. The context of a company is important to include, as something that works with one company, might not work with another company. The pragmatic approach can be seen as an approach from engineering, where the interest is focused on what works at a specific time in a specific context.
 
-An \textbf{positivism} is not a suitable approach in this context. A positivistic approach tries to build up knowledge on verifiable observations that is then incrementally built upon. Positivists prefer to create specific theories from where testable hypotheses are extracted. These hypotheses are then tested in an controlled and isolated environment \citep{easterbrook2008selecting}.
+An \textbf{positivism} is not a suitable approach in this context. A positivistic approach tries to build up knowledge on verifiable observations that is then incrementally built upon. Positivists prefer to create specific theories from where testable hypotheses are extracted. These hypotheses are then tested in an controlled and isolated environment \parencite{easterbrook2008selecting}.
 
 \subsection{Unit of analysis}
 
-\cite{easterbrook2008selecting} point out that it is important to pick the unit of analysis of the study. The unit in this case could be a company or organization, a project, a team, or an individual software developer. As DX is the experience of an individual developer, it is selected as the primary focus in this study.
+\textcite{easterbrook2008selecting} point out that it is important to pick the unit of analysis of the study. The unit in this case could be a company or organization, a project, a team, or an individual software developer. As DX is the experience of an individual developer, it is selected as the primary focus in this study.
 
 Another viewpoint to this is also the case company, that has its own culture and set of practices. This study will also see the company as a unit of analysis. The company culture and practices are something that is shared between every developer and other employees.
 
@@ -794,13 +800,13 @@ Each research and study should have a background check and literature review whe
 
 Brainstorming (BS) is a widely used technique, where the idea is to foster unique and novel ideas. Usually BS sessions are conducted when there is a need for innovation and new ideas. One typical use case of BS would be in a context of developing a product. With help of involving the development team in a BS session, new ideas and possible development directions can be found. The foundation of BS lies in that there are no right and wrong ideas, and that every idea is welcome.
 
-In the context of this thesis, the technique of BS works as an exploratory way of initiating the study. Because of the novelty of the research topic DX, BS is an appropriate way of establishing the initial understanding of DX in the context of the study and the case company. Because the researcher has created their own understanding of what DX is, it would interfere with the study results if the researcher would participate into the sessions. It would also be problematic if the researcher would introduce the topic before the session, because the would either change or deepen the personal image of DX that the participants at that moment have. This is in line with the exploratory research philosophy described by \cite{ethnographically-informed}. If the initial session would have been for example a workshop facilitated by the researcher, the researcher might have affected the session, and it would not have yielded in the same results as with a BS session.
+In the context of this thesis, the technique of BS works as an exploratory way of initiating the study. Because of the novelty of the research topic DX, BS is an appropriate way of establishing the initial understanding of DX in the context of the study and the case company. Because the researcher has created their own understanding of what DX is, it would interfere with the study results if the researcher would participate into the sessions. It would also be problematic if the researcher would introduce the topic before the session, because the would either change or deepen the personal image of DX that the participants at that moment have. This is in line with the exploratory research philosophy described by \textcite{ethnographically-informed}. If the initial session would have been for example a workshop facilitated by the researcher, the researcher might have affected the session, and it would not have yielded in the same results as with a BS session.
 
-Brainstorming types can be identified into \textit{Traditional Brainstorming (TBS)}, \textit{Nominal Brainstorming (NBS)}, \textit{Electronic brainstorming (EBS)} \citep{brainstorming-techniques}. \textit{TBS} are verbal brainstorming sessions where the idea is to brainstorm verbally together in a group face-to-face. \textit{NBS} can be seen as individual BS sessions, where each individual does the brainstorming without working together. \textit{EBS} is a way to conduct BS with help of computers, from where each individual can concurrently input their ideas. Meanwhile the participants can see ideas from others. However there is a level of anonymity that defeats some of the problems with TBS and NBS.  All in all, the different types of BS has been studied and their efficiency is dependent on many factors \citep{productivity-loss-in-brainstorming-groups}, \citep{electronic-brainstorming}, \citep{chainstorm}.
+Brainstorming types can be identified into \textit{Traditional Brainstorming (TBS)}, \textit{Nominal Brainstorming (NBS)}, \textit{Electronic brainstorming (EBS)} \parencite{brainstorming-techniques}. \textit{TBS} are verbal brainstorming sessions where the idea is to brainstorm verbally together in a group face-to-face. \textit{NBS} can be seen as individual BS sessions, where each individual does the brainstorming without working together. \textit{EBS} is a way to conduct BS with help of computers, from where each individual can concurrently input their ideas. Meanwhile the participants can see ideas from others. However there is a level of anonymity that defeats some of the problems with TBS and NBS.  All in all, the different types of BS has been studied and their efficiency is dependent on many factors \parencite{productivity-loss-in-brainstorming-groups}, \parencite{electronic-brainstorming}, \parencite{chainstorm}.
 
-There are some problems with brainstorming sessions \citep{electronic-brainstorming} \citep{chainstorm}. \textit{Evaluation apprehension} means that group members might get the feeling of being judged, and therefore they might feel reticent with bringing out their ideas. \textit{Production blocking} might also be a problem, as working in groups will require everyone to talk on their own turns, which might lead to ideas becoming irrelevant, ideas might be forgot, the ideas might be rehearsed that blocks the generation of new ideas. \textit{Free riding} can also happen when some BS group members rely on other members to perform the BS actions. According to \cite{six-issues-of-brainstorming}, the proponents of brainstorming is the practitioners, and the opponents are often researchers.
+There are some problems with brainstorming sessions \parencite{electronic-brainstorming} \parencite{chainstorm}. \textit{Evaluation apprehension} means that group members might get the feeling of being judged, and therefore they might feel reticent with bringing out their ideas. \textit{Production blocking} might also be a problem, as working in groups will require everyone to talk on their own turns, which might lead to ideas becoming irrelevant, ideas might be forgot, the ideas might be rehearsed that blocks the generation of new ideas. \textit{Free riding} can also happen when some BS group members rely on other members to perform the BS actions. According to \textcite{six-issues-of-brainstorming}, the proponents of brainstorming is the practitioners, and the opponents are often researchers.
 
-In this study the initial brainstorming session was selected to be a combination of TBS and NBS. NBS allows everyone to work individually. The case company has also established itself as working very agile, and therefore mentioned problems with BS do not require any extra actions to mitigate them. The BS session used Think-Pair-Share method \citep{think-pair-share}, where each participant of the session first thinks about the problem and possible ideas by themselves, then after that each individual is paired together where they share their own initial ideas, discard duplicate ideas, and further develop new ideas after the discussion. After pairing, each pair presents their ideas and findings to the whole group.
+In this study the initial brainstorming session was selected to be a combination of TBS and NBS. NBS allows everyone to work individually. The case company has also established itself as working very agile, and therefore mentioned problems with BS do not require any extra actions to mitigate them. The BS session used Think-Pair-Share method \parencite{think-pair-share}, where each participant of the session first thinks about the problem and possible ideas by themselves, then after that each individual is paired together where they share their own initial ideas, discard duplicate ideas, and further develop new ideas after the discussion. After pairing, each pair presents their ideas and findings to the whole group.
 
 \subsubsection{Interviews}
 
@@ -814,11 +820,11 @@ Interviews can be conducted with the concept and framework of developer experien
 
 \subsection{Timeline}
 
-Mixed-methods approaches are more complex research strategies where multiple different approaches of an empirical study is combined \citep{easterbrook2008selecting}. In mixed-methods approaches the limitations of the different methods are acknowledged, and the limitations of them are mitigated.
+Mixed-methods approaches are more complex research strategies where multiple different approaches of an empirical study is combined \parencite{easterbrook2008selecting}. In mixed-methods approaches the limitations of the different methods are acknowledged, and the limitations of them are mitigated.
 
 \textit{Sequential exploratory strategy} is one specific mixed-methods research approach. In this approach first qualitative data is collected and analyzed, after which the focus shifts towards quantitative data. Purpose of this approach is to first explore the topic with help of qualitative research, and then possibly test some emerging theory with help of quantitative research. Another reason might be to help in interpreting the qualitative data.
 
-\textit{Concurrent triangulation strategy} is another specific approach of mixed-methods \citep{easterbrook2008selecting}, where different research methods are used concurrently. The concurrent research enables to use results from one method to another, and vice versa. This enables to cross-validate research findings.
+\textit{Concurrent triangulation strategy} is another specific approach of mixed-methods \parencite{easterbrook2008selecting}, where different research methods are used concurrently. The concurrent research enables to use results from one method to another, and vice versa. This enables to cross-validate research findings.
 
 In this thesis both \textit{sequential exploratory strategy} and \textit{concurrent triangulation strategy} was used as research approaches. The sequential exploratory strategy was implemented by first conducting the initial multivocal and traditional literature reviews, and then only after that the ideation and planning of the workshops started. However at this point the MLR was not finalized, and still had some open questions, and ongoing interpretations and analysis.
 
@@ -828,36 +834,36 @@ The initiation of the thesis started during the summer of 2019. The topic of the
 
 \subsection{Analysis of data}
 
-\cite{analyzing-qualitative-data} give a set of guidelines and practices on analysing qualitative data. They state that using qualitative data in research requires discipline, creativity, but also a systematic approach. The divide the analysis of qualitative data into 5 different step: get to know your data, focus the analysis, categorize information, identify patterns and connections within and between categories, and finally interpretation. Categorization of the data is explained more in the specific sections where categorization, theming, or coding of data is performed.
+\textcite{analyzing-qualitative-data} give a set of guidelines and practices on analysing qualitative data. They state that using qualitative data in research requires discipline, creativity, but also a systematic approach. The divide the analysis of qualitative data into 5 different step: get to know your data, focus the analysis, categorize information, identify patterns and connections within and between categories, and finally interpretation. Categorization of the data is explained more in the specific sections where categorization, theming, or coding of data is performed.
 
 \clearpage
 \section{Multivocal literature review} \label{mlr}
 
-Traditionally, in Systematic Literature Reviews (SLR) the reviewed literature consists only of literature that is formally published, and of which the motivation of publishing is the publication in itself, e.g. scientific publications in journals and conferences. Material that is produced with commercial interests and informally published material and publications are not considered in SLR \citep{guidelines-for-MLR}.
+Traditionally, in Systematic Literature Reviews (SLR) the reviewed literature consists only of literature that is formally published, and of which the motivation of publishing is the publication in itself, e.g. scientific publications in journals and conferences. Material that is produced with commercial interests and informally published material and publications are not considered in SLR \parencite{guidelines-for-MLR}.
 
-Multivocal Literature Reviews (MLR), are a way to include grey literature into SLRs \citep{the-need-for-MLR}. Grey literature can be defined in different ways, and research fields define grey literature in ways that are meaningful to that specific field.
+Multivocal Literature Reviews (MLR), are a way to include grey literature into SLRs \parencite{the-need-for-MLR}. Grey literature can be defined in different ways, and research fields define grey literature in ways that are meaningful to that specific field.
 
 \begin{quotation}
-  \textit{"Grey literature stands for manifold document types produced on all levels of government, academics, business and industry in print and electronic formats that are protected by intellectual property rights, of sufficient quality to be collected and preserved by library holdings or institutional repositories, but not controlled by commercial publishers i.e., where publishing is not the primary activity of the producing body."} \citep{towards-a-prague-definition-of-grey-literature}
+  \textit{"Grey literature stands for manifold document types produced on all levels of government, academics, business and industry in print and electronic formats that are protected by intellectual property rights, of sufficient quality to be collected and preserved by library holdings or institutional repositories, but not controlled by commercial publishers i.e., where publishing is not the primary activity of the producing body."} \parencite{towards-a-prague-definition-of-grey-literature}
 \end{quotation}
 
-The Prague Definition of grey literature is strict and therefore not allowing e.g. blog posts to be used on MLRs. However, a specific guideline for including grey literature in literature reviews has been created \citep{guidelines-for-MLR}. This guideline is based on the guidelines on how to perform SLR in SE \citep{guidelines-for-SLR-in-SE}.
+The Prague Definition of grey literature is strict and therefore not allowing e.g. blog posts to be used on MLRs. However, a specific guideline for including grey literature in literature reviews has been created \parencite{guidelines-for-MLR}. This guideline is based on the guidelines on how to perform SLR in SE \parencite{guidelines-for-SLR-in-SE}.
 
 \subsection{The motivation behind a Multivocal Literature Review}
 
-DX is an abstract concept and framework. As pointed by \cite{fagerholm-doctoral-thesis}, the framework they present can be used to guide inquiries into DX. There was a need to create an understanding of the definition of DX from the point of view in this thesis. Traditional literature reviews can help in these cases, and they create a common understanding and basis of the topic that is going to be discussed. However, traditional literature reviews are prone to be biased. To avoid bias of the author, and because DX is a subjective concept of the developer, the definition of DX could have been reviewed with a help of a SLR. SLRs are a way of producing evidence based results, and they are effective in complex and opinion based fields where a common agreement of a concept or topic might be difficult to find.
+DX is an abstract concept and framework. As pointed by \textcite{fagerholm-doctoral-thesis}, the framework they present can be used to guide inquiries into DX. There was a need to create an understanding of the definition of DX from the point of view in this thesis. Traditional literature reviews can help in these cases, and they create a common understanding and basis of the topic that is going to be discussed. However, traditional literature reviews are prone to be biased. To avoid bias of the author, and because DX is a subjective concept of the developer, the definition of DX could have been reviewed with a help of a SLR. SLRs are a way of producing evidence based results, and they are effective in complex and opinion based fields where a common agreement of a concept or topic might be difficult to find.
 
-In software engineering practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \citep{the-need-for-MLR}. An SLR would include only the scientific papers, and therefore it might not be sufficient to only focus on that. In a MLR the GL should provide a current perspective and fill in the gaps of scientific and formal literature \citep{guidelines-for-MLR}. SE practitioners are producing a lot of literature, that would not be considered in normal literature reviews or SLR. This GL can provide insights about the field of SE, and especially about DX.
+In software engineering practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \parencite{the-need-for-MLR}. An SLR would include only the scientific papers, and therefore it might not be sufficient to only focus on that. In a MLR the GL should provide a current perspective and fill in the gaps of scientific and formal literature \parencite{guidelines-for-MLR}. SE practitioners are producing a lot of literature, that would not be considered in normal literature reviews or SLR. This GL can provide insights about the field of SE, and especially about DX.
 
-% TODO: Read \citep{guidelines-for-MLR} again after reading \citep{guidelines-for-SLR-in-SE}.
+% TODO: Read \parencite{guidelines-for-MLR} again after reading \parencite{guidelines-for-SLR-in-SE}.
 
 \subsection{The review protocol of the Multivocal Literature Review}
 
-DX is a novel concept, and therefore there has been little formal research on the topic. Based on the different levels of literature, white, grey, and black \citep{guidelines-for-MLR}, DX could be seen even to be in the category of black literature. DX can still be seen to be on the level of ideas, concepts, and thoughts.
+DX is a novel concept, and therefore there has been little formal research on the topic. Based on the different levels of literature, white, grey, and black \parencite{guidelines-for-MLR}, DX could be seen even to be in the category of black literature. DX can still be seen to be on the level of ideas, concepts, and thoughts.
 
 \newcommand{\mlrdxlink}{https://bit.ly/31QzQ7z}
 
-All data of the MLR can be found the following link: \href{\mlrdxlink}{https://bit.ly/31QzQ7z}. The data collection is done with Google Sheets and is based on the example shown in \citep{guidelines-for-MLR}.
+All data of the MLR can be found the following link: \href{\mlrdxlink}{https://bit.ly/31QzQ7z}. The data collection is done with Google Sheets and is based on the example shown in \parencite{guidelines-for-MLR}.
 
 \subsubsection{Research questions}
 
@@ -869,7 +875,7 @@ The search process was divided into a database search and a snowballing procedur
 
 \subsubsubsection{Database search}
 
-The first iteration of the search was performed as a manual search by the author from various libraries to gather the scientific literature. For grey literature, the Google search engine (https://www.google.com) was be used. To limit the amount of results in the search of grey literature, only the first 2 pages of searches from google.com will be included. In a study conducted by \cite{google-search}, only 91 percent of participants in a study went to the second page of google results page. Therefore it's appropriate to include only the most relevant (the first pages of the results) results from the google search. The selected databases and libraries of sources of scientific literature is listed in table \ref{table:included-databases}.
+The first iteration of the search was performed as a manual search by the author from various libraries to gather the scientific literature. For grey literature, the Google search engine (https://www.google.com) was be used. To limit the amount of results in the search of grey literature, only the first 2 pages of searches from google.com will be included. In a study conducted by \textcite{google-search}, only 91 percent of participants in a study went to the second page of google results page. Therefore it's appropriate to include only the most relevant (the first pages of the results) results from the google search. The selected databases and libraries of sources of scientific literature is listed in table \ref{table:included-databases}.
 
 \begin{table}
   \centering
@@ -900,17 +906,17 @@ The first iteration of the search was performed as a manual search by the author
 
 Other possible libraries and databases that could have been used are listed in table \ref{table:excluded-databases}. However, the sources listed in this table does not provide advanced search. Advanced search by author keyword was a search criteria and because of that these libraries and databases were excluded from the initial search of sources.
 
-\cite{guidelines-for-snowballing} state that with manual searches of sources, the results will vary and are hard to replicate because of the lack of a system. This is key when performing systematic reviews so other researchers can replicate the study. \cite{guidelines-for-snowballing} also mention that performing database searches might result in a big set of irrelevant results, from where it can be difficult to find the relevant result from. The process of manually filtering out results is also error prone.
+\textcite{guidelines-for-snowballing} state that with manual searches of sources, the results will vary and are hard to replicate because of the lack of a system. This is key when performing systematic reviews so other researchers can replicate the study. \textcite{guidelines-for-snowballing} also mention that performing database searches might result in a big set of irrelevant results, from where it can be difficult to find the relevant result from. The process of manually filtering out results is also error prone.
 
-Search string for both scientific and grey literature was \textbf{"developer experience"}. The aim of the MLR review was to get an overview of the definition of DX, only that specific search string was used. That assured that all relevant publications were included. Including more words in the search string or creating a more complex search string would have required a better understanding of DX. Also, including other search strings would have biased the search result. To further narrow down the search, the search was modified to include only results where author keyword was "developer experience". This narrowed down the search significantly, and removed irrelevant results. \cite{guidelines-for-snowballing} mention that creating complex queries and search strings might be difficult because of the lacking standardized terminology of the research topic. This was exactly the case with this study, as the topic of DX is relatively novel and some research might be studying DX without explicitly stating or even being aware of that themselves.
+Search string for both scientific and grey literature was \textbf{"developer experience"}. The aim of the MLR review was to get an overview of the definition of DX, only that specific search string was used. That assured that all relevant publications were included. Including more words in the search string or creating a more complex search string would have required a better understanding of DX. Also, including other search strings would have biased the search result. To further narrow down the search, the search was modified to include only results where author keyword was "developer experience". This narrowed down the search significantly, and removed irrelevant results. \textcite{guidelines-for-snowballing} mention that creating complex queries and search strings might be difficult because of the lacking standardized terminology of the research topic. This was exactly the case with this study, as the topic of DX is relatively novel and some research might be studying DX without explicitly stating or even being aware of that themselves.
 
 Using the author keyword gave results where the author is intentionally discussing the topic of DX. In the case of DX, with searching only with the author keyword, the inclusion/exclusion rate is significantly better than with a full-text search. However, this approach removed the possibility to discover definitions of DX where the author is not aware of this concept or phenomenon.
 
-\cite{understanding-ux} performed a search on the definition of UX. Their search strings used a combination of keywords. However, trying to replicate these for the search of the definition of DX did not yield any satisfactory results, and either the number of search results was too big or too small.
+\textcite{understanding-ux} performed a search on the definition of UX. Their search strings used a combination of keywords. However, trying to replicate these for the search of the definition of DX did not yield any satisfactory results, and either the number of search results was too big or too small.
 
 \subsubsubsection{Snowballing}
 
-The result of the database search gave good results that however were too narrow. With the guidance of the thesis supervisor who has done extensive research on DX, the decision of using snowballing to collect more sources was done. Snowballing allows to find sources that would otherwise go undiscovered. For example obscure journals, conferences, or magazines can be difficult to find with only using database searchers \citep{guidelines-for-snowballing}.
+The result of the database search gave good results that however were too narrow. With the guidance of the thesis supervisor who has done extensive research on DX, the decision of using snowballing to collect more sources was done. Snowballing allows to find sources that would otherwise go undiscovered. For example obscure journals, conferences, or magazines can be difficult to find with only using database searchers \parencite{guidelines-for-snowballing}.
 
 In this thesis one iteration of snowballing was performed on the scientific articles. The first set of scientific literature included 21 articles. Snowballing was performed on these 21 articles, and the first round of backward and forward snowballing resulted in 5 articles from backward and 14 articles from forward snowballing. Snowballing on
 
@@ -930,7 +936,7 @@ Papers that discussed about developer's experience in terms of the experience le
 
 \subsubsection{Quality assessment}
 
-\cite{guidelines-for-MLR} give guidelines on how to assess the quality of the sources. This can be done with help of quality points based on some set of questions or points of measure. This is useful when the aim is to achieve a certain level on the sources. It also helps to filter out a big number of possible sources. Because of the novel topic the quality assessments were not considered in this study. The amount of sources were low and because of the exploratory nature of the study, every possible and available source were considered.
+\textcite{guidelines-for-MLR} give guidelines on how to assess the quality of the sources. This can be done with help of quality points based on some set of questions or points of measure. This is useful when the aim is to achieve a certain level on the sources. It also helps to filter out a big number of possible sources. Because of the novel topic the quality assessments were not considered in this study. The amount of sources were low and because of the exploratory nature of the study, every possible and available source were considered.
 
 \subsubsection{Data collection}
 
@@ -986,7 +992,7 @@ Data collection was rather successful and multiple different data points was ext
 
 The quantitative data analysis was performed with simple aggregations and visualized with help of charts. No specific methods or techniques of quantitative data were used. Iterating on the categories by removing, adding, and combining them, new categories and patterns emerged.
 
-Qualitative data analysis was performed one data point at at a time. Each data point was copied to an excel table where electronic affinity diagramming was performed. Affinity diagramming or the KJ method \citep{scupin1997kj} is a technique that allows to make sense of qualitative data. The KJ methods allows to understand and interpret data that would otherwise be difficult to make something out of.
+Qualitative data analysis was performed one data point at at a time. Each data point was copied to an excel table where electronic affinity diagramming was performed. Affinity diagramming or the KJ method \parencite{scupin1997kj} is a technique that allows to make sense of qualitative data. The KJ methods allows to understand and interpret data that would otherwise be difficult to make something out of.
 
 The idea is to shuffle statements that are written cards or notes. Next step is to group things that relate to each other together so that "teams" of cards are formed. Then each of these teams are titled, and finally the relations between teams are explained and reported. This method allows to create new interpretations and reveal hidden meaning behind the collected data. This method was suitable for this MLR, as the majority of the data collected was qualitative e.g. statements and loose interpretations from the articles.
 
@@ -995,15 +1001,15 @@ The idea is to shuffle statements that are written cards or notes. Next step is 
 
 \subsection{Case company}
 
-Reaktor is a Finnish company that provides consultancy and agency services. The company was founded in 2000 and has since then been a leading IT-consultancy company in the Finnish market. In addition to offices in Finland, Reaktor has offices in New York, Amsterdam, Tokyo, and Dubai \citep{reaktor-home}. Reaktor has won the Great Place to Work award multiple times in Finland \citep{reaktor-gptw} and the company is actively improving the wellbeing of everyone at the company \citep{talouselama-reaktor}.
+Reaktor is a Finnish company that provides consultancy and agency services. The company was founded in 2000 and has since then been a leading IT-consultancy company in the Finnish market. In addition to offices in Finland, Reaktor has offices in New York, Amsterdam, Tokyo, and Dubai \parencite{reaktor-home}. Reaktor has won the Great Place to Work award multiple times in Finland \parencite{reaktor-gptw} and the company is actively improving the wellbeing of everyone at the company \parencite{talouselama-reaktor}.
 
-A significant part of Reaktor's employee's are technical experts, engineers, and developers. These roles include titles as Senior Software Engineer, Full Stack Engineer, Experience mobile developer (iOS/Android), and DevOps engineer \citep{reaktor-careers}. This makes studying DX at Reaktor an interesting subject of research. Different roles and specialities have their own viewpoints of DX.
+A significant part of Reaktor's employee's are technical experts, engineers, and developers. These roles include titles as Senior Software Engineer, Full Stack Engineer, Experience mobile developer (iOS/Android), and DevOps engineer \parencite{reaktor-careers}. This makes studying DX at Reaktor an interesting subject of research. Different roles and specialities have their own viewpoints of DX.
 
 \subsection{Developer Experience at Reaktor}
 
 Developer Experience has not been previously explicitly studied at Reaktor. However, during the initial phases of the thesis, the topic of DX in this thesis caused some interesting informal discussions about some problems and occurrences of DX. These discussions varied in length and depth, but allowed to create a good basis for the empirical study at the company.
 
-Discussion channels used at Reaktor are very active, and information sharing is a constant activity. \citet{thesis-nelli-vilkko} took a deep dive into the ways of of working at Reaktor, and specifically into how agile methods form the experience of work engagement. They also mention that information sharing and knowledge management is something that gets a lot of care at Reaktor.
+Discussion channels used at Reaktor are very active, and information sharing is a constant activity. \textcite{thesis-nelli-vilkko} took a deep dive into the ways of of working at Reaktor, and specifically into how agile methods form the experience of work engagement. They also mention that information sharing and knowledge management is something that gets a lot of care at Reaktor.
 
 \begin{figure}[ht]
   \captionsetup{width=1\textwidth}
@@ -1048,7 +1054,7 @@ There are two different research groups that research DX. A research group in Br
 
 \subsubsection{The object / entity of DX under study}
 
-Based on the DX framework presented by \citet{fagerholm-doctoral-thesis}, a data collection point was included to understand the object or entity under study of DX. This addresses the first research question, specifically \hyperref[RQ1.1]{RQ1.1}. The experience object is what is experienced in itself. This could be some artifact e.g. the IDE in the developer's development environment. However, it can also be something more abstract like the conventions or unwritten rules that a software team has established.
+Based on the DX framework presented by \textcite{fagerholm-doctoral-thesis}, a data collection point was included to understand the object or entity under study of DX. This addresses the first research question, specifically \hyperref[RQ1.1]{RQ1.1}. The experience object is what is experienced in itself. This could be some artifact e.g. the IDE in the developer's development environment. However, it can also be something more abstract like the conventions or unwritten rules that a software team has established.
 
 \subsubsubsection{Object under study in scientific literature}
 
@@ -1062,11 +1068,11 @@ Other emerged objects of DX under study in scientific literature included \texti
 
 \textit{Developer's activities in a community} relates to the activities a developer has in a community of other developers. Development is a social activity, that often is performed in conjunction with other developers in a team. Developers create communities on different levels that can be very local e.g. a single software team
 
-\textit{Wellbeing of developers} was discussed in multiple articles. Mainly this was a discussion topic of the research group studying the happiness and unhappiness of developers \citep{what-happens-when-unhappy}, \citep{unhappy-developers}, \citep{consequences-of-unhappiness}, \citep{on-the-unhappiness}. They focus mostly on the happy-productive theory of developers. This set of studies and research focuses mostly on the happy-productive theory of developer, but there can also be seen a general interest towards the wellbeing of developers.
+\textit{Wellbeing of developers} was discussed in multiple articles. Mainly this was a discussion topic of the research group studying the happiness and unhappiness of developers \parencite{what-happens-when-unhappy}, \parencite{unhappy-developers}, \parencite{consequences-of-unhappiness}, \parencite{on-the-unhappiness}. They focus mostly on the happy-productive theory of developers. This set of studies and research focuses mostly on the happy-productive theory of developer, but there can also be seen a general interest towards the wellbeing of developers.
 
-\textit{Individual developers in a bigger context} was not a self-evident object under study. \citet{entering-an-ecosystem} and \citet{fagerholm2014examining} were the two most obvious studies of this aspect of DX. However, this can also be found from other objects under study, sometimes directly but mostly more indirectly.
+\textit{Individual developers in a bigger context} was not a self-evident object under study. \textcite{entering-an-ecosystem} and \textcite{fagerholm2014examining} were the two most obvious studies of this aspect of DX. However, this can also be found from other objects under study, sometimes directly but mostly more indirectly.
 
-Further iterating on the emerged objects / entities under study, it became more clear that the underlying object under study was the developers' point of view as in \cite{voice-of-the-developer}. In the past decision relating to software tools or other used techniques and procedures were made by managers and directors. Today there can be seen a trend that has turned the tides, and given developers more decision power when creating and developing their own ways of working. In general there is an interest towards supporting developers and their daily activities in the environment they are working in. The wellbeing of developers is seen important and different viewpoints on how this can be improved
+Further iterating on the emerged objects / entities under study, it became more clear that the underlying object under study was the developers' point of view as in \textcite{voice-of-the-developer}. In the past decision relating to software tools or other used techniques and procedures were made by managers and directors. Today there can be seen a trend that has turned the tides, and given developers more decision power when creating and developing their own ways of working. In general there is an interest towards supporting developers and their daily activities in the environment they are working in. The wellbeing of developers is seen important and different viewpoints on how this can be improved
 
 \subsubsubsection{Object under study in grey literature}
 
@@ -1074,7 +1080,7 @@ The first iteration of the grey literature and its objects under study revealed 
 
 \textit{Starting experience} was found in one grey literature article, and it captured an important object of DX. Developers are constantly learning new stuff and adopting new technologies and techniques. The starting experience of new tools, products, and services is in a crucial role when developers pick their selections for upcoming projects and products. The starting experience was also called \textit{"0 to 200"} and \textit{"Time to Hello World"}.
 
-\textit{API DX} seems also to be a hot topic in the industry. There has been lately discussions about a new term called \textit{API Economy} \cite{web-api-economy}. APIs have become important assets for companies, and some companies are even relying their whole businesses on to providing APIs. Developers are the main users of APIs and therefore the API's UX and DX are important for the business. DX in the context of API is mostly usability, but includes also other aspects like the starting experience, documentation, and adoptability.
+\textit{API DX} seems also to be a hot topic in the industry. There has been lately discussions about a new term called \textit{API Economy} \textcite{web-api-economy}. APIs have become important assets for companies, and some companies are even relying their whole businesses on to providing APIs. Developers are the main users of APIs and therefore the API's UX and DX are important for the business. DX in the context of API is mostly usability, but includes also other aspects like the starting experience, documentation, and adoptability.
 
 \textit{Developer portals} are websites and documentation libraries where developers can find information and examples about products and services aimed towards developer, mostly APIs. The portals can include and overview of the service's different functionalities, specifications and guidelines. The gist of developer portals is to allow developers to make well informed decisions.
 
@@ -1094,23 +1100,23 @@ Scientific articles were dwelling more equally on cognitive, affective, and cona
 
 \subsubsection{Factors that improve or worsen the DX}
 
-What improves and/or worsens the DX as in \citet{fagerholm-doctoral-thesis} was also included in the data collection form. When understanding the object of DX, there is also something that improves or worsens the experience, i.e. what influences the experience. The discovered factors were no direct statements found in the sources, but were factors that emerged when analyzing the articles as a more coherent set of articles.
+What improves and/or worsens the DX as in \textcite{fagerholm-doctoral-thesis} was also included in the data collection form. When understanding the object of DX, there is also something that improves or worsens the experience, i.e. what influences the experience. The discovered factors were no direct statements found in the sources, but were factors that emerged when analyzing the articles as a more coherent set of articles.
 
 \subsubsubsection{Factors that improve/worsen the DX found in scientific literature}
 
 Notable factors in scientific literature that improve DX were many, including \textit{shared understanding,	available support, collaboration, expectations, mitigating complexity, being in control, ability to tackle challenges, having a meaning as a developer, guidelines, information availability}.
 
-\textit{Shared understanding} was mostly discussed in the articles discussing Performance Alignment Work \citep{paw}, \citep{how-developers-experience-team-performance}. However, this pattern can be found in most of the articles. Having a shared understanding between developers, but also with other stakeholders seems to improve DX.
+\textit{Shared understanding} was mostly discussed in the articles discussing Performance Alignment Work \parencite{paw}, \parencite{how-developers-experience-team-performance}. However, this pattern can be found in most of the articles. Having a shared understanding between developers, but also with other stakeholders seems to improve DX.
 
-\textit{Collaboration} and the benefits that are achieved from working together improves DX. Getting quick feedback from teammates, having agreed policies and roles but being flexible and agile all improve the experience developers have when collaborating with others. \cite{entering-an-ecosystem} studied the different systems surrounding a developer in a open source community
+\textit{Collaboration} and the benefits that are achieved from working together improves DX. Getting quick feedback from teammates, having agreed policies and roles but being flexible and agile all improve the experience developers have when collaborating with others. \textcite{entering-an-ecosystem} studied the different systems surrounding a developer in a open source community
 
 \textit{Mitigating complexity} and simplifying things was mentioned explicitly in some articles, but was also apparent in many other articles implicitly. Developers are solving difficult technical problems in complex domains. Developers have to understand both the technical opportunities and constraints, but they also need to understand the business value of what they are doing. This means that developers have a lot on their mind, and therefore all complexity might affect developers DX negatively.
 
-\textit{Being in control} relates to the developers feeling that they are in control of what they are doing. Overwhelming situations were developers feel that they are not in control might worsen their DX. Here the selection of tools also plays a role. The perceived selection of tools affects also the developer DX \citep{software-developers-as-users}. Throughout the years there has been a shift in selection of tools, that has more leaned towards developers. Reaching a flow state is also an important part of feeling of being in control. Achieving a flow state shows that external and internal distractions of developers are minimal, and that developers can focus on the essential, developing. Uncertain situations was
+\textit{Being in control} relates to the developers feeling that they are in control of what they are doing. Overwhelming situations were developers feel that they are not in control might worsen their DX. Here the selection of tools also plays a role. The perceived selection of tools affects also the developer DX \parencite{software-developers-as-users}. Throughout the years there has been a shift in selection of tools, that has more leaned towards developers. Reaching a flow state is also an important part of feeling of being in control. Achieving a flow state shows that external and internal distractions of developers are minimal, and that developers can focus on the essential, developing. Uncertain situations was
 
-\textit{Ability to tackle challenges}. Challenges are inevitable when developing software. However, the ability to tackle them was seen as a factor that improves DX. \cite{what-happens-when-unhappy} concluded that being stuck in problem solving affects significantly developers' mood and happiness. These problems can be anything relating to development practices like difficulties with a framework or library, algorithm logic, IDE, other development tools, deployment of software, maintenance, etc. The ability to tackle challenges relates also to the before mentioned factor "being in control".
+\textit{Ability to tackle challenges}. Challenges are inevitable when developing software. However, the ability to tackle them was seen as a factor that improves DX. \textcite{what-happens-when-unhappy} concluded that being stuck in problem solving affects significantly developers' mood and happiness. These problems can be anything relating to development practices like difficulties with a framework or library, algorithm logic, IDE, other development tools, deployment of software, maintenance, etc. The ability to tackle challenges relates also to the before mentioned factor "being in control".
 
-\textit{Having a meaning as a developer} and having explicit and aligned values within the team and organization improves the motivation of developers, and presumably also the DX. Aligned values can relate to the product and its goals, but also to teammates and their goals. \citet{fagerholm2014examining} concluded being able to put the value system of a team into words is more important than the methodologies. This can help with understanding what the team is aiming for and what the goals of the team is. Developers that understand the values, and possibly also share them with others might have a greater sense of meaning regarding their development tasks.
+\textit{Having a meaning as a developer} and having explicit and aligned values within the team and organization improves the motivation of developers, and presumably also the DX. Aligned values can relate to the product and its goals, but also to teammates and their goals. \textcite{fagerholm2014examining} concluded being able to put the value system of a team into words is more important than the methodologies. This can help with understanding what the team is aiming for and what the goals of the team is. Developers that understand the values, and possibly also share them with others might have a greater sense of meaning regarding their development tasks.
 
 \textit{Information, guidelines, and support} was the most obvious emerged factor that improves DX. Developers are constantly in a learning process, and for example the information, guidelines, support, code examples, and instructions affects the developers DX significantly. Availability, quality, and relevance of all these are important as developers time is limited. The time between getting stuck in problem solving and finding a solution and way out is minimized with good support for developers.
 
@@ -1224,37 +1230,37 @@ To summarize the analysis of what the studied objects of DX are, what the factor
 
 \subsubsubsection{Categories of definitions of DX in scientific literature}
 
-The most common definition of DX used in the scientific papers is the concept and definition presented by \cite{fagerholm-dx-concept-and-definition} and \cite{fagerholm-doctoral-thesis}. This definition is at the moment of writing (\now) the only explicit attempt and deep dive into giving a definition of DX in the scientific literature. There is also further derivations on this concept and definition, but nothing that is refuting their definition and concept or nothing that takes another viewpoint on the definition of DX.
+The most common definition of DX used in the scientific papers is the concept and definition presented by \textcite{fagerholm-dx-concept-and-definition} and \textcite{fagerholm-doctoral-thesis}. This definition is at the moment of writing (\now) the only explicit attempt and deep dive into giving a definition of DX in the scientific literature. There is also further derivations on this concept and definition, but nothing that is refuting their definition and concept or nothing that takes another viewpoint on the definition of DX.
 
-The definition given by \citet{fagerholm-dx-concept-and-definition} was apparent when looking at results of the analysis of the definition of DX in scientific literature. The most apparent and noted definition of DX was \textit{developers thoughts and feelings towards their work}. The thoughts and feelings included subjects as the mood of developers, working environments, social aspects, processes, and basically anything that relates to the daily work activities that developers are conducting. Other categories of definitions were \textit{activities, technology, usability, values, agility combined with the starting experience, and expectations}.
+The definition given by \textcite{fagerholm-dx-concept-and-definition} was apparent when looking at results of the analysis of the definition of DX in scientific literature. The most apparent and noted definition of DX was \textit{developers thoughts and feelings towards their work}. The thoughts and feelings included subjects as the mood of developers, working environments, social aspects, processes, and basically anything that relates to the daily work activities that developers are conducting. Other categories of definitions were \textit{activities, technology, usability, values, agility combined with the starting experience, and expectations}.
 
 \textit{Activities} refer to the all the different activities, and the experiences of them, of a developer. In the literature these activities are defined as anything that the developer encounters in their software development tasks. A good example of a definition of DX regarding activities was
 
 \begin{quotation}
   \noindent \textit{"Developer Experience relates to all kinds of artifacts and activities that a developer may encounter as part of his/her involvement in software development"}
 
-  - \cite{ekwoge2017tester} based on \cite{fagerholm-dx-concept-and-definition}
+  - \textcite{ekwoge2017tester} based on \textcite{fagerholm-dx-concept-and-definition}
 \end{quotation}
 
-\noindent \textit{Technology} was another, quite broad, category of definition that was found.  Almost all articles discuss about the technologies that developers use, and that they are a main contributor to the definition of DX. In e.g. \cite{nebeling2013informing}, measurement of the DX of different mobile development platforms was performed by grading the platforms from the point of view of the technical (e.g. programming language, IDE, debugging tools), subjective (feelings towards the platform), and the level of productivity (ratio of output vs. effort). However, for example, \cite{silva-comparing} took an exclusively technical viewpoint on the definition of DX, and could be loosely interpreted to be defined as \textit{as the ability to construct models with help of visual modeling languages}.
+\noindent \textit{Technology} was another, quite broad, category of definition that was found.  Almost all articles discuss about the technologies that developers use, and that they are a main contributor to the definition of DX. In e.g. \textcite{nebeling2013informing}, measurement of the DX of different mobile development platforms was performed by grading the platforms from the point of view of the technical (e.g. programming language, IDE, debugging tools), subjective (feelings towards the platform), and the level of productivity (ratio of output vs. effort). However, for example, \textcite{silva-comparing} took an exclusively technical viewpoint on the definition of DX, and could be loosely interpreted to be defined as \textit{as the ability to construct models with help of visual modeling languages}.
 
-\textit{Usability} and UX was seen as being part of DX, and one definition of DX falling into this category was \textit{"UX characteristics of an IDE in the developers development environment"} \citep{software-developers-as-users}. The other definitions found in this category are also related to this definition, the UX and usability of any artifact in the software development activities.
+\textit{Usability} and UX was seen as being part of DX, and one definition of DX falling into this category was \textit{"UX characteristics of an IDE in the developers development environment"} \parencite{software-developers-as-users}. The other definitions found in this category are also related to this definition, the UX and usability of any artifact in the software development activities.
 
-\textit{Aligned values} of developers and the bigger organizations that they are working in captured the different definitions were the DX is defined as the set of values, and their alignment with bigger entities of the software development process. \citep{fagerholm2014examining} state that \textit{Developer experience is formed in the value system of the development environment, both individually and in groups}.
+\textit{Aligned values} of developers and the bigger organizations that they are working in captured the different definitions were the DX is defined as the set of values, and their alignment with bigger entities of the software development process. \parencite{fagerholm2014examining} state that \textit{Developer experience is formed in the value system of the development environment, both individually and in groups}.
 
-The definition of the selected sources for the majority follow the definition grounded by \cite{fagerholm-doctoral-thesis}. Almost all sources take some approach to DX, either cognitive, affective, or conative. This is especially true in the scientific articles, where there are more comprehensive groundwork done on why the research in question is performed.
+The definition of the selected sources for the majority follow the definition grounded by \textcite{fagerholm-doctoral-thesis}. Almost all sources take some approach to DX, either cognitive, affective, or conative. This is especially true in the scientific articles, where there are more comprehensive groundwork done on why the research in question is performed.
 
 \subsubsubsection{Categories of definitions of DX in grey literature}
 
 In grey literature the definition of DX varies a lot more and there are no references to any scientific sources in the grey literature. The definitions are given by the practitioners themselves and from their viewpoint and context of software engineering. In many of the grey literature articles the authors have their own view and definition of what DX is. Only in few articles there is actual questioning of the definition of DX. During the analysis there were 4 different categories of definitions of DX that emerged. These include \textit{the experience of using a software product, understanding the developer, experience from idea to code to delivering business value}, and finally \textit{support and help for developers}.
 
-\textit{The experience of using a software product} was interpreted as the definition of DX in multiple articles.
+\textit{The experience of using a software product} was interpreted as the definition of DX in multiple articles. \textcite{the-best-practices-for-a-great-dx}
 
 \subsubsection{Conclusions of the sources}
 
 The articles report that DX is an important factor of software engineering. From the different contexts emerged in this study it is apparent that DX can be seen from multiple different viewpoints.
 
-One main finding from the is that overall there is a shift in the empathy and sympathy towards developers. This is also noted in \cite{voice-of-the-developer}. However, there is still a lot of "objectifying" of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design.
+One main finding from the is that overall there is a shift in the empathy and sympathy towards developers. This is also noted in \textcite{voice-of-the-developer}. However, there is still a lot of "objectifying" of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design.
 
 \subsection{Validity of results}
 
@@ -1294,7 +1300,7 @@ Depth of data collection has probably varied while performing the MLR. In most c
 
 \clearpage
 \thesisbibliography
-\bibliography{thesis}
+\printbibliography
 
 \clearpage
 \thesisappendix
@@ -1308,45 +1314,45 @@ Depth of data collection has probably varied while performing the MLR. In most c
     \captionsetup{width=0.6\textwidth}                                                                                                                                                                    \\
     \caption{Scientific articles}                                                                                                                                                                         \\
     \label{table:scientific-articles}                                                                                                                                                                     \\
-    1.  & \cite{fagerholm-dx-concept-and-definition}        & Developer experience: concept and definition                                                                                                \\
-    2.  & \cite{flow-intrinsic-dx}                          & Flow, Intrinsic Motivation, and Developer Experience in Software Engineering                                                                \\
-    3.  & \cite{nebeling2013informing}                      & Informing the Design of New Mobile Development Methods and Tools                                                                            \\
-    4.  & \cite{henriques2018improving}                     & Improving the Developer Experience with a low-code process modelling language                                                               \\
-    5.  & \cite{fontao2018mobile}                           & Mobile Application Development Training in Mobile Software Ecosystem: Investigating the Developer eXperience                                \\
-    6.  & \cite{design-framework-enchancing}                & Design framework enhancing developer experience in collaborative coding environment                                                         \\
-    7.  & \cite{unhappy-developers}                         & Unhappy Developers: Bad for Themselves, Bad for process, and Bad for Software Product                                                       \\
-    8.  & \cite{fontao2017investigating}                    & Investigating factors that influence developers' experience in mobile software ecosystems                                                   \\
-    9.  & \cite{on-the-unhappiness}                         & On the Unhappiness of Software Developers                                                                                                   \\
-    10. & \cite{consequences-of-unhappiness}                & Consequences of Unhappiness While Developing Software                                                                                       \\
-    11. & \cite{what-happens-when-unhappy}                  & What happens when software developers are (un)happy                                                                                         \\
-    12. & \cite{how-developers-experience-team-performance} & How do software developers experience team performance in Lean and Agile environments?                                                      \\
-    13. & \cite{paw}                                        & Performance Alignment Work: How software developers experience the continuous adaptation of team performance in Lean and Agile environments \\
-    14. & \cite{chatley2019supporting}                      & Supporting the Developer Experience with Production Metrics                                                                                 \\
-    15. & \cite{fontao2017facing}                           & Facing up the primary emotions in Mobile Software Ecosystems from Developer Experience                                                      \\
-    16. & \cite{api-designers}                              & API Designers in the Field: Design Practices and Challenges for Creating Usable APIs                                                        \\
-    17. & \cite{pinter2019polymorph}                        & Polymorph segmentation representation for medical image computing                                                                           \\
-    18. & \cite{dong2019impact}                             & The Impact of "Cosmetic" Changes on the Usability of Error Messages                                                                         \\
-    19. & \cite{entering-an-ecosystem}                      & Entering an ecosystem: The hybrid OSS landscape from a developer perspective                                                                \\
-    20. & \cite{software-developers-as-users}               & Software Developers as Users: Developer Experience of a Cross-Platform Integrated Development Environment                                   \\
-    21. & \cite{fagerholm2014examining}                     & Examining the Structure of Lean and Agile Values Among Software Developers                                                                  \\
-    22. & \cite{miranda2018improving}                       & Improving the Usability of a MAS DSML                                                                                                       \\
-    23. & \cite{fontao2016mseco}                            & MSECO-DEV: Application Development Process in Mobile Software Ecosystems                                                                    \\
-    24. & \cite{fontao2015research}                         & Research Opportunities for Mobile Software Ecosystems                                                                                       \\
-    25. & \cite{myers2016improving}                         & Improving API usability                                                                                                                     \\
-    26. & \cite{macvean2016api}                             & API Usability at Scale                                                                                                                      \\
-    27. & \cite{kuusinen2016software}                       & Are Software Developers Just Users of Development Tools? Assessing Developer Experience of a Graphical User Interface Designer              \\
-    28. & \cite{karpanoja2016exploring}                     & Exploring Peopleware in Continuous Delivery                                                                                                 \\
-    29. & \cite{ekwoge2017tester}                           & Tester Experience: Concept, Issues and Definition                                                                                           \\
-    30. & \cite{romano2018effect}                           & The effect of noise on software engineers' performance                                                                                      \\
-    31. & \cite{ivo2018approach}                            & An approach for applying Test-Driven Development (TDD) in the development of randomized algorithms                                          \\
-    32. & \cite{de2017towards}                              & Towards a Guideline-Based Approach to Govern Developers in Mobile Software Ecosystems                                                       \\
-    33. & \cite{programmer-experience}                      & Programmer eXperience: A Systematic Literature Review                                                                                       \\
-    34. & \cite{claussen2019role}                           & The Role of Pre-Innovation Platform Activity for Diffusion Success: Evidence from Consumer Innovations on a 3D Printing Platform            \\
-    35. & \cite{oran2017set}                                & A Set of Artifacts and Models to Support Requirements Communication Based on Perspectives                                                   \\
-    36. & \cite{nazariodetecting}                           & Detecting and Reporting Object-Relational Mapping Problems: An Industrial Report                                                            \\
-    37. & \cite{zhang2018toward}                            & Toward Understanding IoT Developers in Chinese Startups                                                                                     \\
-    38. & \cite{silva-comparing}                            & Comparing the Usability of two Multi-Agents Systems DSLs: SEA\_ML++ and DSML4MAS Study Design                                               \\
-    39. & \cite{ollis2019helping}                           & Helping developers to help each other: a technique to facilitate understanding among professional software developers
+    1.  & \textcite{fagerholm-dx-concept-and-definition}        & Developer experience: concept and definition                                                                                                \\
+    2.  & \textcite{flow-intrinsic-dx}                          & Flow, Intrinsic Motivation, and Developer Experience in Software Engineering                                                                \\
+    3.  & \textcite{nebeling2013informing}                      & Informing the Design of New Mobile Development Methods and Tools                                                                            \\
+    4.  & \textcite{henriques2018improving}                     & Improving the Developer Experience with a low-code process modelling language                                                               \\
+    5.  & \textcite{fontao2018mobile}                           & Mobile Application Development Training in Mobile Software Ecosystem: Investigating the Developer eXperience                                \\
+    6.  & \textcite{design-framework-enchancing}                & Design framework enhancing developer experience in collaborative coding environment                                                         \\
+    7.  & \textcite{unhappy-developers}                         & Unhappy Developers: Bad for Themselves, Bad for process, and Bad for Software Product                                                       \\
+    8.  & \textcite{fontao2017investigating}                    & Investigating factors that influence developers' experience in mobile software ecosystems                                                   \\
+    9.  & \textcite{on-the-unhappiness}                         & On the Unhappiness of Software Developers                                                                                                   \\
+    10. & \textcite{consequences-of-unhappiness}                & Consequences of Unhappiness While Developing Software                                                                                       \\
+    11. & \textcite{what-happens-when-unhappy}                  & What happens when software developers are (un)happy                                                                                         \\
+    12. & \textcite{how-developers-experience-team-performance} & How do software developers experience team performance in Lean and Agile environments?                                                      \\
+    13. & \textcite{paw}                                        & Performance Alignment Work: How software developers experience the continuous adaptation of team performance in Lean and Agile environments \\
+    14. & \textcite{chatley2019supporting}                      & Supporting the Developer Experience with Production Metrics                                                                                 \\
+    15. & \textcite{fontao2017facing}                           & Facing up the primary emotions in Mobile Software Ecosystems from Developer Experience                                                      \\
+    16. & \textcite{api-designers}                              & API Designers in the Field: Design Practices and Challenges for Creating Usable APIs                                                        \\
+    17. & \textcite{pinter2019polymorph}                        & Polymorph segmentation representation for medical image computing                                                                           \\
+    18. & \textcite{dong2019impact}                             & The Impact of "Cosmetic" Changes on the Usability of Error Messages                                                                         \\
+    19. & \textcite{entering-an-ecosystem}                      & Entering an ecosystem: The hybrid OSS landscape from a developer perspective                                                                \\
+    20. & \textcite{software-developers-as-users}               & Software Developers as Users: Developer Experience of a Cross-Platform Integrated Development Environment                                   \\
+    21. & \textcite{fagerholm2014examining}                     & Examining the Structure of Lean and Agile Values Among Software Developers                                                                  \\
+    22. & \textcite{miranda2018improving}                       & Improving the Usability of a MAS DSML                                                                                                       \\
+    23. & \textcite{fontao2016mseco}                            & MSECO-DEV: Application Development Process in Mobile Software Ecosystems                                                                    \\
+    24. & \textcite{fontao2015research}                         & Research Opportunities for Mobile Software Ecosystems                                                                                       \\
+    25. & \textcite{myers2016improving}                         & Improving API usability                                                                                                                     \\
+    26. & \textcite{macvean2016api}                             & API Usability at Scale                                                                                                                      \\
+    27. & \textcite{kuusinen2016software}                       & Are Software Developers Just Users of Development Tools? Assessing Developer Experience of a Graphical User Interface Designer              \\
+    28. & \textcite{karpanoja2016exploring}                     & Exploring Peopleware in Continuous Delivery                                                                                                 \\
+    29. & \textcite{ekwoge2017tester}                           & Tester Experience: Concept, Issues and Definition                                                                                           \\
+    30. & \textcite{romano2018effect}                           & The effect of noise on software engineers' performance                                                                                      \\
+    31. & \textcite{ivo2018approach}                            & An approach for applying Test-Driven Development (TDD) in the development of randomized algorithms                                          \\
+    32. & \textcite{de2017towards}                              & Towards a Guideline-Based Approach to Govern Developers in Mobile Software Ecosystems                                                       \\
+    33. & \textcite{programmer-experience}                      & Programmer eXperience: A Systematic Literature Review                                                                                       \\
+    34. & \textcite{claussen2019role}                           & The Role of Pre-Innovation Platform Activity for Diffusion Success: Evidence from Consumer Innovations on a 3D Printing Platform            \\
+    35. & \textcite{oran2017set}                                & A Set of Artifacts and Models to Support Requirements Communication Based on Perspectives                                                   \\
+    36. & \textcite{nazariodetecting}                           & Detecting and Reporting Object-Relational Mapping Problems: An Industrial Report                                                            \\
+    37. & \textcite{zhang2018toward}                            & Toward Understanding IoT Developers in Chinese Startups                                                                                     \\
+    38. & \textcite{silva-comparing}                            & Comparing the Usability of two Multi-Agents Systems DSLs: SEA\_ML++ and DSML4MAS Study Design                                               \\
+    39. & \textcite{ollis2019helping}                           & Helping developers to help each other: a technique to facilitate understanding among professional software developers
   \end{longtable}
 \end{center}
 
