@@ -636,19 +636,14 @@ The notion of experiencing can been seen in various different ways in SE. Someti
 
 Current scientific literature on the definition of DX is few in numbers. DX has however a comprehensive and detailed definition by \textcite{fagerholm-doctoral-thesis}. Their doctoral thesis dives into the core of developers and their experiences with developing software. They define DX into two different environments, a social and a technical environment. These two dimensions are presented in figure \ref{figure:social-technical}.
 
-Social aspect of software development plays a crucial role on how a developer experiences the development practice, and is receiving as much consideration as the technical environment in figure \ref{figure:social-technical}. It has for long been noted that the social and human factors of software development are not considered as important as they should be \parencite{human-factor}.
-
-The technical environment, including programming languages, infrastructure, processes, techniques, plans, diagrams etc., is also part of the DX. A developer is interacting with these artifacts and that generates an experience. Activities with these artefacts are both experienced as an individual but also as an group.
-
-Time-wise, the DX can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time, in e.g. a software project.
-
-\textcite{fagerholm-dx-concept-and-definition} takes an approach from psychology, and divides DX into three different sub areas or categories – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution). This conceptual framework is presented in figure \ref{figure:conceptual-framework}.
-
-DX can be seen as important from multiple different viewpoints. From a viewpoint of project management a better DX can help to understand, evaluate, and plan projects so that they are inline with the three different dimensions of DX. Another viewpoint is when designing a software development platform or environment, it can be beneficial to understand what impacts and affect the DX, so that the platform or environment can be designed to be aligned with the developers using it \textcite{fagerholm-dx-concept-and-definition}.
-
-% TODO: \textcite{exploring-peopleware-in-cd}
-
-% TODO: include also the Developer Experience Theoretical Framework into this section and explain how it is used in this thesis to guide the study
+\begin{figure}
+  \captionsetup{width=0.6\textwidth}
+  \caption{Conceptual framework of Developer Experience \parencite{fagerholm-dx-concept-and-definition}}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{dx-conceptual.pdf}
+  \end{center}
+  \label{figure:conceptual-framework}
+\end{figure}
 
 \begin{figure}
   \captionsetup{width=0.6\textwidth}
@@ -659,14 +654,32 @@ DX can be seen as important from multiple different viewpoints. From a viewpoint
   \label{figure:social-technical}
 \end{figure}
 
+
+
+Social aspect of software development plays a crucial role on how a developer experiences the development practice, and is receiving as much consideration as the technical environment in figure \ref{figure:social-technical}. It has for long been noted that the social and human factors of software development are not considered as important as they should be \parencite{human-factor}.
+
+The technical environment, including programming languages, infrastructure, processes, techniques, plans, diagrams etc., is also part of the DX. A developer is interacting with these artifacts and that generates an experience. Activities with these artefacts are both experienced as an individual but also as an group.
+
+Time-wise, the DX can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time, in e.g. a software project.
+
+\textcite{fagerholm-dx-concept-and-definition} takes an approach from psychology, and divides DX into three different sub areas or categories – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution). This conceptual framework is presented in figure \ref{figure:conceptual-framework}.
+
+DX can be seen as important from multiple different viewpoints. From a viewpoint of project management a better DX can help to understand, evaluate, and plan projects so that they are inline with the three different dimensions of DX. Another viewpoint is when designing a software development platform or environment, it can be beneficial to understand what impacts and affect the DX, so that the platform or environment can be designed to be aligned with the developers using it \parencite{fagerholm-dx-concept-and-definition}.
+
+% TODO: \textcite{exploring-peopleware-in-cd}
+
 \begin{figure}
   \captionsetup{width=0.6\textwidth}
-  \caption{Conceptual framework of Developer Experience \parencite{fagerholm-dx-concept-and-definition}}
+  \caption{Theoretical Framework of Developer Experience \parencite{fagerholm-doctoral-thesis}}
   \begin{center}
-    \includegraphics[width=0.6\textwidth]{dx-conceptual.pdf}
+    \includegraphics[width=\textwidth]{theoretical-framework.pdf}
   \end{center}
-  \label{figure:conceptual-framework}
+  \label{figure:theoretical-framework}
 \end{figure}
+
+The theoretical framework by \textcite{fagerholm-doctoral-thesis} presented in figure \ref{figure:theoretical-framework} is a presentation of the activities of developers in a individual and social environment, and how the experiences arise. The framework is includes aspects as experience \textit{objects, formations, influencers, content, progression},\textit{behaviour outcome} and \textit{object outcome}. These different aspects can be used to study DX from a wide variety of different viewpoints.
+
+
 
 \subsubsection{Programmer Experience}
 
@@ -757,13 +770,9 @@ During the study, the research problem and the research questions evolved as the
 
 During writing of the thesis, the author was working at the case company, allowing to perform ethnographic techniques in understanding and studying the phenomena. Working at the case company also allowed to have discussion with colleagues.
 
-% TODO: Use the theory and/or framework from \textcite{fagerholm-doctoral-thesis} and use e.g. the "experience objects" and measure what kind of experiences ("immediate experience", "cumulative experience")
-
-% google translate work very well!: you could try to take the theoretical model in my doctoral dissertation to structure the analysis a bit (eg what "experience objects" come up, how the participants reason about them, and at what level they reason (from "immediate experience" to "cumulative experience) ")? Then you will most likely find something else as well, and then maybe a result could be a different theoretical model that is better based on empirical evidence.
-
 \subsection{Research approach}
 
-This thesis takes an exploratory approach to study the research problem and to answer the research questions. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \parencite{easterbrook2008selecting}. The definition of DX given by \textcite{fagerholm-dx-concept-and-definition} works as the basis of the study, but it is only giving the abstract concept to build upon. This concept and framework has not yet been widely taken into practice in empirical research.
+This thesis takes an exploratory approach to study the research problem and to answer the research questions. A research with an exploratory approach considers questions that address the existence of a phenomena, try to describe something \parencite{easterbrook2008selecting}. The definition of DX given by \textcite{fagerholm-dx-concept-and-definition} (figure ) and \textcite{fagerholm-doctoral-thesis}, and they function as the basis of the study, but they are only giving the abstract concept to build upon. This concept and framework has not yet been widely taken into practice in empirical research. From \textcite{fagerholm-doctoral-thesis} the theoretical framework was used for guiding the research. 
 
 Also, from initial discussion in the case company there was almost as many definitions of DX as there was discussions. This shows that depending on the role of the practitioner and the context they are working in affects in the definition of DX.
 
@@ -773,7 +782,7 @@ In \textcite{developing-grounded-theory} Juliet Corbin reflects on the grounded 
   \textit{"I was just going to sit down with that first piece of data in front of me and let it flow, let the research take me where it wanted"} - Juliet Corbin \parencite[p.~43]{developing-grounded-theory}
 \end{quotation}
 
-Taking an approach that enabled and open mind and building the research questions was the most suitable in this thesis, both from the viewpoint of the research topic and researchers own skills, competency, and way of thought.
+Taking an approach that enabled an open mindset allowed to question suitable research questions, and this approach was the most suitable in this thesis, both from the viewpoint of the research topic and researchers own skills, competency, and way of thought.
 
 % TODO: Read "Grounded theory in software engineering research: a critical review and guidelines"
 
@@ -813,9 +822,9 @@ There are some problems with brainstorming sessions \parencite{electronic-brains
 
 In this study the initial brainstorming session was selected to be a combination of TBS and NBS. NBS allows everyone to work individually. The case company has also established itself as working very agile, and therefore mentioned problems with BS do not require any extra actions to mitigate them. The BS session used Think-Pair-Share method \parencite{think-pair-share}, where each participant of the session first thinks about the problem and possible ideas by themselves, then after that each individual is paired together where they share their own initial ideas, discard duplicate ideas, and further develop new ideas after the discussion. After pairing, each pair presents their ideas and findings to the whole group.
 
-\subsubsection{Interviews}
+% \subsubsection{Interviews}
 
-Interviews can be conducted with the concept and framework of developer experience, even without having the participants being aware of the definition of Developer Experience. By using the conation, affection, and cognition, it is possible to initiate discussions of the different elements of DX.
+% Interviews can be conducted with the concept and framework of developer experience, even without having the participants being aware of the definition of Developer Experience. By using the conation, affection, and cognition, it is possible to initiate discussions of the different elements of DX.
 
 % Write a lot more about interviews
 % Topics to address:
@@ -1039,7 +1048,7 @@ The Multivocal Literature Review (MLR) performed on the definition of DX resulte
 
 There are two different research groups that research DX. A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it. Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development. To this group is also linked other studies related to the DX of IDEs.
 
-% TODO: rename all occurrences of "scientific" to "white"
+% TODO: rename all occurrences of "scientific" to "white"?
 
 \begin{table}[ht]
   \begin{center}
@@ -1350,26 +1359,6 @@ The search engine Google is known to provide results based on many different var
 Google has not revealed how the search engine optimization (SEO) works on the Google search engine. However there are some broad guidelines on what a web page has to include, so that it will rank higher on the results page. For companies Google search results is a huge asset and a big opportunity to gain visitor traffic and publicity. Having a web page or site ranking high on the Google search results can probably even determine the existence of some companies businesses. All in all, this means that ranking high on the Google search results page requires knowledge and effort. Therefore we can deduce that the grey literature resources included in this MLR retrieved from Google search are funded or backed by companies that deliberately aim for high ranking on Google searches to sell or promote their products or services.
 
 Depth of data collection has probably varied while performing the MLR. In most cases no explicit analysis was required to extract the required data when collecting it. However, based on the quality of the source sometimes the collection required some analysis to be able extract the data. E.g. understanding the object of DX under study forced sometimes the researcher to "read between the lines", adding their own interpretation and possible bias to the data. This same problem was present also if the research topic of the source was not explicitly  studying DX, but still related to concepts of DX.
-
-%\clearpage
-%\section{Exploratory research}
-%
-%Based on the results from the background section and the Multivocal Literature Review, it can be derived that the research topic is complex and difficult to define. Therefore, to gain a better understanding and grasp how DX is thought of in the industry, a workshop and a series of interviews will be conducted.
-%
-%\textbf{\\ Possible approaches for the practical part of the study:}
-%
-%\newcommand{\uxdesigndx}{https://uxdesign.cc/contributing-great-developer-experience-designer-e1f497b0fb4}
-%
-%\begin{itemize}
-%  \item [--] Based on the \href{\uxdesigndx}{this article}, create a set of guidelines and good practices of DX, and interview and/or measure how well established the application of the practices are
-%  \item [--] Conduct interviews studying the development environments of different projects. \textit{"When starting a new project, be upfront that you want to tailor your tools and methods for collaboration"}(\href{\uxdesigndx}{uxdesigndx})
-%  \item [--] Workshop to map current practices and viewpoints on DX
-%  \item [--] Interviews with individual developers on their viewpoint of DX
-%\end{itemize}
-%
-%\subsection{Brainstorming session}
-%
-%\subsection{Interviews}
 
 \clearpage
 \section{Discussion}
