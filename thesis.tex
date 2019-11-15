@@ -285,15 +285,16 @@ sorting=nyt
 %% Thesis keywords:
 %% Note! The keywords are separated using the \spc macro
 %%
-\keywords{Developer Experience\spc Software Projects}
+\keywords{Developer Experience\spc Multivocal Literature Review\spc Software Developer \spc Software Engineering}
 %%
 
 %% The abstract text. This text is included in the metadata of the pdf file as well
 %% as the abstract page.
 %%
 
-\newcommand{\englishabstract}{The abstract in english}
-\newcommand{\swedishabstract}{Sammandrag på svenska}
+\newcommand{\englishabstract}{Developer Experience is a concept that has emerged from the notion of User Experience. Developer Experience differs from User Experience that it is considering developers instead of users. However, developers can be seen as users of software development tools. The concept of Developer Experience has initiated ways of thought and practices for software development. Even if there has been research on the topic of Developer Experience, there is still open questions and vague definitions on what developer experience is and what it means in practice. To better understand the definition of Developer Experience this thesis' focus is on understanding the current state of research of Developer Experience. The study was performed as Multivocal Literature Review where articles written by both academics and practitioners were analysed. The results from the review indicate that Developer Experience can be seen as a way to understand the feelings and perceptions of the developers in a software development context. Developer Experience is studied both in the academics and the industry, where they both focus on improving the developers experiences when developing software. The difference between the academics and practitioners is that academics are focused on understanding the underlying phenomenons of Developer Experience, while practitioners have seen a lot of different opportunities and business value in studying and improving Developer Experience}
+
+\newcommand{\swedishabstract}{Utvecklarupplevelsen är ett begrepp som har framträtt från definitionen av användarupplevelsen. Utvecklarupplevelsen skiljer sig från användarupplevelsen från att utvecklarupplevelsen är förknippad med utvecklare som både utvecklar nya producker och tjänster men också som använder verktyg och hjälpmedel för utvecklingen, medan användarupplevelsen fokuserar endast på personer som använder produker och tjänster. Konceptet av utvecklarupplevelsen har resulterat till nya tankesätt och metoder inom mjukvaruutveckling. Fastän det har gjorts forksning inom ämnet av utvecklarupplevelsen, så finns det ännu öppna frågor om utvecklarupplevelsen och vad det innebär, och definitionerna av utvecklarupplevelsen är till viss del vaga. För att bättre förstå definitionen av utvecklarupplevelsen, fokuserar denna avhandling på att förstå den nuvarande statuset på forskning av  utvecklarupplevelsen. Studien i denna avhandling utfördes som ett litteraturöversikt, där artiklar skrivna av både akademiker och experter inom industryin analyserades. Resultaten från litteraturöversikten indikerar att utvecklarupplevelsen kan ses som ett sätt att förstå utvecklarnas känslor och uppfattningar i mjukvaruutveckling. Utvecklarupplevelsen studeras både inom akademin och industrin, där båda fokuserar på att förbättra utvecklarnas upplevelser när man utvecklar programvara. Skillnaden mellan akademiker och industrin är att akademiker är inriktade på att förstå de underliggande fenomenen av utvecklarupplevelsen, medan industrin har sett många olika möjligheter med att skapa affärsvärde av att förstå och förbättra utvecklarupplevelsen}
 
 \thesisabstract{
   \englishabstract
@@ -429,13 +430,8 @@ sorting=nyt
   \swedishabstract
 \end{abstractpage}
 
-%% Preface
-%%
-%% This section is optional. Remove it if you do not want a preface.
 \mysection{Preface}
-I want to thank everyone so far that has shown interested and been involved in this thesis. Even if the thesis is still in it's early phases, I am surprised of how many have showed interest towards it and offered a helping hand.
-
-After the thesis has been finalized there will probably be many more appreciations to give
+I want to thank everyone that have shown interest towards this work. From the beginning to the very end I've had discussions about the topic with my friends and colleagues, and these discussions have been greatly appreciated by me. The discussions and different opinions have helped me to validate the selection of the topic, and to further iterate on the research problem and the presented research questions. I want to also thank my advisor Fabian Fagerholm for supporting me during the thesis and giving me advice on how to continue with the problems that I have faced. Finally I want to thank Reaktor for giving me the opportunity to work on this thesis. My colleagues at Reaktor have showed interest and provided good insights into the study.
 
 \vspace{5cm}
 Otaniemi, Date to te announced
@@ -457,9 +453,7 @@ Otaniemi, Date to te announced
 
 \begin{tabular}{ll}
   API   & Application Programming Interface  \\
-  BS    & Brainstorming                      \\
   DX    & Developer Experience               \\
-  EBS   & Electronic Brainstorming           \\
   EM    & Extrinsic Motivation               \\
   GL    & Grey Literature                    \\
   HCI   & Human Computer Interaction         \\
@@ -467,13 +461,11 @@ Otaniemi, Date to te announced
   IM    & Intrinsic Motivation               \\
   MLR   & Multivocal Literature Review       \\
   MSECO & Mobile Software Ecosystem          \\
-  NBS   & Nominal Brainstorming              \\
   OSS   & Open Source Software               \\
   PAW   & Performance Alignment Work         \\
   SE    & Software Engineering               \\
   SEO   & Search Engine Optimization         \\
   SLR   & Systematic Literature Review       \\
-  TBS   & Traditional Brainstorming          \\
   UX    & User Experience                    \\
 \end{tabular}
 
@@ -531,7 +523,7 @@ Based on this, the selected approach for defining the problem and the research q
 \newcommand{\rqthree}{What is known about factors that improve or worsen developer experience?}
 \newcommand{\rqfour}{From what contexts is developer experience looked at from?}
 \newcommand{\rqfive}{What are the definitions given to developer experience?}
-\newcommand{\rqsix}{What are the main results of the existing research on developer experience?}
+% \newcommand{\rqsix}{What are the main results of the existing research on developer experience?}
 
 \begin{table}[ht]
   \begin{center}
@@ -540,8 +532,8 @@ Based on this, the selected approach for defining the problem and the research q
       \textbf{RQ 2} & \rqtwo   \label{RQ2} \\
       \textbf{RQ 3} & \rqthree \label{RQ3} \\
       \textbf{RQ 4} & \rqfour  \label{RQ4} \\
-      \textbf{RQ 5} & \rqfive  \label{RQ5} \\
-      \textbf{RQ 6} & \rqsix   \label{RQ6}
+      \textbf{RQ 5} & \rqfive  \label{RQ5} 
+      % \textbf{RQ 6} & \rqsix   \label{RQ6}
     \end{tabularx}
   \end{center}
   \caption{The research questions \label{researchquestions}}
@@ -1262,16 +1254,6 @@ In grey literature the definition of DX varies a lot more and there are no refer
 There can be seen both differences and similarities between the definitions of DX.
 % TODO: more here
 
-\subsubsection{The conclusions and results of the research in the studies}
-
-% TODO: perform data analysis and complete this chapter
-
-\subsubsubsection{Conclusions in the scientific literature}
-
-\subsubsubsection{Conclusions in the grey literature}
-
-\subsubsubsection{Differences and similarities in the conclusions in scientific and grey literature}
-
 
 \subsubsection{Conclusions of the sources}
 
@@ -1312,10 +1294,22 @@ Answering \hyperref[RQ3]{RQ3} (\rqthree) was possible based on the results of th
 
 \hyperref[RQ5]{RQ5} (\rqfive) asked about the different definitions of DX found in the literature. The most notable and recurring concise definition is provided by \textcite{fagerholm-dx-concept-and-definition} as \textit{"the developers feelings and perceptions about their work"}. 
 
-The results of the existing research on developer experience \hyperref[RQ6]{RQ6} (\rqsix) 
+\subsection{Future research}
+
+This study took an exploratory approach into understanding the phenomenon of DX, especially the current state of the literature of it. During the initial phases of the research, the research problem and questions were constantly evolving with the progress of the study. The first version of the research problem focused on understanding the cause-effect relation between practicing good developer experience and the effect of that on software projects. It was formalized initially as \textit{"What are the aspects of Developer Experience that are utilized in practice and have potential of being replicable in different teams of a software consulting company?"}
+
+However, it was quickly noticed that this problem was way too ambitious, and would require huge effort on the current state of the understanding of DX. Unanswered questions in this approach were questions like \textit{"what is developer experience?"}, \textit{what is the aspects of developer experience?} \textit{"what does utilizing in practice mean?}, \textit{"what does having potential mean?"} \textit{"what does replicable mean?"}. To be able to study research problems like this there needs to be more ground work done in the field of study of DX. These questions were the main motivator for selecting this topic for this thesis, and were initially the goal of this thesis. 
+
+In conclusion, future research could focus on any aspect of DX in practice. How are practitioners considering DX? What could the benefits of focusing on DX be? As it was found out in this thesis, there could be huge potential in understanding DX and how it affect the practice of software development. We have seen the evolution from Human Computer Interaction (HCI) to User Experience (UX). It will be interesting to see to what extent DX is taken.
 
 \clearpage
 \section{Conclusions}
+
+From the research and foundations of Human Computer Interaction (HCI), Usability, and User Experience (UX) has a relatively new concept of Developer Experience (DX) emerged. While UX considers an user and their experience of using a service or product, DX considers the developer's experience of acting as an user of software development artefacts while developing software. 
+
+Traditionally developers have been seen as an asset or resource in the software development practice, where they are the labour and work force while developing and creating software products and services. The developer's opinions, feelings, and voice have not been heard well enough. 
+
+The concept of DX can be seen as a revolution to this. First, this means that the voice of the developer is being heard. Second, the developers are also being understood. DX is a way to measure otherwise difficult, complicated, and often abstract things. 
 
 \clearpage
 \thesisbibliography
