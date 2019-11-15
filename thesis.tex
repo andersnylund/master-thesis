@@ -201,6 +201,9 @@ sorting=nyt
 % \university{aalto-yliopisto}
 % \school{Sähkötekniikan korkeakoulu}
 
+\newcommand{\thesisadvisor}{Ph.D Fabian Fagerholm}
+\newcommand{\thesissupervisor}{Anon}
+
 %% Edit to conform to your degree programme
 %%
 \degreeprogram{Computer, Communication and Information Sciences}
@@ -240,7 +243,7 @@ sorting=nyt
 %% argument in box brackets. This is done because the title is part of the 
 %% metadata in the pdf/a file, and the metadata cannot contain line breaks.
 %%
-\thesistitle{Developer Experience}
+\thesistitle{A multivocal literature review on developer experience}
 %\thesistitle[Title of the thesis]{Title of\\ the thesis}
 %%
 
@@ -262,13 +265,13 @@ sorting=nyt
 %% slightly longer space follows, but what is desired is a regular interword
 %% space.
 %%
-\supervisor{Prof.\ Pirjo Professor}
+\supervisor{\thesissupervisor}
 %%
 
 %% Advisor(s)---two at the most---of the thesis. Check with your supervisor how
 %% many official advisors you can have.
 %%
-\advisor{Dr Alan Advisor}
+\advisor{\thesisadvisor}
 %\advisor{MSc Sarah Scientist}
 %%
 
@@ -285,7 +288,7 @@ sorting=nyt
 %% Thesis keywords:
 %% Note! The keywords are separated using the \spc macro
 %%
-\keywords{Developer Experience\spc Multivocal Literature Review\spc Software Developer \spc Software Engineering}
+\keywords{Developer Experience\spc Multivocal Literature Review\spc Software Developer\spc Software Engineering}
 %%
 
 %% The abstract text. This text is included in the metadata of the pdf file as well
@@ -418,20 +421,20 @@ sorting=nyt
 
 %% Swedish abstract. Delete it if you don't need it. 
 %% 
-\thesistitle{Developer Experience}
-\supervisor{Prof.\ Pirjo Professori}
-\advisor{TkD Alan Advisor} %
+\thesistitle{En multivocal litteraturöversikt på utvecklarupplevelsen}
+\supervisor{\thesissupervisor}
+\advisor{\thesisadvisor} %
 \degreeprogram{Computer, Communication and Information Sciences}
 \department{Institutionen för radiovetenskap och -teknik}%
 %% Abstract keywords
-\keywords{Nyckelord på svenska, Utvecklar upplevelse}
+\keywords{Utvecklarupplevelse\spc Multivocal litteraturöversikt\spc Mjukvaruutvecklare \spc Mjukvaruutveckling}
 %% Abstract text
 \begin{abstractpage}[swedish]
   \swedishabstract
 \end{abstractpage}
 
 \mysection{Preface}
-I want to thank everyone that have shown interest towards this work. From the beginning to the very end I've had discussions about the topic with my friends and colleagues, and these discussions have been greatly appreciated by me. The discussions and different opinions have helped me to validate the selection of the topic, and to further iterate on the research problem and the presented research questions. I want to also thank my advisor Fabian Fagerholm for supporting me during the thesis and giving me advice on how to continue with the problems that I have faced. Finally I want to thank Reaktor for giving me the opportunity to work on this thesis. My colleagues at Reaktor have showed interest and provided good insights into the study.
+I want to thank everyone that have shown interest towards this work. From the beginning to the very end I've had discussions about the topic with my friends and colleagues, and these discussions have been greatly appreciated by me. I am even a bit surprised about how much people have been interested in the topic. The discussions and different opinions have helped me to validate the selection of the topic, and to further iterate on the research problem and the presented research questions. I want to also thank my advisor Fabian Fagerholm for supporting me during the thesis and giving me advice on how to continue with the problems that I have faced. Finally I want to thank Reaktor for giving me the opportunity to work on this thesis. My colleagues at Reaktor have showed interest and provided good insights into the study.
 
 \vspace{5cm}
 Otaniemi, Date to te announced
@@ -587,15 +590,18 @@ The scope of this thesis is narrow. Even if the there is a lot of open questions
 
 \subsection{Structure of the thesis}
 
+The structure of the thesis is as follows:
+
 \begin{enumerate}
   \item Introduction
-        % \item Background
-        % \item Research methods
-        % \item Results
-        % \item Summary
-        % \item Conclusions
-  \item ???
-  \item Profit!!!
+  \item Background
+  \item Research methods
+  \item Multivocal literature review
+  \item Results
+  \item Discussion
+  \item Conclusions
+  \item References
+  \item Appendix
 \end{enumerate}
 
 %% In a thesis, every section starts a new page, hence \clearpage
