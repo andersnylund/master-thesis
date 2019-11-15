@@ -427,7 +427,7 @@ sorting=nyt
 \degreeprogram{Computer, Communication and Information Sciences}
 \department{Institutionen för radiovetenskap och -teknik}%
 %% Abstract keywords
-\keywords{Utvecklarupplevelse\spc Multivocal litteraturöversikt\spc Mjukvaruutvecklare \spc Mjukvaruutveckling}
+\keywords{Utvecklarupplevelse\spc Multivocal litteraturöversikt\spc Mjukvaruutvecklare\spc Mjukvaruutveckling}
 %% Abstract text
 \begin{abstractpage}[swedish]
   \swedishabstract
@@ -476,7 +476,7 @@ Otaniemi, Date to te announced
 %% and tables).
 %%
 \cleardoublepage
-\section{Introduction} \label{introduction}
+\section{Introduction} \label{section:introduction}
 
 Software development and software engineering is a complex practice that requires both technical and social skills. Compared to other engineering professions, software engineering is a relative new field of practice and study. The practices deemed as "best practice" are still evolving, and new ideas of good practices are being developed and previous ideas are discarded.
 
@@ -535,7 +535,7 @@ Based on this, the selected approach for defining the problem and the research q
       \textbf{RQ 2} & \rqtwo   \label{RQ2} \\
       \textbf{RQ 3} & \rqthree \label{RQ3} \\
       \textbf{RQ 4} & \rqfour  \label{RQ4} \\
-      \textbf{RQ 5} & \rqfive  \label{RQ5} 
+      \textbf{RQ 5} & \rqfive  \label{RQ5}
       % \textbf{RQ 6} & \rqsix   \label{RQ6}
     \end{tabularx}
   \end{center}
@@ -548,11 +548,15 @@ To analyze the research questions, the categorization, classification, and guide
 
 The research questions are exploratory and they try to understand the underlying phenomena, i.e. DX. Because there is a vague and undefined foundation to build upon, it is not an option ask \textit{relationship}, \textit{correlation and causality}, or \textit{design questions} questions. The nature of these selected research questions will guide the research and guide with selecting the used methods and techniques.
 
-% TODO: motivate the other research questions, and possibly create some hypothesis?
+\hyperref[RQ1]{RQ1} prompts to study the different objects that can affect the DX. This question was created from the theoretical framework presented by \textcite[70]{fagerholm-doctoral-thesis} (figure \ref{figure:theoretical-framework}).
 
-\hyperref[RQ4]{RQ4} (\rqfour) is asked because it was noted that different articles all take their own viewpoint and context from which DX is looked at. It is important to understand what parts of DX is being studied and why some specific results have been achieved. Scientific and grey literature do presumably have different contexts of DX that they are studying.
+\hyperref[RQ2]{RQ2} studies the different research methods that have been used in both grey and scientific literature. Answering this could help to understand what might work and what might not work when studying and researching DX.
 
-There are multiple different definitions to UX, e.g. \parencite{iso-9241-210}, \parencite{understanding-ux}, \parencite{ux-research-agenda}. \hyperref[RQ5]{RQ5} (\rqfour) is searching for a concise definition like there exists for UX. 
+\hyperref[RQ3]{RQ3} continues on \hyperref[RQ1]{RQ1}, and further evolves the focus of the problem into trying to understand what makes the DX better/worse on the possible different object/entities of DX.
+
+\hyperref[RQ4]{RQ4} is asked because it was noted that different articles all take their own viewpoint and context from which DX is looked at. It is important to understand what parts of DX is being studied and why some specific results have been achieved. Scientific and grey literature do presumably have different contexts of DX that they are studying.
+
+Finally, \hyperref[RQ5]{RQ5} is an ambitious questioning that tries to summarize the previously presented questions. There are multiple different definitions to UX, e.g. \parencite{iso-9241-210}, \parencite{understanding-ux}, \parencite{ux-research-agenda}. \hyperref[RQ5]{RQ5} is searching for a concise definition like there exists for UX.
 
 %% OTHER CONSIDERED RESEARCH PROBLEM(S)
 
@@ -590,27 +594,15 @@ The scope of this thesis is narrow. Even if the there is a lot of open questions
 
 \subsection{Structure of the thesis}
 
-The structure of the thesis is as follows:
-
-\begin{enumerate}
-  \item Introduction
-  \item Background
-  \item Research methods
-  \item Multivocal literature review
-  \item Results
-  \item Discussion
-  \item Conclusions
-  \item References
-  \item Appendix
-\end{enumerate}
+The structure of the thesis is as follows: Section \ref{section:introduction}.~\nameref{section:introduction} presents and motivates the problem in this thesis. A traditional literature on the subject of developer experience is presented in section \ref{section:background}.~\nameref{section:background}. Section \ref{section:research-methods}.~\nameref{section:research-methods} discusses the different options of research methods and also presents and motivates the selected ones. Section \ref{section:multivocal-literature-review}.~\nameref{section:multivocal-literature-review} presents the review protocol of the multivocal literature review. Section \ref{section:results}.~\nameref{section:results} presents the results of the thesis. Section \ref{section:discussion}.~\nameref{section:discussion} continues on the analysis of the results and answer the research questions. Finally, section \ref{section:conclusions}.~\nameref{section:conclusions} draws conclusions on the presented results of the thesis.
 
 %% In a thesis, every section starts a new page, hence \clearpage
 \clearpage
-\section{Background}
+\section{Background} \label{section:background}
 
 % FIXME: Remove most of the sections here, and add them to the results. Currently they are the result of the early stages of the thesis, and do not fit into the context. Instead have only the different experiences explained here, and then focus on the selection of tools, motivation, etc. in the results
 
-The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explain the background behind the themes in this study. The topics and themes discussed are a result of an informal literature search on the concept of DX and the results of the systematic literature. They are topics that are related to DX and understanding these individual topics help to understand the complex nature of DX. The systematic literature review on the definition of DX is presented in section \ref{mlr}.
+The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explain the background behind the themes in this study. The topics and themes discussed are a result of an informal literature search on the concept of DX and the results of the systematic literature. They are topics that are related to DX and understanding these individual topics help to understand the complex nature of DX. The systematic literature review on the definition of DX is presented in section \ref{section:multivocal-literature-review}.
 
 \subsection{Experience}
 
@@ -648,9 +640,7 @@ Current scientific literature on the definition of DX is few in numbers. DX has 
 
 Social aspect of software development plays a crucial role on how a developer experiences the development practice, and is receiving as much consideration as the technical environment in figure \ref{figure:social-technical}. It has for long been noted that the social and human factors of software development are not considered as important as they should be \parencite{human-factor}.
 
-The technical environment, including programming languages, infrastructure, processes, techniques, plans, diagrams etc., is also part of the DX. A developer is interacting with these artifacts and that generates an experience. Activities with these artefacts are both experienced as an individual but also as an group.
-
-Time-wise, the DX can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time, in e.g. a software project.
+The technical environment, including programming languages, infrastructure, processes, techniques, plans, diagrams etc., is also part of the DX. A developer is interacting with these artifacts and that generates an experience. Activities with these artefacts are both experienced as an individual but also as an group. Time-wise, the DX can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time, in e.g. a software project.
 
 \textcite{fagerholm-dx-concept-and-definition} takes an approach from psychology, and divides DX into three different sub areas or categories – cognitive (How developers perceive the development infrastructure), affective (How developers feel about their work), and conative (How developers see the value of their contribution). This conceptual framework is presented in figure \ref{figure:conceptual-framework}.
 
@@ -750,7 +740,7 @@ Application Programming Interfaces (APIs) are interface that developers use to c
 APIs, and especially Web APIs have enabled to create businesses around APIs \parencite{api-ecosystem}, \parencite{web-api-economy}, \parencite{moilanen2018api}. This type of business is called an API economy, and has quickly become a viable way of generating revenue for businesses.
 
 \clearpage
-\section{Research methods}
+\section{Research methods} \label{section:research-methods}
 
 During the study, the research problem and the research questions evolved as the understanding and comprehension of the problem improved. Because of this the planned research methods and the goals with these also evolved and were reshaped when new information was acquired. From the introduction and motivation in sections \ref{introduction} and \ref{motivation}, it was determined that DX is a novel and abstract construct. The concepts and definitions of it are multiple, and vary both in research and in industry. This means that the author's understanding of the topic improved and evolved during the study.
 
@@ -795,7 +785,7 @@ The initiation of the thesis started during the summer of 2019. The topic of the
 \textcite{analyzing-qualitative-data} give a set of guidelines and practices on analysing qualitative data. They state that using qualitative data in research requires discipline, creativity, but also a systematic approach. The divide the analysis of qualitative data into 5 different step: get to know your data, focus the analysis, categorize information, identify patterns and connections within and between categories, and finally interpretation. Categorization of the data is explained more in the specific sections where categorization, theming, or coding of data is performed.
 
 \clearpage
-\section{Multivocal literature review} \label{mlr}
+\section{Multivocal literature review} \label{section:multivocal-literature-review}
 
 Traditionally, in Systematic Literature Reviews (SLR) the reviewed literature consists only of literature that is formally published, and of which the motivation of publishing is the publication in itself, e.g. scientific publications in journals and conferences. Material that is produced with commercial interests and informally published material and publications are not considered in SLR \parencite{guidelines-for-MLR}.
 
@@ -953,7 +943,7 @@ Qualitative data analysis was performed one data point at at a time. Each data p
 The idea is to shuffle statements that are written cards or notes. Next step is to group things that relate to each other together so that "teams" of cards are formed. Then each of these teams are titled, and finally the relations between teams are explained and reported. This method allows to create new interpretations and reveal hidden meaning behind the collected data. This method was suitable for this MLR, as the majority of the data collected was qualitative e.g. statements and loose interpretations from the articles.
 
 \clearpage
-\section{Results}
+\section{Results} \label{section:results}
 
 This section reports the different result of the research.
 % TODO: add more explanation here
@@ -1207,7 +1197,7 @@ From the analysis of the material, there is a clear indication that there are di
 
 \subsubsection{Categories of definitions of DX}
 
-To summarize the analysis of what the studied objects of DX are, what the factors that improve/worsen the DX are, the explicit and implicit definitions of DX, and the context of from where DX is looked from, and attempt to understand the definition of DX was made. This was also a data point in the data collection form, and each article's short definition of DX was added to the form. The subsequent sections analyze the definitions on both the scientific and grey literature.
+An attempt to understand the definition of DX was made. This was based on the summaries of the analysis of what the studied objects of DX are, what the factors that improve/worsen the DX are, the explicit and implicit definitions of DX, and the context of from where DX is looked from. The definitions of DX was also a data point in the data collection form, and each article's short definition of DX was interpreted. The subsequent sections analyze the definitions on both the scientific and grey literature, and categorizes the definitions into bigger contexts.
 
 \subsubsubsection{Categories of definitions of DX in scientific literature}
 
@@ -1257,9 +1247,7 @@ In grey literature the definition of DX varies a lot more and there are no refer
 
 \subsubsubsection{Difference between the definition of DX in scientific and grey literature}
 
-There can be seen both differences and similarities between the definitions of DX.
-% TODO: more here
-
+There can be seen both differences and similarities between the definitions of DX in the scientific and grey literature. They both define DX as the developer's experience of developing software and interacting with software development artifacts. They both also define providing a good DX is related to understanding the developer and showing sympathy towards them. Their difference is that in grey literature the definitions lean more toward the usability of products and services, while the definitions in scientific literature take a more holistic approach of defining DX.
 
 \subsubsection{Conclusions of the sources}
 
@@ -1267,9 +1255,7 @@ The articles report that DX is an important factor of software engineering. From
 
 One main finding from the MLR, that applies for both scientific and grey literature, is that in software engineering in general there has happened a change in the empathy and sympathy shown and expressed towards developers. Almost all articles analyzed were discussing about DX in a humane and compassionate tone. This is also noted in \textcite{voice-of-the-developer}. However, there is still a lot of "objectifying" of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design.
 
-\subsection{Validity of results}
-
-\subsubsection{MLR}
+\subsection{Validity of the results}
 
 The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private browsing sessions were used on the browser when performing the searches.
 
@@ -1278,7 +1264,7 @@ Google has not revealed how the search engine optimization (SEO) works on the Go
 Depth of data collection has probably varied while performing the MLR. In most cases no explicit analysis was required to extract the required data when collecting it. However, based on the quality of the source sometimes the collection required some analysis to be able extract the data. E.g. understanding the object of DX under study forced sometimes the researcher to "read between the lines", adding their own interpretation and possible bias to the data. This same problem was present also if the research topic of the source was not explicitly  studying DX, but still related to concepts of DX.
 
 \clearpage
-\section{Discussion}
+\section{Discussion} \label{section:discussion}
 
 Developer experience is an umbrella term that captures a big part how developers feel and perceive their work. Current definition of DX in the industry is largely based on practitioners own experiences. In academic writings and papers, the topic of DX is studied relatively little, and the existing articles are not well known by the research community.
 
@@ -1292,30 +1278,30 @@ The \hyperref[research-problem]{research problem} (\researchproblem) prompted to
 
 \hyperref[RQ1]{RQ1} (\rqone) focused on finding about the different objects or entities of DX that are studied. The most obvious object under study in scientific literature was the technical artifacts that the developer interacts with in their everyday work tasks. Also, the most common artifact under study was programming languages and IDEs i.e. development tools. Other objects under study were the processes and methods used, the work environment, and developer's mood. In grey literature the most studied object of DX were APIs and their usability and other development tools.
 
-\hyperref[RQ2]{RQ2} (\rqtwo) questioned the research methods used in the research of DX. The most apparent research method was literature reviews in scientific articles, and expert experience reports in grey literature. In scientific literature empirical studies were also common along with surveys. 
+\hyperref[RQ2]{RQ2} (\rqtwo) questioned the research methods used in the research of DX. The most apparent research method was literature reviews in scientific articles, and expert experience reports in grey literature. In scientific literature empirical studies were also common along with surveys.
 
 Answering \hyperref[RQ3]{RQ3} (\rqthree) was possible based on the results of the analysis of the data collected. There were multiple different factors that improve or worsen the DX. In scientific literature were multiple factors, e.g. shared understanding, collaboration, and mitigating complexity, that seemed to improve DX. Common with all these factors were that almost all of them were non-technical, and more social factors, if following the division into technical and social factors by \textcite{fagerholm-doctoral-thesis} presented in figure \ref{figure:social-technical}.
 
 \hyperref[RQ4]{RQ4} (\rqfour) was presented because it was noted that different articles all take their own viewpoint and context from which DX is looked at. Scientific articles are focused more on looking at DX from the context the development environment, the definition DX, Knowledge sharing, and Team, Collaboration and Community. However grey literature focused mostly on DX from the context of APIs, products and services, and UX.
 
-\hyperref[RQ5]{RQ5} (\rqfive) asked about the different definitions of DX found in the literature. The most notable and recurring concise definition is provided by \textcite{fagerholm-dx-concept-and-definition} as \textit{"the developers feelings and perceptions about their work"}. 
+\hyperref[RQ5]{RQ5} (\rqfive) asked about the different definitions of DX found in the literature. The most notable and recurring concise definition is provided by \textcite{fagerholm-dx-concept-and-definition} as \textit{"the developers feelings and perceptions about their work"}.
 
 \subsection{Future research}
 
 This study took an exploratory approach into understanding the phenomenon of DX, especially the current state of the literature of it. During the initial phases of the research, the research problem and questions were constantly evolving with the progress of the study. The first version of the research problem focused on understanding the cause-effect relation between practicing good developer experience and the effect of that on software projects. It was formalized initially as \textit{"What are the aspects of Developer Experience that are utilized in practice and have potential of being replicable in different teams of a software consulting company?"}
 
-However, it was quickly noticed that this problem was way too ambitious, and would require huge effort on the current state of the understanding of DX. Unanswered questions in this approach were questions like \textit{"what is developer experience?"}, \textit{what is the aspects of developer experience?} \textit{"what does utilizing in practice mean?}, \textit{"what does having potential mean?"} \textit{"what does replicable mean?"}. To be able to study research problems like this there needs to be more ground work done in the field of study of DX. These questions were the main motivator for selecting this topic for this thesis, and were initially the goal of this thesis. 
+However, it was quickly noticed that this problem was way too ambitious, and would require huge effort on the current state of the understanding of DX. Unanswered questions in this approach were questions like \textit{"what is developer experience?"}, \textit{what is the aspects of developer experience?} \textit{"what does utilizing in practice mean?}, \textit{"what does having potential mean?"} \textit{"what does replicable mean?"}. To be able to study research problems like this there needs to be more ground work done in the field of study of DX. These questions were the main motivator for selecting this topic for this thesis, and were initially the goal of this thesis.
 
 In conclusion, future research could focus on any aspect of DX in practice. How are practitioners considering DX? What could the benefits of focusing on DX be? As it was found out in this thesis, there could be huge potential in understanding DX and how it affect the practice of software development. We have seen the evolution from Human Computer Interaction (HCI) to User Experience (UX). It will be interesting to see to what extent DX is taken.
 
 \clearpage
-\section{Conclusions}
+\section{Conclusions} \label{section:conclusions}
 
-From the research and foundations of Human Computer Interaction (HCI), Usability, and User Experience (UX) has a relatively new concept of Developer Experience (DX) emerged. While UX considers an user and their experience of using a service or product, DX considers the developer's experience of acting as an user of software development artefacts while developing software. 
+From the research and foundations of Human Computer Interaction (HCI), Usability, and User Experience (UX) has a relatively new concept of Developer Experience (DX) emerged. While UX considers an user and their experience of using a service or product, DX considers the developer's experience of acting as an user of software development artefacts while developing software.
 
-Traditionally developers have been seen as an asset or resource in the software development practice, where they are the labour and work force while developing and creating software products and services. The developer's opinions, feelings, and voice have not been heard well enough. 
+Traditionally developers have been seen as an asset or resource in the software development practice, where they are the labour and work force while developing and creating software products and services. The developer's opinions, feelings, and voice have not been heard well enough.
 
-The concept of DX can be seen as a revolution to this. First, this means that the voice of the developer is being heard. Second, the developers are also being understood. DX is a way to measure otherwise difficult, complicated, and often abstract things. 
+The concept of DX can be seen as a revolution to this. First, this means that the voice of the developer is being heard. Second, the developers are also being understood. DX is a way to measure otherwise difficult, complicated, and often abstract things. It is about understanding and showing sympathy towards the developer. With this understanding the environment that developers work in can be improved, including both the social and technical factors.
 
 \clearpage
 \thesisbibliography
@@ -1324,7 +1310,7 @@ The concept of DX can be seen as a revolution to this. First, this means that th
 \clearpage
 \thesisappendix
 
-\section{Resources of the Multivocal Literature Review \label{mlr-resources}}
+\section{Resources of the Multivocal Literature Review \label{section:resources-of-the-multivocal-literature-review}}
 
 \renewcommand{\arraystretch}{1.5}
 
