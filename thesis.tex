@@ -597,37 +597,50 @@ The structure of the thesis is as follows: Section \ref{section:introduction}. p
 \clearpage
 \section{Background} \label{section:background}
 
-The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explain the background behind the themes in this study. The topics and themes discussed are a result of an informal literature search on the concept of DX and the results of the systematic literature. They are topics that are related to DX and understanding these individual topics help to understand the complex nature of DX. The systematic literature review on the definition of DX is presented in section \ref{section:multivocal-literature-review}.
-
-\subsection{Experience}
-
-\textcite[167]{moilanen2018api} differentiates UX from DX by stating that in UX the focus is on using the product and in DX the focus is on creating a product. They also note that UX is a user-centered model of operation, whereas DX is a process-product-centered model of operation. This differentiation of using versus producing is used in this thesis
+The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explain the background behind the themes in this study. The topics and themes discussed are based on the initial literature research, and they create an outline for the multivocal literature review. They are topics that are related to DX and understanding these individual topics help to understand the complex nature of DX. The systematic literature review on the definition of DX is presented in section \ref{section:multivocal-literature-review}.
 
 The notion of experiencing can been seen in various different ways in SE. Sometimes the different variations of experiences are used intertwined, but is important to differentiate them to avoid misunderstandings. Different experiences related to consuming, using or interacting with something provided by someone else includes \textit{user experience}, \textit{product experience}, \textit{brand experience}, and \textit{service experience}. Experiences related to development are \textit{programmer experience}, and finally \textit{developer experience}.
 
 \textcite{understanding-ux} investigate into the notion of UX and simultaneously differentiates the different kinds of usage experiences. \textit{Brand experience} includes interaction not only with the product, but also the company and it's services and therefore brand experience is a more broad concept than UX. \textit{Product experience} is narrower than the user experience and deals with the objects that are products. \textit{Service experience} concerns about face-to-face services and experiences related to that. \textit{User experience} is discussed in section \ref{section:ux}
 
+\subsection{User Experience} \label{section:ux}
+
+User Experience (UX) emerged from the traditional field of HCI. It was seen that only focusing on the instrumental value of the product or service is not enough. \textcite{ux-research-agenda} studied recent research of UX, and also proposed the future of it to aid in finding a direction for research of it. They found 3 important perspectives of UX. 1) UX is beyond the instrumental by considering the holistic, aesthetic, and hedonic aspects of usage. 2) Emotion and affect are to interest when understanding the subjective view on usage, that often is focused on the positive antecedents and consequences. 3) The experience in itself is a complex and dynamic phenomena that is near to impossible to replicate.
+
+\textcite{understanding-ux} found that the notion of User Experience (UX) has been widely adopted without having a clear understanding and definition of what UX. Interestingly, this relates exactly to the situation of what the understanding and definition of DX is at the moment.
+
+\subsection{User Starting Experience}
+
+\textcite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}. These both concepts are discussing the approachability of different artifacts. Developers have become more and more in charge of the decision and selection of the tools and 3rd party products that are used when developing software. This might have been more of a responsibility of the organization i.e. the directors or managers. Now however, it has been seen that the developers are the most knowledgeable persons to make these decisions. \textcite{api-designers} argue that the first encounter with the API determines if it's selected for usage or not, especially if there is a set of different options to choose from. Therefore they also say that the \textit{0 to 200} and \textit{Time to Hello World} are important things to consider when developing APIs with a good DX.
+
+The term \textit{0 to 200} originates from the Hypertext Transfer Protocol HTTP code 200 indicating a successful OK response. Adopting a new API and successfully calling the API with a 200 OK response can be seen as the minimal effort to get the integration working. The term \textit{Time to Hello World} has its grounds in the introduction and adoption of a new programming language, where often the first task is to print or log the text ``Hello World'' to the output channel e.g. the console or terminal. Adopting the basic structures and building block of the programming language prove how easy it is to get stared and going with the programming language, and therefore can be a measurement of the approachability of the programming language.
+
+However, this shouldn't be limited or restricted to only APIs, programming languages, or frameworks. The concept of User Starting Experience could be used in the measurement of introducing or adopting anything new related to software development e.g. introducing a new development technique or process to a software development team.
+
 % Definition of Experience, [online] Available: https://www.merriam-webster.com/dictionary/experience.
 
 \subsection{Developer Experience}
 
-Current scientific literature on the definition of DX are few in numbers. DX has however a comprehensive and detailed definition by \textcite{fagerholm-doctoral-thesis} that build upon \textcite{fagerholm-dx-concept-and-definition}. Their doctoral thesis dives into the core of developers and their experiences with developing software. They define DX into two different environments, a social and a technical environment. These two dimensions are presented in figure \ref{figure:social-technical}.
+
+\textcite[167]{moilanen2018api} differentiates UX from DX by stating that in UX the focus is on using the product and in DX the focus is on creating a product. They also note that UX is a user-centered model of operation, whereas DX is a process-product-centered model of operation. This differentiation of using versus producing is used in this thesis.
+
+Current scientific literature on the definition of DX are few in numbers. DX has however a comprehensive and detailed definition by \textcite{fagerholm-doctoral-thesis} that build upon \textcite{fagerholm-dx-concept-and-definition}. Fagerholm's (\citeyear{fagerholm-doctoral-thesis}) doctoral thesis dives into the core of developers and their experiences with developing software. They define DX into two different environments, a social and a technical environment. These two dimensions are presented in Figure \ref{figure:social-technical}.
 
 \begin{figure}
-  \captionsetup{width=0.6\textwidth}
-  \caption{Conceptual framework of Developer Experience \parencite{fagerholm-dx-concept-and-definition}}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{dx-conceptual.pdf}
   \end{center}
+  \captionsetup{width=0.6\textwidth}
+  \caption{Conceptual framework of Developer Experience \parencite{fagerholm-dx-concept-and-definition}}
   \label{figure:conceptual-framework}
 \end{figure}
 
 \begin{figure}
-  \captionsetup{width=0.6\textwidth}
-  \caption{The Developer Experience Concept \parencite{fagerholm-doctoral-thesis}}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{dx-social-technical.pdf}
   \end{center}
+  \captionsetup{width=0.6\textwidth}
+  \caption{The Developer Experience Concept \parencite{fagerholm-doctoral-thesis}}
   \label{figure:social-technical}
 \end{figure}
 
@@ -660,19 +673,7 @@ In this thesis a software developer is defined as a person with a bigger respons
 
 However, there is ambiguity around the definition of PX. \textcite{programming-experience} use the term \textit{``Programming Experience''}, and their definition of PX resemble the one of DX. They are not only talking about the technical details of programming, but also about aspects as the live domain, understanding the requirements, visualization, immediate experience, and joy related to the experience.  
 
-\subsection{User Experience} \label{section:ux}
 
-User Experience (UX) emerged from the traditional field of HCI. It was seen that only focusing on the instrumental value of the product or service is not enough. \textcite{ux-research-agenda} studied recent research of UX, and also proposed the future of it to aid in finding a direction for research of it. They found 3 important perspectives of UX. 1) UX is beyond the instrumental by considering the holistic, aesthetic, and hedonic aspects of usage. 2) Emotion and affect are to interest when understanding the subjective view on usage, that often is focused on the positive antecedents and consequences. 3) The experience in itself is a complex and dynamic phenomena that is near to impossible to replicate.
-
-\textcite{understanding-ux} found that the notion of User Experience (UX) has been widely adopted without having a clear understanding and definition of what UX. Interestingly, this relates exactly to the situation of what the understanding and definition of DX is at the moment.
-
-\subsection{User Starting Experience}
-
-\textcite{api-designers} introduce the concepts of \textit{0 to 200} and \textit{Time to Hello World}. These both concepts are discussing the approachability of different artifacts. Developers have become more and more in charge of the decision and selection of the tools and 3rd party products that are used when developing software. This might have been more of a responsibility of the organization i.e. the directors or managers. Now however, it has been seen that the developers are the most knowledgeable persons to make these decisions. \textcite{api-designers} argue that the first encounter with the API determines if it's selected for usage or not, especially if there is a set of different options to choose from. Therefore they also say that the \textit{0 to 200} and \textit{Time to Hello World} are important things to consider when developing APIs with a good DX.
-
-The term \textit{0 to 200} originates from the Hypertext Transfer Protocol HTTP code 200 indicating a successful OK response. Adopting a new API and successfully calling the API with a 200 OK response can be seen as the minimal effort to get the integration working. The term \textit{Time to Hello World} has its grounds in the introduction and adoption of a new programming language, where often the first task is to print or log the text ``Hello World'' to the output channel e.g. the console or terminal. Adopting the basic structures and building block of the programming language prove how easy it is to get stared and going with the programming language, and therefore can be a measurement of the approachability of the programming language.
-
-However, this shouldn't be limited or restricted to only APIs, programming languages, or frameworks. The concept of User Starting Experience could be used in the measurement of introducing or adopting anything new related to software development e.g. introducing a new development technique or process to a software development team.
 
 \clearpage
 \section{Research methods} \label{section:research-methods}
