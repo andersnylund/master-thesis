@@ -192,7 +192,8 @@
 backend=biber,
 style=apa,
 sortcites=true,
-sorting=nyt
+sorting=nyt,
+uniquename=false
 ]{biblatex}
 \addbibresource{thesis.bib}
 
@@ -202,7 +203,7 @@ sorting=nyt
 % \school{Sähkötekniikan korkeakoulu}
 
 \newcommand{\thesisadvisor}{Ph.D Fabian Fagerholm}
-\newcommand{\thesissupervisor}{TBD}
+\newcommand{\thesissupervisor}{Ph.D Fabian Fagerholm}
 
 %% Edit to conform to your degree programme
 %%
@@ -257,7 +258,7 @@ sorting=nyt
 \date{\datenow}
 %%
 
-\newcommand{\now}{November 2019}
+\newcommand{\now}{December 2019}
 
 %% Thesis supervisor
 %% Note the "\" character in the title after the period and before the space
@@ -521,7 +522,6 @@ During this study the research problem and questions evolved and were modified w
 \newcommand{\rqthree}{What is known about factors that improve or worsen developer experience?}
 \newcommand{\rqfour}{From what contexts is developer experience looked at?}
 \newcommand{\rqfive}{What are the definitions given to developer experience?}
-% \newcommand{\rqsix}{What are the main results of the existing research on developer experience?}
 
 \begin{table}[ht]
   \begin{center}
@@ -531,7 +531,6 @@ During this study the research problem and questions evolved and were modified w
       \textbf{RQ 3} & \rqthree \label{RQ3} \\
       \textbf{RQ 4} & \rqfour  \label{RQ4} \\
       \textbf{RQ 5} & \rqfive  \label{RQ5}
-      % \textbf{RQ 6} & \rqsix   \label{RQ6}
     \end{tabularx}
   \end{center}
   \caption{The research questions \label{researchquestions}}
@@ -583,7 +582,7 @@ Finally, \hyperref[RQ5]{RQ5} is an ambitious questioning that tries to summarize
 
 \subsection{Scope and focus}
 
-The scope of the thesis changed remarkably during the research process. Initially the philosophy of the thesis was more of a positivistic approach, but the more information was gathered about the topic, the more exploratory the nature of the thesis became. This change of the scope is discussed further in section \ref{section:research-philosophy}.
+The scope of the thesis changed remarkably during the research process. Initially the philosophy of the thesis was more of a positivistic approach, but the more information was gathered about the topic, the more exploratory the nature of the thesis became. This change of the scope is discussed further in Section \ref{section:research-philosophy}.
 
 The scope of this thesis is relatively narrow. There is a lot of open questions about the concept of DX, and the thesis is only scratching the surface of the current state and understanding of the definition of DX. Therefore this thesis focuses on getting a broad view on the research problem. It is acknowledged that understanding the whole concept DX is difficult, and that there are no definitive answers when trying to define what DX is about. This thesis doesn't give any clear and well defined definition of DX, and there are no ``right'' or ``wrong'' answers presented in the thesis.
 
@@ -597,11 +596,11 @@ The structure of the thesis is as follows: Section \ref{section:introduction}. p
 \clearpage
 \section{Background} \label{section:background}
 
-The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explain the background behind the themes in this study. The topics and themes discussed are based on the initial literature research, and they create an outline for the multivocal literature review. They are topics that are related to DX and understanding these individual topics help to understand the complex nature of DX. The systematic literature review on the definition of DX is presented in section \ref{section:multivocal-literature-review}.
+The concept of Developer Experience (DX) introduces and is related to concepts, frameworks, thoughts, models, and ideas that require introduction and discussion. In the following subsections we discuss the relevant topics and explain the background behind the themes in this study. The topics and themes discussed are based on the initial literature research, and they create an outline for the multivocal literature review. They are topics that are related to DX and understanding these individual topics help to understand the complex nature of DX. The systematic literature review on the definition of DX is presented in Section \ref{section:multivocal-literature-review}.
 
 The notion of experiencing can been seen in various different ways in SE. Sometimes the different variations of experiences are used intertwined, but is important to differentiate them to avoid misunderstandings. Different experiences related to consuming, using or interacting with something provided by someone else includes \textit{user experience}, \textit{product experience}, \textit{brand experience}, and \textit{service experience}. Experiences related to development are \textit{programmer experience}, and finally \textit{developer experience}.
 
-\textcite{understanding-ux} investigate into the notion of UX and simultaneously differentiates the different kinds of usage experiences. \textit{Brand experience} includes interaction not only with the product, but also the company and it's services and therefore brand experience is a more broad concept than UX. \textit{Product experience} is narrower than the user experience and deals with the objects that are products. \textit{Service experience} concerns about face-to-face services and experiences related to that. \textit{User experience} is discussed in section \ref{section:ux}
+\textcite{understanding-ux} investigate into the notion of UX and simultaneously differentiates the different kinds of usage experiences. \textit{Brand experience} includes interaction not only with the product, but also the company and it's services and therefore brand experience is a more broad concept than UX. \textit{Product experience} is narrower than the user experience and deals with the objects that are products. \textit{Service experience} concerns about face-to-face services and experiences related to that. \textit{User experience} is discussed in Section \ref{section:ux}
 
 \subsection{User Experience} \label{section:ux}
 
@@ -609,9 +608,9 @@ User Experience (UX) emerged from the traditional field of HCI. It was seen that
 
 \textcite{understanding-ux} found that the notion of User Experience (UX) has been widely adopted without having a clear understanding and definition of what UX is. Interestingly, this relates exactly to the situation of what the understanding and definition of DX is at the moment.
 
-% FIXME: Här skulle det vara intressant att veta mera! Har Law et al. (2009) eller nån annan löst situatonen för UX? Vad är i så fall lösningen? Eller om det är bitar av lösningar eller lösningar till delar sitautionen, var är de? Kunde man återanvända lösningsmodellerna på DX? (Jag gissar att man här kunde stärka arbetets motivation genom att visa att en del av arbetet med UX har handlat om noggrann definiering av begrepp, och det kunde hjälpa för DX också, som detta arbete gör.)
+Today, UX is still a more of a subjective than objective measure. However, in the field of user-centered design there has been interest towards finding a. One example of this is \textcite{iso-9241-210}.
 
-% Definition of Experience, [online] Available: https://www.merriam-webster.com/dictionary/experience.
+% FIXME: it would be interesting to know more! According to Law et al. (2009) or anyone else solved the situation for UX? If so, what is the solution? Or if there are pieces of solutions or solutions to share the situation, where are they? Could the DX solution models be reused? (I guess here you could strengthen the work's motivation by showing that part of the work with UX was about defining concepts clearly, and that could help DX as well, as this work does.)
 
 \subsection{Developer Experience}
 
@@ -645,11 +644,11 @@ Social aspect of software development plays a crucial role on how a developer ex
 The technical environment, including programming languages, infrastructure, processes, techniques, plans, diagrams etc., is also part of the DX. A developer is interacting with these artifacts and that generates an experience. Activities with these artifacts are both experienced as an individual but also as a group. Time-wise, the DX can be both short term impulsive, or related to one event in software development, but it can also be a long term experience over a period of time, in e.g. a software project (\cite{fagerholm-doctoral-thesis}; Figure \ref{figure:theoretical-framework})
 
 \begin{figure}[H]
-  \captionsetup{width=0.6\textwidth}
-  \caption{Theoretical Framework of Developer Experience \parencite{fagerholm-doctoral-thesis}}
   \begin{center}
     \includegraphics[width=\textwidth]{theoretical-framework.pdf}
   \end{center}
+  \captionsetup{width=0.6\textwidth}
+  \caption{Theoretical Framework of Developer Experience \parencite{fagerholm-doctoral-thesis}}
   \label{figure:theoretical-framework}
 \end{figure}
 
@@ -702,14 +701,10 @@ The main goal of a MLR is to get objective viewpoints and results on the topic t
 
 For the present researcher taking an approach that enabled an open mindset allowed to question suitable research questions. This approach was the most suitable in this thesis, both from the viewpoint of the research topic and researchers own skills, competency, and way of thought. Therefore the techniques presented in \textcite{developing-grounded-theory} are also utilized in this research in all parts of it including the material selection, but also the analysis of the results.
 
-\subsection{Analysis of data}
-
-\textcite{analyzing-qualitative-data} give a set of guidelines and practices on analysing qualitative data. They state that using qualitative data in research requires discipline, creativity, but also a systematic approach. They divide the analysis of qualitative data into 5 different step: get to know your data, focus the analysis, categorize information, identify patterns and connections within and between categories, and finally interpretation. Categorization of the data is explained more in the specific sections where categorization, theming, or coding of data is performed.
-
 \clearpage
 \section{Multivocal literature review} \label{section:multivocal-literature-review}
 
-Traditionally, in Systematic Literature Reviews (SLR) the reviewed literature consists only of literature that is formally published, and of which the motivation of publishing is the publication in itself, e.g. scientific publications in journals and conferences. Material that is produced with commercial interests e.g. informally published material and publications, are not considered in SLRs \parencite{guidelines-for-MLR}.
+Traditionally in Systematic Literature Reviews (SLR) in Software Engineering (SE), the reviewed literature consists only of literature that is formally published, and of which the motivation of publishing is the publication in itself, e.g. scientific publications in journals and conferences. Material that is published in non-scientific forums without peer review e.g. informal material and publications, are not considered in SLRs \parencite{guidelines-for-MLR}.
 
 Multivocal Literature Reviews (MLR), are a way to include grey literature into SLRs \parencite{the-need-for-MLR}. Grey literature can be defined in different ways, and research fields define grey literature in ways that are meaningful to that specific field.
 
@@ -717,25 +712,26 @@ Multivocal Literature Reviews (MLR), are a way to include grey literature into S
   \textit{``Grey literature stands for manifold document types produced on all levels of government, academics, business and industry in print and electronic formats that are protected by intellectual property rights, of sufficient quality to be collected and preserved by library holdings or institutional repositories, but not controlled by commercial publishers i.e., where publishing is not the primary activity of the producing body.''} \parencite{towards-a-prague-definition-of-grey-literature}
 \end{quotation}
 
-The Prague Definition of grey literature is strict and therefore not allowing e.g. blog posts to be used on MLRs. However, a specific guideline for including grey literature in literature reviews has been created \parencite{guidelines-for-MLR}. This guideline is based on the guidelines on how to perform SLR in SE \parencite{guidelines-for-SLR-in-SE}.
+In the citation above (The Prague Definition of grey literature), the definition of grey literature is strict and therefore does not allow e.g. blog posts to be used on MLRs. However, a specific guideline for including grey literature in literature reviews has been created \parencite{guidelines-for-MLR}. This guideline is based on the guidelines on how to perform SLR in SE \parencite{guidelines-for-SLR-in-SE}.
 
 \subsection{The motivation behind a Multivocal Literature Review}
 
-DX is an abstract concept and framework. As pointed by \textcite{fagerholm-doctoral-thesis}, the framework they present can be used to guide inquiries into DX. The goal was to create an understanding of the definition of DX from the selected point of view in this thesis. Traditional literature reviews can help in these cases, and they create a common understanding and basis of the topic that is going to be discussed. However, traditional literature reviews are prone to be biased. To avoid bias of the author, and because DX is a subjective concept of the developer, the definition of DX could have been reviewed with a help of a SLR. SLRs are a way of producing evidence based results, and they are effective in complex and opinion based fields where a common agreement of a concept or topic might be difficult to find.
+DX is an novel and abstract concept and framework, and therefore there has been little formal research on the topic. Based on the different levels of literature, white, grey, and black \parencite{guidelines-for-MLR}, DX could be seen even to be in the category of black literature. DX can be seen to still be mainly on the level of ideas, concepts, and thoughts.
 
-In software engineering practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \parencite{the-need-for-MLR}. A SLR would include only the scientific papers, and therefore it might not be sufficient to only focus on that. In a MLR the grey literature should provide a current perspective and fill in the gaps of scientific and formal literature \parencite{guidelines-for-MLR}. SE practitioners are producing a lot of literature, that would not be considered in normal literature reviews or SLR. This grey literature can provide insights about the field of SE, and especially about DX.
+As pointed by \textcite{fagerholm-doctoral-thesis}, the framework they present can be used to guide inquiries into DX. The goal was to create an understanding of the definition of DX from the selected point of view in this thesis. Traditional literature reviews can help in these cases, and they create a common understanding and basis of the topic that is going to be discussed. However, traditional literature reviews are prone to be biased. A researcher conducting a traditional literature review, where material is picked based on and with help of some non-systematic procedure, is likely going to be biased by the researchers own expertise and experiences. Because, if there is no rules to follow when picking articles, the researcher is going to pck them by their own interest and what they personally find relevant e.g. the study is going to be affected by the subjective opinions of the researcher. To avoid researcher bias, a better approach for the literature is a systematic literature review (SLR). SLRs are a way of producing evidence based results, and they are effective in complex and opinion based fields where a common agreement of a concept or topic might be difficult to find. An SLR is also suitable to study DX, as DX can be seen as a subjective concept of the developer.
+
+In software engineering, practitioners constantly produce valuable literature in e.g. technical reports or blog posts, but this material is not considered in SLRs. This has been identified as a problem, and there's been a call for MLRs in SE \parencite{the-need-for-MLR}. A SLR would include only the scientific papers, and therefore it might not be sufficient to only focus on that. In a MLR the grey literature should provide a current perspective and fill in the gaps of scientific and formal literature \parencite{guidelines-for-MLR}. SE practitioners are producing a lot of literature, that would not be considered in normal literature reviews or SLR. This grey literature can provide insights about the field of SE, and especially about DX.
+
 
 \subsection{The review protocol of the Multivocal Literature Review}
 
 \newcommand{\mlrdxlink}{https://bit.ly/31QzQ7z}
 
-DX is a novel concept, and therefore there has been little formal research on the topic. Based on the different levels of literature, white, grey, and black \parencite{guidelines-for-MLR}, DX could be seen even to be in the category of black literature. DX can be seen to still be only on the level of ideas, concepts, and thoughts. All data of the MLR can be found the following link: \href{\mlrdxlink}{https://bit.ly/31QzQ7z}. The data collection is done with Google Sheets and is based on the example shown in \textcite{guidelines-for-MLR}.
+All data of the MLR can be found the following link: \href{\mlrdxlink}{https://bit.ly/31QzQ7z}. The data collection is done with Google Sheets and is based on the example shown in \textcite{guidelines-for-MLR}.
+
+% TODO: Check if an electronic appendix is possible in Aalto's systems
 
 \textcite{guidelines-for-SLR-in-SE} point out that following a review protocol is crucial when performing a SLR. The following sections are a brief overview of the review protocol used in this thesis.
-
-\subsubsection{Research questions}
-
-The research problem captures the motivation behind doing this MLR. The different research questions then divide the problem into smaller problems that can be tackled one by one. The research questions and the motivation behind them are discussed more thoroughly in section \ref{section:research-problem-and-questions}.
 
 \subsubsection{Search process}
 
@@ -743,11 +739,13 @@ The search process was divided into a database search and followed by a snowball
 
 \subsubsubsection{Database search}
 
-Initially the search of scientific literature was not systematic and the very first iteration of the search was performed as a manual search by the author from various libraries to gather the scientific literature. However, it was noted that this approach was not suitable in this thesis. Later it as decided that the gathering of scientific articles should be systematic, and the final approach was decided to be a MLR. The selected databases and libraries of sources of scientific literature is listed in table \ref{table:included-databases}.
+Initially the search of scientific literature was not systematic and the very first iteration of the search was performed as a manual search by the author from various libraries to gather the scientific literature. These non-systematic searches for literature helped to plan, design, and focus the research and the MLR. The selected databases and libraries of sources of scientific literature are listed in Table \ref{table:included-databases}.
 
-\textcite{guidelines-for-snowballing} state that with manual searches of sources, the results will vary and are hard to replicate because of the lack of a system. This is key when performing systematic reviews so other researchers can replicate the study. \textcite{guidelines-for-snowballing} also mention that performing database searches might result in a big set of irrelevant results, from where it can be difficult to find the relevant result from. The process of manually filtering out results is also error prone.
+\textcite{guidelines-for-snowballing} and \textcite{guidelines-for-SLR-in-SE} state that with manual searches of sources, the results will vary and are hard to replicate because of the lack of a system. This is key when performing systematic reviews so other researchers can replicate the study. \textcite{guidelines-for-snowballing} also mention that performing database searches might result in a big set of irrelevant results, from where it can be difficult to find the relevant result from. The process of manually filtering out results is also error prone. 
 
-\begin{table}
+\textcite{guidelines-for-MLR} also mention that SLRs in general are helpful when there is a huge amount of studies on a specific topic. In these cases, doing a SLR helps to index the studies, which then also helps further studies on the same topic.
+
+\begin{table}[h]
   \centering
   \begin{tabular}{ l l }
     \hline
@@ -761,7 +759,7 @@ Initially the search of scientific literature was not systematic and the very fi
   \label{table:included-databases}
 \end{table}
 
-\begin{table}
+\begin{table}[h]
   \centering
   \begin{tabular}{ l l }
     \hline
@@ -774,23 +772,25 @@ Initially the search of scientific literature was not systematic and the very fi
   \label{table:excluded-databases}
 \end{table}
 
-Other possible libraries and databases that could have been used are listed in table \ref{table:excluded-databases}. However, the sources listed in this table does not provide advanced search. Advanced search by author keyword was a search criteria and because of that these libraries and databases were excluded from the initial search for scientific sources.
+Other possible libraries and databases that could have been used are listed in Table \ref{table:excluded-databases}. Google scholar does not provide advanced search that have the required search options, especially search based on author keyword. Also, ScienceDirect och Scopus, do not have the required advanced search features. Advanced search by author keyword was a search criteria and because of that these libraries and databases were excluded from the initial search for scientific sources.
 
-For gathering grey literature, the Google search engine (https://www.google.com) was used. To limit the amount of results in the search of grey literature, only the first 2 pages of searches from google.com were included. In a study conducted by \textcite{google-search}, only 91 percent of participants in a study went to the second page of google results page. Therefore it was appropriate to include only the most relevant (the first pages of the results) results from the google search.
+% FIXME: Remove reasoning behind 2 first pages of Google results
 
-Search string for both scientific and grey literature was \textbf{``developer experience''}. As the aim of the MLR review was to get an overview of the definition of DX, only that specific search string was used. This was an attempt to assure that the relevant publications were included. Including more words in the search string or creating a more complex search string would have required a better understanding of DX. Also, including other search strings would have biased the search result. To further narrow down the search, the search was modified to include only results where author keyword was ``developer experience''. This narrowed down the search significantly, and removed irrelevant results. \textcite{guidelines-for-snowballing} mention that creating complex queries and search strings might be difficult because of the lacking standardized terminology of the research topic. This was exactly the case with this study, as the topic of DX is relatively novel and some research might be studying DX without explicitly stating or even being aware of that their study might be related to a concept called DX.
+For gathering grey literature, the Google search engine (https://www.google.com) was used. Because of a limited amount of time available for the research, a decision to only select the 2 first result pages of Google was made. The first round of grey literature about the topic was gathered at September 2019, and the second round in November 2019. Having two different occasions of gathering grey literature sources did take into action timely changes in search results of Google. Also, in a study conducted by \textcite{google-search}, only 91 percent of participants in a study went to the second page of google results page. Therefore it was appropriate to include the most relevant (the first pages of the results) results from the google search.
 
-Using the author keyword gave results where the author is intentionally discussing the topic of DX. In the case of DX, with searching only with the author keyword, the inclusion/exclusion rate is significantly better than with a full-text search. However, this approach removed the possibility to discover definitions of DX where the author is not aware of this concept or phenomenon.
+Search string for both scientific and grey literature was \textbf{``developer experience''}. As the aim of the MLR review was to get an overview of the definition of DX, only that specific search string was used. This was an attempt to assure that the relevant publications were included. Including more words in the search string or creating a more complex search string would have required a better understanding of DX. Also, including other search strings would have biased the search result. To further narrow down the search on the scientific articles, the search was modified to include only results where author keyword was ``developer experience''. This narrowed down the search significantly, and removed irrelevant results. \textcite{guidelines-for-snowballing} mention that creating complex queries and search strings might be difficult because of the lacking standardized terminology of the research topic. This was exactly the case with this study, as the topic of DX is relatively novel and some research might be studying DX without explicitly stating or even being aware of that their study might be related to a concept called DX.
+
+Searching by author keyword gave search results where the author is intentionally discussing the topic of DX. In the case of DX, with searching only with the author keyword, the inclusion/exclusion rate is significantly better than with a full-text or any other search strategy. There is no exact data gathered on this, but based on the manual unstructured test searches that was performed, the amount of unrelated articles was significantly higher than compared to when searching by author keyword. In full text searches, the consequent words "Developer Experience" appear in the content of the article, and therefore they also appear in the search results. By using author keyword, this limits the search to only cases where the author has deliberately selected the keyword. However, this approach removed the possibility to discover definitions of DX where the author is not aware of this concept or phenomenon.
 
 \textcite{understanding-ux} performed a search on the definition of UX. Their search strings used a combination of keywords. However, trying to replicate these for the search of the definition of DX did not yield any satisfactory results, and either the number of search results was too big or too small.
 
 \subsubsubsection{Snowballing}
 
-The result of the database search gave good results. However the results were too narrow, and it was thought that there are more results to be found. With the guidance of the thesis supervisor who has done extensive research on DX, the decision of using snowballing to collect more sources was done. Snowballing allows to find sources that would otherwise go undiscovered. For example, obscure journals, conferences, or magazines can be difficult to find with only using database searchers \parencite{guidelines-for-snowballing}.
+The results from the database search were good, and the relevancy of the found sources were satisfactory. However there was a suspicion that the amount of found results were too few. With the guidance of the thesis supervisor who has done extensive research on DX, the decision of using snowballing to collect more sources was done. Snowballing allows to find sources that would otherwise go undiscovered. For example, obscure journals, conferences, or magazines can be difficult to find with only using database searchers \parencite{guidelines-for-snowballing}.
 
 In this thesis one iteration of snowballing was performed on the scientific articles. The first set of scientific literature included 21 articles. Snowballing was performed on these 21 articles, and the round of backward and forward snowballing resulted in 5 articles from backward and 14 articles from forward snowballing.
 
-Snowballing was not used on grey literature. However, 2 different searches with the same keyword was performed in Google Search. The first round of grey literature about the topic was gathered at September 2019, and the second round in November 2019. Having two different occasions of gathering grey literature sources did take into action timely changes in search results of Google.
+Snowballing was not used on grey literature.
 
 \subsubsection{Inclusion criteria}
 
@@ -810,36 +810,38 @@ Papers that discussed about developer's experience in terms of the experience le
 
 All sources of the review were collected into one form with the selected data points. The process of collection was a continuous refinement of the search method, the inclusion/exclusion criteria, and data extraction points. During the collection the comprehension and understanding of the base concept of DX was continuously refined. The author's understanding about the topic improved, and therefore there was also need to continuously update and refine the data collection form.
 
-First version of the data collection form was simple and included only some basic characteristics and data points of the sources. With help of ongoing collection, refinement of the search process, and adjustments to the research questions the data points emerged to their final form. A more comprehensive explanation of the collected data points is given in section \ref{section:results}.
+First version of the data collection form was simple and included only some basic characteristics and data points of the sources. With help of ongoing collection, refinement of the search process, and adjustments to the research questions the data points emerged to their final form. A more comprehensive explanation of the collected data points is given in Section \ref{section:results}.
 
 \subsubsection{Data analysis}
 
-Data collection was successful and multiple different data points was extracted. These data points were both qualitative and quantitative in nature. During the data collection, the view of the data collection was focused on a horizontal perspective i.e. on source at a time. During analysis the view was flipped to a vertical view i.e. looking at one data point at a time.
+\textcite{analyzing-qualitative-data} give a set of guidelines and practices on analysing qualitative data. They state that using qualitative data in research requires discipline, creativity, but also a systematic approach. They divide the analysis of qualitative data into 5 different step: get to know your data, focus the analysis, categorize information, identify patterns and connections within and between categories, and finally interpretation. Categorization of the data is explained more in the specific sections where categorization, theming, or coding of data is performed.
+
+Data collection was successful and multiple different data points was extracted. These data points were both qualitative and quantitative in nature. During the data collection, the view of the data collection was focused on a horizontal perspective i.e. on source at a time. During analysis the view was flipped to a vertical view i.e. looking at on data attribute at a time.
 
 The quantitative data analysis was performed with simple aggregations and visualized with help of charts. No specific methods or techniques of quantitative data analysis was used. Iterating on the categories by removing, adding, and combining them, new categories and patterns emerged.
 
-Qualitative data analysis was performed one data point at at a time. Each data point was copied to its own Google Sheet tab where electronic affinity diagramming was performed. Affinity diagramming or the KJ method \parencite{scupin1997kj} is a technique that allows to make sense of qualitative data. The KJ methods allows to understand and interpret data that would otherwise be difficult to make something out of.
+Qualitative data analysis was performed one attribute at a time. Each data point was copied to its own Google Sheet tab where electronic affinity diagramming was performed. Affinity diagramming or the KJ method \parencite{scupin1997kj} is a technique that allows to make sense of qualitative data. The KJ methods allows to understand and interpret data that would otherwise be difficult to make something out of.
 
-The idea with affinity diagramming is to shuffle statements that are written cards or notes. Next step is to group things that relate to each other together so that ``teams'' of cards are formed. Then each of these teams are titled, and finally the relations between teams are explained and reported. This method allows to create new interpretations and reveal hidden meaning behind the collected data. This method was suitable for this MLR, as the majority of the data collected was qualitative e.g. statements and loose interpretations from the articles.
+The idea with affinity diagramming is to visually arrange statements that are written on cards or notes. Next step is to group things that relate to each other so that ``teams'' of cards are formed. Then each of these teams are titled, and finally the relations between teams are explained and reported. This method allows to create new interpretations and reveal hidden meaning behind the collected data. This method was suitable for this MLR, as the majority of the data collected was qualitative e.g. statements and interpretations from the articles.
 
 \clearpage
 \section{Results} \label{section:results}
 
 The Multivocal Literature Review (MLR) performed on the definition of DX resulted in interesting results that are presented and reviewed in the following sections. The data points collected emerged during the analysis, and the more analysis was done the more interesting revelations were found.
 
-During the analysis, two different research groups that research DX was found. A research group in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO). To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it. Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development. To this group is also linked other studies related to the DX of IDEs.
+During the analysis, two different groups of researchers that study DX was found. A group of researchers in Brazil has to a large extent researched the DX in the context of Mobile Software Ecosystems (MSECO) \parencite{fontao2015research, fontao2016mseco, fontao2018mobile, fontao2017investigating, fontao2017facing}. To these ecosystems belong mobile application development platforms as Android and iOS. Their approach to DX can however be seen as something applicable to all kinds of products and services that aim to create a better DX and improve on it. Another group of researchers in Finland have studied the mood of developers and its effects at varying levels of software development \parencite{what-happens-when-unhappy, unhappy-developers,on-the-unhappiness, consequences-of-unhappiness}. To this group is also linked other studies related to the DX of IDEs.
 
-In table \ref{table:number-of-sources} the numbers of included and excluded sources is presented. The number of excluded sources is relatively high compared to the included sources.
+In Table \ref{table:number-of-sources} the numbers of included and excluded sources is presented. The number of excluded sources is relatively high compared to the included sources.
 
 \begin{table}[ht]
   \begin{center}
     \begin{tabular}{l | r r | r}
                         & \textbf{Scientific literature} & \textbf{Grey literature} &     \\
       \hline
-      \textbf{Included} & 39                             & 19                       & 58  \\
+      \textbf{Included} & 40                             & 19                       & 59  \\
       \textbf{Excluded} & 50                             & 2                        & 52  \\
       \hline
-                        & 89                             & 21                       & 110
+                        & 90                             & 21                       & 111
     \end{tabular}
     \captionsetup{width=0.6\textwidth}
     \caption{Number of sources analyzed for the MLR}
@@ -847,9 +849,18 @@ In table \ref{table:number-of-sources} the numbers of included and excluded sour
   \end{center}
 \end{table}
 
-\subsection{The object / entity of DX under study}
+\subsection{The object or entity of DX under study}
 
 Based on the DX framework presented by \textcite{fagerholm-doctoral-thesis}, a data collection point was included to understand the object or entity under study of DX. This addresses the first research question \hyperref[RQ1]{RQ1}. The experience object is what is experienced in itself. This could be some artifact e.g. the IDE in the developer's development environment. However, it can also be something more abstract like the conventions or unwritten rules that a software team has established.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=\textwidth]{object-under-study.pdf}
+  \end{center}
+  \captionsetup{width=0.6\textwidth}
+  \caption{The object or entity of DX under study}
+  \label{figure:object-under-study}
+\end{figure}
 
 \subsubsection{Object under study in scientific literature}
 
@@ -863,11 +874,39 @@ Other emerged objects of DX under study in scientific literature included \texti
 
 \textit{Developer's activities in a community} relates to the activities a developer has in a community of other developers. Development is a social activity, that is often performed in conjunction with other developers in a team. Developers create communities on different levels that can be very local e.g. a single software team, but also bigger as e.g. users of a specific software development platform.
 
-\textit{Wellbeing of developers} was discussed in multiple articles. Mainly this was a discussion topic of the research group studying the happiness and unhappiness of developers \parencite{what-happens-when-unhappy}, \parencite{unhappy-developers}, \parencite{consequences-of-unhappiness}, \parencite{on-the-unhappiness}. They focus mostly on the happy-productive theory of developers. This set of studies and research focuses mostly on the happy-productive theory of developer, but there can also be seen a general interest towards the wellbeing of developers.
+\textit{Wellbeing of developers} was discussed in multiple articles. Mainly this was a discussion topic of the group of researchers studying the happiness and unhappiness of developers \parencite{what-happens-when-unhappy, unhappy-developers, consequences-of-unhappiness, on-the-unhappiness}. This set of studies and research focuses mostly on the happy-productive theory of developer, but there can also be seen a general interest towards the wellbeing of developers.
 
-\textit{Individual developers in a bigger context} was not a self-evident object under study. \textcite{entering-an-ecosystem} and \textcite{fagerholm2014examining} were the two most obvious studies of this aspect of DX. However, this can also be found from other objects under study, sometimes directly but mostly more indirectly.
+\textit{Individual developers in a bigger context} was not a self-evident object under study. \textcite{entering-an-ecosystem} (Connection between community context and the individual developer's experience) and \textcite{fagerholm2014examining} (Lean/Agile values) were the two most obvious studies of this aspect of DX. However, this can also be found from other objects under study, sometimes directly but mostly more indirectly.
 
-Further iterating on the emerged objects / entities under study, it became more clear that the underlying object under study was the developers' point of view as in \textcite{voice-of-the-developer}. In the past decision relating to software tools or other used techniques and procedures were made by managers and directors. Today there can be seen a trend that has turned the tides, and given developers more decision power when creating and developing their own ways of working. In general there is an interest towards supporting developers and their daily activities in the environment they are working in. The wellbeing of developers is seen important and different viewpoints on how this can be improved was found in the articles.
+The above mentioned objects and entities under study show that they all have in common the ``the developers' point of view'' as in \textcite{voice-of-the-developer}. In the past decision relating to software tools or other used techniques and procedures were made by managers and directors. Today there can be seen a trend that has turned the tides, and given developers more decision power when creating and developing their own ways of working. In general there is an interest towards supporting developers and their daily activities in the environment they are working in. The wellbeing of developers is seen important and different viewpoints on how this can be improved was found in the articles.
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+  \begin{longtable}{p{0.3\linewidth}p{0.6\linewidth}}
+    \textbf{Scientific literature}                                                                                                                                                                                                                                                                                                                     \\
+    \hline                                                                                                                                                                                                                                                                                                                                             \\
+    Support for developers                     & \textcite{fontao2017investigating} \newline \textcite{fontao2016mseco} \newline \textcite{fontao2018mobile}                                                                                                                                                                                           \\
+    Technical environment                      & \textcite{flow-intrinsic-dx} \newline \textcite{kuusinen2016software} \newline \textcite{programmer-experience}                                                                                                                                                                                       \\
+    Developer's activities in a community      & \textcite{fontao2015research} \newline \textcite{design-framework-enchancing} \newline \textcite{oran2017set} \newline \textcite{open-service-innovation} \newline \textcite{claussen2019role}                                                                                                        \\
+    Wellbeing of developers                    & \textcite{what-happens-when-unhappy} \newline  \textcite{consequences-of-unhappiness} \newline \textcite{fontao2017facing} \newline \textcite{unhappy-developers} \newline \textcite{on-the-unhappiness}                                                                                              \\
+    Individual developers in a bigger context  & \textcite{entering-an-ecosystem} \newline \textcite{fagerholm2014examining}                                                                                                                                                                                                                           \\
+                                               &                                                                                                                                                                                                                                                                                                       \\
+    \textbf{Grey literature}                                                                                                                                                                                                                                                                                                                           \\
+    \hline                                                                                                                                                                                                                                                                                                                                             \\
+    Starting experience                        & \textcite{what-is-developer-experience-everydeveloper}                                                                                                                                                                                                                                                \\
+    API DX                                     & \textcite{great-dx-and-the-people-who-make-them}                                                                                                                                                                                                                                                      \\
+    Developer portals                          & \textcite{apis-for-humans-the-rise-of-developer-experience} \newline \textcite{4-apis-doing-developer-experience-really-well} \newline \textcite{what-is-api-developer-experience-and-why-it-matters}                                                                                                 \\
+    Developers developing for other developers & \textcite{the-best-practices-for-a-great-dx} \newline \textcite{heroku-dx} \newline  \textcite{developer-experience-what-and-why} \newline \textcite{dx-devs-are-people-too} \newline \textcite{developer-experience-sanity} \newline \textcite{building-the-developer-experience-from-the-ground-up} \\
+    Developer support                          & \textcite{api-developer-experience-dx-resources} \newline \textcite{contributing-as-a-designer}                                                                                                                                                                                                       \\
+    Development platforms                      & \textcite{effective-developer-experience} \newline \textcite{workflows-for-the-new-developer-experience}                                                                                                                                                                                              \\
+    \captionsetup{width=0.6\textwidth}                                                                                                                                                                                                                                                                                                                 \\
+    \caption{Object under study}                                                                                                                                                                                                                                                                                                                       \\
+    \label{table:object-under-study}                                                                                                                                                                                                                                                                                                                   \\
+  \end{longtable}
+\end{center}
+\renewcommand{\arraystretch}{1}
+
+% TODO: Check if these tables are OK, or if research methods, explicit/definition, context of DX, and categories of definitions of DX also need to have their tables of sources 
 
 \subsubsection{Object under study in grey literature}
 
@@ -897,7 +936,44 @@ Scientific articles were dwelling more equally on cognitive, affective, and cona
 
 What improves and/or worsens the DX as in \textcite{fagerholm-doctoral-thesis} was also included in the data collection form. When understanding the object of DX, there is also something that improves or worsens the experience, i.e. what influences the experience. The discovered factors were no direct statements found in the sources, but were factors that emerged when analyzing the articles as a more coherent set of articles.
 
-\subsubsection{Factors that improve/worsen the DX found in scientific literature}
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=\textwidth]{factors-that-improve-worsen-the-dx.pdf}
+  \end{center}
+  \captionsetup{width=0.6\textwidth}
+  \caption{Factors that improve or worsen the DX}
+  \label{figure:factors-that-improve-worsen-the-dx}
+\end{figure}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+  \begin{longtable}{p{0.3\linewidth}p{0.6\linewidth}}
+    \textbf{Scientific literature}                                                                                                                                                                                                                                                                                                                                         \\
+    \hline                                                                                                                                                                                                                                                                                                                                                                 \\
+    Shared understanding                    & \textcite{how-developers-experience-team-performance} \newline \textcite{paw} \newline \textcite{api-designers} \newline \textcite{fontao2016mseco}                                                                                                                                                                          \\
+    Collaboration                           & \textcite{design-framework-enchancing} \newline \textcite{entering-an-ecosystem} \newline \textcite{exploring-peopleware-in-cd} \newline \textcite{romano2018effect} \newline \textcite{ollis2019helping} \newline \textcite{oran2017set} \newline \textcite{on-the-unhappiness} \newline \textcite{open-service-innovation} \\
+    Mitigating complexity                   & \textcite{fontao2017facing} \newline \textcite{nebeling2013informing} \newline \textcite{miranda2018improving}                                                                                                                                                                                                               \\
+    Being in control                        & \textcite{software-developers-as-users} \newline \textcite{silva-comparing} \newline \textcite{myers2016improving} \newline \textcite{macvean2016api}                                                                                                                                                                        \\
+    Ability to tackle challenges            & \textcite{pinter2019polymorph} \newline \textcite{ivo2018approach} \newline \textcite{zhang2018toward} \newline \textcite{what-happens-when-unhappy}                                                                                                                                                                         \\
+    Having a meaning as a developer         & \textcite{fagerholm2014examining} \newline \textcite{fontao2017investigating}                                                                                                                                                                                                                                                \\
+    Information, guidelines, and support    & \textcite{de2017towards} \newline \textcite{myers2016improving} \newline \textcite{macvean2016api} \newline \textcite{claussen2019role} \newline \textcite{chatley2019supporting} \newline \textcite{nazariodetecting} \newline \textcite{henriques2018improving} \newline \textcite{fontao2018mobile}                       \\
+                                            &                                                                                                                                                                                                                                                                                                                              \\
+    \textbf{Grey literature}                                                                                                                                                                                                                                                                                                                                               \\
+    \hline                                                                                                                                                                                                                                                                                                                                                                 \\
+    Transparency                            & \textcite{workflows-for-the-new-developer-experience} \newline \textcite{4-apis-doing-developer-experience-really-well} \newline \textcite{dx-devs-are-people-too}                                                                                                                                                           \\
+    Explicit guidelines                     & \textcite{the-best-practices-for-a-great-dx} \newline \textcite{what-exactly-is-developer-experience}                                                                                                                                                                                                                        \\
+    Developers using tools they love        & \textcite{heroku-dx} \newline \textcite{great-dx-and-the-people-who-make-them} \newline \textcite{how-i-missed-it-before} \newline \textcite{building-the-developer-experience-from-the-ground-up} \newline \textcite{what-is-api-developer-experience-and-why-it-matters}                                                   \\
+    Sympathy                                & \textcite{contributing-as-a-designer}                                                                                                                                                                                                                                                                                        \\
+    Feeling of capability                   & \textcite{what-is-developer-experience-everydeveloper} \newline \textcite{developer-experience-sanity}                                                                                                                                                                                                                       \\
+    Developers are human too                & \textcite{api-developer-experience-dx-resources} \newline \textcite{apis-for-humans-the-rise-of-developer-experience}                                                                                                                                                                                                        \\
+    Support towards the development process & \textcite{effective-developer-experience} \newline \textcite{developer-experience-what-and-why}                                                                                                                                                                                                                              \\
+    \captionsetup{width=0.6\textwidth}                                                                                                                                                                                                                                                                                                                                     \\
+    \caption{Factors that improve or worsen the Developer Experience}                                                                                                                                                                                                                                                                                                      \\
+  \end{longtable}
+\end{center}
+\renewcommand{\arraystretch}{1}
+
+\subsubsection{Factors that improve or worsen the DX found in scientific literature}
 
 Notable factors in scientific literature that improve DX were many, including \textit{shared understanding,	available support, collaboration, expectations, mitigating complexity, being in control, ability to tackle challenges, having a meaning as a developer, guidelines, information availability}.
 
@@ -917,9 +993,9 @@ Notable factors in scientific literature that improve DX were many, including \t
 
 All the combined scientific factors that improve DX shows that DX is improved by mostly affective and conative aspects. This includes the feelings and perceptions of developers. Even if the studied articles were mostly discussing about cognitive aspects like tools and processes, and especially usability, there is the common pattern that developers own feeling and perceptions is what creates a good DX.
 
-\subsubsection{Factors that improve/worsen the DX found in grey literature}
+\subsubsection{Factors that improve or worsen the DX found in grey literature}
 
-The most significant factor that improves DX was the UX and usability of tools. Usability of APIs, tools, and products all affect the DX. These usability factors include esthetics, exclusivity, fun, completeness, functionality, experience, pleasure, and reliability. When further analyzing the grey literature, factors as \textit{transparency towards developers,	explicit guidelines, developers loving their tools, sympathy, feeling of capability, developers are human too, support towards the development process} emerged.
+The most significant factor that improves DX was the UX and usability of tools. Usability of APIs, tools, and products all affect the DX. These usability factors include esthetics, exclusivity, fun, completeness, functionality, experience, pleasure, and reliability. When further analyzing the grey literature, factors as \textit{transparency towards developers, explicit guidelines, developers loving their tools, sympathy, feeling of capability, developers are human too, support towards the development process} emerged.
 
 \textit{Transparency} was one of the indirect factors that emerged in the grey literature. Transparency means in this context the transparency of the development artifacts that developers interact with in their daily work. One example of transparency could be the running application in the production environment, where the state and the possible errors are available to the developer. Another example, that was not apparent in the literature, could be the transparency of the whole organization where the developer works. Developers that have a honest and clear understanding of the whole organization that they are working in, will probably have a better DX.
 
@@ -941,7 +1017,7 @@ UX and usability of tools, APIs and products is the most obvious factor that imp
 
 \subsection{Research methods that have been used to study DX}
 
-A list of research methods used to study DX can be found in table \ref{table:research-methods}. From the nature of the research topic in the studies, it is apparent that most of the research methods are exploratory in nature.
+A list of research methods used to study DX can be found in Table \ref{table:research-methods}. From the nature of the research topic in the studies, it is apparent that most of the research methods are exploratory in nature.
 
 \begin{table}[ht]
   \begin{center}
@@ -967,11 +1043,11 @@ A list of research methods used to study DX can be found in table \ref{table:res
 \subsubsection{Research methods in the scientific literature}
 
 \begin{figure}[ht]
-  \captionsetup{width=0.6\textwidth}
-  \caption{Research methods of Developer Experience in scientific literature}
   \begin{center}
     \includegraphics[width=\textwidth]{research-methods-scientific.pdf}
   \end{center}
+  \captionsetup{width=0.6\textwidth}
+  \caption{Research methods of Developer Experience in scientific literature}
 \end{figure}
 
 Mostly the results of the studies were based on literature review and some qualitative methods like interviews, surveys, and diary studies. There were also some design science researches and case studies. Case studies and research designs are probably popular because they provide academics a way to collaborate with practitioners. This is common especially in software engineering, as the industry might be leading the way ahead the academic research.
@@ -983,12 +1059,14 @@ Experiments, trainings and observational studies were also a common research met
 \subsubsection{Research methods in the grey literature}
 
 \begin{figure}[ht]
-  \captionsetup{width=0.6\textwidth}
   \begin{center}
-    \caption{Research methods of Developer Experience in grey literature}
-    \includegraphics[width=\textwidth]{research-methods-grey.pdf}
+    \includegraphics[width=0.8\textwidth]{research-methods-grey.pdf}
   \end{center}
+  \captionsetup{width=0.6\textwidth}
+  \caption{Research methods of Developer Experience in grey literature}
 \end{figure}
+
+% TODO: Check that diagrams are properly placed and that no lonely rows of text are placed between them
 
 In the grey literature the research methods are all expert experience reports where practitioners from the industry report their experiences and lessons from them on blogs and other websites. However, the grey literature articles were quite heavy in references, where the authors were used either someone else's writing or their own writing to base their statements.
 
@@ -999,28 +1077,47 @@ Interestingly, during the analysis of the sources, it emerged that some articles
 \textit{Explicit definition} of DX means that the author has in some words explained or defined the concept of DX, or referenced some other material that gives the definition to it. \textit{Implicit definition} of DX means that the author doesn't give any definition or explanation of what DX is. The definition can often however be inferred from the context of the paper.
 
 \begin{figure}[ht]
-  \captionsetup{width=0.6\textwidth}
-  \caption{Implicit vs. explicit definition of Developer Experience in scientific literature}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{definition-scientific.pdf}
   \end{center}
+  \captionsetup{width=0.6\textwidth}
+  \caption{Implicit vs. explicit definition of Developer Experience in scientific literature}
 \end{figure}
 
-Scientific papers are almost equal in both giving an implicit or explicit definition of DX. It shows and confirms that DX is an topic and research area that has not gotten much attention at the moment of writing. Some research areas have been developed so far that there is things that can be taken for granted. However, the are of DX might not yet be at that point yet and therefore
+Scientific papers are almost equal in both giving an implicit or explicit definition of DX. It shows and confirms that DX is an topic and research area that has not gotten much attention at the moment of writing. Some research areas have been developed so far that there is things that can be taken for granted.
+
+% FIXME: Finnish sentence
+However, the are of DX might not yet be at that point yet and therefore
 
 \begin{figure}[ht]
-  \captionsetup{width=0.6\textwidth}
   \begin{center}
-    \caption{Implicit vs. explicit definition of Developer Experience in grey literature}
     \includegraphics[width=0.6\textwidth]{definition-grey.pdf}
+    \captionsetup{width=0.6\textwidth}
+    \caption{Implicit vs. explicit definition of Developer Experience in grey literature}
   \end{center}
 \end{figure}
 
 Grey literature has a majority of explicit definition of DX. The articles are often starting with giving an explanation of their viewpoint and definition of DX. Quickly the articles then continue to discuss the topic from the selected context and viewpoint.
 
-\subsection{Context of DX}
+\subsection{Context of the studies}
 
-From the analysis of the material, there is a clear indication that there are different viewpoints and contexts to DX. The different contexts that emerged from the analysis are listed in table \ref{table:contexts}. The context were completely unknown before starting the MLR. One source address the topic of DX from multiple contexts and viewpoints.
+From the analysis of the material, there is a clear indication that there are different viewpoints and contexts to the research and study of DX. The different contexts that they studies are made in emerged from the analysis are listed in Table \ref{table:contexts}. The context were completely unknown before starting the MLR. One source address the topic of DX from multiple contexts and viewpoints. The context can be seen as the environment of where DX is studied in. In software engineering things can be seen from multiple different viewpoints based on a plethora of different things. The same is true about DX.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=\textwidth]{context-scientific.pdf}
+    \captionsetup{width=0.6\textwidth}
+    \caption{Context of Developer Experience in scientific literature}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=\textwidth]{context-grey.pdf}
+    \captionsetup{width=0.6\textwidth}
+    \caption{Context of Developer Experience in grey literature}
+  \end{center}
+\end{figure}
 
 \begin{table}[ht]
   \begin{center}
@@ -1042,7 +1139,7 @@ From the analysis of the material, there is a clear indication that there are di
   \end{center}
 \end{table}
 
-\textit{Definition} is the context that considers directly the definition of DX. Articles having the context of definition are discussing and explaining the concept of DX. They either implicitly or explicitly add to the definition of DX, either from their own point of view or then from a more broader context.
+\textit{Definition} is the context that considers directly the definition of DX. Articles having the context of definition are discussing and explaining the concept of DX without any specific viewpoint. They either implicitly or explicitly add to the definition of DX, either from their own point of view or then from a more broader context.
 
 \textit{Development Environment} is related to the technical environment where the developer is developing the software. In the found articles the most notable artifact under research was the IDE. Other artifacts that could be included in the development environment could be programming languages and framework or the ease of use of setting up the development environment.
 
@@ -1055,20 +1152,6 @@ From the analysis of the material, there is a clear indication that there are di
 \textit{Team, Collaboration, \& Community} was seen as a specific context that includes the social aspect of DX. Multiple sources discussed about the team and communities where software is developed. They were considered to have a great impact on the DX. The scientific research is more focused on the social parts of DX, and scientific research has taken a step further in this than the grey literature.
 
 \textit{Mood \& Feelings} emerged from the multiple articles discussing the happiness of developers. The mood and feelings should not only be restricted to happiness and/or unhappiness. DX allows developers to reason about things that before has been difficult. Making statements that are in the favour of developers might have been difficult as there hasn't been any term to coin the feelings, emotions, needs, and desires.
-
-\begin{figure}[ht]
-  \caption{Context of Developer Experience in scientific literature}
-  \begin{center}
-    \includegraphics[width=\textwidth]{context-scientific.pdf}
-  \end{center}
-\end{figure}
-
-\begin{figure}[ht]
-  \caption{Context of Developer Experience in grey literature}
-  \begin{center}
-    \includegraphics[width=\textwidth]{context-grey.pdf}
-  \end{center}
-\end{figure}
 
 \subsection{Categories of definitions of DX}
 
@@ -1128,24 +1211,9 @@ There can be seen both differences and similarities between the definitions of D
 
 The articles report that DX is an important factor of software engineering. From the different contexts emerged in this study it is apparent that DX can be seen from a wide variety of different viewpoints. The different data points that were collected showed interesting results about the different aspects of DX, both in scientific and grey literature. There were both similarities and differences between them.
 
-One main finding from the MLR, that applies for both scientific and grey literature, is that in software engineering in general there has happened a change in the empathy and sympathy shown and expressed towards developers. Almost all articles analyzed were discussing about DX in a humane and compassionate tone. This is also noted in \textcite{voice-of-the-developer}. However, there is still a lot of ``objectifying'' of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design.
+One main finding from the MLR, that applies for both scientific and grey literature, is that in software engineering in general there has happened a change in the empathy and sympathy shown and expressed towards developers. Almost all articles analyzed were discussing about DX in a humane and compassionate tone. This is also noted in \textcite{voice-of-the-developer}. 
 
-\subsection{Validity of the results}
-
-The selection of the search strategy might have caused some relevant search results to have been excluded from the results. There were attempts to try to mitigate this risk, but it could not be assured that this was the case. Because of the novelty of the topic, there are most likely a large amount of articles and writings that discuss about the topic of DX implicitly. However, as a researcher it is almost impossible to try to also include these articles into the research and study.
-
-The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private browsing sessions were used on the browser when performing the searches.
-
-Google has not revealed how the search engine optimization (SEO) works on the Google search engine. However there are some broad guidelines on what a web page has to include, so that it will rank higher on the results page. For companies Google search results is a huge asset and a big opportunity to gain visitor traffic and publicity. Having a web page or site ranking high on the Google search results can probably even determine the existence of some companies businesses. All in all, this means that ranking high on the Google search results page requires knowledge and effort. Therefore we can deduce that the grey literature resources included in this MLR retrieved from Google search are funded or backed by companies that deliberately aim for high ranking on Google searches to sell or promote their products or services.
-
-Depth of data collection has probably varied while performing the MLR. In most cases no explicit analysis was required to extract the required data when collecting it. However, based on the quality of the source sometimes the collection required some analysis to be able extract the data. E.g. understanding the object of DX under study forced sometimes the researcher to ``read between the lines'', adding their own interpretation and possible bias to the data. This same problem was present also if the research topic of the source was not explicitly  studying DX, but still related to concepts of DX.
-
-\clearpage
-\section{Discussion} \label{section:discussion}
-
-Developer experience is an umbrella term that captures a big part how developers feel and perceive their work. Current definition of DX in the industry is largely based on practitioners own experiences. In academic writings and papers, the topic of DX is studied relatively little, and the existing articles are not well known by the research community.
-
-Surprisingly the most used research method in scientific articles was literature reviews and systematic mappings. Even if the topic is novel and there is not much studies on it, the studies are basing their findings on previous work. One explanation to this could that DX is an umbrella term (hypernym) of multiple different hyponyms, e.g. UX, usability, and aspects of psychology. Based on the research methods, there can be seen that trainings, experiments, and diary studies were utilized a lot. This shows that the academics were closely collaborating with practitioners from the industry and students at universities.
+However, there is still a lot of ``objectifying'' of developers the same way as there might have been towards users of the early stages of HCI and before user-centered design. \textcite{kauppinen2009feature} discuss about customer value creation. Even though the study is in the field of Requirements Engineering (RE), the similarities can be seen. They state that practitioners have previously focused more on feature creation i.e. a \textit{"inside-out"} approach of looking at RE where the features and other development ideas came from the development team themselves. However, they see that better customer value can be created by taking an \textit{"outside-in"} approach, where the customer is understood, and that the features and development ideas come from them.  
 
 \subsection{Experience influencers}
 
@@ -1161,7 +1229,7 @@ There has been a study on the Developer Experience of IDEs \parencite{software-d
 
 There can be situations when two different developers use a different IDE, and therefore also the experience can be completely different between them. At the most extreme the 2 IDEs are not compatible with each other as their files related to the project are different. An example of this is Eclipse and IntelliJ IDEA as Java IDEs.
 
-In a study of IDEs \parencite{software-developers-as-users}, the survey about IDEs in the study produced answers about the IDE that were most pragmatic, but not hedonic. This could show that most of the developers are practical, and not feeling based. This has also been proven \parencite{personality-software}. This might also be a reason why DX has not gotten that much attention yet, as big part of people in software engineering are \textit{``Introverts''}. Software engineers are also more logical thinkers than feeling based. As Developer Experience is focusing on the feelings and subjective opinions about things, it might be a difficult topic to research.
+In a study of IDEs \parencite{software-developers-as-users}, the survey about IDEs in the study produced answers about the IDE that were most pragmatic, but not hedonic. This could show that most of the developers are practical, and not feeling based. \textcite{personality-software} studied the personalities in software engineering and found out that the majority of software developers are of type ISTJ (Introversion, Sensing, Thinking, Judgement) on the Myers-Briggs Type indicator. This might also be a reason why DX has not received that much attention yet, as big part of people in software engineering are \textit{``Introverts''}.  This doesn't mean that they do not have feelings, but that they keep them more to themselves or that they are not that well aware of their feelings. Software engineers might also think, even if they might not be, that they base their reasoning more on logic than feelings. As Developer Experience is focusing on the feelings and subjective opinions about things, it might be a difficult topic to research.
 
 \subsubsection{Organization and project onboarding}
 
@@ -1199,9 +1267,14 @@ Application Programming Interfaces (APIs) are interface that developers use to c
 
 APIs, and especially Web APIs have enabled to create businesses around APIs \parencite{api-ecosystem}, \parencite{web-api-economy}, \parencite{moilanen2018api}. This type of business is called an API economy, and has quickly become a viable way of generating revenue for businesses.
 
-\subsection{Answering the research questions}
+\clearpage
+\section{Discussion} \label{section:discussion}
 
-At this point we are ready to provide an answer the research problem and questions.
+Developer experience is an umbrella term that captures a big part how developers feel and perceive their work. Current definition of DX in the industry is largely based on practitioners own experiences. In academic writings and papers, the topic of DX is studied relatively little, and the existing articles are not well known by the research community.
+
+Surprisingly the most used research method in scientific articles was literature reviews and systematic mappings. Even if the topic is novel and there is not much studies on it, the studies are basing their findings on previous work. One explanation to this could that DX is an umbrella term (hypernym) of multiple different hyponyms, e.g. UX, usability, and aspects of psychology. Based on the research methods, there can be seen that trainings, experiments, and diary studies were utilized a lot. This shows that the academics were closely collaborating with practitioners from the industry and students at universities.
+
+\subsection{Answering the research questions}
 
 The \hyperref[research-problem]{research problem} (\researchproblem) prompted to perform a Multivocal literature review where both scientific and grey literature was studied to gain a better understanding of DX.
 
@@ -1213,13 +1286,27 @@ Answering \hyperref[RQ3]{RQ3} (\rqthree) was possible based on the results of th
 
 \hyperref[RQ4]{RQ4} (\rqfour) was presented because it was noted that different articles all take their own viewpoint and context from which DX is looked at. Scientific articles are focused more on looking at DX from the context the development environment, the definition DX, Knowledge sharing, and Team, Collaboration and Community. However grey literature focused mostly on DX from the context of APIs, products and services, and UX.
 
-\hyperref[RQ5]{RQ5} (\rqfive) asked about the different definitions of DX found in the literature. The most notable and recurring concise definition is provided by \textcite{fagerholm-dx-concept-and-definition} as \textit{``the developers feelings and perceptions about their work''}.
+\hyperref[RQ5]{RQ5} (\rqfive) asked about the different definitions of DX found in the literature. The most notable and recurring concise definition is provided by \textcite{fagerholm-dx-concept-and-definition} as \textit{``the developers feelings and perceptions about their work''}. The definitions of DX in the grey literature to a large degree fall under this same definition given by \textcite{fagerholm-dx-concept-and-definition}. However, there is the apparent business aspect visible in the grey literature where the point of view is gaining business value by improving DX of products and services.
+
+\subsection{Validity of the results}
+
+The selection of the search strategy might have caused some relevant search results to have been excluded from the results. There were attempts to try to mitigate this risk, but it could not be assured that this was the case. Because of the novelty of the topic, there are most likely a large amount of articles and writings that discuss about the topic of DX implicitly. However, as a researcher it is almost impossible to try to also include these articles into the research and study.
+
+The search engine Google is known to provide results based on many different variables on the user e.g. previous searchers, internet profile etc. Therefore the search results from Google might not present results that are applicable for anyone. To mitigate this, private browsing sessions were used on the browser when performing the searches. Google has not revealed how the search engine optimization (SEO) works on the Google search engine. However there are some broad guidelines on what a web page has to include, so that it will rank higher on the results page. For companies Google search results is a huge asset and a big opportunity to gain visitor traffic and publicity. Having a web page or site ranking high on the Google search results can probably even determine the existence of some companies businesses. All in all, this means that ranking high on the Google search results page requires knowledge and effort. Therefore we can deduce that the grey literature resources included in this MLR retrieved from Google search are funded or backed by companies that deliberately aim for high ranking on Google searches to sell or promote their products or services.
+
+Depth of data collection has probably varied while performing the MLR. In most cases no explicit analysis was required to extract the required data when collecting it. However, based on the quality of the source sometimes the collection required some analysis to be able extract the data. E.g. understanding the object of DX under study forced sometimes the researcher to ``read between the lines'', adding their own interpretation and possible bias to the data. This same problem was present also if the research topic of the source was not explicitly  studying DX, but still related to concepts of DX.
+
+Other noteworthy limitations to the research was the search process and decisions made to finding the sources of the MLR. These decisions include the decision to only include 2 first pages of Google search results, collecting scientific articles from 4 databases were used to find scientific articles, and finally, only one round of snowballing was performed on the scientific sources. They all are limitations to the search prcess, and might have affected the search results.
+
+% TODO: Kanske nånting annat om validity of the results som jag har nämnt tidigare?
+
+% Poängen är inte att säga att allt detta gör att resultaten är ogiltiga. Det handlar bara om att evaluera vad som inverkar på validiteten och ge argument för varför resultaten har någon grad av validitet trots begränsningarna. 
 
 \subsection{Future research}
 
-This study took an exploratory approach into understanding the phenomenon of DX, especially the current state of the literature of it. During the initial phases of the research, the research problem and questions were constantly evolving with the progress of the study. The first version of the research problem focused on understanding the cause-effect relation between practicing good developer experience and the effect of that on software projects. It was formalized initially as \textit{``What are the aspects of Developer Experience that are utilized in practice and have potential of being replicable in different teams of a software consulting company?''}
+This study took an exploratory approach into understanding the phenomenon of DX, especially the current state of the literature in it.
 
-However, it was quickly noticed that this problem was way too ambitious, and would require huge effort on the current state of the understanding of DX. Unanswered questions in this approach were questions like \textit{``what is developer experience?''}, \textit{what is the aspects of developer experience?} \textit{"what does utilizing in practice mean?}, \textit{``what does having potential mean?''} \textit{``what does replicable mean?''}. To be able to study research problems like this there needs to be more ground work done in the field of study of DX. These questions were the main motivator for selecting this topic for this thesis, and were initially the goal of this thesis.
+One possible future research approach could be to find possible cause-effect relations regarding to DX. One example of this could be to find out the relation between practicing good eveloper experience and the effect of that on software projects. One question to answer could be e.g. \textit{``What are the aspects of Developer Experience that are utilized in practice and have potential of being replicable in different teams of a software consulting company?''}. Unanswered questions in this approach are \textit{``what is developer experience?''}, \textit{what are the aspects of developer experience?} \textit{"what does utilizing in practice mean?}, \textit{``what does having potential mean?''} \textit{``what does replicable mean?''}. To be able to study research problems like this there needs to be more ground work done in the field of study of DX.
 
 In conclusion, future research could focus on any aspect of DX in practice. How are practitioners considering DX? What could the benefits of focusing on DX be? As it was found out in this thesis, there could be huge potential in understanding DX and how it affect the practice of software development. We have seen the evolution from Human Computer Interaction (HCI) to User Experience (UX). It will be interesting to see to what extent DX is taken.
 
@@ -1244,9 +1331,7 @@ The concept of DX can be seen as a revolution to this. First, this means that th
 \renewcommand{\arraystretch}{1.5}
 
 \begin{center}
-  \begin{longtable}{p{0.05\linewidth}p{0.35\linewidth}p{0.6\linewidth}}
-    \captionsetup{width=0.6\textwidth}                                                                                                                                                                        \\
-    \caption{Scientific articles}                                                                                                                                                                             \\
+  \begin{longtable}{p{0.05\linewidth}p{0.35\linewidth}p{0.5\linewidth}}
     \label{table:scientific-articles}                                                                                                                                                                         \\
     1.  & \textcite{fagerholm-dx-concept-and-definition}        & Developer experience: concept and definition                                                                                                \\
     2.  & \textcite{flow-intrinsic-dx}                          & Flow, Intrinsic Motivation, and Developer Experience in Software Engineering                                                                \\
@@ -1278,22 +1363,23 @@ The concept of DX can be seen as a revolution to this. First, this means that th
     28. & \textcite{karpanoja2016exploring}                     & Exploring Peopleware in Continuous Delivery                                                                                                 \\
     29. & \textcite{ekwoge2017tester}                           & Tester Experience: Concept, Issues and Definition                                                                                           \\
     30. & \textcite{romano2018effect}                           & The effect of noise on software engineers' performance                                                                                      \\
-    31. & \textcite{ivo2018approach}                            & An approach for applying Test-Driven Development (TDD) in the development of randomized algorithms                                          \\
-    32. & \textcite{de2017towards}                              & Towards a Guideline-Based Approach to Govern Developers in Mobile Software Ecosystems                                                       \\
-    33. & \textcite{programmer-experience}                      & Programmer eXperience: A Systematic Literature Review                                                                                       \\
-    34. & \textcite{claussen2019role}                           & The Role of Pre-Innovation Platform Activity for Diffusion Success: Evidence from Consumer Innovations on a 3D Printing Platform            \\
-    35. & \textcite{oran2017set}                                & A Set of Artifacts and Models to Support Requirements Communication Based on Perspectives                                                   \\
-    36. & \textcite{nazariodetecting}                           & Detecting and Reporting Object-Relational Mapping Problems: An Industrial Report                                                            \\
-    37. & \textcite{zhang2018toward}                            & Toward Understanding IoT Developers in Chinese Startups                                                                                     \\
-    38. & \textcite{silva-comparing}                            & Comparing the Usability of two Multi-Agents Systems DSLs: SEA\_ML++ and DSML4MAS Study Design                                               \\
-    39. & \textcite{ollis2019helping}                           & Helping developers to help each other: a technique to facilitate understanding among professional software developers
+    31. & \textcite{open-service-innovation}                    & Open service innovation ecosystem for public transportation                                                                                 \\
+    32. & \textcite{ivo2018approach}                            & An approach for applying Test-Driven Development (TDD) in the development of randomized algorithms                                          \\
+    33. & \textcite{de2017towards}                              & Towards a Guideline-Based Approach to Govern Developers in Mobile Software Ecosystems                                                       \\
+    34. & \textcite{programmer-experience}                      & Programmer eXperience: A Systematic Literature Review                                                                                       \\
+    35. & \textcite{claussen2019role}                           & The Role of Pre-Innovation Platform Activity for Diffusion Success: Evidence from Consumer Innovations on a 3D Printing Platform            \\
+    36. & \textcite{oran2017set}                                & A Set of Artifacts and Models to Support Requirements Communication Based on Perspectives                                                   \\
+    37. & \textcite{nazariodetecting}                           & Detecting and Reporting Object-Relational Mapping Problems: An Industrial Report                                                            \\
+    38. & \textcite{zhang2018toward}                            & Toward Understanding IoT Developers in Chinese Startups                                                                                     \\
+    39. & \textcite{silva-comparing}                            & Comparing the Usability of two Multi-Agents Systems DSLs: SEA\_ML++ and DSML4MAS Study Design                                               \\
+    40. & \textcite{ollis2019helping}                           & Helping developers to help each other: a technique to facilitate understanding among professional software developers                       \\
+    \captionsetup{width=0.6\textwidth}                                                                                                                                                                        \\
+    \caption{Scientific articles}                                                                                                                                                                             \\
   \end{longtable}
 \end{center}
 
 \begin{center}
-  \begin{longtable}{p{0.05\linewidth}p{0.35\linewidth}p{0.60\linewidth}}
-    \captionsetup{width=0.6\textwidth}                                                                                                                                                               \\
-    \caption{Grey literature}                                                                                                                                                                        \\
+  \begin{longtable}{p{0.05\linewidth}p{0.35\linewidth}p{0.5\linewidth}}
     \label{table:grey-literature}                                                                                                                                                                    \\
     1.  & \textcite{the-best-practices-for-a-great-dx}                    & https://hackernoon.com/the-best-practices-for-a-great-developer-experience-dx-9036834382b0                               \\
     2.  & \textcite{dx-devs-are-people-too}                               & https://hackernoon.com/developer-experience-dx-devs-are-people-too-6590d6577afe                                          \\
@@ -1312,7 +1398,9 @@ The concept of DX can be seen as a revolution to this. First, this means that th
     15. & \textcite{developer-experience-what-and-why}                    & http://theappslab.com/2017/04/04/developer-experience-what-and-why/                                                      \\
     16. & \textcite{what-exactly-is-developer-experience}                 & https://blog.apimatic.io/what-exactly-is-developer-experience-1646b813df14                                               \\
     17. & \textcite{developer-experience-sanity}                          & https://www.sanity.io/developer-experience                                                                               \\
-    18. & \textcite{4-apis-doing-developer-experience-really-well}        & https://nordicapis.com/4-apis-doing-developer-experience-really-well/
+    18. & \textcite{4-apis-doing-developer-experience-really-well}        & https://nordicapis.com/4-apis-doing-developer-experience-really-well/                                                    \\
+    \captionsetup{width=0.6\textwidth}                                                                                                                                                               \\
+    \caption{Grey literature}                                                                                                                                                                        \\
   \end{longtable}
 \end{center}
 
